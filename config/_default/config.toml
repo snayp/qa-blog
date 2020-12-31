@@ -1,0 +1,53 @@
+baseURL = "https://snayp.github.io/"
+title = "сельский тестер"
+ignoreErrors = ["error-remote-getjson"]
+languageCode = "ru"
+defaultContentLanguage = "ru"
+copyright = ""
+paginatepath = "страница"
+
+canonifyURLs = true
+enableEmoji = true
+footnotereturnlinkcontents = "<sup>^</sup>"
+ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]
+  section = [ "HTML", "RSS" ]
+
+[mediaTypes."application/manifest+json"]
+  suffixes = ["webmanifest"]
+
+[outputFormats.WebAppManifest]
+  mediaType = "application/manifest+json"
+  rel = "manifest"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Enable user to embed HTML snippets in Markdown content.
+  [markup.highlight]
+    codeFences = false  # Disable Hugo's code highlighter as it conflicts with Academic's highligher.
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+[imaging]
+  resampleFilter = "lanczos"
+  quality = 90
+  anchor = "smart" 
+
+[permalinks]
+  categories = "/категория/:slug/"      # required
+  tags = "/тэг/:slug/"                 # required
+  pages = "/:slug/" 
+  authors = "/автор/:slug/" 
+
+[related]
+  includeNewer = false
+  threshold = 80
+  toLower = true
+
+  [[related.indices]]
+    name = "авторы"
+    weight = 100
