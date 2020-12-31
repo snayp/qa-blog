@@ -5,8 +5,9 @@ languageCode = "ru"
 defaultContentLanguage = "ru"
 copyright = ""
 paginatepath = "страница"
-
+enableInlineShortcodes = true
 canonifyURLs = true
+relativeURLs = true
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]

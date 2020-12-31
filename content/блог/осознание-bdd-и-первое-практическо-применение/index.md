@@ -6,7 +6,7 @@ draft = false
 tags = ["bdd"]
 categories = ["онлайн"]
 keywords = []
-author = ["dsh"]
+authors = ["dsh"]
 +++
 
 ## первое применение

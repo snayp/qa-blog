@@ -1,7 +1,6 @@
 +++
 # Hero widget.
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 # title = "блог"
@@ -33,18 +32,20 @@ weight = 10  # Order that this section will appear.
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [cta]
-  url = "#about"
-  label = "вступление"
+  url = "#приветствие"
+  label = "приветствие"
 
 [cta_alt]
-  url = "#posts"
-  label = "читать"
+  url = "#новое"
+  label = "новое в блоге"
 
 +++
 
-# Добро пожаловать
+# Доброго здоровья
 
-## Моя фамилия **Шилин**
+## Уважаемый **читатель**
 
 \
-это мой блог, где я делюсь опытом и мнением
+этот блог, способ обобщить опыт
+
+ и сохранить полюбившуюся музыку

@@ -5,12 +5,12 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 120  # Order that this section will appear.
 
-title = "топ 10 тем"
+title = "топ 10 тегов"
 subtitle = ""
 
 [content]
   # Choose the taxonomy from `config.toml` to display (e.g. tags, categories)
-  taxonomy = "тема"
+  taxonomy = "tags"
   
   # Choose how many tags you would like to display (0 = all tags)
   count = 10
