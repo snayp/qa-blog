@@ -3,10 +3,9 @@
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
-# title = "блог"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-# hero_media = "me.jpg"
+hero_media = "me.jpg"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -31,21 +30,14 @@ weight = 10  # Order that this section will appear.
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
-[cta]
-  url = "#приветствие"
-  label = "приветствие"
-
-[cta_alt]
-  url = "#новое"
-  label = "новое в блоге"
-
 +++
 
-# Доброго здоровья
+# доброго здоровья
 
-## Уважаемый **читатель**
+## уважаемый **читатель**
 
-\
-этот блог, способ обобщить опыт
+### это блог с материалами о тестировании и качестве софта
 
- и сохранить полюбившуюся музыку
+### советы как самостоятельно освоить профессию тестировщика
+
+### и примеры организации процесса создания качественных интернет сервисов позволяющего сразу реагировать на новые запросы клиентов

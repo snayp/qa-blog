@@ -2,9 +2,9 @@
 title = "Techno set Dj Omm"
 date = 2020-11-29T05:10:51+03:00
 draft = false
-author = "dsh"
-tags = ["dj oom", "techno"]
-categories = [ "музыка", "продюссер", "онлайн" ]
+authors = ["dsh"]
+tags = ["dj oom", "techno", "Саратов"]
+categories = [ "музыка", "онлайн" ]
 +++
 ## Dj Omm live @Asid Riot
 

@@ -69,7 +69,7 @@
 - id: book_appointment
   translation: Назначить встречу
 - id: abstract
-  translation: Аннотация
+  translation: Главное
 - id: publication
   translation: Публикация
 - id: publication_type
@@ -107,7 +107,7 @@
 - id: publications
   translation: Публикации
 - id: talks
-  translation: Выступления
+  translation: События
 - id: projects
   translation: Проекты
 - id: search
@@ -121,7 +121,7 @@
 - id: page_not_found
   translation: Страница не найдена
 - id: 404_recommendations
-  translation: Вы наверное искали один из тезисов?
+  translation: Вы возможно искали один из новых постов?
 - id: cookie_message
   translation: Для комфорной навигации на этом сайте используются куки (cookies).
 - id: cookie_dismiss
