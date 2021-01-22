@@ -8,7 +8,7 @@ weight = 60  # Order that this section will appear.
 
 title = "свежее"
 subtitle = ""
-url = "новое"
+
 [content]
   # Page type to display. E.g. post, talk, or publication.
   page_type = "блог"

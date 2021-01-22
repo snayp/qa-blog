@@ -1,12 +1,13 @@
 +++
 title = "Осознание BDD и первое практическо применение"
+summary = "блог о тестировании и качестве"
 date = 2020-12-01T05:38:27+03:00
 lastmod = 2020-12-01T05:38:27+03:00
 draft = false
 tags = ["bdd"]
 categories = ["онлайн"]
 keywords = []
-authors = ["dsh"]
+authors = ["snayp"]
 +++
 
 ## первое применение

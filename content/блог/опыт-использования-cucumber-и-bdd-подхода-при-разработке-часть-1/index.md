@@ -3,7 +3,7 @@ title: "Опыт использования Cucumber и BDD подхода. Ча
 date: 2020-11-30T05:10:51+03:00
 draft: false
 author:
-- dsh
+- snayp
 tags: ["автоматизация", "cucumber", "selenium", "java", "BDD"]
 categories: [ "тестирование", "онлайн" ]
 ---

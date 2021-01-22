@@ -5,7 +5,7 @@ active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-hero_media = "me.jpg"
+hero_media = "me.png"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -21,7 +21,7 @@ hero_media = "me.jpg"
   # gradient_end = "#000f"
   
   # Background image.
-  image = "bg.JPG"
+  image = "background.jpg"
   image_darken = 0.1
 
   # Text color (true=light or false=dark).
@@ -32,12 +32,21 @@ hero_media = "me.jpg"
 #   Remove a link/note by deleting a cta/note block.
 +++
 
-# доброго здоровья
+# доброго здоровья!
 
 ## уважаемый **читатель**
 
-### это блог с материалами о тестировании и качестве софта
+_популярно о_
+### качество современного софта
 
-### советы как самостоятельно освоить профессию тестировщика
+_актуально о_
 
-### и примеры организации процесса создания качественных интернет сервисов позволяющего сразу реагировать на новые запросы клиентов
+### профессии тестировщика
+
+_насущные_
+
+### интернет технологии
+
+_критика_
+
+### онлайн музыки
