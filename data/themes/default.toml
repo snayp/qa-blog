@@ -1,8 +1,8 @@
 # Theme metadata
-name = "Default"
+name = "default"
 
 # Is theme light or dark?
-light = false
+light = false 
 
 # Primary
 primary = "#fc6f5c"
