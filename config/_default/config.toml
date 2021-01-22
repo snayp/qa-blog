@@ -10,7 +10,7 @@ canonifyURLs = true
 relativeURLs = true
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
-ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "categories", "tags"]
+ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "categories/", "tags/"]
 
 [outputs]
   home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]
@@ -42,7 +42,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   categories = "/категория/:slug/"      # required
   tags = "/тема/:slug/"                 # required
   pages = "/:slug/" 
-  authors = "/автор/:slug/" 
+  authors = "/автор/" 
 
 [related]
   includeNewer = false
