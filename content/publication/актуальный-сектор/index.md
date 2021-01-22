@@ -2,7 +2,6 @@
 title = "ДДТ и  еще более 20 исполнителей сыграли требьют Сектор Газа"
 description = ""
 summary = ""
-featured = true
 publication_types = ["1"]
 keywords = [ ]
 tags = [ ]

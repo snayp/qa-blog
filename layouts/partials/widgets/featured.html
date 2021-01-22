@@ -3,7 +3,7 @@
 {{/* Initialise */}}
 {{ $ := .root }}
 {{ $st := .page }}
-{{ $items_type := $st.Params.content.page_type | default "post" }}
+{{ $items_type := $st.Params.content.page_type | default "блог" }}
 {{ $items_count := $st.Params.content.count | default 65535 }}
 {{ $items_sort := $st.Params.content.order| default "desc" }}
 
