@@ -19,7 +19,6 @@ url = "/автор/"
   icon = "github"
   icon_pack = "fab"
   link = "https://github.com/continuous4testing"
-
 +++
 
 ## Тесты под годный музон
