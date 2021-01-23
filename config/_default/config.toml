@@ -7,12 +7,10 @@ copyright = ""
 paginatepath = "страница"
 enableInlineShortcodes = true
 canonifyURLs = true
-
-relativeURLs = false
-
+relativeURLs = true
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
-ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "categories", "tags"]
+ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 # Taxonomies.
 [taxonomies]

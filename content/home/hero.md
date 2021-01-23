@@ -3,7 +3,7 @@
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
-
+headless = true
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 hero_media = "me.png"
 

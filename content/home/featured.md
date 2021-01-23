@@ -6,11 +6,10 @@ widget = "featured"
 
 # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 80  # Order that this section will appear.
 
 title = "избранное"
-
 subtitle = "актуальные материалы"
 
 
@@ -18,7 +17,6 @@ subtitle = "актуальные материалы"
   # Page type to display. E.g. post, talk, or publication.
   page_type = "блог"
 
-  
   # Choose how much pages you would like to display (0 = all pages)
   count = 3
 

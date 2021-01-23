@@ -14,11 +14,6 @@
   weight = 20
 
 [[main]]
-  name = "афиша"
-  url = "/афиша/"
-  weight = 30
-
-[[main]]
   name = "идея"
   url = "/идея/"
   weight = 35

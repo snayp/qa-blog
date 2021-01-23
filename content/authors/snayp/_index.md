@@ -4,7 +4,7 @@ name = "snayp"
 role = "инженер качества"
 superuser = false
 title = "рад приветствовать на страницах этого блога"
-url = "/автор/"
+
 [[social]]
   icon = "telegram"
   icon_pack = "fab"
