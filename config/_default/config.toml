@@ -8,7 +8,7 @@ paginatepath = "страница"
 enableInlineShortcodes = true
 canonifyURLs = true
 
-relativeURLs = true
+relativeURLs = false
 
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
