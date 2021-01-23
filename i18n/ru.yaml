@@ -69,11 +69,7 @@
 - id: book_appointment
   translation: Назначить встречу
 - id: abstract
-<<<<<<< HEAD
   translation: Резюме
-=======
-  translation: Главное
->>>>>>> 10fd9fa1d909dff31124d79303287b9ec0204192
 - id: publication
   translation: Публикация
 - id: publication_type
