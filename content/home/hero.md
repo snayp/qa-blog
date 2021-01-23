@@ -1,13 +1,11 @@
 +++
 # Hero widget.
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
-# title = "блог"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-# hero_media = "me.jpg"
+hero_media = "me.png"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -23,7 +21,7 @@ weight = 10  # Order that this section will appear.
   # gradient_end = "#000f"
   
   # Background image.
-  image = "bg.JPG"
+  image = "background.jpg"
   image_darken = 0.1
 
   # Text color (true=light or false=dark).
@@ -32,19 +30,30 @@ weight = 10  # Order that this section will appear.
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
-[cta]
-  url = "#about"
-  label = "вступление"
 
-[cta_alt]
-  url = "#posts"
-  label = "читать"
 
 +++
 
-# Добро пожаловать
+# доброго здоровья
 
-## Моя фамилия **Шилин**
+## уважаемый **читатель**
 
-\
-это мой блог, где я делюсь опытом и мнением
+### _необходимое_
+
+### качество сервисов
+
+### _актуальная_
+
+### профессия тестировщика
+
+### _насущные_
+
+### интернет технологии
+
+### анонсы
+
+### _интересных событьий_
+
+### _критика_
+
+### онлайн музыки

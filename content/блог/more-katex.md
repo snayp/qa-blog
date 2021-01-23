@@ -1,10 +1,11 @@
----
-title           : "More KaTeX"
-description     : "Brief explanation of mhchem, copy-tex, etc."
-katex           : true
-katexExtensions : [ mhchem, copy-tex ]
-tags            : [ markdown, shortcodes, extra ]
----
++++
+description = "Brief explanation of mhchem, copy-tex, etc."
+katex = true
+katexExtensions = ["mhchem", "copy-tex"]
+tags = ["markdown", "shortcodes", "extra"]
+title = "More KaTeX"
+
++++
 
 The extensions `mhchem` and `copy-tex` are also included (along the necessary `auto-render`).
 

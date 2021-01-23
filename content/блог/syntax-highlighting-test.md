@@ -1,9 +1,10 @@
----
-title       : "Syntax Highlighting Test"
-description : "A page full of code samples."
-tags        : [ extra, "syntax highlighting" ]
-toc         : true
----
++++
+description = "A page full of code samples."
+tags = ["extra", "syntax highlighting"]
+title = "Syntax Highlighting Test"
+toc = true
+authors = ["snayp"]
++++
 
 ## Bash
 

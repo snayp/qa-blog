@@ -3,7 +3,7 @@
 {{/* Initialise */}}
 {{ $ := .root }}
 {{ $st := .page }}
-{{ $items_type := $st.Params.content.page_type | default "post" }}
+{{ $items_type := $st.Params.content.page_type | default "блог" }}
 {{ $items_count := $st.Params.content.count | default 65535 }}
 {{ $items_sort := $st.Params.content.order| default "desc" }}
 
@@ -38,9 +38,9 @@
 
 {{/* Localisation */}}
 {{ $i18n := "" }}
-{{ if eq $items_type "post" }}
+{{ if eq $items_type "блог" }}
   {{ $i18n = "more_posts" }}
-{{ else if eq $items_type "talk" }}
+{{ else if eq $items_type "афиша" }}
   {{ $i18n = "more_talks" }}
 {{ else if eq $items_type "publication" }}
   {{ $i18n = "more_publications" }}

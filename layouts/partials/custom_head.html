@@ -2,3 +2,7 @@
 {{/* Instead, create a `layouts/partials/custom_head.html` file in your site and add your code to it. */}}
 
 {{/* This partial is included in `themes/academic/layouts/partials/site_head.html`. */}}
+{{- template "_internal/opengraph.html" . -}}
+{{- template "_internal/google_news.html" . -}}
+{{- template "_internal/schema.html" . -}}
+{{- template "_internal/twitter_cards.html" . -}}
