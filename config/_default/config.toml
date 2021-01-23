@@ -52,10 +52,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   categories = "/категория/:slug/"      # required
   tags = "/тема/:slug/"                 # required
   pages = "/:slug/"
-<<<<<<< HEAD
   authors = "/автор/:slug/"
-=======
->>>>>>> 10fd9fa1d909dff31124d79303287b9ec0204192
 
 [related]
   includeNewer = false
