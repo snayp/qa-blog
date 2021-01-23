@@ -7,10 +7,14 @@ copyright = ""
 paginatepath = "страница"
 enableInlineShortcodes = true
 canonifyURLs = true
+<<<<<<< HEAD
 relativeURLs = false
+=======
+relativeURLs = true
+>>>>>>> 10fd9fa1d909dff31124d79303287b9ec0204192
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
-ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "categories", "tags"]
 
 # Taxonomies.
 [taxonomies]
@@ -48,7 +52,10 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   categories = "/категория/:slug/"      # required
   tags = "/тема/:slug/"                 # required
   pages = "/:slug/"
+<<<<<<< HEAD
   authors = "/автор/:slug/"
+=======
+>>>>>>> 10fd9fa1d909dff31124d79303287b9ec0204192
 
 [related]
   includeNewer = false

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 +++
 authors = ["snayp"]
 categories = ["тестирование", "онлайн"]
@@ -7,6 +8,17 @@ tags = ["автоматизация", "cucumber", "selenium", "java", "BDD"]
 title = "Опыт использования Cucumber и BDD подхода. Часть 1"
 
 +++
+=======
+---
+title: "Опыт использования Cucumber и BDD подхода. Часть 1"
+date: 2020-11-30T05:10:51+03:00
+draft: false
+author:
+- snayp
+tags: ["автоматизация", "cucumber", "selenium", "java", "BDD"]
+categories: [ "тестирование", "онлайн" ]
+---
+>>>>>>> 10fd9fa1d909dff31124d79303287b9ec0204192
 ## Знакомство с BDD
 
 {{< figure src="header.png" link="https://cucumber.io/" title="BDD - мнения за и против, best practicies и anti patterns." caption="*Особенности процесса и полезные инструменты позволяющие команде сосредоточиться на реальных примерах использования системы с точки зрения конечного пользователя.*" alt="Behaviour Driven Development (BDD) - командное обсуждение существенных детелей проекта, позволяющее добиться однозначного понимания будущих изменений у всех членов команды." class="small" >}}
