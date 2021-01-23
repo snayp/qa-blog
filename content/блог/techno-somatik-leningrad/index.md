@@ -1,16 +1,6 @@
 +++
-<<<<<<< HEAD
 authors = ["snayp"]
 categories = ["музыка"]
-=======
-title = "Редкий московский Somatic "
-description = ""
-summary = ""
-keywords = [ ]
-tags = [ ]
-categories = [ "музыка" ]
-"автор" = ["snayp"]
->>>>>>> 10fd9fa1d909dff31124d79303287b9ec0204192
 cover = ""
 coverAlt = ""
 date = "2020-12-26T13:43:10Z"
