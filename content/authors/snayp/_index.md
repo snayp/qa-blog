@@ -1,11 +1,10 @@
 +++
+authors = ["snayp"]
 bio = "тестирую ПО, на досуге практикую Web технологии и с детства уважаю качественную музыку"
 name = "snayp"
 role = "инженер качества"
-superuser = false
 slug = "snayp"
-authors = ["snayp"]
-# title = "рад приветствовать на страницах этого блога"
+superuser = false
 
 [[social]]
   icon = "telegram"
@@ -21,6 +20,7 @@ authors = ["snayp"]
   icon = "github"
   icon_pack = "fab"
   link = "https://github.com/continuous4testing"
+
 +++
 
 ## Тестирование ПО под годный музон

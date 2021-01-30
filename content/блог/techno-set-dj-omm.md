@@ -5,6 +5,7 @@ date = "2020-11-29T05:10:51+03:00"
 draft = false
 tags = ["dj oom", "techno", "Саратов"]
 title = "Techno set Dj Omm"
+
 +++
 ## Dj Omm live @Asid Riot
 

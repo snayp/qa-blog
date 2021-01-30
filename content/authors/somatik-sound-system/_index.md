@@ -2,14 +2,11 @@
 bio = "Питерский андеграунд, заслуженно получивший мировое признание."
 name = "Somatik Sound System"
 role = "Somatik techno"
-superuser = false
 slug = "somatik-sound-system"
+superuser = false
 
 [avatar]
-  # Get user avatars from Gravatar.com? (true/false)
   gravatar = false
-
-  # Choose a shape for avatar images. Options: circle, square.
   shape = "square"
 
 [[social]]
@@ -26,6 +23,7 @@ slug = "somatik-sound-system"
   icon = "vk"
   icon_pack = "fab"
   link = "https://vk.com/somatik"
+
 +++
 
 ## Питерский андеграунд известный далеко за границей России

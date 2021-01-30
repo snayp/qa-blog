@@ -1,9 +1,10 @@
 +++
+authors = ["snayp"]
 description = "A page full of code samples."
 tags = ["extra", "syntax highlighting"]
 title = "Syntax Highlighting Test"
 toc = true
-authors = ["snayp"]
+
 +++
 
 ## Bash

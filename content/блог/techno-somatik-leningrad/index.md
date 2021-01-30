@@ -1,14 +1,15 @@
 +++
 authors = ["snayp"]
 categories = ["музыка"]
-date = 2020-12-26T13:43:10
+date = "2020-12-26T13:43:10+03:00"
 description = ""
+featured = true
 keywords = []
-lastmod = 2020-12-26T13:43:25
+lastmod = "2020-12-26T13:43:25+03:00"
 summary = ""
 tags = []
 title = "Редкий московский Somatic "
-featured = true
+
 +++
 
 @ Baltic (31.10.2020)

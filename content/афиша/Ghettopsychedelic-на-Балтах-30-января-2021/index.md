@@ -1,27 +1,27 @@
 +++
-draft = false
+abstract = ""
 all_day = false
-date = 2021-01-30T22:59:00+03:00
-date_end = 2021-01-31T06:00:00+03:00
-event = "Ghettopsychedelic На Балтах 30-01-21"
-title = "Ghettopsychedelic На Балтах состоится 30 января 2021"
+authors = ["somatik-sound-system"]
+categories = ["музыка", "афиша", "somatik"]
+date = "2021-01-30T22:59:00+03:00"
+date_end = "2021-01-31T06:00:00+03:00"
 description = ""
+draft = false
+event = "Ghettopsychedelic На Балтах 30-01-21"
 event_url = "https://t.me/somatik/2385"
 featured = false
+link_authors = true
 location = "Балты"
 projects = []
-publishDate = 2021-01-29T09:45:42+03:00
+publishDate = "2021-01-29T09:45:42+03:00"
 slides = ""
-categories = ["музыка", "афиша"]
-tags = ["live", "рейв", "Питер"]
-authors = ["somatik-sound-system"]
 summary = "Очередная вечеринка Ghettopsychedelic состоится 30 января, в логове гиен на Балтах. Резиденты Somatik Sound System порадуют публику завораживающим переплетением синтеческих звуков и раскачают танцпол ломаными ритмами. Поверьте - ребята знают свое дело, неустанно развивают саунд и могут удивить самого искушенного рейвера, неожиданным экспериментом в ярком, запоминающемся шоу."
-abstract = ""
-link_authors = true
+tags = ["Live", "рейв", "Питер", "Балты", "Ghettopsychedelic"]
+title = "Ghettopsychedelic На Балтах состоится 30 января 2021"
 
 [address]
-  street = "Балтийская, 59"
   city = "СПб"
+  street = "Балтийская, 59"
 
 [image]
   caption = ""
@@ -33,12 +33,13 @@ link_authors = true
   icon_pack = "fab"
   name = "в контакте"
   url = "https://vk.com/wall-30712887_10095"
-  
+
 [[links]]
   icon = "telegram"
   icon_pack = "fab"
   name = "в телеге"
   url = "https://t.me/somatik/2385"
+
 +++
 
 ## Лайнап вечеринки
@@ -73,10 +74,6 @@ link_authors = true
 
 В Вандерленде на двух танцполах отдельная туса СИЛАРИТМА печати/браслеты действительны и там и там.
 
-### Новый релиз вышел на лейбле SSS
+#### Предлагаю оценить последний релиз саунд системы в следубщем посте
 
-**Kinestetic** - _Corridor_
-
-создаст правильный настрой перед мероприятием
-
-{{< vk_playlist owner="-2000119969" playlist="10119969" hash="308fc80716cbe20bfe" >}}
+Уверен, прослушивание пластинки, поспособствует появлению правильной установки перед походом в логово.

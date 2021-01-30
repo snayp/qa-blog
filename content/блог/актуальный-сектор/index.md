@@ -1,14 +1,15 @@
 +++
 authors = ["snayp"]
+categories = ["музыка"]
+date = "2020-12-26T13:43:10Z"
 description = ""
-summary = ""
-title = "ДДТ и  еще более 20 исполнителей сыграли требьют Сектор Газа"
 featured = true
-keywords = [ ]
-tags = [ ]
-categories = [ "музыка" ]
-date = 2020-12-26T13:43:10.795Z
-lastmod = 2020-12-26T13:43:25.629Z
+keywords = []
+lastmod = "2020-12-26T13:43:25Z"
+summary = ""
+tags = []
+title = "ДДТ и  еще более 20 исполнителей сыграли требьют Сектор Газа"
+
 +++
 
 ## Хой Жив {#юрий_хой}
