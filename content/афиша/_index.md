@@ -25,8 +25,8 @@ view = 2
     tag = ""
     category = ""
     author = ""
-    exclude_featured = false
-    exclude_past = true
-    exclude_future = true
+    exclude_featured = true
+    exclude_past = false
+    exclude_future = false
 +++
 
