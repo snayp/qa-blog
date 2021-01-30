@@ -3,9 +3,9 @@
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
-headless = true
+
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-hero_media = "me.png"
+hero_media = "19.JPG"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -22,7 +22,7 @@ hero_media = "me.png"
   
   # Background image.
   image = "background.jpg"
-  image_darken = 0.1
+  # image_darken = 0.1
 
   # Text color (true=light or false=dark).
   text_color_light = true
@@ -30,30 +30,21 @@ hero_media = "me.png"
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
-
-
 +++
+# добро пожаловать
 
-# доброго здоровья
+## _в этом блоге, читатель найдет_
 
-## уважаемый **читатель**
+### материалы о тестировании и качестве ПО
 
-### _необходимое_
+### _анонсы_
 
-### качество сервисов
+### любопытных тусовок
 
-### _актуальная_
+### _подборку_
 
-### профессия тестировщика
+### качественной музыки
 
-### _насущные_
+### _мнение автора_
 
-### интернет технологии
-
-### анонсы
-
-### _интересных событьий_
-
-### _критика_
-
-### онлайн музыки
+### об интересных людях и событиях

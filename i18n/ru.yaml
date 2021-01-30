@@ -7,7 +7,7 @@
 - id: back_to_top
   translation: На верх
 - id: related
-  translation: Похожие
+  translation: Похожее
 - id: minute_read
   translation: мин. для прочтения
 - id: previous
@@ -45,13 +45,15 @@
 - id: education
   translation: Образование
 - id: user_profile_latest
-  translation: Последние
+  translation: Последние посты этого автора
+- id: org_latest
+  translation: Послдние события этого организатора
 - id: see_certificate
   translation: Посмотреть сертификат
 - id: present
   translation: Настоящий
-- id: more_pages
-  translation: Посмотреть всё
+- id: more_featured
+  translation: Посмотреть избранное
 - id: more_posts
   translation: Все посты
 - id: more_talks

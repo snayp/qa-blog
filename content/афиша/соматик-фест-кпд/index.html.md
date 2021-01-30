@@ -10,19 +10,34 @@ projects = []
 publishDate = "2019-12-28T04:40:50+03:00"
 slides = ""
 title = "Somatik Fest Kpd"
-categories = ["музыка"]
-tags = [""]
+categories = ["музыка", "афиша"]
+tags = ["live", "рейв", "Питер"]
+authors = ["somatik"]
+summary = ""
+abstract = ""
+link_authors = true
 
+  
 [address]
   city = "СПб"
-  country = "Россия"
-  street = "Кожевенная Линия Васильевского Острова 40"
+  street = "Кожевенная Линия Васильевского Острова, 40"
 
 [image]
   caption = ""
-  focal_point = ""
+  focal_point = "TopLeft"
   preview_only = false
 
+[[links]]
+  icon = "vk"
+  icon_pack = "fab"
+  name = "в контакте"
+  url = "https://vk.com/wall-30712887_10095"
+  
+[[links]]
+  icon = "telegram"
+  icon_pack = "fab"
+  name = "в телеге"
+  url = "https://t.me/somatik/2385"
 +++
 
-{{< youtube TxCFxpnwgjc >}}
+
