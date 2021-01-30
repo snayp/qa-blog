@@ -51,9 +51,21 @@ summaryLength = 90
   authors = "/:slug/"
 
 [related]
-  includeNewer = false
-  threshold = 80
+  includeNewer = true
+  threshold = 40
   toLower = true
+
+  [[related.indices]]
+    name = "categories"
+    weight = 40
+
+  [[related.indices]]
+    name = "tags"
+    weight = 60
+
+  [[related.indices]]
+    name = "keywords"
+    weight = 80
 
   [[related.indices]]
     name = "authors"

@@ -1,0 +1,7 @@
+<div id="vk_playlist_{{ .Get "owner" }}_{{ .Get "playlist" }}"></div>
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+<script type="text/javascript">
+  (function() {
+    VK.Widgets.Playlist("vk_playlist_{{ .Get "owner" }}_{{ .Get "playlist" }}", {{ .Get "owner" }}, {{ .Get "playlist" }},'{{ .Get "hash"}}');
+  }());
+</script>

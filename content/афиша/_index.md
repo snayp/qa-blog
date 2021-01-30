@@ -1,6 +1,7 @@
 +++
-title = "афиша"
+title = "Анонсы ИТ и музыкальных событий"
 view = 2
+
 [avatar]
   # Get user avatars from Gravatar.com? (true/false)
   gravatar = false

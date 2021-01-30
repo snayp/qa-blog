@@ -62,7 +62,7 @@ subtitle = "ближайших событий"
   
 [advanced]
  # Custom CSS. 
- css_style = "color:#495057"
+ css_style = "color: #f8f8f2;"
  
  # CSS class.
  css_class = ""
