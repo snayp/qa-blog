@@ -1,12 +1,10 @@
 +++
 authors = ["snayp"]
 categories = ["музыка"]
-cover = ""
-coverAlt = ""
-date = "2020-12-26T13:43:10Z"
+date = 2020-12-26T13:43:10
 description = ""
 keywords = []
-lastmod = "2020-12-26T13:43:25Z"
+lastmod = 2020-12-26T13:43:25
 summary = ""
 tags = []
 title = "Редкий московский Somatic "

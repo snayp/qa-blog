@@ -4,7 +4,7 @@
 
 {{/* Get schema type. */}}
 {{ $schema := "Article" }}
-{{ if eq $page.Type "блог" }}
+{{ if (in (slice "блог" "афиша") $page.Type) }}
   {{ $schema = "BlogPosting" }}
 {{ end }}
 

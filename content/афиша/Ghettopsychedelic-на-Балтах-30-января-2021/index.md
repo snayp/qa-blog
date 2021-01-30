@@ -1,7 +1,7 @@
 +++
 draft = false
 all_day = false
-date = 2021-01-30T22:00:00+03:00
+date = 2021-01-30T22:59:00+03:00
 date_end = 2021-01-31T06:00:00+03:00
 event = "Ghettopsychedelic На Балтах 30-01-21"
 title = "Ghettopsychedelic На Балтах состоится 30 января 2021"
@@ -14,14 +14,14 @@ publishDate = 2021-01-29T09:45:42+03:00
 slides = ""
 categories = ["музыка", "афиша"]
 tags = ["live", "рейв", "Питер"]
-authors = ["somatik"]
-summary = "Очередная вечеринка Ghettopsychedelic состоится 30 января 2021, в логове гиен на Балтах. Резиденты Somatik Sound System порадуют публику завораживающим переплетением синтеческих звуков и раскачают танцпол ломаными ритмами. Поверьте - ребята знают свое дело, неустанно развивают саунд и могут удивить самого искушенного рейвера, неожиданным экспериментом в ярком, запоминающемся шоу."
-abstract = "выапывап"
+authors = ["somatik-sound-system"]
+summary = "Очередная вечеринка Ghettopsychedelic состоится 30 января, в логове гиен на Балтах. Резиденты Somatik Sound System порадуют публику завораживающим переплетением синтеческих звуков и раскачают танцпол ломаными ритмами. Поверьте - ребята знают свое дело, неустанно развивают саунд и могут удивить самого искушенного рейвера, неожиданным экспериментом в ярком, запоминающемся шоу."
+abstract = ""
 link_authors = true
+
 [address]
   street = "Балтийская, 59"
   city = "СПб"
-
 
 [image]
   caption = ""
@@ -45,25 +45,27 @@ link_authors = true
 
 ### Ангар
 
-Dopesmoker b2b K-San
+23:00 Tekkyon
 
-Ekza Selecta
+00:00 Ekza Selecta
 
-Vovapcp & Tsaritsa Logiki (dj set)
+01:00 Vovapcp & Tsaritsa Logiki (dj set)
 
-Primary Substance (live)
+02:30 Dopesmoker b2b K-San
 
-Tekkyon
+04:30 Primary Substance (live)
 
 ### Дом 1 этаж
 
-Dubsane
+00:00 Gopnik
 
-Klimov D
+01:00  Doqta
 
-Doqta
+02:30 Dubsane
 
-Gopnik
+03:30 Klimov D
+
+04:30 Кашапов
 
 **Билеты вот**: http://rupor.biz/widgets/event-tickets/583 
 
@@ -71,7 +73,7 @@ Gopnik
 
 В Вандерленде на двух танцполах отдельная туса СИЛАРИТМА печати/браслеты действительны и там и там.
 
-### Новый релиз на лейбле SSS
+### Новый релиз вышел на лейбле SSS
 
 **Kinestetic** - _Corridor_
 

@@ -3,7 +3,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic {{ site.Data.academic.version }}">
 
   {{ $scr := .Scratch }}
 
@@ -38,7 +37,7 @@
   {{ range .Translations }}
   <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
   {{ end }}
-  <link rel="alternate" hreflang="{{ site.LanguageCode | default "en-us" }}" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="{{ site.LanguageCode | default "ru-ru" }}" href="{{ .Permalink }}">
 
   {{ partial "functions/parse_theme" . }}
   {{ $css := site.Data.assets.css }}
@@ -120,7 +119,7 @@
   <link rel="stylesheet" {{ printf "href=\"https://fonts.googleapis.com/css?family=%s&display=swap\"" . | replaceRE "\\|" "%7C" | safeHTMLAttr }}>
   {{ end }}
 
-  {{ $css_comment := printf "/*!* Source Themes Academic v%s (https://sourcethemes.com/academic/) */\n" site.Data.academic.version }}
+  {{ $css_comment := printf "QA блог" }}
   {{ $css_bundle_head := $css_comment | resources.FromString "css/bundle-head.css" }}
   {{ $css_options := dict "targetPath" "css/academic.css" }}
   {{- if (in (slice (getenv "HUGO_ENV") hugo.Environment) "production") -}}
@@ -181,7 +180,7 @@
   <meta property="og:image" content="{{.}}">
   <meta property="twitter:image" content="{{.}}">
   {{- end -}}
-  <meta property="og:locale" content="{{ site.LanguageCode | default "en-us" }}">
+  <meta property="og:locale" content="{{ site.LanguageCode | default "ru-ry" }}">
   {{ if .IsPage }}
     {{ if not .PublishDate.IsZero }}
       <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">
@@ -198,7 +197,8 @@
   {{ partial "cookie_consent" . }}
 
   {{ partial "custom_head" . }}
-  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+  
+  {{ partial "vk_js" . }}
 
   <title>{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}</title>
 
