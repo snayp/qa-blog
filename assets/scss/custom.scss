@@ -1,1 +1,65 @@
 // Override this file to add your own SCSS styling.
+#contact {
+
+    margin: 1.5rem 0;
+  
+    label {
+      display: block;
+      line-height: 1.8rem;
+    }
+  
+    input[name=name],
+    input[name=_replyto],
+    input[name=_subject],
+    select,
+    textarea {
+      display: block;
+      background-color: rgb(255, 255, 255);
+      color: darkslategray;
+      margin: 3px 0;
+      max-width: 100%;
+    }
+    
+    input[name=name],
+    input[name=_replyto],
+    input[name=_subject] {
+      min-width: 240px;
+      padding: 6px 12px;
+    }
+    
+    select {
+      min-width: 210px;
+      padding: 6px;
+    }
+    
+    textarea {
+      padding: 9px 15px;
+      
+      width: 90%;
+      height: auto;
+    }
+  
+    input[type=submit] {
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .05rem;
+      
+      margin-top: 1.2rem;
+      padding: 12px 42px 15px;
+      
+      outline-offset: 2px;
+  
+      transition:
+        background-color #fff,
+        border .2s ease-in-out,
+        color #dd5656,
+        outline-color .2s ease-in-out,
+        opacity .2s ease-in-out;
+  
+      // HACK
+      // Override Firefox unnecessary extra inner outline
+      &::-moz-focus-inner {
+        border: 0;
+      }
+    }
+  }

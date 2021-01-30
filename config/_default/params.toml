@@ -268,3 +268,29 @@ plugins_js  = [ ]
 [marketing]
   google_analytics = ""
   google_tag_manager = ""
+
+
+# Contact form shortcode
+[contact]
+
+  # formspree.io Form ID
+  formspreeFormId = "p/1602710451626442135/f/contact"
+  
+  # Autocomplete [on/off] and min character length for message
+  autoComplete      = false # Default is false
+  messageMinLength  = 40   # Default is 140
+  
+  # Subject
+  # You can set a single value below (and it will cease to be a dropdown),
+  # BUT KEEP IT AS AN ARRAY
+  # It can also be disabled entirely (and it will turn into a text field)
+  subject = [ 'Just saying "hi"', "I know what you did last winter", "... Is that a sloth?", "お前はもう死んでいる。" ]
+
+  # Text placeholders. As usual, comment the lines if you don't want use them
+  # The "subject" below will only be used if the "subject" above doesn't exist (ie.: commented/deleted)
+  [params.contact.placeholder]
+    name    = "Jane Doe"
+    email   = "janedoe@example.com"
+    subject = 'Just saying "hi"'
+    message = "Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
+
