@@ -1,0 +1,19 @@
+{{/* Function to get event start and end dates/times. */}}
+{{ $d1 := printf "%d %s %d" .Date.Day (index site.Data.months.months_rod .Date.Month) .Date.Year }}{{/* Start datetime. */}}
+{{ $t1 := time .Params.Time }}
+{{ $str := slice ((time $t1)) }}{{/* Init return string with start date. */}}
+{{/* Show start time if not all day event. */}}
+{{ if not .Params.all_day }}{{ $str = $str | append $t1 }}{{ end }}
+{{/* Show event end date if provided. */}}
+{{ if .Params.date_end }}
+  {{ $str = $str | append "&mdash;" }}
+  {{ $d2 := printf "%d %s %d"  .Params.Date_end "Day" (index (site.Data.months.months_rod .Params.Date_end "Month")) .Params.Date_end "Year" }}{{/* End datetime. */}}
+  {{ $t2 := time .Params.Time_end }}{{/* End datetime. */}}
+  {{/* Show end date if it differs to start date. */}}
+  {{ if .Params.Time_end }}
+    {{ $str = $str | append $t2 }}
+  {{ end }}
+  {{/* Show end time if not all day event. */}}
+  {{ if not .Params.all_day }}{{ $str = $str | append $t2  }}{{ end }}
+{{ end }}
+{{ return (delimit $str " ") }}

@@ -56,8 +56,18 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">{{ i18n "date" }}</div>
           <div class="col-12 col-md-9">
-            {{ partial "functions/get_event_dates" . }}
+            старт
+            <div>
+            {{ printf "%s" ((time .Date).Format (site.Params.time_format)) }}
+            {{ printf "%d %s %d" .Date.Day (index site.Data.months.months_rod .Date.Month) .Date.Year }}
+            </div>
+            финиш
+            <div>
+            {{ printf "%s" ((time .Params.Date_end).Format (site.Params.time_format)) }}
+            {{ printf "%d %s %d" (time .Params.Date_end).Day (index site.Data.months.months_rod (time .Params.Date_end).Month) (time .Params.Date_end).Year }}
+            </div>
           </div>
+
         </div>
       </div>
       <div class="col-md-1"></div>
