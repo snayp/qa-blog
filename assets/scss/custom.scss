@@ -49,12 +49,9 @@
       
       outline-offset: 2px;
   
-      transition:
-        background-color #fff,
-        border .2s ease-in-out,
-        color #dd5656,
-        outline-color .2s ease-in-out,
-        opacity .2s ease-in-out;
+      background-color: #fff;
+      border: #fff !important;
+      color: #dd5656;
   
       // HACK
       // Override Firefox unnecessary extra inner outline
@@ -74,7 +71,6 @@ form label,
 .StripeElement {
   font-family: inherit;
   font-size: 100%;
-  color: inherit;
   border: none;
   border-radius: 0;
   display: block;
@@ -95,7 +91,7 @@ form select,
 form textarea,
 .StripeElement {
   box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(247, 118, 118);
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0.75em 1rem;
   margin-bottom: 1.5rem;
@@ -104,7 +100,7 @@ form input:focus,
 form select:focus,
 form textarea:focus,
 .StripeElement:focus {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   outline-style: solid;
   outline-width: thin;
   outline-color: gray;

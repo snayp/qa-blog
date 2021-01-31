@@ -77,13 +77,13 @@
 - id: publication_type
   translation: Тип публикации
 - id: date
-  translation: Дата
+  translation: Когда?
 - id: last_updated
   translation: Обновлено
 - id: event
-  translation: Событие
+  translation: Что?
 - id: location
-  translation: Место
+  translation: Где?
 - id: pub_uncat
   translation: Без категории
 - id: pub_conf

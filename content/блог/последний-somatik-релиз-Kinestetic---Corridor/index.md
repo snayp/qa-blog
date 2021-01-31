@@ -4,7 +4,7 @@ categories = [ ]
 date = 2021-01-31T00:34:23+03:00
 draft = false
 featured = false
-lastmod = "2021-01-31T00:34:23+03:00"
+lastmod = 2021-01-31T00:34:23+03:00
 projects = [ ]
 subtitle = "Дебютный альбом Kinestetic под названием 'Corridor', увидел свет 25 января и доступен на всех цифровых платформах."
 summary = "Новая пластинка выпущенная лейблом SSS - очередной уверенный шаг в развитии Somatik движения."
@@ -13,16 +13,18 @@ title = "Последний Somatik Релиз Стал Первым для Kine
 view = 2
 
 [image]
+alt_text = "An optional description of the image for screen readers."
 caption = ""
 focal_point = ""
 preview_only = false
+placement = "1"
 +++
 
 ## Новый релиз саунд системы
 
-### **Kinestetic** - _Corridor_
+Дюбютная работа Kinestetic вышла на лейбле SSS
 
-{{< figure src="kinestetic-corridor.jpg" caption="Дюбютная работа Kinestetic вышла на лейбле SSS" >}}
+### **Kinestetic** - _Corridor_
 
 Как это часто у нас бывает, артист может  играть десятки крышесносных лайвов, постоянно их обновлять и дорабатывать, но при этом не издавать почти совсем ничего. Раньше мы комплексовали на эту тему, но потом пришло понимание – мы процесс, а не продукт. И тем ценнее момент живых выступлений. То что происходит здесь и сейчас.
 

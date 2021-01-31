@@ -11,17 +11,17 @@ event = "Ghettopsychedelic На Балтах 30-01-21"
 event_url = "https://t.me/somatik/2385"
 featured = false
 link_authors = true
-location = "Балты"
+location = "Балты на Балтийской 59, СПб"
 projects = []
 publishDate = "2021-01-29T09:45:42+03:00"
 slides = ""
 summary = "Очередная вечеринка Ghettopsychedelic состоится 30 января, в логове гиен на Балтах. Резиденты Somatik Sound System порадуют публику завораживающим переплетением синтеческих звуков и раскачают танцпол ломаными ритмами. Поверьте - ребята знают свое дело, неустанно развивают саунд и могут удивить самого искушенного рейвера, неожиданным экспериментом в ярком, запоминающемся шоу."
-tags = ["Live", "рейв", "Питер", "Балты", "Ghettopsychedelic"]
+tags = ["рейв", "Питер", "Балты", "Ghettopsychedelic"]
 title = "Ghettopsychedelic На Балтах состоится 30 января 2021"
 
 [address]
-  city = "СПб"
-  street = "Балтийская, 59"
+  street = ""
+  city = ""
 
 [image]
   caption = ""

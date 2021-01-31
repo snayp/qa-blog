@@ -13,20 +13,6 @@
       <br>
     {{ end }}
 
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "date" }}</div>
-          <div class="col-12 col-md-9">
-            {{ partial "functions/get_event_dates" . }}
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-
     {{ if .Params.event }}
     <div class="row">
       <div class="col-md-1"></div>
@@ -51,10 +37,11 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">{{ i18n "location" }}</div>
+          
           <div class="col-12 col-md-9">{{ .Params.location | markdownify }}</div>
           {{ if .Params.address }}
             <div class="col-md-3"></div>
-            <div class="col-12 col-md-9">{{partial "functions/get_address" (dict "root" . "address" .Params.address) }}</div>
+            <div class="col-12 col-md-9">{{partial "functions/get_address" (dict "root" (.) "address" .Params.address) }}</div>
           {{end}}
         </div>
       </div>
@@ -62,6 +49,21 @@
     </div>
     <div class="d-md-none space-below"></div>
     {{ end }}
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "date" }}</div>
+          <div class="col-12 col-md-9">
+            {{ partial "functions/get_event_dates" . }}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+
 
     <div class="space-below"></div>
 

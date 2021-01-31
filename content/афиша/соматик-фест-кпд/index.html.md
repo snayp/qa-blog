@@ -18,8 +18,8 @@ tags = ["live", "рейв", "Питер"]
 title = "Somatik Fest Kpd"
 
 [address]
-  city = "СПб"
-  street = "Кожевенная Линия Васильевского Острова, 40"
+  city = ""
+  street = "Кожевенная Линия ВО, д 40, СПб"
 
 [image]
   caption = ""

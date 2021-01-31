@@ -6,7 +6,7 @@
 
 {{ $page := . }}
 {{ $address := .address }}
-{{ $format_name := $page.Params.address_format | default site.Params.address_format | default "en-us" }}
+{{ $format_name := $page.Params.address_format | default site.Params.address_format | default "ru-ru" }}
 {{ $format := index site.Params.address_formats $format_name }}
 {{ $address_display := slice }}
 
