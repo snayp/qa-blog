@@ -1,5 +1,9 @@
 +++
-
+type = "page"
+menu = "автор"
+share = false
+commentable = false
+editable = false
 +++
 
 ## Тесты ПО, продолжаются > 10 лет
