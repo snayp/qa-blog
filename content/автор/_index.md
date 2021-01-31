@@ -4,7 +4,7 @@ menu = "автор"
 share = false
 commentable = false
 editable = false
-title = "автор блога"  
+title = "Автор блога"  
 +++
 ## Тесты ПО, продолжаются > 10 лет
 
