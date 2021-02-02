@@ -3,7 +3,6 @@ title = "сельский тестер"
 ignoreErrors = ["error-remote-getjson"]
 languageCode = "ru"
 defaultContentLanguage = "ru"
-copyright = ""
 paginatepath = "страница"
 enableInlineShortcodes = true
 canonifyURLs = true
@@ -11,7 +10,7 @@ relativeURLs = true
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-summaryLength = 90
+
 # Taxonomies.
 [taxonomies]
   tag = "tags"
@@ -39,10 +38,11 @@ summaryLength = 90
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 3
+
 [imaging]
   resampleFilter = "lanczos"
   quality = 90
-  anchor = "smart" 
+  anchor = "" 
 
 [permalinks]
   categories = "/категория/:slug/"      # required
@@ -52,7 +52,7 @@ summaryLength = 90
 
 [related]
   includeNewer = true
-  threshold = 80
+  threshold = 30
   toLower = true
 
   [[related.indices]]

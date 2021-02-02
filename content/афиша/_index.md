@@ -1,9 +1,8 @@
 +++
-title = "Анонсы ИТ и музыкальных событий"
+title = "анонсы стоящих мероприятий"
 view = 2
 
 [avatar]
-  gravatar = false
   shape = "square"
 
 [content]
@@ -11,6 +10,7 @@ view = 2
   offset = 0
   order = "desc"
   page_type = "афиша"
+
   [content.filters]
     author = ""
     category = ""

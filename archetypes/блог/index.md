@@ -11,14 +11,6 @@ date = {{ .Date }}
 lastmod = {{ .Date }}
 featured = false
 draft = true
-view = 2
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-[image]
-  caption = ""
-  focal_point = "Left"
-  preview_only = false
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -26,6 +18,13 @@ view = 2
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects = []
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+[image]
+  caption = ""
+  focal_point = ""
+  preview_only = false
 
 [design.background]
   # Apply a background color, gradient, or image.

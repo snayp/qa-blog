@@ -2,8 +2,8 @@
 commentable = true
 share = true
 summary = "блог о тестировании и качестве"
-title = "Записки впечатлительного QA"
-widget = "pages"
+title = "записки впечатлительного QA"
+# widget = "pages"
 
 +++
 

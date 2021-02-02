@@ -1,15 +1,13 @@
 +++
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
+title = "{{ replace .Name "-" " " | title }}"
+subtitle = ""
+
 event = ""
 event_url = ""
 location = ""
-[address]
-  street = ""
-  city = ""
-  region = ""
-  postcode = ""
-  country = ""
+
 summary = ""
 abstract = ""
 
@@ -24,16 +22,16 @@ publishDate = {{ .Date }}
 
 authors = []
 tags = []
-
+categories = ["афиша"]
 # Is this a featured talk? (true/false)
 featured = false
-view = 3
+
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 [image]
   caption = ""
-  focal_point = "Smart"
+  focal_point = ""
   preview_only = false
 
 # Custom links (optional).

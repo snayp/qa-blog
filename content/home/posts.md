@@ -9,6 +9,11 @@ weight = 60  # Order that this section will appear.
 title = "свежее"
 subtitle = "новые посты"
 
+[image]
+  caption = ""
+  focal_point = ""
+  preview_only = false
+
 [content]
   # Page type to display. E.g. post, talk, or publication.
   page_type = "блог"
@@ -35,7 +40,7 @@ subtitle = "новые посты"
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view = 4
+  view = 3
   
 [design.background]
   # Apply a background color, gradient, or image.

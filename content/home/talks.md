@@ -10,6 +10,11 @@ weight = 70  # Order that this section will appear.
 title = "анонс"
 subtitle = "ближайших событий"
 
+[image]
+  caption = ""
+  focal_point = ""
+  preview_only = false
+
 [content]
   # Page type to display. E.g. post, talk, or publication.
   page_type = "афиша"
@@ -62,7 +67,7 @@ subtitle = "ближайших событий"
   
 [advanced]
  # Custom CSS. 
- css_style = "color: #f8f8f2;"
+ css_style = ""
  
  # CSS class.
  css_class = ""
