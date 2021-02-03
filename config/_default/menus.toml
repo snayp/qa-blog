@@ -4,8 +4,13 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "афиша"
-  url = "/афиша/"
+  name = "музыка"
+  url = "/музыка/"
+  weight = 32
+
+[[main]]
+  name = "анонс"
+  url = "/анонс/"
   weight = 30
 
 [[main]]

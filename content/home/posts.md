@@ -4,10 +4,10 @@
 
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = true  # Activate this widget? true/false
-weight = 60  # Order that this section will appear.
-# headless = true
+weight = 60  # Order that this section will appear.headless = true
 title = "свежее"
 subtitle = "новые посты"
+light = true
 
 [image]
   caption = ""
@@ -50,17 +50,17 @@ subtitle = "новые посты"
   
   # Background color.
   # color = "navy"
-  
   # Background gradient.
   # gradient_start = "DeepSkyBlue"
   # gradient_end = "SkyBlue"
-  
-  # Background image.
-  # image = "background.jpg"  # Name of image in `static/img/`.
-  # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+  # gradient_start = "rgb(130 47 7 / 5%)"
+  # gradient_end = "rgb(65 70 10 / 34%)"
+  # Background image.#343a40, #1c2429
+  image = "background_talk.jpg"  # Name of image in `static/img/`.
+  # image_darken = 0.4  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
-  # text_color_light = true  
+ text_color_light = false     
   
 [advanced]
  # Custom CSS. 

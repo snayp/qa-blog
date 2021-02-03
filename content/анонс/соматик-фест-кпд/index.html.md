@@ -1,8 +1,8 @@
 +++
 abstract = ""
 all_day = false
-authors = ["somatik"]
-categories = ["музыка", "афиша"]
+authors = ["somatik-sound-system"]
+categories = ["музыка", "анонс"]
 date = "2019-12-28T23:59:00+03:00"
 date_end = "2019-12-29T06:40:50+03:00"
 event = "Somatik Fest"
@@ -16,14 +16,14 @@ slides = ""
 summary = ""
 tags = ["live", "рейв", "Питер"]
 title = "Somatik Fest Kpd"
-
+keywords = []
 [address]
   city = ""
   street = ""
 
 [image]
   caption = ""
-  focal_point = "TopLeft"
+  focal_point = "Center"
   preview_only = false
 
 [[links]]

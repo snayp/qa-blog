@@ -1,7 +1,8 @@
 +++
-authors = [ "snayp" ]
+authors = [ "somatik-sound-system" ]
 categories = [ ]
 date = 2021-01-31T00:34:23+03:00
+# date_end = 2021-01-31T00:34:23+03:00
 draft = false
 featured = false
 lastmod = 2021-01-31T00:34:23+03:00
@@ -9,9 +10,9 @@ projects = [ ]
 subtitle = "Дебютный альбом Kinestetic под названием 'Corridor', увидел свет 25 января и доступен на всех цифровых платформах."
 summary = "Новая пластинка выпущенная лейблом SSS - очередной уверенный шаг в развитии Somatik движения."
 tags = [ ]
-title = "Последний Somatik Релиз Стал Первым для Kinestetic"
+title = "Состоялся дебютный релиз Kinestetic"
 view = 2
-
+url = "/релиз/31-12-2021/somatik-sound-system/kinestetic-corridor/"
 [image]
 alt_text = "An optional description of the image for screen readers."
 caption = ""
@@ -20,7 +21,7 @@ preview_only = false
 placement = "1"
 +++
 
-## Новый релиз саунд системы
+## Релиз SSS
 
 Дюбютная работа Kinestetic вышла на лейбле SSS
 

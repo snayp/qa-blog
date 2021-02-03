@@ -15,4 +15,7 @@ author  = "snayp"
  
  # CSS class.
  css_class = ""
+ [design.background]
+ # text_color_light = false
+
 +++

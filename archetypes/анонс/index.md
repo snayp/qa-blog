@@ -22,7 +22,7 @@ publishDate = {{ .Date }}
 
 authors = []
 tags = []
-categories = ["афиша"]
+categories = ["анонс"]
 # Is this a featured talk? (true/false)
 featured = false
 

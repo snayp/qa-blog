@@ -22,7 +22,7 @@ hero_media = "19.JPG"
   
   # Background image.
   image = "background.jpg"
-  # image_darken = 0.1
+  image_darken = 0.1
 
   # Text color (true=light or false=dark).
   text_color_light = true
