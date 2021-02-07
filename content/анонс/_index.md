@@ -1,6 +1,6 @@
 +++
 widget = "pages"
-title = "афиша"
+title = "любопытные тусовки"
 
 view = 2
 [avatar]

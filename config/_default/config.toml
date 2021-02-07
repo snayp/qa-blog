@@ -13,8 +13,8 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 
 # Taxonomies.
 [taxonomies]
-  tag = "tags"
-  category = "categories"
+  "тема" = "tags"
+  "категория" = "categories"
   author = "authors"
 
 [outputs]
@@ -43,7 +43,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   resampleFilter = "lanczos"
   quality = 90
   anchor = "smart" 
-  
+
 [permalinks]
   categories = "/категория/:slug/"      # required
   tags = "/тема/:slug/"                 # required

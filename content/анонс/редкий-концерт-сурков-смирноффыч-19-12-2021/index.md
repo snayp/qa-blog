@@ -20,7 +20,7 @@ all_day = false
 
 # Schedule page publish date (NOT talk date).
 publishDate = 2020-12-14T00:44:28+03:00
-
+paginator = true
 authors = []
 tags = []
 
@@ -31,7 +31,7 @@ tags = []
   caption = ""
   focal_point = "smart"
   preview_only = false
-  placement = 3
+  placement = 1
 # Projects (optional).
 #   Associate this post with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
