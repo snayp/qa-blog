@@ -35,7 +35,5 @@ subtitle = "темы"
 
   image = "background_talk.jpg"
   # image_darken = 0.4
-  text_color_light = false  
+  # text_color_light = false  
 +++
-
----

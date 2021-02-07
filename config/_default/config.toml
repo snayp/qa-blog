@@ -1,6 +1,6 @@
 baseURL = "https://snayp.github.io/"
 title = "сельский тестер"
-ignoreErrors = ["error-remote-getjson"]
+ignoreErrors = ["error-remote-getjson", "error-disable-taxonomy"]
 languageCode = "ru"
 defaultContentLanguage = "ru"
 paginatepath = "страница"
@@ -9,12 +9,12 @@ canonifyURLs = true
 relativeURLs = true
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
-ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "categories", "tags"]
-
+ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+disableKinds = [""]
 # Taxonomies.
 [taxonomies]
-  "тема" = "tags"
-  "категория" = "categories"
+  tag = "tags"
+  category = "categories"
   author = "authors"
 
 [outputs]

@@ -3,6 +3,7 @@ date = "2019-02-12T11:53:57+03:00"
 description = ""
 disableTitleSeparator = false
 draft = false
+share = false
 noindex = true
 sitemapExclude = true
 title = "Соглашение об использовании файлов Cookie"

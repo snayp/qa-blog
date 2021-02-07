@@ -143,7 +143,7 @@ docs_section_pager = false  # Display pager in Docs layout (e.g. tutorials)?
 sharing = true
 
 # Link authors to their profile page? (true/false)
-show_related = {"блог" = true, "анонс" = true, pages = false}
+show_related = {"блог" = true, "анонс" = true, page = false}
 
 # Abstract length (characters) in the Compact and Portfolio Card list views. Also, see `summaryLength` in `config.toml`.
 abstract_length = 135

@@ -1,11 +1,11 @@
 +++
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title = "Олег Сурков & Off Sound System 19 дкабря в Массолит"
+title = "Олег Сурков & Off Sound System в Массолит"
 subtitle = ""
 categories = []
 featured = false
-draft = true
+draft = false
 event = "Олег Сурков & Off Sound System в Массолит"
 event_url = ""
 location = "**Массолит**, Поварская, д. 31/29, МСК"
@@ -20,7 +20,7 @@ all_day = false
 
 # Schedule page publish date (NOT talk date).
 publishDate = 2020-12-14T00:44:28+03:00
-paginator = true
+
 authors = []
 tags = []
 

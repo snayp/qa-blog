@@ -5,8 +5,8 @@
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.headless = true
-title = "новое"
-subtitle = "свежие посты"
+title = "новячок :new:"
+subtitle = "самые свежие посты"
 
 
 [image]

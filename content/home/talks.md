@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 70  # Order that this section will appear.
 
 title = "анонс"
-subtitle = "событий"
+subtitle = "ближайших событий"
 
 [image]
   caption = ""

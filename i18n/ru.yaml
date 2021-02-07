@@ -11,9 +11,9 @@
 - id: minute_read
   translation: мин. для прочтения
 - id: previous
-  translation: Перед 
+  translation: позже 
 - id: next
-  translation: После
+  translation: раньше
 - id: figure
   translation: 'Схема № %d:'
 - id: btn_preprint
@@ -45,9 +45,9 @@
 - id: education
   translation: Образование
 - id: user_profile_latest
-  translation: Последние посты этого автора
+  translation: Новые публикации этого автора
 - id: org_latest
-  translation: Послдние события этого организатора
+  translation: Последние события этого организатора
 - id: see_certificate
   translation: Посмотреть сертификат
 - id: present
@@ -55,9 +55,9 @@
 - id: more_featured
   translation: Посмотреть избранное
 - id: more_posts
-  translation: Все посты
+  translation: Читать блог
 - id: more_talks
-  translation: Все события
+  translation: Просмотреть события
 - id: more_publications
   translation: Больше публикаций
 - id: contact_name
@@ -71,7 +71,7 @@
 - id: book_appointment
   translation: Назначить встречу
 - id: abstract
-  translation: Резюме
+  translation: Главное
 - id: publication
   translation: Публикация
 - id: publication_type
@@ -105,7 +105,7 @@
 - id: open_project_site
   translation: Перейти на сайт проекта
 - id: posts
-  translation: Поств
+  translation: Посты
 - id: publications
   translation: Публикации
 - id: talks
@@ -123,7 +123,7 @@
 - id: page_not_found
   translation: Страница не найдена
 - id: 404_recommendations
-  translation: Вы возможно искали один из новых постов?
+  translation: Возможно будет интересен один из новых постов?
 - id: cookie_message
   translation: Для комфорной навигации на этом сайте используются куки (cookies).
 - id: cookie_dismiss
