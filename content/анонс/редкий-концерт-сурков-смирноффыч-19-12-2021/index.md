@@ -29,8 +29,9 @@ tags = []
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 [image]
   caption = ""
-  focal_point = "Center"
+  focal_point = "smart"
   preview_only = false
+  placement = 3
 # Projects (optional).
 #   Associate this post with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.

@@ -3,7 +3,7 @@
 
 {{/* Dynamic view adjusts to content type. */}}
 {{ $show_buttons := false }}
-{{ if eq $item.Type "talk" }}
+{{ if eq $item.Type "анонс" }}
   {{ $show_buttons = true }}
 {{ else if eq $item.Type "publication" }}
   {{ $show_buttons = true }}
@@ -45,7 +45,9 @@
   {{ with $resource }}
   {{ $image := .Fill (printf "918x517 q90 %s" $anchor) }}
   <a href="{{ $item.RelPermalink }}">
+    <div class="img-hover-zoom">
       <img src="{{ $image.RelPermalink }}" class="article-banner" alt="">
+    </div>
   </a>
   {{end}}
 

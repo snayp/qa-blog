@@ -9,13 +9,20 @@ date = 2021-01-30T22:47:19.000Z
 lastmod = 2021-01-30T22:47:19.000Z
 featured = false
 draft = false
-view = 2
+view = 3
 
+projects = [ ]
 [image]
 caption = ""
-focal_point = "Left"
+focal_point = ""
 preview_only = false
-projects = [ ]
+placement = 3
+[advanced]
+ # Custom CSS. 
+ css_style = ""
+ 
+ # CSS class.
+ css_class = ""
 +++
 
 ## Live vs. Студия
