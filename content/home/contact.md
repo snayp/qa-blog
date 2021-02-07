@@ -50,6 +50,6 @@ contact_links = [
   # Background gradient.
   gradient_start = "#191313c9"
   gradient_end = "#2d2c36"
-  text_color_light = false
+  # text_color_light = false
   
 +++

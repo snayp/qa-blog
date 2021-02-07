@@ -19,8 +19,8 @@
   weight = 20
 
 [[main]]
-  name = "идея"
-  url = "/идея/"
+  name = "мысли"
+  url = "/мысли/"
   weight = 35
 
 [[main]]
