@@ -42,8 +42,8 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 [imaging]
   resampleFilter = "lanczos"
   quality = 90
-  anchor = "" 
-# {{ $st := .Page.Params.author.user_groups }}
+  anchor = "smart" 
+  
 [permalinks]
   categories = "/категория/:slug/"      # required
   tags = "/тема/:slug/"                 # required
