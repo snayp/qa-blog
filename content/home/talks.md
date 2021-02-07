@@ -54,19 +54,22 @@ subtitle = "событий"
   # Background color.
   # color = "#282a36;"
   # Background gradient.
-  gradient_start = "rgb(26 63 0 / 52%)"
-  gradient_end = "rgba(0, 0, 0, 0.16)"
+  # gradient_start = "rgb(26 63 0 / 52%)"
+  # gradient_end = "rgba(0, 0, 0, 0.16)"
   # Background image.
   image = "background_talk.jpg"  # Name of image in `static/img/`.
-  image_darken = 0.16  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+  # image_darken = 0.16  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
+  # image_parallax = true
   # Text color (true=light or false=dark).
   text_color_light = false
   
 [advanced]
  # Custom CSS. 
- css_style = "color: #282a36"
+ css_style = ""
  
  # CSS class.
  css_class = ""
 +++
+
+---

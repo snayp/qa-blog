@@ -1,0 +1,5 @@
+{{ define "partials/count.html" }}
+{{ $pages := (where .Site.RegularPages "Section" "==" "блог") }}
+{{ $pagesCount := len $pages }}
+{{ return $pagesCount }}
+{{ end }}

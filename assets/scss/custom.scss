@@ -90,7 +90,7 @@ form textarea,
 .StripeElement {
   box-sizing: border-box;
   border: 1px solid rgb(247, 118, 118);
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(255, 255, 255);
   padding: 0.75em 1rem;
   margin-bottom: 1.5rem;
 }
@@ -128,3 +128,58 @@ form select {
   text-transform: none;
 }
 
+#talk_list > div > h3 {
+  margin-top: 0rem;
+}
+
+
+
+.abbb {
+  padding: 3em 0 3em 0;
+}
+
+.abbb.wg-blank {
+  align-items: center;
+  justify-content: center;
+}
+
+.abbb.wg-blank .content {
+  text-align: center;
+}
+
+.abbb > .content {
+  width: 45em;
+  max-width: calc(100% - 4em);
+  margin: 0 auto;
+}
+
+.abbb > .content > :last-child {
+  margin-bottom: 0;
+}
+
+.abbb header {
+  margin-bottom: 1em;
+}
+
+.abbb .wg-blank h2 {
+  font-size: 2.25em;
+  line-height: 1.25em;
+  letter-spacing: -0.05em;
+}
+
+// @media only screen and (min-width: 1001px){
+//   .abbb .container {
+//     width: 1000px;  
+//   }
+// }
+
+@media (min-width: 1200px) {
+  .abbb .container {
+    max-width: 1000px;
+  }
+}
+@media (min-width: 992px){
+  .abbb .container {
+    max-width: 880px;
+  }
+}

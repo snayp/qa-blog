@@ -23,28 +23,36 @@ hero_media = "19.JPG"
   # Background image.
   image = "background.jpg"
   image_darken = 0.1
+  image_parallax = true  # Use a fun parallax-like fixed background effect? true/false
 
   # Text color (true=light or false=dark).
   text_color_light = true
+[advanced]
+ # Custom CSS. 
+ css_style = ""
+ 
+ # CSS class.
+ css_class = ""
+  
 
-# Call to action links (optional).
-#   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
-#   Remove a link/note by deleting a cta/note block.
+
 +++
-# добро пожаловать
 
-## _в этом блоге, читатель найдет_
+- - -
 
-### материалы о тестировании и качестве ПО
+<br/>
 
-### _анонсы_
+# привет читатель 🙏 
 
-### любопытных тусовок
+## _здесь ты найдешь_
 
-### _подборку_
+### _статьи о_ [тестировании и качестве ПО](/категория/тестирование/)
 
-### качественной музыки
+### _анонсы_ любопытных тусовок
 
-### _мнение автора_
+### _подборку_ качественной музыки
 
-### об интересных людях и событиях
+<br/>
+<br/>
+
+***

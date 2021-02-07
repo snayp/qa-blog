@@ -5,8 +5,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
-title = "Наглядно"
-subtitle = "информация в блоге"
+title = "опубликовано"
+subtitle = "материалов в соответствующих разделах"
 
 # Showcase personal skills or business features.
 # 
@@ -23,7 +23,6 @@ subtitle = "информация в блоге"
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view = 3
   
 [design.background]
   # Apply a background color, gradient, or image.
@@ -39,28 +38,29 @@ subtitle = "информация в блоге"
   # gradient_start = "rgb(130 47 7 / 5%)"
   # gradient_end = "rgb(65 70 10 / 34%)"
   # Background image.#343a40, #1c2429
-  image = "background_cont.jpg"  # Name of image in `static/img/`.
+  # image = "background_talk.jpg"  # Name of image in `static/img/`.
   # image_darken = 0.4  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
-  text_color_light = true 
+  # text_color_light = true 
 
 [[feature]]
   icon = "blog"
   icon_pack = "fas"
   name = "постов"
-  description = "90%"
+  description = "блог"
   
 [[feature]]
-  icon = "meetup"
-  icon_pack = "fab"
-  name = "событий"
-  description = "100%"  
+  icon = "calendar-times"
+  icon_pack = "fas"
+  name = "события"
+  description = "анонс"  
   
 [[feature]]
   icon = "compact-disc"
   icon_pack = "fas"
-  name = "дискография"
-  description = "10%"
+  name = "аудио"
+  description = "музыка"
 
 +++
+

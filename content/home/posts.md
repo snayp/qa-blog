@@ -7,7 +7,7 @@ active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.headless = true
 title = "свежее"
 subtitle = "новые посты"
-light = true
+
 
 [image]
   caption = ""
@@ -60,7 +60,7 @@ light = true
   # image_darken = 0.4  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
- text_color_light = false     
+  text_color_light = false     
   
 [advanced]
  # Custom CSS. 
@@ -69,3 +69,5 @@ light = true
  # CSS class.
  css_class = ""
 +++
+
+---

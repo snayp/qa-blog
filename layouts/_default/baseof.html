@@ -2,7 +2,7 @@
 <html lang="{{ site.LanguageCode | default "ru-ru" }}">
 
 {{ partial "site_head" . }}
-<body id="top" data-spy="scroll" data-offset="70" data-target="{{ if or .IsHome (eq .Type "widget_page") }}#navbar-main{{else}}#TableOfContents{{end}}" {{ if ne .Section "автор" }}class="dark"{{end}}>
+<body id="top" data-spy="scroll" data-offset="70" data-target="{{ if or .IsHome (eq .Type "widget_page") }}#navbar-main{{else}}#TableOfContents{{end}}" {{ if not (.Params.light) }}class="dark"{{end}}>
   {{ partial "fb_sdk"  . }}
 
   {{ partial "search" . }}

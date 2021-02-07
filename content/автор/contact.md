@@ -1,25 +1,22 @@
 +++
 # Contact widget.
 widget = "contact"  # See https://sourcethemes.com/academic/docs/page-builder/
-
+headless = true
 active = true  # Activate this widget? true/false
-weight = 130  # Order that this section will appear.
-
+weight = 30  # Order that this section will appear.
 title = "контакты"
-subtitle = "социальные сети"
+subtitle = "контакты"
 
-# Automatically link email and phone?
-
-
+email = "p/1602710451626442135/f/contact"
+autolink = false
 # Email form provider
 #   0: Disable email form
 #   1: Netlify (requires that the site is hosted by Netlify)
 #   2: formspree.io
-email_form = 0
+email_form = 2
 [content]
-autolink = false
 [advanced]
- css_style = ""
+ css_style = "color = "#282a36""
 
      
 [design]
@@ -28,8 +25,8 @@ autolink = false
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  # column = "1"
-  
+  columns = 2
+
 [design.background]
   # Apply a background color, gradient, or image.
   #   Uncomment (by removing `#`) an option to apply it.
@@ -37,12 +34,11 @@ autolink = false
   #   Any HTML color name or Hex value is valid.
 
   # Background color.
-  # color = "#282a36;"
+  # color = "#282a36"
   
   # Background gradient.
-  gradient_start = "#191313c9"
-  gradient_end = "#2d2c36"
-  text_color_light = false
+  # gradient_start = "#191313c9"
+  # gradient_end = "#2d2c36"
+  # text_color_light = false
 +++
 
----

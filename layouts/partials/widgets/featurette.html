@@ -1,5 +1,11 @@
 {{ $ := .root }}
 {{ $page := .page }}
+{{ $posts := (where $.Site.RegularPages "Section" "==" "блог") }}
+{{ $postsCount := len $posts }}
+{{ $events := (where $.Site.RegularPages "Section" "==" "анонс") }}
+{{ $eventsCount := len $events }}
+{{ $audio := (where $.Site.RegularPages "Section" "==" "музыка") }}
+{{ $audioCount := len $audio }}
 
 <div class="row featurette">
   {{ with $page.Title }}
@@ -24,7 +30,15 @@
   <div class="col-12 col-sm-4">
     {{ with .icon }}<div class="featurette-icon"><i class="{{ $pack }} {{ $pack_prefix }}-{{ (.) }}"></i></div>{{ end }}
     
-    {{ with .description }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+    {{ with .description }}
+      {{ if eq "блог" . }}
+      <h3>{{ printf "%d" $postsCount | markdownify | emojify }}</h3>
+      {{ else if eq "анонс" . }}
+      <h3>{{ printf "%d" $eventsCount | markdownify | emojify }}</h3>
+      {{ else }}
+      <h3>{{ printf "%d" $audioCount | markdownify | emojify }}</h3>
+      {{ end }}
+    {{ end }}
     <h3>{{ .name | markdownify | emojify }}</h3>
   </div>
   {{ end }}

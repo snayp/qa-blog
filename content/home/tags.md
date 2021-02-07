@@ -30,10 +30,12 @@ subtitle = "темы"
   # color = "#282a06;"
   
   # Background gradient.
-  gradient_start = "#f6f6f6c2"
-  gradient_end = "#65636ab8"
+  # gradient_start = "#f6f6f6c2"
+  # gradient_end = "#65636ab8"
 
   image = "background_talk.jpg"
-  image_darken = 0.4
+  # image_darken = 0.4
   text_color_light = false  
 +++
+
+---

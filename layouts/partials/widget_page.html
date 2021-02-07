@@ -4,9 +4,9 @@
 {{/* Get widget page */}}
 {{ $page := "" }}
 {{ if .IsHome }}
-  {{ $page = "/home" }}
+  {{ $page = "/home/index.md" }}
 {{ else }}
-  {{ $page = .URL }}
+  {{ $page = .File.Path }}
 {{ end }}
 {{ $headless_bundle := site.GetPage $page }}
 {{/* Check homepage exists */}}

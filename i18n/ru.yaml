@@ -61,11 +61,11 @@
 - id: more_publications
   translation: Больше публикаций
 - id: contact_name
-  translation: Имя
+  translation: Ваше имя
 - id: contact_email
-  translation: адрес электронной почты
+  translation: Почта для обратной связи
 - id: contact_message
-  translation: Сообщение
+  translation: Ваше сообщение
 - id: contact_send
   translation: Отправить
 - id: book_appointment
