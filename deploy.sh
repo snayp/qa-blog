@@ -28,4 +28,4 @@ git add .
 git commit -m "$msg"
 
 # Push source and build repos.
-git push -u origin main
+git push
