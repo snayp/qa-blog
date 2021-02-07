@@ -1,6 +1,6 @@
 +++
 widget = "pages"
-title = "анонс событий"
+title = "афиша"
 
 view = 2
 [avatar]
@@ -8,5 +8,4 @@ view = 2
 [advanced]
 css_style = ""
 [design]
-  columns = 1
 +++
