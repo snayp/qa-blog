@@ -100,7 +100,7 @@
       {{ end }}
 
       {{/* Contact links. */}}
-      {{ range $data.contact_links }}
+      {{ range $page.Params.contact_links }}
       {{ $pack := or .icon_pack "fas" }}
       {{ $pack_prefix := $pack }}
       {{ if in (slice "fab" "fas" "far" "fal") $pack }}

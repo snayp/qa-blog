@@ -4,8 +4,8 @@ widget = "contact"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true
 active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
-title = "контакты"
-subtitle = "контакты"
+title = "написать"
+subtitle = "сообщение админу"
 
 email = "p/1602710451626442135/f/contact"
 autolink = false
@@ -25,7 +25,7 @@ email_form = 2
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  columns = 2
+
 
 [design.background]
   # Apply a background color, gradient, or image.
