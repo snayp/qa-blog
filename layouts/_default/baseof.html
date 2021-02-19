@@ -11,6 +11,8 @@
 
   {{ block "main" . }}{{ end }}
 
+  {{ partial "site_js" . }}
+
 
   {{/* Docs and Updates layouts include the site footer in a different location. */}}
   {{ if not (in (slice "docs" "updates") .Type) }}
