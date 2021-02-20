@@ -5,7 +5,7 @@ active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-hero_media = "19.JPG"
+hero_media = "блог_тестировшикаJPG"
 
 [design.background]
   # Apply a background color, gradient, or image.

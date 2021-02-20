@@ -116,7 +116,7 @@
   version = "3.1.1"
   sri = "sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q="
   url = "https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/%s/cookieconsent.min.css"
-[css.aplayer]
-  version = "1.10.1"
-  sri = "sha512-CIYsJUa3pr1eoXlZFroEI0mq0UIMUqNouNinjpCkSWo3Bx5NRlQ0OuC6DtEB/bDqUWnzXc1gs2X/g52l36N5iw=="
-  url = "https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"
+# [css.aplayer]
+#   version = "1.10.1"
+#   sri = "sha512-CIYsJUa3pr1eoXlZFroEI0mq0UIMUqNouNinjpCkSWo3Bx5NRlQ0OuC6DtEB/bDqUWnzXc1gs2X/g52l36N5iw=="
+#   url = "https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"

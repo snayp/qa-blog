@@ -19,12 +19,12 @@
   weight = 20
 
 [[main]]
-  name = "мысли"
+  name = "imho"
   url = "/мысли/"
   weight = 35
 
 [[main]]
-  name = "автор"
+  name = "био"
   url = "/автор/"
   weight = 40
 
