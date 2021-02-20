@@ -9,6 +9,8 @@
       {{ printf "<script src=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\"></script>" (printf $js.imagesLoaded.url $js.imagesLoaded.version) $js.imagesLoaded.sri | safeHTML }}
       {{ printf "<script src=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\"></script>" (printf $js.isotope.url $js.isotope.version) $js.isotope.sri | safeHTML }}
       {{ printf "<script src=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\"></script>" (printf $js.fancybox.url $js.fancybox.version) $js.fancybox.sri | safeHTML }}
+      {{ printf "<script src=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\"></script>" $js.aplayer.url $js.aplayer.sri | safeHTML }}
+  
 
       {{ if or .Params.diagram site.Params.diagram }}
         {{ printf "<script src=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\" title=\"mermaid\"></script>" (printf $js.mermaid.url $js.mermaid.version) $js.mermaid.sri | safeHTML }}
@@ -107,6 +109,8 @@
     {{ printf "<script src=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\"></script>" (printf $js.fuse.url $js.fuse.version) $js.fuse.sri | safeHTML }}
     {{ printf "<script src=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\"></script>" (printf $js.mark.url $js.mark.version) $js.mark.sri | safeHTML }}
     {{ end }}
+
+    
 
     {{/* Algolia search engine. */}}
     {{ if eq site.Params.search.engine 2 }}

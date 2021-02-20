@@ -1,9 +1,31 @@
-<div class="post-player-wrapper">
-    <div
-      class="post-aplayer"
-      data-urls="{{- .Get "urls" -}}"
-      data-names="{{- .Get "names" -}}"
-      {{ with .Get "artists" -}}data-artists="{{- . -}}"{{- end }}
-      {{ with .Get "covers" -}}data-covers="{{- . -}}"{{- end }}
-    ></div>
-  </div>
+
+  <div id="aplayer" class="aplayer"></div>
+
+
+  {{ $url:= .Get "urls" }}
+  {{ $name := .Get "names" }}
+  {{ $artist := .Get "artists" }}
+  {{ $cover := .Get "covers" }}
+<script>
+  const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: false,
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: 'all',
+    order: 'random',
+    preload: 'auto',
+    volume: 0.7,
+    listFolded: false,
+    audio:[
+    {
+        name: '{{ $name | safeJS }}',
+        artist: '{{ $artist | safeJS }}',
+        url: '{{ $url | safeJS }}',
+        cover: '{{ $cover | safeJS }}'
+    }],
+});
+
+
+</script>
+  
