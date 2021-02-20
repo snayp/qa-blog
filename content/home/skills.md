@@ -47,6 +47,7 @@ subtitle = "текущее количество публикаций"
 
 [design.spacing]
   padding = ["10rem", "0", "10rem", "0"]
+  
 [[feature]]
   icon = "blog"
   icon_pack = "fas"

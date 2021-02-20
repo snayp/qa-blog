@@ -1,6 +1,6 @@
 +++
 # About widget.
-widget = "about"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "about"  # 
 active = true  # Activate this widget? true/false
 weight = 20  # Order that this section will appear in.
 headless = true
