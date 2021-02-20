@@ -4,14 +4,4 @@ resources/*
 .env
 public/*
 themes/
-wowchemy-hugo-modules-5.0.0-beta.2/
-_2assets/
-vscode-profile-2021-02-07-20-31-50.cpuprofile
-assets/js/_vendor/
-assets/js/wowchemy-animation.js
-assets/js/wowchemy-init.js
-assets/js/wowchemy-search.js
-assets/js/wowchemy-slides.js
-assets/js/wowchemy-theming.js
-assets/js/wowchemy-utils.js
-assets/js/wowchemy.js
+node_modules/
