@@ -1,16 +1,19 @@
 +++
 # Experience widget.
-widget = "experience"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "experience"  
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
 
-title = "Experience"
-subtitle = ""
+title = "работа"
+subtitle = "вместо резюме"
 
 # Date format for experience
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
 date_format = "Jan 2006"
+
+[design]
+
 
 # Experiences.
 #   Add/remove as many `[[experience]]` blocks below as you like.
@@ -18,7 +21,7 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
+  title = "QA"
   company = "GenCoin"
   company_url = ""
   location = "California"
