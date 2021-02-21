@@ -31,7 +31,7 @@ subtitle = "самые свежие посты"
   [content.filters]
     tag = ""
     category = ""
-    author = "admin"
+    author = ""
     exclude_featured = true
   
 [design]
