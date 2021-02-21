@@ -4,7 +4,7 @@ date = "2019-03-05"
 description = "Guide to emoji usage in Hugo"
 tags = ["emoji"]
 title = "Emoji Support"
-
+draft = true
 +++
 
 Emoji can be enabled in a Hugo project in a number of ways. 
@@ -43,3 +43,4 @@ The [Emoji cheat sheet](http://www.emoji-cheat-sheet.com/) is a useful reference
 }
 </style>
 {{< /css.inline >}}
+<!-- Потратить время и ресурсы, чтобы гарантированно стать успешным очень мало как у бизнеса, так и у рядового специалиста. 90% всех ресурсов, тратятся на решение типовых задач, не требующих для успешного выполнения особого таланта или гениальности, это с одной стороны убивает редко появляющиеся таланты, но с другой дает шанс развиваться большинству людей, не отставая от прогресса. -->
