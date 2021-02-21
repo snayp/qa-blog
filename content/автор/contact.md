@@ -3,7 +3,7 @@
 widget = "contact"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true
 active = true  # Activate this widget? true/false
-weight = 30  # Order that this section will appear.
+weight = 50  # Order that this section will appear.
 title = "написать"
 subtitle = "сообщение админу"
 
@@ -16,7 +16,7 @@ autolink = false
 email_form = 2
 [content]
 [advanced]
- css_style = "color = "#282a36""
+ css_style = "color = "#252a36""
 
      
 [design]
@@ -39,6 +39,6 @@ email_form = 2
   # Background gradient.
   # gradient_start = "#191313c9"
   # gradient_end = "#2d2c36"
-  # text_color_light = false
+  text_color_light = false
 +++
 
