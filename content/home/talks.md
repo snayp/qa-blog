@@ -33,7 +33,7 @@ subtitle = "ближайших событий"
     tag = ""
     category = ""
     author = ""
-    exclude_featured = false
+    exclude_featured = true
     exclude_past = false 
     exclude_future = false
     
