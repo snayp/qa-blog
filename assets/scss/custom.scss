@@ -1,4 +1,207 @@
 // Override this file to add your own SCSS styling.
+#contact {
+
+  margin: 1.5rem 0;
+
+  label {
+    display: block;
+    line-height: 1.8rem;
+  }
+
+  input[name=name],
+  input[name=_replyto],
+  input[name=_subject],
+  select,
+  textarea {
+    display: block;
+    background-color: #7e7c7c;
+    color: darkslategray;
+    margin: 3px 0;
+    max-width: 100%;
+  }
+  
+  input[name=name],
+  input[name=_replyto],
+  input[name=_subject] {
+    min-width: 240px;
+    padding: 6px 12px;
+  }
+  
+  select {
+    min-width: 210px;
+    padding: 6px;
+  }
+  
+  textarea {
+    padding: 9px 15px;
+    
+    width: 90%;
+    height: auto;
+  }
+
+  input[type=submit] {
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    
+    margin-top: 1.2rem;
+    padding: 12px 42px 15px;
+    
+    outline-offset: 2px;
+
+    color: #dd5656;
+
+    // HACK
+    // Override Firefox unnecessary extra inner outline
+    &::-moz-focus-inner {
+      border: 0;
+    }
+  }
+}
+
+/* reset */
+form input,
+form select,
+form textarea,
+form fieldset,
+form optgroup,
+form label,
+.StripeElement {
+font-family: inherit;
+font-size: 100%;
+border: none;
+border-radius: 0;
+display: block;
+width: 100%;
+padding: 0;
+margin: 0;
+-webkit-appearance: none;
+-moz-appearance: none;
+}
+form label,
+form legend {
+font-size: 0.825rem;
+margin-bottom: 0.5rem;
+}
+/* border, padding, margin, width */
+form input,
+form select,
+form textarea,
+.StripeElement {
+box-sizing: border-box;
+border: 1px solid rgb(247, 118, 118);
+background-color: rgb(255, 255, 255);
+padding: 0.75em 1rem;
+margin-bottom: 1.5rem;
+}
+form input:focus,
+form select:focus,
+form textarea:focus,
+.StripeElement:focus {
+background-color: rgb(255, 255, 255);
+outline-style: solid;
+outline-width: thin;
+outline-color: gray;
+outline-offset: -1px;
+}
+form [type="text"],
+form [type="email"],
+.StripeElement {
+width: 100%;
+}
+form [type="button"],
+form [type="submit"],
+form [type="reset"] {
+width: auto;
+cursor: pointer;
+-webkit-appearance: button;
+-moz-appearance: button;
+appearance: button;
+}
+form [type="button"]:focus,
+form [type="submit"]:focus,
+form [type="reset"]:focus {
+outline: none;
+}
+
+form select {
+text-transform: none;
+}
+
+#talk_list > div > h3 {
+margin-top: 0rem;
+}
+
+.hero-lead > a {
+text-decoration: none;
+}
+
+
+
+.abbb {
+padding: 3em 0 3em 0;
+}
+
+.abbb.wg-blank {
+align-items: center;
+justify-content: center;
+}
+
+.abbb.wg-blank .content {
+text-align: center;
+}
+
+.abbb > .content {
+width: 45em;
+max-width: calc(100% - 4em);
+margin: 0 auto;
+}
+
+.abbb > .content > :last-child {
+margin-bottom: 0;
+}
+
+.abbb header {
+margin-bottom: 1em;
+}
+
+.abbb .wg-blank h2 {
+font-size: 2.25em;
+line-height: 1.25em;
+letter-spacing: -0.05em;
+}
+
+// @media only screen and (min-width: 1001px){
+//   .abbb .container {
+//     width: 1000px;  
+//   }
+// }
+
+@media (min-width: 1200px) {
+.abbb .container {
+  max-width: 1000px;
+}
+}
+@media (min-width: 992px){
+.abbb .container {
+  max-width: 880px;
+}
+}
+
+/* Hide overflowing of zoomed child img element */
+.img-hover-zoom {
+overflow: hidden;
+}
+
+/* Smooth transition for image zoom on hover */
+.img-hover-zoom img {
+transition: transform 0.3s ease-in-out;
+}
+
+/* Transform the image scale when container gets hovered */
+.img-hover-zoom:hover img {
+transform: scale(1.1);
+}
 
 #preloader {
     position: fixed;
