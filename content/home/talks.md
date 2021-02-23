@@ -67,7 +67,6 @@ subtitle = "ближайших событий"
 [advanced]
  # Custom CSS. 
  css_style = ""
- 
  # CSS class.
  css_class = ""
 +++
