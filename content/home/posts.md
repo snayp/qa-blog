@@ -1,14 +1,13 @@
 +++
-# A Recent Blog Posts section created with the Pages widget.
-# This section displays recent blog posts from `content/post/`.
 
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = true  # Activate this widget? true/false
-weight = 60  # Order that this section will appear.headless = true
+weight = 60  # Order that this section will appear.
+headless = true
+
 title = "новячок :new:"
 subtitle = "самые свежие посты"
-
-
+profile = false
 [image]
   caption = ""
   focal_point = ""

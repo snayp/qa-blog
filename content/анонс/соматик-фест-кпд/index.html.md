@@ -1,14 +1,14 @@
 +++
 abstract = ""
 all_day = false
-authors = ["somatik-sound-system"]
+authors = ["somatik-sound-system","admin"]
 categories = ["музыка", "анонс"]
 date = "2019-12-28T23:59:00+03:00"
 date_end = "2019-12-29T06:40:50+03:00"
 event = "Somatik Fest"
 event_url = "https://t.me/somatik"
 featured = false
-link_authors = true
+link_authors = false
 location = "**КПД** Кожевенная Линия ВО 40, СПб"
 projects = []
 publishDate = "2019-12-28T04:40:50+03:00"
