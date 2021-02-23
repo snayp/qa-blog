@@ -36,7 +36,7 @@ contact_links = [
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  # column = "1"
+ column = "1"
   
 [design.background]
   # Apply a background color, gradient, or image.

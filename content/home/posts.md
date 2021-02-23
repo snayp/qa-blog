@@ -55,7 +55,7 @@ subtitle = "самые свежие посты"
   # gradient_start = "rgb(130 47 7 / 5%)"
   # gradient_end = "rgb(65 70 10 / 34%)"
   # Background image.#343a40, #1c2429
-  image = "background_talk.jpg"  # Name of image in `static/img/`.
+  image = "background_talk.jpg" 
   # image_darken = 0.4  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).

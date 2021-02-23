@@ -9,14 +9,16 @@ title = "QA блог"
 # This should be the username of a profile in your `content/authors/` folder.
 # See https://sourcethemes.com/academic/docs/get-started/#introduce-yourself
 author  = "snayp"
-
 [advanced]
  # Custom CSS. 
  css_style = "color: #495057"
  
  # CSS class.
  css_class = ""
- [design.background]
+[design]
+columns = "2"
+
+[design.background]
  # text_color_light = false
 
 +++

@@ -46,7 +46,7 @@ subtitle = "текущее количество публикаций"
   text_color_light = true 
 
 [design.spacing]
-  padding = ["10rem", "0", "10rem", "0"]
+  padding = ["10rem", "0", "4rem", "0"]
   
 [[feature]]
   icon = "blog"
