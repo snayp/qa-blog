@@ -2,8 +2,7 @@
 # About widget.
 widget = "about"  # 
 active = true  # Activate this widget? true/false
-weight = 20  # Order that this section will appear in.
-headless = true
+weight = 20
 title = "QA блог"
 
 # See https://sourcethemes.com/academic/docs/get-started/#introduce-yourself

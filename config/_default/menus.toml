@@ -34,3 +34,7 @@
 #    name = "CV"
 #    url = "files/cv.pdf"
 #    weight = 70
+
+[["анонс"]]
+  name = "год"
+  weight = 10

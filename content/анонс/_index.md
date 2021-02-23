@@ -1,7 +1,5 @@
 +++
 widget = "pages"
-headless = true
-title = "любопытные тусовки"
 share = true
 commentable = true
 
@@ -10,6 +8,5 @@ commentable = true
 [advanced]
 css_style = ""
 [design]
-view = 2
-columns = 1
+
 +++
