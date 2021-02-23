@@ -4,7 +4,7 @@
 {{ partial "page_author" . }}
 {{ partial "comments" . }}
 
-{{ if eq .Type "блог" "анонс" }}
+{{ if in .Type (slice "блог" "анонс") }}
 <div class="article-widget">
   {{ partial "section_pager" . }}
 </div>
