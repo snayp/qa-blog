@@ -11,6 +11,7 @@ event = "Ghettopsychedelic На Балтах 30-01-21"
 event_url = "https://t.me/somatik/2385"
 featured = false
 
+link_authors = true
 location = "**Балты** на Балтийской 59, СПб"
 projects = []
 publishDate = "2021-01-29T09:45:42+03:00"

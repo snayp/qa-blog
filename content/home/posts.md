@@ -7,7 +7,7 @@ headless = true
 
 title = "новячок :new:"
 subtitle = "самые свежие посты"
-profile = false
+
 [image]
   caption = ""
   focal_point = ""
@@ -31,7 +31,7 @@ profile = false
     tag = ""
     category = ""
     author = ""
-    exclude_featured = true
+    user_groups = ""
   
 [design]
   # Toggle between the various page layout types.
