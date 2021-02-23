@@ -4,7 +4,7 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "музыка"
+  name = "muz"
   url = "/музыка/"
   weight = 32
 
@@ -24,7 +24,7 @@
   weight = 35
 
 [[main]]
-  name = "био"
+  name = "info"
   url = "/автор/"
   weight = 40
 

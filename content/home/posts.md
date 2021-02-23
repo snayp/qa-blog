@@ -6,7 +6,7 @@ weight = 60  # Order that this section will appear.
 headless = true
 
 title = "новячок :new:"
-subtitle = "самые свежие посты"
+subtitle = "самое свежее"
 
 [image]
   caption = ""

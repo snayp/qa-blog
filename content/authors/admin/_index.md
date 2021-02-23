@@ -2,5 +2,6 @@
 name = "admin"
 superuser = false
 user_groups = ["tech"]
-slug = "admin"
+slug = "snayp"
+profile = false
 +++
