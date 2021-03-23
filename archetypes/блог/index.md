@@ -1,5 +1,5 @@
 +++
-title = ""
+title = "{{ replace .Name "-" " " | title }}"
 subtitle = ""
 summary = ""
 description = ""
