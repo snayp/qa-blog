@@ -23,6 +23,11 @@ refLinksNotFoundURL = "/"
   home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]
   section = [ "HTML", "RSS" ]
 
+[outputFormats.Reveal]
+  baseName = "index"
+  mediaType = "text/html"
+  isHTML = true
+
 [mediaTypes."application/manifest+json"]
   suffixes = ["webmanifest"]
 
