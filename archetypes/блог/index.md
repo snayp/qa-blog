@@ -1,5 +1,4 @@
 +++
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title = "{{ replace .Name "-" " " | title }}"
 subtitle = ""
