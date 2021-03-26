@@ -1,8 +1,9 @@
 +++
 # Hero widget.
-widget = "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
-active = true  # Activate this widget? true/false
+widget = "slider"  # See https://sourcethemes.com/academic/docs/page-builder/
+active = false  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
+outputs = ["Reveal"]
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 hero_media = "блог_тестировшика.JPG"
@@ -33,19 +34,12 @@ hero_media = "блог_тестировшика.JPG"
  
  # CSS class.
  css_class = ""
-  
-[params]
-  theme = ["reveal-hugo"]
+
 
 +++
-
-<br/>
-
 # привет читатель 🙏 {#привет}
 
 ## _с ревностью отобраны_ {#можно-найти}
-
- --- 
 
 ### материалы о [тестировании и качестве ПО](/блог/) {#hero-тестирование-по}
 
@@ -53,8 +47,6 @@ hero_media = "блог_тестировшика.JPG"
 
 ### [музыка](/музыка/) достойной внимания {#hero-музыка}
 
-<br/>
-<br/>
 
 ***
 
