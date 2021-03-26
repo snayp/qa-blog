@@ -14,9 +14,9 @@ autolink = false
 #   1: Netlify (requires that the site is hosted by Netlify)
 #   2: formspree.io
 email_form = 2
-[content]
+
 [advanced]
- css_style = "color = "#252a36""
+ css_style = "color = #252a36"
 
      
 [design]

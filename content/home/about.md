@@ -4,8 +4,7 @@ widget = "about"  #
 active = true  # Activate this widget? true/false
 weight = 20
 title = "QA блог"
-
-# See https://sourcethemes.com/academic/docs/get-started/#introduce-yourself
+headless = true
 author  = "snayp"
 [advanced]
  # Custom CSS. 

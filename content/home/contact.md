@@ -1,7 +1,7 @@
 +++
 # Contact widget.
 widget = "contact"  # See https://sourcethemes.com/academic/docs/page-builder/
-
+headless = true
 active = true  # Activate this widget? true/false
 weight = 130  # Order that this section will appear.
 
@@ -36,7 +36,6 @@ contact_links = [
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
- column = "1"
   
 [design.background]
   # Apply a background color, gradient, or image.
