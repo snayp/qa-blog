@@ -1,6 +1,5 @@
 baseURL = "https://snayp.github.io/"
 title = "сельский тестер"
-theme = ["reveal-hugo"]
 ignoreErrors = ["error-remote-getjson", "error-disable-taxonomy"]
 languageCode = "ru"
 defaultContentLanguage = "ru"
@@ -31,10 +30,6 @@ refLinksNotFoundURL = "/"
   mediaType = "application/manifest+json"
   rel = "manifest"
 
-[outputFormats.Reveal]
-#  baseName = "index"
-  mediaType = "text/html"
-  isHTML = true
   
 [markup]
   defaultMarkdownHandler = "goldmark"
