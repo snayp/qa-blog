@@ -1,8 +1,9 @@
 baseURL = "https://snayp.github.io/"
 title = "сельский тестер"
 ignoreErrors = ["error-remote-getjson", "error-disable-taxonomy"]
-languageCode = "ru"
+languageCode = ["ru", "en"]
 defaultContentLanguage = "ru"
+defaultContentLanguageInSubdir = false
 paginatepath = "страница"
 enableInlineShortcodes = true
 canonifyURLs = true
