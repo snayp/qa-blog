@@ -1,7 +1,0 @@
-[submodule "public"]
-	path = public
-	url = git@github.com:snayp/snayp.github.io.git
-	branch = main
-[submodule "themes/reveal-hugo"]
-	path = themes/reveal-hugo
-	url = git@github.com:dzello/reveal-hugo.git
