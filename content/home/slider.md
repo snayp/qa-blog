@@ -27,7 +27,7 @@ height = "calc(100vh - 70px)"
   решении повседневных задач тестирования 
   \
   модных трендах - SDED и Continuous Testing'''
-  align = "center"  # Choose `center`, `left`, or `right`.
+  align = "center"  
 
   # Overlay a color or image (optional).
   #   Deactivate an option by commenting out the line, prefixing it with `#`.

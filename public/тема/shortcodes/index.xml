@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcodes | Блог Снайпера</title>
+    <link>https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/shortcodes/</link>
+      <atom:link href="https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <description>shortcodes</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <image>
+      <url>https://snayp.github.io/img/qa-blog-512x512.png</url>
+      <title>shortcodes</title>
+      <link>https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/shortcodes/</link>
+    </image>
+    
+    <item>
+      <title>More KaTeX</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/more-katex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/more-katex/</guid>
+      <description>&lt;p&gt;The extensions &lt;code&gt;mhchem&lt;/code&gt; and &lt;code&gt;copy-tex&lt;/code&gt; are also included (along the necessary &lt;code&gt;auto-render&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;mhchem&lt;/code&gt; extension allows chemistry notation, like  \(\ce{H2O}\)  or:&lt;/p&gt;
+&lt;p&gt;$$
+\ce{x Na(NH4)HPO4 -&amp;gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}
+$$&lt;/p&gt;
+&lt;p&gt;While &lt;code&gt;copy-tex&lt;/code&gt; allows users to copy the rendered KaTeX and paste it in its native format.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s worth noting, though, that &lt;code&gt;copy-tex&lt;/code&gt; has some 
+&lt;a href=&#34;https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex#known-issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;known issues&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;About how to load the extensions, here&amp;rsquo;s a quick example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;---
+title           : &amp;quot;More KaTeX&amp;quot;
+katex           : true
+katexExtensions : [ mhchem, copy-tex ]
+---
+
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;fences&#34;&gt;Fences&lt;/h2&gt;
+&lt;p&gt;Another tweak here is that KaTeX blocks are accessible via keyboard and long expressions can be scrolled:&lt;/p&gt;
+&lt;p&gt;$$ \text{Damage} = \text{Skill Level} * \lfloor A * (1 - B) * (1 - C) * (1 - D) * (1 - E) * F * G \lfloor \frac{H * 0.7 * \text{INT} * \text{INT} * \text{VIT}}{(\text{INT} + \text{VIT})} \rfloor \rfloor $$&lt;/p&gt;
+&lt;p&gt;Pretty much like code blocks:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;$$
+  \text{Damage} = \text{Skill Level} * \lfloor A * (1 - B) * (1 - C) * (1 - D) * (1 - E) * F * G \lfloor \frac{H * 0.7 * \text{INT} * \text{INT} * \text{VIT}}{(\text{INT} + \text{VIT})} \rfloor \rfloor
+$$
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

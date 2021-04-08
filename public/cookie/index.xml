@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Соглашение об использовании файлов Cookie | Блог Снайпера</title>
+    <link>https://snayp.github.io/cookie/</link>
+      <atom:link href="https://snayp.github.io/cookie/index.xml" rel="self" type="application/rss+xml" />
+    <description>Соглашение об использовании файлов Cookie</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Tue, 12 Feb 2019 11:53:57 +0300</lastBuildDate>
+    <image>
+      <url>https://snayp.github.io/img/qa-blog-512x512.png</url>
+      <title>Соглашение об использовании файлов Cookie</title>
+      <link>https://snayp.github.io/cookie/</link>
+    </image>
+    
+  </channel>
+</rss>

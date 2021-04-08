@@ -6,6 +6,7 @@ summary = ""
 authors = ["snayp"]
 tags = []
 categories = []
+keywords = []
 date = {{ .Date }}
 lastmod = {{ .Date }}
 featured = false

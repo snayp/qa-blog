@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>онлайн | Блог Снайпера</title>
+    <link>https://snayp.github.io/%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F/%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD/</link>
+      <atom:link href="https://snayp.github.io/%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F/%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD/index.xml" rel="self" type="application/rss+xml" />
+    <description>онлайн</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Tue, 01 Dec 2020 05:38:27 +0300</lastBuildDate>
+    <image>
+      <url>https://snayp.github.io/img/qa-blog-512x512.png</url>
+      <title>онлайн</title>
+      <link>https://snayp.github.io/%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F/%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD/</link>
+    </image>
+    
+    <item>
+      <title>Осознание BDD и первое практическо применение</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D1%81%D0%BE%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5-bdd-%D0%B8-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/</link>
+      <pubDate>Tue, 01 Dec 2020 05:38:27 +0300</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D1%81%D0%BE%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5-bdd-%D0%B8-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/</guid>
+      <description>&lt;h2 id=&#34;первое-применение&#34;&gt;первое применение&lt;/h2&gt;
+&lt;p&gt;43c3153994a2acd76cd791be518ce572152f8709&lt;/p&gt;
+&lt;p&gt;a01a96103e88981dfbd37b832b5a2390116b8646&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://t.me/somatik/2231&#34;&gt;https://t.me/somatik/2231&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Опыт использования Cucumber и BDD подхода. Часть 1</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/</link>
+      <pubDate>Mon, 30 Nov 2020 05:10:51 +0300</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/</guid>
+      <description>&lt;h2 id=&#34;знакомство-с-bdd&#34;&gt;Знакомство с BDD&lt;/h2&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure class=&#34;small&#34; id=&#34;figure-bdd---мнения-за-и-против-best-practicies-и-anti-patterns&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/header_hu7907faaef7e9e2a11d2683d026425d0b_271474_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;BDD - мнения за и против, best practicies и anti patterns.&#34;&gt;
+
+
+  &lt;img data-src=&#34;../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/header_hu7907faaef7e9e2a11d2683d026425d0b_271474_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;Behaviour Driven Development (BDD) - командное обсуждение существенных детелей проекта, позволяющее добиться однозначного понимания будущих изменений у всех членов команды.&#34; width=&#34;2405&#34; height=&#34;1173&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    BDD - мнения за и против, best practicies и anti patterns.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;О фреймворке 
+&lt;a href=&#34;https://cucumber.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cucumber&lt;/a&gt;, я узнал достаточно давно, примерно 7 лет назад, когда пытался овладеть технологией Ruby on Rails. RoR подразумевает написание большого количества тестов и имеет очень развитой инструментарий для различных видов тестирования. Собственно, абрревиатуры BDD &amp;amp; TDD и какие процессы за ними кроются, я тоже узнал изучая RoR.&lt;/p&gt;
+&lt;p&gt;При первом знакомстве, я не смог оценить по достуинству возможности предлагаемыми BDD &amp;amp; TDD методологиями и начать их применять на практике. Сразу стоит оговориться, что до сих пор споры на тему применимости данных подходов и реального профита для команды, не утихли и продожаются среди сторонников и противников в среде тестировщиков-автоматизаторов.&lt;/p&gt;
+&lt;p&gt;В следующий раз я столкнулся с синтаксисом Given, When, Then уже при написании тестов на REST API используя Java и библиотеку 
+&lt;a href=&#34;http://rest-assured.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rest-Assured&lt;/a&gt;. Тесты выглядели примерно так и кроме  синтаксиса от BDD не заимствовали ничего лишнего.&lt;/p&gt;
+&lt;script type=&#34;application/javascript&#34; src=&#34;https://gist.github.com/snayp/c41875f9b2aa729ee29b32e13cc5205c.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;
+&lt;a href=&#34;https://automated-testing.info/t/code-recipe-primer-ispolzovaniya-rest-assured-dlya-avtomatizaczii-restfull-api/24599?u=snayp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Выложил больше примеров с описанием, что делают тесты&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Затем, при автоматизации Websocket API пришлось использовать JavaScript инструменты - 
+&lt;a href=&#34;https://jasmine.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jasmine&lt;/a&gt; + 
+&lt;a href=&#34;https://karma-runner.github.io/latest/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Karma&lt;/a&gt;. Jasmine - BDD фреймворк, который &amp;ldquo;из коробки&amp;rdquo; имеет все необходимое для тестировани JavaScript кода. Не зависит ни каких сторонних npm модулей, потому очень шустрый. В моем случае, он был очень удобен по двум причинам:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;для тестирования ассинхронного WebSocket API JavaScript оказался гораздо приспособленней, чем Java;&lt;/li&gt;
+&lt;li&gt;парсить JSON объекты JavaScript&amp;rsquo;ом, намного легче, чем возиться с Java объектами;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Возможности BDD, снова никакой роли не играли. Тут хочу мельком сказать про свое первое знакомство с магией Promise, Поскольку тесты подразумевали несколько последовательных вызовов API, где каждый последующий вызов использовал результаты предыдущего, то очень быстро код стал абсолютно не читаемым из-за огромного числа вложенных callback&amp;rsquo;ов.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;linktourist&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;linkQuery&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;unlinktourist&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;linkQuery&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;person&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;delete&amp;#34;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;personId&lt;/span&gt;}, &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;delete&amp;#34;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;serviceId&lt;/span&gt;}, &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;order&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;delete&amp;#34;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;orderId&lt;/span&gt;}, &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;done&lt;/span&gt;();
+                });
+            });
+        });
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Хоть IntelliJIDEA и мощнейший редактор текста, но искать, где же пропущена одна скобка или точка с зяпятой, было просто не выносимо. Тогда я первый раз узнал про Linter&amp;rsquo;ы, это тоже отдельная тема, которой будет посвящен пост в будущем. Сокральный смысл Promise я тогда не понял, а вот возможность отрефакторить код, чтобы он был выровнен по левому краю, оценил сразу!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dry cleaning&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;done&lt;/span&gt;) {
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;inDate&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Date().&lt;span style=&#34;color:#a6e22e&#34;&gt;getTime&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;outDate&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Date().&lt;span style=&#34;color:#a6e22e&#34;&gt;getTime&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;searchQuery&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;place&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HO000288TR&amp;#34;&lt;/span&gt;
+            },
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;date&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;inDate&lt;/span&gt;,
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;outDate&lt;/span&gt;,
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;intime&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;43200000&lt;/span&gt;, &lt;span style=&#34;color:#75715e&#34;&gt;// 12:00
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                &lt;span style=&#34;color:#a6e22e&#34;&gt;outtime&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50400000&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// 14:00
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            },
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;families&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [
+                {
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;adults&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+                }
+            ]
+        };
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;paginationQuery&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;searchQuery&lt;/span&gt;) {
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {};
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage2&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dayuse&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;searchQuery&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;search&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeUndefined&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;done&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;done&lt;/span&gt;) {
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;setTimeout&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;() {
+                        &lt;span style=&#34;color:#a6e22e&#34;&gt;paginationQuery&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;searchQuery&lt;/span&gt;);
+                    }, &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;);
+                } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;search&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeDefined&lt;/span&gt;();
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;search&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeGreaterThan&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Нет результатов поиска&amp;#34;&lt;/span&gt;);
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;search&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;items&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeDefined&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Нет результатов поиска&amp;#34;&lt;/span&gt;);
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;search&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;items&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeGreaterThan&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;);
+                    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;room&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;search&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;items&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;][&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;];
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;room&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;meal&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeDefined&lt;/span&gt;();
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;room&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeDefined&lt;/span&gt;();
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;room&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;outtime&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;searchQuery&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;date&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;outtime&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Не сходится время выезда&amp;#34;&lt;/span&gt;);
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;room&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;currency&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;978&lt;/span&gt;);
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;room&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;offer&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;offer&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;room&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;offer&lt;/span&gt;;
+                    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage2&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;person&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;create&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;createPersonQuery&lt;/span&gt;);
+                }
+            }).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;personId&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;;
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage2&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;order&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;create&amp;#34;&lt;/span&gt;);
+            }).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;orderId&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;;
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;createServiceQuery&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dayuse&amp;#34;&lt;/span&gt;,
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;orderid&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;orderId&lt;/span&gt;,
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;items&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [{
+                        &lt;span style=&#34;color:#a6e22e&#34;&gt;offer&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;offer&lt;/span&gt;
+                    }]
+                };
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage2&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;create&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;createServiceQuery&lt;/span&gt;);
+            }).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;serviceId&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;;
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;linkQuery&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+                    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;serviceId&lt;/span&gt;,
+                    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tourist&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;personId&lt;/span&gt;,
+                    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;item&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+                };
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage2&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;linktourist&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;linkQuery&lt;/span&gt;);
+            }).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;() {
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage2&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;autocomplete&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;clothes&amp;#34;&lt;/span&gt;, { &lt;span style=&#34;color:#a6e22e&#34;&gt;search&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;hotel&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;searchQuery&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;place&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; });
+            }).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeGreaterThan&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;);
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;cloth&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;];
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;cloth&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;cloth&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;clothId&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;cloth&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;;
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage2&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;extras&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dry&amp;#34;&lt;/span&gt;, { &lt;span style=&#34;color:#a6e22e&#34;&gt;cloth&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;clothId&lt;/span&gt; });
+            }).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;actions&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;actions&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeGreaterThan&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;);
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;action&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;actions&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;];
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;action&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;actionId&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;action&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;;
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;action&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;action&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;action&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;original&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;action&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;offer&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;extraOffer&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;action&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;offer&lt;/span&gt;;
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;updateExtras&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;serviceId&lt;/span&gt;,
+                    &lt;span style=&#34;color:#a6e22e&#34;&gt;extras&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [
+                        {
+                            &lt;span style=&#34;color:#a6e22e&#34;&gt;index&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,
+                            &lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;personId&lt;/span&gt;,
+                            &lt;span style=&#34;color:#a6e22e&#34;&gt;amount&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+                            &lt;span style=&#34;color:#a6e22e&#34;&gt;offer&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;extraOffer&lt;/span&gt;,
+                            &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;DRY&amp;#34;&lt;/span&gt;,
+                            &lt;span style=&#34;color:#a6e22e&#34;&gt;item&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+                                &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;clothId&lt;/span&gt;
+                            },
+                            &lt;span style=&#34;color:#a6e22e&#34;&gt;action&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+                                &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;actionId&lt;/span&gt;
+                            }
+                        }
+                    ]
+                }
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage2&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;extras&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;update&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;updateExtras&lt;/span&gt;);
+            }).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;() {
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage2&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;order&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;retrieve&amp;#34;&lt;/span&gt;, { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;orderId&lt;/span&gt; });
+            }).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;date&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;payment&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;currency&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;services&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;services&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeGreaterThan&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;);
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;services&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;services&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;];
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dayuse&amp;#34;&lt;/span&gt;);
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;persons&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;persons&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;];
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;last&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;last&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;createPersonQuery&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;last&lt;/span&gt;);
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;currency&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;978&lt;/span&gt;);
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;tl&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;extraCommerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;payment&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;extraCommerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;original&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;extraCommerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;currency&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;extraCommerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;currency&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;978&lt;/span&gt;);
+
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wsApi&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sendMessage2&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;extras&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;retrieve&amp;#34;&lt;/span&gt;, { &lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;serviceId&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;DRY&amp;#34;&lt;/span&gt; });
+            }).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;) {
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;extras&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;extras&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeGreaterThan&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;);
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;extras&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+                
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;extras&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;];
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;DRY&amp;#34;&lt;/span&gt;);
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;index&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;index&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;);
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;offer&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;extraOffer&lt;/span&gt;);
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;original&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;payment&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;currency&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;not&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toBeNull&lt;/span&gt;();
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;commerce&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;currency&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;toBe&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;978&lt;/span&gt;);
+
+                &lt;span style=&#34;color:#a6e22e&#34;&gt;done&lt;/span&gt;();
+            });
+        };
+        
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;paginationQuery&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;searchQuery&lt;/span&gt;);
+    }, &lt;span style=&#34;color:#ae81ff&#34;&gt;20000&lt;/span&gt;);
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Итого, за первые 5 лет моего знакомства с термином Behaviour Driven Development (BDD), так и не возникло насущной необходимости, благодаря который я бы смог подробнее разобраться, зачем же еще что то новое придумали и смог бы применить новый подход в своей работе.&lt;/p&gt;
+&lt;p&gt;В следующей части будет рассказ, о том, как же я все таки осознал, как и зачем можно использовать BDD и даже нашел задачу, где предложенные методы, могли реально упростить разработку, а точнее, что описание конкретного кейса на естественном языке, действительно помогает понять смысл разрабатываемого функционала всем членам команды и не тратить ресуры на реализацию сомнительнего функционала.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Techno set Dj Omm</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/techno-set-dj-omm/</link>
+      <pubDate>Sun, 29 Nov 2020 05:10:51 +0300</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/techno-set-dj-omm/</guid>
+      <description>&lt;h2 id=&#34;dj-omm-live-asid-riot&#34;&gt;Dj Omm live @Asid Riot&lt;/h2&gt;
+&lt;p&gt;Ваня экспериментирует с техно.&lt;/p&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;150&#34; src=&#34;https://www.mixcloud.com/widget/iframe/?feed=%2Fo936o%2Fjust-illusions%2F&#34; frameborder=&#34;0&#34; &gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Вступление Часть 3 Заключительная</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-3-%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F/</link>
+      <pubDate>Thu, 22 Aug 2019 21:38:52 +0800</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-3-%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F/</guid>
+      <description>&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Вступление Часть 2 столичный опыт</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2/</link>
+      <pubDate>Tue, 30 Apr 2019 05:23:30 +0000</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2/</guid>
+      <description>&lt;h2 id=&#34;покорение-москвы&#34;&gt;Покорение Москвы&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Вступление часть 1 начало карьеры</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/</link>
+      <pubDate>Sat, 13 Apr 2019 01:05:40 +0000</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/</guid>
+      <description>&lt;h2 id=&#34;как-я-стал-тестировщиком-по&#34;&gt;Как я стал тестировщиком ПО&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Не случайные&lt;/strong&gt; случайности происходит в жизни довольно часто и порой совершенно не предскажуемый итог оказывается, у бытовой ситуации. В 2005 году, я после двух академических отпусков, с неохотой посещал зянятия на физическом факультете Саратовского Государственного Университета им. Н.Г. Чернышевского. Одноклассники, к тому моменту, уже получили высшее образование, и немного поработав собирались покорять Москву. Это и послужило поводом увидится, после  перерыва с другом детства, с которым долго сидели за одной партой в школе. По итогу встречи у меня остался номер телефона директора компании VDI, о которой я не знал абсолютно ничего, кроме того, что ребята пишут программы. Как раз в начале сентября проходил конкурс на трехмесячные курсы ИТ. Я был совсем в не контекста программирования и создания софта и мои результаты тестов оказались посредственными. Через пару дней мне все таки позвонили, так как один студент отказался,  и освободилось одно место в группе. Так, совершенно, случайно я оказался на курсах тестировщиков пограммного обеспечения - &amp;ldquo;Basic tools training. VDI Training Center, QA engineer&amp;rdquo;. В те далекие времена отрасль была совсем молодая с непонятными перспективами и возможностями, но удовольствие от решения новых сложных задач, перевесило первые негативные впечатления о профессии. Через месяц VDI был поглощен аутсорсинговым гигантом Восточной Европы - EPAM Systems и с января 2007 я попал на свой первый проект, да еще и к американскому заказчику WebMD, в роли автотестировщика. До сих пор сохранились самые теплые и позитивняые воспоминания о том времени. Молодой коллектив, иностранные коллеги, грамотные старшие товарищи с прекрасным чувством юмора и огромный офис, все доставляло удовольствие. Кстати, софт тогда был весь пиратский и я тихонечко автоматизировал web интерфейс, запуская HP QuickTest Professional на виртуальной машине, которая была на внешнем винчествере, на случай неожиданного визита в офис сотрудников ОБЭБ. Да, они действительно, все таки пришли, но инженеры были к этому готовы и только раскидали CD-R по столам с надписью Windows crack.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;В Саратове&lt;/strong&gt; множество различных учебных заведений, но все таки самые выдающиеся это - классический СГУ и Политехнический университет. Физики с обеих сторон всегда находились в конфронтации и считали, что их Альма Матер превосходит все остальные, но у оппонета было противоположное мнение на этот счет. в 2007 и 2008 годах студенты СГУ неожиданно забрали золотые медали на международных олимпиадах по программированию, что привлекло внимание очень крупного бизнеса в сфере ИТ. Ребята отказались от всех предложений имигрировать и остались в родном городе. Если гора не идет к Магомеду, значит он сам идет к ней. Нашелся бизнесмен, который смог продать талантливую молодежь за границу и организовал ИТ офис в Саратове. Так появился центр непрерывной олимпийской подготовки на базе факультета компьютернызх наук СГУ и центр компетенции и аутсорсинга компании Mirantis. Отделение EPAM в городе появилось благодаря усилиям доцента из политеха и работали там в основном студенты этого ВУЗа. Через год я перешел в Mirantis на проект GE Money Bank RU, и с радостью воспринял то факт, что в ИТ, можно получать при одинаковых нагрузках в два раза больше денег, а проектная деятельность и орагнизация быта в офисе имеет потенциал и может быть в разы лучше. Офис Mirantisa до сих пор на порядок светлее, удобнее, эргонимичние, чем любой другой, в котором мне приходилось трудиться. Наша группа QA полносью покрывала потребность GE в тестировании, а в соседней комнате был единственный офис разработки Cisco в Европе. Безусловно это были лучшие времена в ИТ индустрии в городе. Постепенно, посредственные задачи бизнеса, заметно приземлили уровень среднего айтишника, тем более основная масса вундеркиндов разъехались осознав, что в США или Новой Зелендии уровень жизни в разы превышает нашу действительность.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-саратовский-офис-epam&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/saratov_epam_huab8a1039d275381251a5ae9536647ace_124792_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Саратовский офис EPAM&#34;&gt;
+
+
+  &lt;img data-src=&#34;../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/saratov_epam_huab8a1039d275381251a5ae9536647ace_124792_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;846&#34; height=&#34;300&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Саратовский офис EPAM
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-саратовский-офис-mirantis&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/Mirantis-office_hu4e726a44055548fa0c6a06520f7faa57_112754_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Саратовский офис Mirantis&#34;&gt;
+
+
+  &lt;img data-src=&#34;../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/Mirantis-office_hu4e726a44055548fa0c6a06520f7faa57_112754_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1200&#34; height=&#34;900&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Саратовский офис Mirantis
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;К концу 2012&lt;/strong&gt; года, сечмейные обстоятельства сложились таким образом, что я принял взвешенное решение переехать в Москву. Как сложилась у меня жизнь в городе Москва, расскажу в следующем посте.&lt;/p&gt;
+&lt;p&gt;До скорых встреч в эфире!
+С уважением, DSH.&lt;/p&gt;
+&lt;p&gt;P.S. SSL так, изначально подписывался Сергей Сергеевич, профессор из Политеха, организовавший офис EPAM в Саратове, а потом уже Герман Германович ставил подпись GGN, это доцент из СГУ, благодаря усилиям которого Mirantis появился в городе. А теперь уже и я пишу под псевдонином DSH, хотя, разумеется далеко не доцент.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

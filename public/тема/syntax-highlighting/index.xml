@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>syntax highlighting | Блог Снайпера</title>
+    <link>https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/syntax-highlighting/</link>
+      <atom:link href="https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/syntax-highlighting/index.xml" rel="self" type="application/rss+xml" />
+    <description>syntax highlighting</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <image>
+      <url>https://snayp.github.io/img/qa-blog-512x512.png</url>
+      <title>syntax highlighting</title>
+      <link>https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/syntax-highlighting/</link>
+    </image>
+    
+    <item>
+      <title>Syntax Highlighting Test</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/</guid>
+      <description>&lt;h2 id=&#34;bash&#34;&gt;Bash&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+
+cd $ROOT_DIR
+DOT_FILES=&amp;quot;lastpass weechat ssh Xauthority&amp;quot;
+
+for dotfile in $DOT_FILES; do conform_link &amp;quot;$DATA_DIR/$dotfile&amp;quot; &amp;quot;.$dotfile&amp;quot;; done
+
+# TODO: refactor with suffix variables (or common cron values)
+
+case &amp;quot;$PLATFORM&amp;quot; in
+    linux)
+        #conform_link &amp;quot;$CONF_DIR/shell/zshenv&amp;quot; &amp;quot;.zshenv&amp;quot;
+        crontab -l &amp;gt; $ROOT_DIR/tmp/crontab-conflict-arch
+        cd $ROOT_DIR/$CONF_DIR/cron
+        if [[ &amp;quot;$(diff ~/tmp/crontab-conflict-arch crontab-current-arch)&amp;quot; == &amp;quot;&amp;quot;
+            ]];
+            then # no difference with current backup
+                logger &amp;quot;$LOG_PREFIX: crontab live settings match stored &amp;quot;\
+                    &amp;quot;settings; no restore required&amp;quot;
+                rm ~/tmp/crontab-conflict-arch
+            else # current crontab settings in file do not match live settings
+                crontab $ROOT_DIR/$CONF_DIR/cron/crontab-current-arch
+                logger &amp;quot;$LOG_PREFIX: crontab stored settings conflict with &amp;quot;\
+                    &amp;quot;live settings; stored settings restored. &amp;quot;\
+                    &amp;quot;Previous settings recorded in ~/tmp/crontab-conflict-arch.&amp;quot;
+        fi
+    ;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;c&#34;&gt;C&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#define UNICODE
+#include &amp;lt;windows.h&amp;gt;
+
+int main(int argc, char **argv) {
+  int speed = 0, speed1 = 0, speed2 = 0; // 1-20
+  printf(&amp;quot;Set Mouse Speed by Maverick\n&amp;quot;);
+
+  SystemParametersInfo(SPI_GETMOUSESPEED, 0, &amp;amp;speed, 0);
+  printf(&amp;quot;Current speed: %2d\n&amp;quot;, speed);
+
+  if (argc == 1) return 0;
+  if (argc &amp;gt;= 2) sscanf(argv[1], &amp;quot;%d&amp;quot;, &amp;amp;speed1);
+  if (argc &amp;gt;= 3) sscanf(argv[2], &amp;quot;%d&amp;quot;, &amp;amp;speed2);
+
+  if (argc == 2) // set speed to first value
+    speed = speed1;
+  else if (speed == speed1 || speed == speed2) // alternate
+    speed = speed1 + speed2 - speed;
+  else
+    speed = speed1;  // start with first value
+
+  SystemParametersInfo(SPI_SETMOUSESPEED, 0,  speed, 0);
+  SystemParametersInfo(SPI_GETMOUSESPEED, 0, &amp;amp;speed, 0);
+  printf(&amp;quot;New speed:     %2d\n&amp;quot;, speed);
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;css&#34;&gt;CSS&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;/* CSS Comment */
+#some-id .some-class {
+  float: left;
+  width: 100px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;go&#34;&gt;Go&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
+import &amp;quot;fmt&amp;quot;
+func main() {
+    fmt.Println(&amp;quot;Hello, 世界&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;haskell&#34;&gt;Haskell&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;{-# LANGUAGE OverloadedStrings #-}
+module Main where
+
+--import Prelude hiding (id)
+--import Control.Category (id)
+import Control.Arrow ((&amp;gt;&amp;gt;&amp;gt;), (***), arr)
+import Control.Monad (forM_)
+-- import Data.Monoid (mempty, mconcat)
+-- import System.FilePath
+
+import Hakyll
+
+main :: IO ()
+main = hakyll $ do
+
+    route   &amp;quot;css/*&amp;quot; $ setExtension &amp;quot;css&amp;quot;
+    compile &amp;quot;css/*&amp;quot; $ byExtension (error &amp;quot;Not a (S)CSS file&amp;quot;)
+        [ (&amp;quot;.css&amp;quot;,  compressCssCompiler)
+        , (&amp;quot;.scss&amp;quot;, sass)
+        ]
+
+    route   &amp;quot;js/**&amp;quot; idRoute
+    compile &amp;quot;js/**&amp;quot; copyFileCompiler
+
+    route   &amp;quot;img/*&amp;quot; idRoute
+    compile &amp;quot;img/*&amp;quot; copyFileCompiler
+
+    compile &amp;quot;templates/*&amp;quot; templateCompiler
+
+    forM_ [&amp;quot;test.md&amp;quot;, &amp;quot;index.md&amp;quot;] $ \page -&amp;gt; do
+        route   page $ setExtension &amp;quot;html&amp;quot;
+        compile page $ pageCompiler
+            &amp;gt;&amp;gt;&amp;gt; applyTemplateCompiler &amp;quot;templates/default.html&amp;quot;
+            &amp;gt;&amp;gt;&amp;gt; relativizeUrlsCompiler
+
+sass :: Compiler Resource String
+sass = getResourceString &amp;gt;&amp;gt;&amp;gt; unixFilter &amp;quot;sass&amp;quot; [&amp;quot;-s&amp;quot;, &amp;quot;--scss&amp;quot;]
+                         &amp;gt;&amp;gt;&amp;gt; arr compressCss
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;html&#34;&gt;HTML&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD HTML 4.01 Transitional//EN&amp;quot;&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;A Tiny Page&amp;lt;/title&amp;gt;
+    &amp;lt;!-- Valid HTML Comment --&amp;gt;
+    &amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;
+    &amp;lt;!-- Invalid HTML Comment --&amp;gt;
+      /* Inline CSS Comment */
+      p {
+        font-size: 15pt;
+        color: #000;
+        float: right;
+      }
+    &amp;lt;/style&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body bgcolor=&amp;quot;#FFFFFF&amp;quot; text=&amp;quot;#000000&amp;quot; link=&amp;quot;#0000CC&amp;quot;&amp;gt;
+    &amp;lt;h1&amp;gt;Heading 1&amp;lt;/h1&amp;gt;
+    &amp;lt;h2&amp;gt;Heading 2&amp;lt;/h2&amp;gt;
+    &amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&amp;lt;/p&amp;gt;
+    &amp;lt;!--  Valid HTML Comment --&amp;gt;
+    &amp;lt;script language=&amp;quot;javascript&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+      function changeHeight(h) {
+        var tds = document.getElementsByTagName(&amp;quot;td&amp;quot;);
+        for(var i = 0; i &amp;lt; tds.length; i++) {
+          tds[i].setAttribute(&amp;quot;height&amp;quot;, h + &amp;quot;px&amp;quot;);
+      }}
+    &amp;lt;/script&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;import java.util.Map;
+import java.util.TreeSet;
+
+public class GetEnv {
+  /**
+   * let&#39;s test generics
+   * @param args the command line arguments
+   */
+  public static void main(String[] args) {
+    // get a map of environment variables
+    Map&amp;lt;String, String&amp;gt; env = System.getenv();
+    // build a sorted set out of the keys and iterate
+    for(String k: new TreeSet&amp;lt;String&amp;gt;(env.keySet())) {
+      System.out.printf(&amp;quot;%s = %s\n&amp;quot;, k, env.get(k));
+    }
+  }    
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;javascript&#34;&gt;JavaScript&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// Inline Comment
+var undefined,
+    xui,
+    window     = this,
+    string     = new String(&#39;string&#39;),
+    document   = window.document,
+    simpleExpr = /^#?([\w-]+)$/;
+
+/** 
+ * Block Comment
+ */ 
+function changeHeight (h) {
+  var tds = document.getElementsByTagName(&amp;quot;td&amp;quot;);
+
+  for (var i = 0; i &amp;lt; tds.length; i++) {
+    tds[i].setAttribute(&amp;quot;height&amp;quot;, h + &amp;quot;px&amp;quot;);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;json&#34;&gt;JSON&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+  &amp;quot;employees&amp;quot;: [{
+    &amp;quot;firstName&amp;quot;: &amp;quot;John&amp;quot;, 
+    &amp;quot;lastName&amp;quot;: &amp;quot;Doe&amp;quot;
+  }]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;objective-c&#34;&gt;Objective-C&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-objective-c&#34;&gt;#import &amp;quot;Cocoa1AppDelegate.h&amp;quot;
+
+@implementation Cocoa1AppDelegate
+
+@synthesize window,siteUrl,pageContents;
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    // Insert code here to initialize your application
+    model = [[Cocoa1Model alloc] init];
+}
+
+- (IBAction)getSiteContents:(id)sender {
+    [model setPageUrl:[siteUrl stringValue]];
+    NSString* reply = [model getUrlAsString];
+    NSLog(@&amp;quot;pageSrc: %@&amp;quot;, reply);
+    [pageContents setString:reply];
+    [[[pageContents textStorage] mutableString] appendString:reply];
+}
+
+@end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;perl&#34;&gt;Perl&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-perl&#34;&gt;#!perl -w
+
+# Time-stamp: &amp;lt;2002/04/06, 13:12:13 (EST), maverick, csvformat.pl&amp;gt;
+# Two pass CSV file to table formatter
+
+$delim = $#ARGV &amp;gt;= 1 ? $ARGV[1] : &#39;,&#39;;
+print STDERR &amp;quot;Split pattern: $delim\n&amp;quot;;
+
+# first pass
+open F, &amp;quot;&amp;lt;$ARGV[0]&amp;quot; or die;
+while(&amp;lt;F&amp;gt;)
+{
+  chomp;
+  $i = 0;
+  map { $max[$_-&amp;gt;[1]] = $_-&amp;gt;[0] if $_-&amp;gt;[0] &amp;gt; ($max[$_-&amp;gt;[1]] || 0) }
+    (map {[length $_, $i++]} split($delim));
+}
+close F;
+
+print STDERR &#39;Field width:   &#39;, join(&#39;, &#39;, @max), &amp;quot;\n&amp;quot;;
+print STDERR join(&#39; &#39;, map {&#39;-&#39; x $_} @max);
+
+# second pass
+open F, &amp;quot;&amp;lt;$ARGV[0]&amp;quot; or die;
+while(&amp;lt;F&amp;gt;)
+{
+  chomp;
+  $i = 0;
+  map { printf(&amp;quot;%-$max[$_-&amp;gt;[1]]s &amp;quot;, $_-&amp;gt;[0]) }
+    (map {[$_, $i++]} split($delim));
+  print &amp;quot;\n&amp;quot;;
+}
+close F;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;php&#34;&gt;PHP&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
+
+require_once($GLOBALS[&#39;g_campsiteDir&#39;]. &amp;quot;/$ADMIN_DIR/country/common.php&amp;quot;);
+require_once($GLOBALS[&#39;g_campsiteDir&#39;]. &amp;quot;/classes/SimplePager.php&amp;quot;);
+
+camp_load_translation_strings(&amp;quot;api&amp;quot;);
+
+$f_country_language_selected = camp_session_get(&#39;f_language_selected&#39;, &#39;&#39;);
+$f_country_offset = camp_session_get(&#39;f_country_offset&#39;, 0);
+
+if (empty($f_country_language_selected)) {
+    $f_country_language_selected = null;
+}
+
+$ItemsPerPage = 20;
+$languages = Language::GetLanguages(null, null, null, array(), array(), true);
+$numCountries = Country::GetNumCountries($f_country_language_selected);
+
+$pager = new SimplePager($numCountries, $ItemsPerPage, &amp;quot;index.php?&amp;quot;);
+
+$crumbs = array();
+$crumbs[] = array(getGS(&amp;quot;Configure&amp;quot;), &amp;quot;&amp;quot;);
+$crumbs[] = array(getGS(&amp;quot;Countries&amp;quot;), &amp;quot;&amp;quot;);
+
+echo camp_html_breadcrumbs($crumbs);
+
+?&amp;gt;
+
+&amp;lt;?php if ($g_user-&amp;gt;hasPermission(&amp;quot;ManageCountries&amp;quot;)) { ?&amp;gt;
+&amp;lt;table BORDER=&amp;quot;0&amp;quot; CELLSPACING=&amp;quot;0&amp;quot; CELLPADDING=&amp;quot;1&amp;quot;&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;add.php&amp;quot;&amp;gt;&amp;lt;?php putGS(&amp;quot;Add new&amp;quot;); ?&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;?php } ?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;python&#34;&gt;Python&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Inline Python Comment
+class ExitNotifyThread(Thread):
+    &amp;quot;&amp;quot;&amp;quot;
+    Block-Level Python Comment
+    &amp;quot;&amp;quot;&amp;quot;
+    def run(self):
+        global exitthreads, profiledir
+        self.threadid = thread.get_ident()
+        try:
+            if not profiledir: # normal case
+                Thread.run(self)
+            else:
+                try:
+                    import cProfile as profile
+                except ImportError:
+                    import profile
+                prof = profile.Profile()
+                try:
+                    prof = prof.runctx(&amp;quot;Thread.run(self)&amp;quot;, globals(), locals())
+                except SystemExit:
+                    pass
+                prof.dump_stats( \
+                            profiledir + &amp;quot;/&amp;quot; + str(self.threadid) + &amp;quot;_&amp;quot; + \
+                            self.getName() + &amp;quot;.prof&amp;quot;)
+        except:
+            self.setExitCause(&#39;EXCEPTION&#39;)
+            if sys:
+                self.setExitException(sys.exc_info()[1])
+                tb = traceback.format_exc()
+                self.setExitStackTrace(tb)
+        else:
+            self.setExitCause(&#39;NORMAL&#39;)
+        if not hasattr(self, &#39;exitmessage&#39;):
+            self.setExitMessage(None)
+
+        if exitthreads:
+            exitthreads.put(self, True)
+
+    def setExitCause(self, cause):
+        self.exitcause = cause
+    def getExitCause(self):
+        &amp;quot;&amp;quot;&amp;quot;Returns the cause of the exit, one of:
+        &#39;EXCEPTION&#39; -- the thread aborted because of an exception
+        &#39;NORMAL&#39; -- normal termination.&amp;quot;&amp;quot;&amp;quot;
+        return self.exitcause
+    def setExitException(self, exc):
+        self.exitexception = exc
+    def getExitException(self):
+        &amp;quot;&amp;quot;&amp;quot;If getExitCause() is &#39;EXCEPTION&#39;, holds the value from
+        sys.exc_info()[1] for this exception.&amp;quot;&amp;quot;&amp;quot;
+        return self.exitexception
+    def setExitStackTrace(self, st):
+        self.exitstacktrace = st
+    def getExitStackTrace(self):
+        &amp;quot;&amp;quot;&amp;quot;If getExitCause() is &#39;EXCEPTION&#39;, returns a string representing
+        the stack trace for this exception.&amp;quot;&amp;quot;&amp;quot;
+        return self.exitstacktrace
+    def setExitMessage(self, msg):
+        &amp;quot;&amp;quot;&amp;quot;Sets the exit message to be fetched by a subsequent call to
+        getExitMessage.  This message may be any object or type except
+        None.&amp;quot;&amp;quot;&amp;quot;
+        self.exitmessage = msg
+    def getExitMessage(self):
+        &amp;quot;&amp;quot;&amp;quot;For any exit cause, returns the message previously set by
+        a call to setExitMessage(), or None if there was no such message
+        set.&amp;quot;&amp;quot;&amp;quot;
+        return self.exitmessage
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;ruby&#34;&gt;Ruby&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;desc &amp;quot;Edit a post (defaults to most recent)&amp;quot;
+task :edit_post, :title do |t, args|
+  args.with_defaults(:title =&amp;gt; false)
+  posts = Dir.glob(&amp;quot;#{source_dir}/#{posts_dir}/*.*&amp;quot;)
+  post = (args.title) ? post = posts.keep_if {|post| post =~ /#{args.title}/}.last : posts.last
+  if post
+    puts &amp;quot;Opening #{post} with #{editor}...&amp;quot;
+    system &amp;quot;#{ENV[&#39;EDITOR&#39;]} #{post} &amp;amp;&amp;quot;
+  else
+    puts &amp;quot;No posts were found with \&amp;quot;#{args.title}\&amp;quot; in the title.&amp;quot;
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;scss&#34;&gt;SCSS&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;@import &amp;quot;grids&amp;quot;;
+
+$blue: blue;
+
+a.myAnchor {
+    color: $blue;
+    &amp;amp;:hover {
+        text-decoration: underline;
+    }
+    &amp;amp;:visited {
+        color: purple;
+    }
+}
+
+.error-input {
+  @extend .input;
+  border: 4px solid #e74c3c;
+}
+
+%input-style {
+    font-size: 14px;
+}
+
+input {
+    @extend %input-style;
+    color: black;
+}
+
+@mixin media($queryString){
+    @media #{$queryString} {
+      @content;
+    }
+}
+
+@function getColumnWidth($width, $columns,$margin){
+    @return ($width / $columns) - ($margin * 2);
+}
+
+$settings: (
+    maxWidth: 800px,
+    columns: 12,
+    margin: 15px,
+    breakpoints: (
+        xs: &amp;quot;(max-width : 480px)&amp;quot;,
+        sm: &amp;quot;(max-width : 768px) and (min-width: 481px)&amp;quot;,
+        md: &amp;quot;(max-width : 1024px)  and (min-width: 769px)&amp;quot;,
+        lg: &amp;quot;(min-width : 1025px)&amp;quot;
+    )
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;sql&#34;&gt;SQL&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT column_name, column_name FROM table_name;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;xml&#34;&gt;XML&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;employees&amp;gt;
+    &amp;lt;employee&amp;gt;
+        &amp;lt;firstName&amp;gt;John&amp;lt;/firstName&amp;gt; &amp;lt;lastName&amp;gt;Doe&amp;lt;/lastName&amp;gt;
+    &amp;lt;/employee&amp;gt;
+&amp;lt;/employees&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;Source:
+
+&lt;a href=&#34;https://gist.github.com/cbracco/32036db5425d23de70c3dd9a846517d0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;markdown-pygments-syntax-highlighting-test.md · GitHub&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

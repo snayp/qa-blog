@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>extra | Блог Снайпера</title>
+    <link>https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/extra/</link>
+      <atom:link href="https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/extra/index.xml" rel="self" type="application/rss+xml" />
+    <description>extra</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <image>
+      <url>https://snayp.github.io/img/qa-blog-512x512.png</url>
+      <title>extra</title>
+      <link>https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/extra/</link>
+    </image>
+    
+    <item>
+      <title>More KaTeX</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/more-katex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/more-katex/</guid>
+      <description>&lt;p&gt;The extensions &lt;code&gt;mhchem&lt;/code&gt; and &lt;code&gt;copy-tex&lt;/code&gt; are also included (along the necessary &lt;code&gt;auto-render&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;mhchem&lt;/code&gt; extension allows chemistry notation, like  \(\ce{H2O}\)  or:&lt;/p&gt;
+&lt;p&gt;$$
+\ce{x Na(NH4)HPO4 -&amp;gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}
+$$&lt;/p&gt;
+&lt;p&gt;While &lt;code&gt;copy-tex&lt;/code&gt; allows users to copy the rendered KaTeX and paste it in its native format.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s worth noting, though, that &lt;code&gt;copy-tex&lt;/code&gt; has some 
+&lt;a href=&#34;https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex#known-issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;known issues&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;About how to load the extensions, here&amp;rsquo;s a quick example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;---
+title           : &amp;quot;More KaTeX&amp;quot;
+katex           : true
+katexExtensions : [ mhchem, copy-tex ]
+---
+
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;fences&#34;&gt;Fences&lt;/h2&gt;
+&lt;p&gt;Another tweak here is that KaTeX blocks are accessible via keyboard and long expressions can be scrolled:&lt;/p&gt;
+&lt;p&gt;$$ \text{Damage} = \text{Skill Level} * \lfloor A * (1 - B) * (1 - C) * (1 - D) * (1 - E) * F * G \lfloor \frac{H * 0.7 * \text{INT} * \text{INT} * \text{VIT}}{(\text{INT} + \text{VIT})} \rfloor \rfloor $$&lt;/p&gt;
+&lt;p&gt;Pretty much like code blocks:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;$$
+  \text{Damage} = \text{Skill Level} * \lfloor A * (1 - B) * (1 - C) * (1 - D) * (1 - E) * F * G \lfloor \frac{H * 0.7 * \text{INT} * \text{INT} * \text{VIT}}{(\text{INT} + \text{VIT})} \rfloor \rfloor
+$$
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Read Me</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/readme/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://color-your-world-demo.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Live demo (on Netlify)&lt;/a&gt; | 
+&lt;a href=&#34;https://themes.gohugo.io/theme/hugo-theme-color-your-world/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo (on Hugo Themes)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Color Your World&lt;/strong&gt; is a 
+&lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; theme developed around a single experiment that led me to this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitlab.com/rmaguiar/hugo-theme-color-your-world/-/raw/master/images/color-picker.png&#34; alt=&#34;HTML color picker with 12 presets.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a HTML color picker. Along with some vanilla JS, it allows anyone to change what I&amp;rsquo;ll be calling here&amp;hellip; the &lt;strong&gt;accent color&lt;/strong&gt;, a color used mostly in interactive elements.&lt;/p&gt;
+&lt;p&gt;I liked the result so much that I decided to use it on my main site, but I also want to share it, in case anyone wants to tinker with it.&lt;/p&gt;
+&lt;p&gt;It makes heavy use of 
+&lt;a href=&#34;https://gohugo.io/hugo-pipes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Pipes&lt;/a&gt; and I highly recommend using &lt;code&gt;--minify&lt;/code&gt; when building!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been working on this theme for so long that there are features I don&amp;rsquo;t even remember anymore&amp;hellip; But here are &lt;em&gt;some&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Customizable light/dark mode;&lt;/li&gt;
+&lt;li&gt;Customizable &amp;ldquo;accent color&amp;rdquo; (in an user-level);&lt;/li&gt;
+&lt;li&gt;Keyboard-friendly;&lt;/li&gt;
+&lt;li&gt;Privacy-aware to an extent (no Google Analytics/Fonts, Disqus, etc);&lt;/li&gt;
+&lt;li&gt;Social shortcode including centralized and decentralized platforms;&lt;/li&gt;
+&lt;li&gt;Contact form shortcode (via 
+&lt;a href=&#34;https://formspree.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Formspree&lt;/a&gt;);&lt;/li&gt;
+&lt;li&gt;Open Graph, Twitter Cards and Structured Data (schema.org) meta tags;&lt;/li&gt;
+&lt;li&gt;Responsive images via image processing;&lt;/li&gt;
+&lt;li&gt;Basic search functionality via 
+&lt;a href=&#34;https://github.com/krisk/Fuse&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fuse.js&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;Image lazy loading (native + 
+&lt;a href=&#34;https://github.com/aFarkas/lazysizes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lazysizes&lt;/a&gt;);&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;noscript&lt;/strong&gt; capable to an extent (except for KaTeX and search functionality).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitlab.com/rmaguiar/hugo-theme-color-your-world/-/raw/master/images/screenshot.png&#34; alt=&#34;Theme screenshot in dark mode.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitlab.com/rmaguiar/hugo-theme-color-your-world/-/raw/master/images/screenshot2.png&#34; alt=&#34;Theme screenshot in light mode.&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo Extended&lt;/li&gt;
+&lt;li&gt;Minimum version: 0.77.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;If you have git installed, you can do the following at the CLI within the Hugo directory:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://gitlab.com/rmaguiar/hugo-theme-color-your-world.git themes/color-your-world
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For more information read the 
+&lt;a href=&#34;https://gohugo.io/overview/installing/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo official setup guide&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;customization&#34;&gt;Customization&lt;/h2&gt;
+&lt;h3 id=&#34;lightdark-mode-colors&#34;&gt;Light/dark mode colors&lt;/h3&gt;
+&lt;p&gt;Both color palettes can be found in &lt;code&gt;assets/scss/colors/variables.scss&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;accent-color&#34;&gt;Accent color&lt;/h3&gt;
+&lt;p&gt;By default, there are 2 accent colors plus 10 on the &lt;code&gt;exampleSite&lt;/code&gt;, distributed into pairs.&lt;/p&gt;
+&lt;p&gt;You can change the default mode and accent colors in the config:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params.style]
+
+  # Dark mode as default
+  # User preferences (site/system settings) will still have priority over it
+  # The default is false
+  isDark = true
+
+  # Accent colors for light and dark mode respectively
+  lightAccent  = &amp;quot;#225670&amp;quot; # Default is &amp;quot;#225670&amp;quot;
+  darkAccent   = &amp;quot;#dd587c&amp;quot; # Default is &amp;quot;#dd587c&amp;quot;
+
+  # More colors, pick as many as you want (not really sure if there&#39;s a limit)
+  # Apparently these may not show up on every modern browser (ie.: Firefox)
+  # There&#39;s no default value. Used here just as example
+  presets = [ &amp;quot;#1f676b&amp;quot;, &amp;quot;#f3a530&amp;quot;, &amp;quot;#902b37&amp;quot;, &amp;quot;#1dbc91&amp;quot;, &amp;quot;#754e85&amp;quot;, &amp;quot;#7fc121&amp;quot;, &amp;quot;#a8314a&amp;quot;, &amp;quot;#ff7433&amp;quot;, &amp;quot;#3e6728&amp;quot;, &amp;quot;#c063bd&amp;quot; ]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;syntax-highlighting&#34;&gt;Syntax highlighting&lt;/h3&gt;
+&lt;p&gt;This theme comes with two chroma styles, meant to be used with light and dark mode respectively. These are &lt;strong&gt;Solarized Dark&lt;/strong&gt; for light mode and &lt;strong&gt;Monokai&lt;/strong&gt; for dark mode.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitlab.com/rmaguiar/hugo-theme-color-your-world/-/raw/master/images/syntax-highlight.gif&#34; alt=&#34;Syntax highlighting in both dark and light modes.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s worth noting that I&amp;rsquo;m not using the original stylesheets, but modified stylesheets based on the 
+&lt;a href=&#34;https://github.com/mpchadwick/pygments-high-contrast-stylesheets&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pygments-high-contrast-stylesheets&lt;/a&gt; (aka &amp;ldquo;WCAG AA passing Pygments stylesheets&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;In case you want to change it, it can be found in &lt;code&gt;assets/scss/colors/chroma&lt;/code&gt; as &lt;code&gt;light.scss&lt;/code&gt; and &lt;code&gt;dark.scss&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The lines below are &lt;strong&gt;required&lt;/strong&gt; in your config file to make use of this feature:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[markup]
+  [markup.highlight]
+    noClasses = false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To disable it, you can just remove the &lt;code&gt;noClasses = false&lt;/code&gt; (as its default value is &lt;code&gt;true&lt;/code&gt;) and add the lines below:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  [params.style]
+    useCustomChroma = false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;image-processing&#34;&gt;Image processing&lt;/h2&gt;
+&lt;p&gt;By default, images with width equal or greater than 1280 pixels are processed (resized) into 3 resolutions: 1280x, 960x and 640x (this one with quality at 90, as opposed to the default 75).&lt;/p&gt;
+&lt;p&gt;You can change this behavior via config:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params.imageProc]
+  highRes   = [ &amp;quot;1280x&amp;quot;, &amp;quot;1280w&amp;quot; ]
+  mediumRes = [ &amp;quot;960x&amp;quot;, &amp;quot;960w&amp;quot; ]
+  lowRes    = [ &amp;quot;640x q90&amp;quot;, &amp;quot;640w&amp;quot; ]
+  # entry = [ resize options, condition ]
+  
+  # Images with width equal or greater this value
+  # will be processed into the 3 resolutions above
+  # Valid only for images rendered via markdown
+  # The default value is 1280
+  markupAutoResizeWidth = 1280
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The shortcodes &lt;code&gt;img&lt;/code&gt; and &lt;code&gt;figure&lt;/code&gt; will &lt;strong&gt;always&lt;/strong&gt; process images and cover images will &lt;em&gt;also&lt;/em&gt; process resolutions for Open Graph (1200x630) and Twitter (1280x640).&lt;/p&gt;
+&lt;h2 id=&#34;shortcodes&#34;&gt;Shortcodes&lt;/h2&gt;
+&lt;p&gt;The most complex shortcodes here are the &lt;code&gt;social&lt;/code&gt; and &lt;code&gt;contact-form&lt;/code&gt;. They can be used to inject a list of social platform links and a contact form, respectively.&lt;/p&gt;
+&lt;h3 id=&#34;social&#34;&gt;Social&lt;/h3&gt;
+&lt;p&gt;Here I make a distinction between centralized and decentralized platforms.&lt;/p&gt;
+&lt;p&gt;Since decentralized platforms introduced the concept of &amp;ldquo;instances&amp;rdquo;. It&amp;rsquo;s not uncommon that a single person owns multiple accounts, in multiple instances, in the same platform.&lt;/p&gt;
+&lt;p&gt;This distinction should make the setup easier.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of config file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params.social.centralized]
+  facebook      = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot;, &amp;quot;Zuckerburg&amp;quot; ]
+  flickr        = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  github        = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  gitlab        = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  instagram     = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  keybase       = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  linkedin      = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  medium        = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  reddit        = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  snapchat      = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  soundcloud    = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  stackOverflow = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  strava        = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  telegram      = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  twitch        = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  twitter       = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot;, &amp;quot;@birb&amp;quot; ]
+  vimeo         = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  whatsapp      = [ &amp;quot;&amp;lt;number&amp;gt;&amp;quot; ]
+  xing          = [ &amp;quot;&amp;lt;username&amp;gt;&amp;quot; ]
+  youtube       = [ &amp;quot;&amp;lt;channelid&amp;gt;&amp;quot; ]
+  #entry         = [ &amp;quot;username&amp;quot;, &amp;quot;label (optional)&amp;quot; ]
+  
+  # The &amp;quot;entry&amp;quot; here IS important. It&#39;s used to load the data.
+
+[params.social.decentralized]
+
+  [params.social.decentralized.element]
+    1 = [ &amp;quot;https://app.element.io/#/user/&amp;lt;username&amp;gt;:matrix.org&amp;quot;, &amp;quot;matrix.org&amp;quot; ]
+    #entry = [ &amp;quot;full url&amp;quot;, &amp;quot;label (required)&amp;quot; ]
+    
+  [params.social.decentralized.funkwhale]
+    1 = [ &amp;quot;https://open.audio/&amp;lt;username&amp;gt;&amp;quot;, &amp;quot;open.audio&amp;quot; ]
+    
+  [params.social.decentralized.mastodon]
+    1 = [ &amp;quot;https://mastodon.social/&amp;lt;username&amp;gt;&amp;quot;, &amp;quot;mastodon.social&amp;quot; ]
+    2 = [ &amp;quot;https://mastodon.too/&amp;lt;username&amp;gt;&amp;quot;, &amp;quot;mastodon.too&amp;quot; ]
+    3 = [ &amp;quot;https://yet.another.one/&amp;lt;username&amp;gt;&amp;quot;, &amp;quot;yet.another.one&amp;quot; ]
+    
+  [params.social.decentralized.matrix]
+    1 = [ &amp;quot;https://matrix.to/#/&amp;lt;username&amp;gt;:matrix.org&amp;quot;, &amp;quot;matrix.org&amp;quot; ]
+    2 = [ &amp;quot;https://matrix.to/#/&amp;lt;username&amp;gt;:other.org&amp;quot;, &amp;quot;other.org&amp;quot; ]
+    
+  [params.social.decentralized.peertube]
+    1 = [ &amp;quot;https://peertube.something/accounts/&amp;lt;username&amp;gt;&amp;quot;, &amp;quot;peertube.something&amp;quot; ]
+    
+  [params.social.decentralized.pixelfed]
+    1 = [ &amp;quot;https://pixelfed.social/&amp;lt;username&amp;gt;&amp;quot;, &amp;quot;pixelfed.social&amp;quot; ]
+    
+  # The &amp;quot;entry&amp;quot; here ISN&#39;T important. It&#39;s used for nothing.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This information will also be used to generate social meta tags (ie.: rel=&amp;ldquo;me&amp;rdquo; and Schema.org).&lt;/p&gt;
+&lt;h3 id=&#34;contact-form&#34;&gt;Contact form&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;# Contact form shortcode
+[params.contact]
+
+  # formspree.io Form ID
+  formspreeFormId = &amp;quot;example&amp;quot;
+  
+  # Autocomplete [on/off] and min character length for message
+  autoComplete      = false # Default is false
+  messageMinLength  = 140   # Default is 140
+  
+  # Subject
+  # You can set a single value below (and it will cease to be a dropdown),
+  # BUT KEEP IT AS AN ARRAY
+  # It can also be disabled entirely (and it will turn into a text field)
+  subject = [ &#39;Just saying &amp;quot;hi&amp;quot;&#39;, &amp;quot;I know what you did last winter&amp;quot;, &amp;quot;... Is that a sloth?&amp;quot;, &amp;quot;お前はもう死んでいる。&amp;quot; ]
+
+  # Text placeholders. As usual, comment the lines if you don&#39;t want use them
+  # The &amp;quot;subject&amp;quot; below will only be used if the &amp;quot;subject&amp;quot; above doesn&#39;t exist (ie.: commented/deleted)
+  [params.contact.placeholder]
+    name    = &amp;quot;Jane Doe&amp;quot;
+    email   = &amp;quot;janedoe@example.com&amp;quot;
+    subject = &#39;Just saying &amp;quot;hi&amp;quot;&#39;
+    message = &amp;quot;Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;miscellaneous&#34;&gt;Miscellaneous&lt;/h2&gt;
+&lt;h3 id=&#34;rich-content&#34;&gt;Rich content&lt;/h3&gt;
+&lt;p&gt;Minimal effort was put here, since I don&amp;rsquo;t use this feature. I recommend that you create your own &lt;code&gt;assets/scss/rich-content.scss&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;404&#34;&gt;404&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;really&lt;/strong&gt; basic 404 page can be generated via config file by using:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params.notFound]
+  title         = &amp;quot;Page not found&amp;quot;
+  description   = &amp;quot;This page was not found.&amp;quot;
+  paragraph     = &amp;quot;Nothing to see here, buddy.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;custom-front-matter-params&#34;&gt;Custom front matter params&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mainTitle&lt;/code&gt; (string): Can be used to replace the &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; meta tag, if you wish it to be different from the &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; (which will still use the &lt;code&gt;title&lt;/code&gt; param);&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sitemapExclude&lt;/code&gt; (true|false): Can be used to exclude a page/section from the sitemap;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;noindex&lt;/code&gt; (true|false): Similar to the above. Can be used to exclude a page/section from being indexed (by bots or your own site). It will change the meta tag &lt;code&gt;robots&lt;/code&gt; to &lt;code&gt;noindex&lt;/code&gt; and the page(s) will not be added to the site&amp;rsquo;s search index.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;custom-partials&#34;&gt;Custom partials&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The site title can be replaced by creating a file named &lt;code&gt;layouts/partials/custom/site-title.html&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;Custom favicons can be used by creating a file named &lt;code&gt;layouts/partials/custom/head-append.html&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;Custom CSS can be imported into the main CSS file by creating a file named &lt;code&gt;static/css/custom.css&lt;/code&gt; or &lt;code&gt;assets/scss/custom.scss&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;copyright&lt;/code&gt; param can be replaced by creating a file named &lt;code&gt;layouts/partials/custom/copyright.html&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;more-params&#34;&gt;More params&lt;/h3&gt;
+&lt;p&gt;More possible params for your config file (or front matter):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  
+  # Site description
+  description = &amp;quot;John Doe&#39;s personal website&amp;quot;
+  
+  # Author
+  author      = &amp;quot;John Doe&amp;quot;
+  authorDesc  = &amp;quot;Some indescribable horror.&amp;quot;
+  
+  # Site cover, for Open Graph, Twitter Cards and Schema.org
+  # It will be used if the current page doesn&#39;t have an image cover
+  # File will be picked from the &amp;quot;assets&amp;quot; directory
+  # Comment the lines if you don&#39;t want to use it
+  cover     = &amp;quot;img/cover.jpg&amp;quot;
+  coverAlt  = &amp;quot;A placeholder that doesn&#39;t deserve to be described.&amp;quot;
+  
+  # Shows a message in the footer about JavaScript being disabled
+  # The default is false
+  hasNoscriptNotice = true
+  
+  # Default path for images in posts
+  # ie.: &amp;quot;content/some-post/img&amp;quot;
+  # Can also be set PER PAGE
+  # It can be used to reduce repetition
+  # There&#39;s no default value
+  imgPath = &amp;quot;img&amp;quot;
+  
+  # Default classes for markup image 
+  # Modifies the default behavior of images placed via markdown
+  # Can also be set PER PAGE via front matter
+  # Available classes are: border and borderless
+  # There&#39;s no default value
+  markupImgClass = &amp;quot;borderless&amp;quot;
+  
+  # This will append a separator (of your choice) along the site title to your &amp;lt;title&amp;gt;
+  # ie.: | ❚ - – — • ⚫
+  # You can disabled it PER PAGE by using &amp;quot;disableTitleSeparator&amp;quot; at front
+  # matter or disable it entirely by commenting the line below
+  titleSeparator = &amp;quot;|&amp;quot;
+  
+  [params.search]
+  
+    # Enable search form (at the post list)
+    # The default value is false
+    enable = true
+  
+    # Limit search results
+    # The default value is 30
+    maxResults = 15
+    
+    # Limit seach field input and pattern matching
+    minLength = 2   # Default is 3
+    maxLength = 42  # Default is 32
+    
+    # Optional placeholder for search field
+    placeholder = &amp;quot;ie.: lorem ipsum&amp;quot;
+    
+    # Stop word filter list
+    # Can also be set PER PAGE via front matter
+    # There&#39;s no default value
+    stopWords = [ &amp;quot;a&amp;quot;, &amp;quot;an&amp;quot;, &amp;quot;and&amp;quot;, &amp;quot;in&amp;quot;, &amp;quot;the&amp;quot;, &amp;quot;to&amp;quot;, &amp;quot;was&amp;quot;, &amp;quot;were&amp;quot;, &amp;quot;with&amp;quot; ]
+
+  [params.style]
+  
+    # Disable the use of system settings (prefers-color-scheme)
+    # Can be used as a workaround for Chrome on Linux
+    # (Issue 998903: Dark Gtk theme does not affect prefers-color-scheme media query)
+    # The default is false
+    ignoreSystemSettings = true
+  
+    # Use an icon or text for footnote return links
+    # The default is false
+    hasIconAsFootnoteReturnLink = true
+    
+    # For the social shortcode
+    # Use flexbox (with flex-grow) or grid (equal width)
+    # The default is false
+    socialIsFlex = true
+    
+    # Keep anchor links hidden until it&#39;s focused/hovered
+    # The default is false
+    hideAnchors = true
+
+    # CSS animation transition when changing colors
+    # The default is &amp;quot;.5s ease&amp;quot;
+    changeTransition = &amp;quot;.3s ease&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://fontawesome.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Font Awesome&lt;/a&gt; and 
+&lt;a href=&#34;https://forkaweso.me/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fork Awesome&lt;/a&gt; for the icons;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gist.github.com/nickpunt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@nickpunt&lt;/a&gt; and 
+&lt;a href=&#34;https://gist.github.com/regpaq&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@regpaq&lt;/a&gt; for the 
+&lt;a href=&#34;https://gist.github.com/regpaq/04c67e8aceecbf0fd819945835412d1f&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dark/light mode switcher&lt;/a&gt; idea;&lt;/li&gt;
+&lt;li&gt;Glenn McComb and 
+&lt;a href=&#34;https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;his article&lt;/a&gt; about custom pagination with Hugo;&lt;/li&gt;
+&lt;li&gt;JeffProd and 
+&lt;a href=&#34;https://en.jeffprod.com/blog/2018/build-your-own-hugo-website-search-engine/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;his article&lt;/a&gt; about building a custom search engine for Hugo;&lt;/li&gt;
+&lt;li&gt;Many people 
+&lt;a href=&#34;https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;on this forked gist&lt;/a&gt; for their takes on Fuse.js + Hugo;&lt;/li&gt;
+&lt;li&gt;Philip Walton and 
+&lt;a href=&#34;https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;his sticky footer solution&lt;/a&gt; with Flexbox;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/aFarkas/lazysizes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lazysizes&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/krisk/Fuse&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fuse.js&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://katex.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KaTeX&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;Hugo and 
+&lt;a href=&#34;https://discourse.gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;its community&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sponsoring&#34;&gt;Sponsoring&lt;/h2&gt;
+&lt;p&gt;If this repo was useful or helpful to you in any way, please consider buying me a coffee:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.buymeacoffee.com/rmaguiar&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;img src=&#34;https://cdn.buymeacoffee.com/buttons/lato-orange.png&#34; alt=&#34;Buy Me A Coffee&#34; style=&#34;height: 51px !important;width: 217px !important;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlighting Test</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/</guid>
+      <description>&lt;h2 id=&#34;bash&#34;&gt;Bash&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+
+cd $ROOT_DIR
+DOT_FILES=&amp;quot;lastpass weechat ssh Xauthority&amp;quot;
+
+for dotfile in $DOT_FILES; do conform_link &amp;quot;$DATA_DIR/$dotfile&amp;quot; &amp;quot;.$dotfile&amp;quot;; done
+
+# TODO: refactor with suffix variables (or common cron values)
+
+case &amp;quot;$PLATFORM&amp;quot; in
+    linux)
+        #conform_link &amp;quot;$CONF_DIR/shell/zshenv&amp;quot; &amp;quot;.zshenv&amp;quot;
+        crontab -l &amp;gt; $ROOT_DIR/tmp/crontab-conflict-arch
+        cd $ROOT_DIR/$CONF_DIR/cron
+        if [[ &amp;quot;$(diff ~/tmp/crontab-conflict-arch crontab-current-arch)&amp;quot; == &amp;quot;&amp;quot;
+            ]];
+            then # no difference with current backup
+                logger &amp;quot;$LOG_PREFIX: crontab live settings match stored &amp;quot;\
+                    &amp;quot;settings; no restore required&amp;quot;
+                rm ~/tmp/crontab-conflict-arch
+            else # current crontab settings in file do not match live settings
+                crontab $ROOT_DIR/$CONF_DIR/cron/crontab-current-arch
+                logger &amp;quot;$LOG_PREFIX: crontab stored settings conflict with &amp;quot;\
+                    &amp;quot;live settings; stored settings restored. &amp;quot;\
+                    &amp;quot;Previous settings recorded in ~/tmp/crontab-conflict-arch.&amp;quot;
+        fi
+    ;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;c&#34;&gt;C&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#define UNICODE
+#include &amp;lt;windows.h&amp;gt;
+
+int main(int argc, char **argv) {
+  int speed = 0, speed1 = 0, speed2 = 0; // 1-20
+  printf(&amp;quot;Set Mouse Speed by Maverick\n&amp;quot;);
+
+  SystemParametersInfo(SPI_GETMOUSESPEED, 0, &amp;amp;speed, 0);
+  printf(&amp;quot;Current speed: %2d\n&amp;quot;, speed);
+
+  if (argc == 1) return 0;
+  if (argc &amp;gt;= 2) sscanf(argv[1], &amp;quot;%d&amp;quot;, &amp;amp;speed1);
+  if (argc &amp;gt;= 3) sscanf(argv[2], &amp;quot;%d&amp;quot;, &amp;amp;speed2);
+
+  if (argc == 2) // set speed to first value
+    speed = speed1;
+  else if (speed == speed1 || speed == speed2) // alternate
+    speed = speed1 + speed2 - speed;
+  else
+    speed = speed1;  // start with first value
+
+  SystemParametersInfo(SPI_SETMOUSESPEED, 0,  speed, 0);
+  SystemParametersInfo(SPI_GETMOUSESPEED, 0, &amp;amp;speed, 0);
+  printf(&amp;quot;New speed:     %2d\n&amp;quot;, speed);
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;css&#34;&gt;CSS&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;/* CSS Comment */
+#some-id .some-class {
+  float: left;
+  width: 100px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;go&#34;&gt;Go&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
+import &amp;quot;fmt&amp;quot;
+func main() {
+    fmt.Println(&amp;quot;Hello, 世界&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;haskell&#34;&gt;Haskell&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;{-# LANGUAGE OverloadedStrings #-}
+module Main where
+
+--import Prelude hiding (id)
+--import Control.Category (id)
+import Control.Arrow ((&amp;gt;&amp;gt;&amp;gt;), (***), arr)
+import Control.Monad (forM_)
+-- import Data.Monoid (mempty, mconcat)
+-- import System.FilePath
+
+import Hakyll
+
+main :: IO ()
+main = hakyll $ do
+
+    route   &amp;quot;css/*&amp;quot; $ setExtension &amp;quot;css&amp;quot;
+    compile &amp;quot;css/*&amp;quot; $ byExtension (error &amp;quot;Not a (S)CSS file&amp;quot;)
+        [ (&amp;quot;.css&amp;quot;,  compressCssCompiler)
+        , (&amp;quot;.scss&amp;quot;, sass)
+        ]
+
+    route   &amp;quot;js/**&amp;quot; idRoute
+    compile &amp;quot;js/**&amp;quot; copyFileCompiler
+
+    route   &amp;quot;img/*&amp;quot; idRoute
+    compile &amp;quot;img/*&amp;quot; copyFileCompiler
+
+    compile &amp;quot;templates/*&amp;quot; templateCompiler
+
+    forM_ [&amp;quot;test.md&amp;quot;, &amp;quot;index.md&amp;quot;] $ \page -&amp;gt; do
+        route   page $ setExtension &amp;quot;html&amp;quot;
+        compile page $ pageCompiler
+            &amp;gt;&amp;gt;&amp;gt; applyTemplateCompiler &amp;quot;templates/default.html&amp;quot;
+            &amp;gt;&amp;gt;&amp;gt; relativizeUrlsCompiler
+
+sass :: Compiler Resource String
+sass = getResourceString &amp;gt;&amp;gt;&amp;gt; unixFilter &amp;quot;sass&amp;quot; [&amp;quot;-s&amp;quot;, &amp;quot;--scss&amp;quot;]
+                         &amp;gt;&amp;gt;&amp;gt; arr compressCss
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;html&#34;&gt;HTML&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD HTML 4.01 Transitional//EN&amp;quot;&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;A Tiny Page&amp;lt;/title&amp;gt;
+    &amp;lt;!-- Valid HTML Comment --&amp;gt;
+    &amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;
+    &amp;lt;!-- Invalid HTML Comment --&amp;gt;
+      /* Inline CSS Comment */
+      p {
+        font-size: 15pt;
+        color: #000;
+        float: right;
+      }
+    &amp;lt;/style&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body bgcolor=&amp;quot;#FFFFFF&amp;quot; text=&amp;quot;#000000&amp;quot; link=&amp;quot;#0000CC&amp;quot;&amp;gt;
+    &amp;lt;h1&amp;gt;Heading 1&amp;lt;/h1&amp;gt;
+    &amp;lt;h2&amp;gt;Heading 2&amp;lt;/h2&amp;gt;
+    &amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&amp;lt;/p&amp;gt;
+    &amp;lt;!--  Valid HTML Comment --&amp;gt;
+    &amp;lt;script language=&amp;quot;javascript&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+      function changeHeight(h) {
+        var tds = document.getElementsByTagName(&amp;quot;td&amp;quot;);
+        for(var i = 0; i &amp;lt; tds.length; i++) {
+          tds[i].setAttribute(&amp;quot;height&amp;quot;, h + &amp;quot;px&amp;quot;);
+      }}
+    &amp;lt;/script&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;import java.util.Map;
+import java.util.TreeSet;
+
+public class GetEnv {
+  /**
+   * let&#39;s test generics
+   * @param args the command line arguments
+   */
+  public static void main(String[] args) {
+    // get a map of environment variables
+    Map&amp;lt;String, String&amp;gt; env = System.getenv();
+    // build a sorted set out of the keys and iterate
+    for(String k: new TreeSet&amp;lt;String&amp;gt;(env.keySet())) {
+      System.out.printf(&amp;quot;%s = %s\n&amp;quot;, k, env.get(k));
+    }
+  }    
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;javascript&#34;&gt;JavaScript&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// Inline Comment
+var undefined,
+    xui,
+    window     = this,
+    string     = new String(&#39;string&#39;),
+    document   = window.document,
+    simpleExpr = /^#?([\w-]+)$/;
+
+/** 
+ * Block Comment
+ */ 
+function changeHeight (h) {
+  var tds = document.getElementsByTagName(&amp;quot;td&amp;quot;);
+
+  for (var i = 0; i &amp;lt; tds.length; i++) {
+    tds[i].setAttribute(&amp;quot;height&amp;quot;, h + &amp;quot;px&amp;quot;);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;json&#34;&gt;JSON&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+  &amp;quot;employees&amp;quot;: [{
+    &amp;quot;firstName&amp;quot;: &amp;quot;John&amp;quot;, 
+    &amp;quot;lastName&amp;quot;: &amp;quot;Doe&amp;quot;
+  }]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;objective-c&#34;&gt;Objective-C&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-objective-c&#34;&gt;#import &amp;quot;Cocoa1AppDelegate.h&amp;quot;
+
+@implementation Cocoa1AppDelegate
+
+@synthesize window,siteUrl,pageContents;
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    // Insert code here to initialize your application
+    model = [[Cocoa1Model alloc] init];
+}
+
+- (IBAction)getSiteContents:(id)sender {
+    [model setPageUrl:[siteUrl stringValue]];
+    NSString* reply = [model getUrlAsString];
+    NSLog(@&amp;quot;pageSrc: %@&amp;quot;, reply);
+    [pageContents setString:reply];
+    [[[pageContents textStorage] mutableString] appendString:reply];
+}
+
+@end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;perl&#34;&gt;Perl&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-perl&#34;&gt;#!perl -w
+
+# Time-stamp: &amp;lt;2002/04/06, 13:12:13 (EST), maverick, csvformat.pl&amp;gt;
+# Two pass CSV file to table formatter
+
+$delim = $#ARGV &amp;gt;= 1 ? $ARGV[1] : &#39;,&#39;;
+print STDERR &amp;quot;Split pattern: $delim\n&amp;quot;;
+
+# first pass
+open F, &amp;quot;&amp;lt;$ARGV[0]&amp;quot; or die;
+while(&amp;lt;F&amp;gt;)
+{
+  chomp;
+  $i = 0;
+  map { $max[$_-&amp;gt;[1]] = $_-&amp;gt;[0] if $_-&amp;gt;[0] &amp;gt; ($max[$_-&amp;gt;[1]] || 0) }
+    (map {[length $_, $i++]} split($delim));
+}
+close F;
+
+print STDERR &#39;Field width:   &#39;, join(&#39;, &#39;, @max), &amp;quot;\n&amp;quot;;
+print STDERR join(&#39; &#39;, map {&#39;-&#39; x $_} @max);
+
+# second pass
+open F, &amp;quot;&amp;lt;$ARGV[0]&amp;quot; or die;
+while(&amp;lt;F&amp;gt;)
+{
+  chomp;
+  $i = 0;
+  map { printf(&amp;quot;%-$max[$_-&amp;gt;[1]]s &amp;quot;, $_-&amp;gt;[0]) }
+    (map {[$_, $i++]} split($delim));
+  print &amp;quot;\n&amp;quot;;
+}
+close F;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;php&#34;&gt;PHP&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
+
+require_once($GLOBALS[&#39;g_campsiteDir&#39;]. &amp;quot;/$ADMIN_DIR/country/common.php&amp;quot;);
+require_once($GLOBALS[&#39;g_campsiteDir&#39;]. &amp;quot;/classes/SimplePager.php&amp;quot;);
+
+camp_load_translation_strings(&amp;quot;api&amp;quot;);
+
+$f_country_language_selected = camp_session_get(&#39;f_language_selected&#39;, &#39;&#39;);
+$f_country_offset = camp_session_get(&#39;f_country_offset&#39;, 0);
+
+if (empty($f_country_language_selected)) {
+    $f_country_language_selected = null;
+}
+
+$ItemsPerPage = 20;
+$languages = Language::GetLanguages(null, null, null, array(), array(), true);
+$numCountries = Country::GetNumCountries($f_country_language_selected);
+
+$pager = new SimplePager($numCountries, $ItemsPerPage, &amp;quot;index.php?&amp;quot;);
+
+$crumbs = array();
+$crumbs[] = array(getGS(&amp;quot;Configure&amp;quot;), &amp;quot;&amp;quot;);
+$crumbs[] = array(getGS(&amp;quot;Countries&amp;quot;), &amp;quot;&amp;quot;);
+
+echo camp_html_breadcrumbs($crumbs);
+
+?&amp;gt;
+
+&amp;lt;?php if ($g_user-&amp;gt;hasPermission(&amp;quot;ManageCountries&amp;quot;)) { ?&amp;gt;
+&amp;lt;table BORDER=&amp;quot;0&amp;quot; CELLSPACING=&amp;quot;0&amp;quot; CELLPADDING=&amp;quot;1&amp;quot;&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;add.php&amp;quot;&amp;gt;&amp;lt;?php putGS(&amp;quot;Add new&amp;quot;); ?&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;?php } ?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;python&#34;&gt;Python&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Inline Python Comment
+class ExitNotifyThread(Thread):
+    &amp;quot;&amp;quot;&amp;quot;
+    Block-Level Python Comment
+    &amp;quot;&amp;quot;&amp;quot;
+    def run(self):
+        global exitthreads, profiledir
+        self.threadid = thread.get_ident()
+        try:
+            if not profiledir: # normal case
+                Thread.run(self)
+            else:
+                try:
+                    import cProfile as profile
+                except ImportError:
+                    import profile
+                prof = profile.Profile()
+                try:
+                    prof = prof.runctx(&amp;quot;Thread.run(self)&amp;quot;, globals(), locals())
+                except SystemExit:
+                    pass
+                prof.dump_stats( \
+                            profiledir + &amp;quot;/&amp;quot; + str(self.threadid) + &amp;quot;_&amp;quot; + \
+                            self.getName() + &amp;quot;.prof&amp;quot;)
+        except:
+            self.setExitCause(&#39;EXCEPTION&#39;)
+            if sys:
+                self.setExitException(sys.exc_info()[1])
+                tb = traceback.format_exc()
+                self.setExitStackTrace(tb)
+        else:
+            self.setExitCause(&#39;NORMAL&#39;)
+        if not hasattr(self, &#39;exitmessage&#39;):
+            self.setExitMessage(None)
+
+        if exitthreads:
+            exitthreads.put(self, True)
+
+    def setExitCause(self, cause):
+        self.exitcause = cause
+    def getExitCause(self):
+        &amp;quot;&amp;quot;&amp;quot;Returns the cause of the exit, one of:
+        &#39;EXCEPTION&#39; -- the thread aborted because of an exception
+        &#39;NORMAL&#39; -- normal termination.&amp;quot;&amp;quot;&amp;quot;
+        return self.exitcause
+    def setExitException(self, exc):
+        self.exitexception = exc
+    def getExitException(self):
+        &amp;quot;&amp;quot;&amp;quot;If getExitCause() is &#39;EXCEPTION&#39;, holds the value from
+        sys.exc_info()[1] for this exception.&amp;quot;&amp;quot;&amp;quot;
+        return self.exitexception
+    def setExitStackTrace(self, st):
+        self.exitstacktrace = st
+    def getExitStackTrace(self):
+        &amp;quot;&amp;quot;&amp;quot;If getExitCause() is &#39;EXCEPTION&#39;, returns a string representing
+        the stack trace for this exception.&amp;quot;&amp;quot;&amp;quot;
+        return self.exitstacktrace
+    def setExitMessage(self, msg):
+        &amp;quot;&amp;quot;&amp;quot;Sets the exit message to be fetched by a subsequent call to
+        getExitMessage.  This message may be any object or type except
+        None.&amp;quot;&amp;quot;&amp;quot;
+        self.exitmessage = msg
+    def getExitMessage(self):
+        &amp;quot;&amp;quot;&amp;quot;For any exit cause, returns the message previously set by
+        a call to setExitMessage(), or None if there was no such message
+        set.&amp;quot;&amp;quot;&amp;quot;
+        return self.exitmessage
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;ruby&#34;&gt;Ruby&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;desc &amp;quot;Edit a post (defaults to most recent)&amp;quot;
+task :edit_post, :title do |t, args|
+  args.with_defaults(:title =&amp;gt; false)
+  posts = Dir.glob(&amp;quot;#{source_dir}/#{posts_dir}/*.*&amp;quot;)
+  post = (args.title) ? post = posts.keep_if {|post| post =~ /#{args.title}/}.last : posts.last
+  if post
+    puts &amp;quot;Opening #{post} with #{editor}...&amp;quot;
+    system &amp;quot;#{ENV[&#39;EDITOR&#39;]} #{post} &amp;amp;&amp;quot;
+  else
+    puts &amp;quot;No posts were found with \&amp;quot;#{args.title}\&amp;quot; in the title.&amp;quot;
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;scss&#34;&gt;SCSS&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;@import &amp;quot;grids&amp;quot;;
+
+$blue: blue;
+
+a.myAnchor {
+    color: $blue;
+    &amp;amp;:hover {
+        text-decoration: underline;
+    }
+    &amp;amp;:visited {
+        color: purple;
+    }
+}
+
+.error-input {
+  @extend .input;
+  border: 4px solid #e74c3c;
+}
+
+%input-style {
+    font-size: 14px;
+}
+
+input {
+    @extend %input-style;
+    color: black;
+}
+
+@mixin media($queryString){
+    @media #{$queryString} {
+      @content;
+    }
+}
+
+@function getColumnWidth($width, $columns,$margin){
+    @return ($width / $columns) - ($margin * 2);
+}
+
+$settings: (
+    maxWidth: 800px,
+    columns: 12,
+    margin: 15px,
+    breakpoints: (
+        xs: &amp;quot;(max-width : 480px)&amp;quot;,
+        sm: &amp;quot;(max-width : 768px) and (min-width: 481px)&amp;quot;,
+        md: &amp;quot;(max-width : 1024px)  and (min-width: 769px)&amp;quot;,
+        lg: &amp;quot;(min-width : 1025px)&amp;quot;
+    )
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;sql&#34;&gt;SQL&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT column_name, column_name FROM table_name;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;xml&#34;&gt;XML&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;employees&amp;gt;
+    &amp;lt;employee&amp;gt;
+        &amp;lt;firstName&amp;gt;John&amp;lt;/firstName&amp;gt; &amp;lt;lastName&amp;gt;Doe&amp;lt;/lastName&amp;gt;
+    &amp;lt;/employee&amp;gt;
+&amp;lt;/employees&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;Source:
+
+&lt;a href=&#34;https://gist.github.com/cbracco/32036db5425d23de70c3dd9a846517d0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;markdown-pygments-syntax-highlighting-test.md · GitHub&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

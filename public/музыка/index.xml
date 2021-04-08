@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>аудио находки | Блог Снайпера</title>
+    <link>https://snayp.github.io/%D0%BC%D1%83%D0%B7%D1%8B%D0%BA%D0%B0/</link>
+      <atom:link href="https://snayp.github.io/%D0%BC%D1%83%D0%B7%D1%8B%D0%BA%D0%B0/index.xml" rel="self" type="application/rss+xml" />
+    <description>аудио находки</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Sun, 31 Jan 2021 00:34:23 +0300</lastBuildDate>
+    <image>
+      <url>https://snayp.github.io/img/qa-blog-512x512.png</url>
+      <title>аудио находки</title>
+      <link>https://snayp.github.io/%D0%BC%D1%83%D0%B7%D1%8B%D0%BA%D0%B0/</link>
+    </image>
+    
+    <item>
+      <title>Состоялся дебютный релиз Kinestetic</title>
+      <link>https://snayp.github.io/%D1%80%D0%B5%D0%BB%D0%B8%D0%B7/31-12-2021/somatik-sound-system/kinestetic-corridor/</link>
+      <pubDate>Sun, 31 Jan 2021 00:34:23 +0300</pubDate>
+      <guid>https://snayp.github.io/%D1%80%D0%B5%D0%BB%D0%B8%D0%B7/31-12-2021/somatik-sound-system/kinestetic-corridor/</guid>
+      <description>&lt;h2 id=&#34;релиз-sss&#34;&gt;Релиз SSS&lt;/h2&gt;
+&lt;p&gt;Дюбютная работа Kinestetic вышла на лейбле SSS&lt;/p&gt;
+&lt;h3 id=&#34;kinestetic---_corridor_&#34;&gt;&lt;strong&gt;Kinestetic&lt;/strong&gt; - &lt;em&gt;Corridor&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;Как это часто у нас бывает, артист может  играть десятки крышесносных лайвов, постоянно их обновлять и дорабатывать, но при этом не издавать почти совсем ничего. Раньше мы комплексовали на эту тему, но потом пришло понимание – мы процесс, а не продукт. И тем ценнее момент живых выступлений. То что происходит здесь и сейчас.&lt;/p&gt;
+&lt;p&gt;Кинестетик дебютировал в SSS ровно три года назад и вот наконец мы дождались сольный релиз.Кстати, на подходе ещё один, с чем нас всех и поздравляем.&lt;/p&gt;
+
+  &lt;div id=&#34;aplayer&#34; class=&#34;aplayer&#34;&gt;&lt;/div&gt;
+
+
+  
+  
+  
+  
+&lt;script&gt;
+  const ap = new APlayer({
+    container: document.getElementById(&#39;aplayer&#39;),
+    fixed: false,
+    autoplay: false,
+    theme: &#39;#FADFA3&#39;,
+    loop: &#39;all&#39;,
+    order: &#39;random&#39;,
+    preload: &#39;auto&#39;,
+    volume: 0.7,
+    listFolded: false,
+    audio:[
+    {
+        name: &#39;kinestetic&#39;,
+        artist: &#39;artists&#39;,
+        url: &#39;DieAntwoord.mp3&#39;,
+        cover: &#39;featured.jpg&#39;
+    }],
+});
+
+
+&lt;/script&gt;
+  
+&lt;p&gt;&lt;em&gt;Закрываем глаза. Делаем громко.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Om WiFi 🙏🏻&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Арт на обложке:&lt;/strong&gt;  
+&lt;a href=&#34;https://vk.com/id4350628&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;W0W1988&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Группалагерь: &lt;a href=&#34;https://vk.cc/bXlc2H&#34;&gt;https://vk.cc/bXlc2H&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Яндекс.Музыка: &lt;a href=&#34;https://vk.cc/bXlc37&#34;&gt;https://vk.cc/bXlc37&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Спотифай: &lt;a href=&#34;https://vk.cc/bXlc3V&#34;&gt;https://vk.cc/bXlc3V&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ТыТруба: &lt;a href=&#34;https://vk.cc/bXlc4E&#34;&gt;https://vk.cc/bXlc4E&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ЯблокоМузыка: &lt;a href=&#34;https://vk.cc/bXlc56&#34;&gt;https://vk.cc/bXlc56&lt;/a&gt;&lt;/p&gt;
+&lt;div id=&#34;vk_playlist_-2000119969_10119969&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+  (function() {
+    VK.Widgets.Playlist(&#34;vk_playlist_-2000119969_10119969&#34;, &#34;-2000119969&#34;, &#34;10119969&#34;,&#39;308fc80716cbe20bfe&#39;);
+  }());
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ДДТ и  еще более 20 исполнителей сыграли требьют Сектор Газа</title>
+      <link>https://snayp.github.io/%D1%80%D0%B5%D0%BB%D0%B8%D0%B7/31-12-2021/%D1%82%D1%80%D0%B8%D0%B1%D1%8C%D1%8E%D1%82-%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%B3%D0%B0%D0%B7%D0%B0/</link>
+      <pubDate>Sat, 26 Dec 2020 13:43:10 +0000</pubDate>
+      <guid>https://snayp.github.io/%D1%80%D0%B5%D0%BB%D0%B8%D0%B7/31-12-2021/%D1%82%D1%80%D0%B8%D0%B1%D1%8C%D1%8E%D1%82-%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%B3%D0%B0%D0%B7%D0%B0/</guid>
+      <description>&lt;h2 id=&#34;юрий_хой&#34;&gt;Хой Жив&lt;/h2&gt;
+&lt;p&gt;Невереятно дерзкий саунд и лирика постсоветсткого мистическового колхоза, остаются ярким примером &amp;ldquo;русской народной музыки&amp;rdquo;. &lt;em&gt;Речетатив под панковский гитарный риф и скреч пластинки, читали в Воронеже, за 5 лет до до того, как это стало мейнстримом в исполнении Limp Bizkit в Лондоне.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/hykr5-yPKq8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BE9CXWV1alg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;В 1997 году Артемий Троицкий в беседе с Хоем и Надеждой Бабкиной называет секторовское творчество «экстремальной неформальной народной музыкой», и Хой соглашается с таким определением своих трудов.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Юрий Юлианыч, сделал саунд, перепев Юрия Николаевича.&lt;/p&gt;
+&lt;p&gt;Модно и актуально звучит требьют Сектор Газа в 2020 году, который записало более 20 русских артистов.&lt;/p&gt;
+&lt;iframe frameborder=&#34;0&#34; style=&#34;border:none;width:100%;height:180px;&#34; width=&#34;100%&#34; height=&#34;180&#34; src=&#34;https://music.yandex.ru/iframe/#track/75099811/13169605&#34;&gt;Слушайте &lt;a href=&#39;https://music.yandex.ru/album/13169605/track/75099811&#39;&gt;Ночь перед Рождеством&lt;/a&gt; — &lt;a href=&#39;https://music.yandex.ru/artist/358612&#39;&gt;ДДТ&lt;/a&gt; на Яндекс.Музыке&lt;/iframe&gt;
+&lt;iframe frameborder=&#34;0&#34; style=&#34;border:none;width:100%;height:180px;&#34; width=&#34;100%&#34; height=&#34;180&#34; src=&#34;https://music.yandex.ru/iframe/#track/75099816/13169605&#34;&gt;Слушайте &lt;a href=&#39;https://music.yandex.ru/album/13169605/track/75099816&#39;&gt;Укус вампира&lt;/a&gt; — &lt;a href=&#39;https://music.yandex.ru/artist/6637622&#39;&gt;Чёрный Вторник&lt;/a&gt; на Яндекс.Музыке&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
