@@ -3,8 +3,8 @@ title = "сельский тестер"
 ignoreErrors = ["error-remote-getjson", "error-disable-taxonomy"]
 languageCode = ["ru", "en"]
 defaultContentLanguage = "ru"
-defaultContentLanguageInSubdir = false
-paginatepath = "страница"
+defaultContentLanguageInSubdir = true
+# paginatepath = "страница"
 enableInlineShortcodes = true
 canonifyURLs = true
 relativeURLs = true
@@ -50,10 +50,10 @@ refLinksNotFoundURL = "/"
   anchor = "smart" 
 
 [permalinks]
-  categories = "/категория/:slug/"      # required
-  tags = "/тема/:slug/"                 # required
+  # categories = "/категория/:slug/"      # required
+  # tags = "/тема/:slug/"                 # required
   pages = "/:slug/"
-  authors = "/:slug/"
+  # authors = "/:slug/"
 
 [related]
   includeNewer = true
