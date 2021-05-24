@@ -15,17 +15,17 @@
 
 [[main]]
   name = "блог"
-  url = "/блог/"
+  url = "ru/блог/"
   weight = 20
 
 [[main]]
-  name = "идея"
-  url = "/идея/"
+  name = "автор"
+  url = "ru/автор/"
   weight = 45
 
 [[main]]
   name = "лучшее"
-  url = "/лучшее/"
+  url = "ru/лучшее/"
   weight = 40
 
 # Link to a PDF of your resume/CV from the menu.

@@ -138,8 +138,9 @@ text-decoration: none;
 
 
 
-.abbb {
+html.abbb {
 padding: 3em 0 3em 0;
+color: dimgray;
 }
 
 .abbb.wg-blank {
@@ -312,4 +313,8 @@ transform: scale(1.1);
 
 .abbb {
   min-height: 200px !important;
+}
+
+section#featured.home-section {
+  padding: 50px 0px 50px 0px;
 }

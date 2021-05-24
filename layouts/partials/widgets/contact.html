@@ -1,6 +1,6 @@
 {{ $ := .root }}
 {{ $page := .page }}
-{{ $autolink := default true $page.Params.autolink }}
+{{ $autolink := $page.Params.autolink | default true }}
 {{ $data := site.Params }}
 
 <!-- Contact widget -->

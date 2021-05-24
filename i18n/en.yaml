@@ -234,3 +234,15 @@
 
 - id: cookie_learn
   translation: Learn more
+  
+- id: tags
+  translation: Tags
+
+- id: categories
+  translation: Categories
+
+- id: tag
+  translation: Tag
+
+- id: category
+  translation: Category

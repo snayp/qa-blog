@@ -145,7 +145,7 @@ sharing = true
 # link_authors = false
 
 # Link authors to their profile page? (true/false)
-show_related = {"блог" = true, "анонс" = true, page = false}
+show_related = {"блог" = true, page = false}
 
 # Abstract length (characters) in the Compact and Portfolio Card list views. Also, see `summaryLength` in `config.toml`.
 abstract_length = 135

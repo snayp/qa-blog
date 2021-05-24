@@ -11,17 +11,9 @@
 
   {{ block "main" . }}{{ end }}
 
+  {{ partial "site_footer" . }}
+  
   {{ partial "site_js" . }}
-
-
-  {{/* Docs and Updates layouts include the site footer in a different location. */}}
-  {{ if not (in (slice "docs" "updates") .Type) }}
-  <div class="container">
-    {{ partial "site_footer" . }}
-  </div>
-  {{ end }}
-
-  {{ partial "citation" . }}
 
 </body>
 </html>

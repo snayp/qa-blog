@@ -1,12 +1,13 @@
+{{ $url := site.BaseURL }}
 <footer class="site-footer">
-  {{ if or (site.GetPage "условия-использования.md") (site.GetPage "конфиденциальность.md") }}
+  {{ if or (site.GetPage "terms") (site.GetPage "privacy") }}
   <p class="powered-by">
-    {{ with site.GetPage "конфиденциальность.md" }}
-      {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
+    {{ with site.GetPage "privacy" }}
+      {{ printf "<a href=\"%s\">%s</a>" (.URL | relLangURL) .Title | safeHTML }}
     {{ end }}
-    {{ with site.GetPage "пользовательское-соглашение.md" }}
-      {{ if site.GetPage "пользовательское-соглашение.md" }} &middot; {{ end }}
-      {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
+    {{ with site.GetPage "terms" }}
+      {{ if site.GetPage "privacy" }} &middot; {{ end }}
+      {{ printf "<a href=\"%s\">%s</a>" (.URL | relLangURL)  .Title | safeHTML }}
     {{ end }}
   </p>
   {{ end }}

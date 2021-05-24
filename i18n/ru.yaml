@@ -133,3 +133,12 @@
 
 - id: powered_by
   translation: "{year} &copy; Сделано с помощью " 
+
+- id: tags
+  translation: "темы" 
+- id: categories
+  translation: "категории"   
+- id: tag
+  translation: "тема" 
+- id: category
+  translation: "категория" 
