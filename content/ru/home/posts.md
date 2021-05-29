@@ -1,7 +1,7 @@
 +++
 
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.
 headless = true
 

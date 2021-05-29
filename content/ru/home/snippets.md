@@ -6,7 +6,7 @@ weight = 68  # Order that this section will appear.
 headless = true
 
 title = "примеры"
-subtitle = "фрагменты кода"
+subtitle = "программные средства"
 
 [image]
   caption = ""
@@ -31,7 +31,7 @@ subtitle = "фрагменты кода"
     tag = []
     category = []
     author = []
-    publication_type = []
+    publication_type = "2"
     exclude_featured = true
     exclude_past = false
     exclude_future = true

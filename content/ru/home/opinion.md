@@ -6,7 +6,7 @@ weight = 63  # Order that this section will appear.
 headless = true
 
 title = "мнение"
-subtitle = "опыт разных сторон"
+subtitle = "взгляд с разных сторон"
 
 [image]
   caption = ""
@@ -31,7 +31,7 @@ subtitle = "опыт разных сторон"
     tag = []
     category = []
     author = []
-    publication_type = []
+    publication_type = "7"
     exclude_featured = true
     exclude_past = false
     exclude_future = true
