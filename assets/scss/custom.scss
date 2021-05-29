@@ -343,12 +343,12 @@ section#featured.home-section {
 // }
 
 //footnote link
-a[href^="#fn:"],
+[href="#fn"],
 // Back to footnote link
-a[href^="#fnref:"] {
+[href="#fnref"] {
   text-decoration: none;
   color: $orange;
   font-family: monospace;
 }
-a[href^="#fn:"]:before{ content: '[' }
-a[href^="#fn:"]:after{ content: ']' }
+a[href="#fn"]:before{ content: '[' }
+a[href="#fn"]:after{ content: ']' }
