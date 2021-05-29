@@ -6,7 +6,7 @@ weight = 69  # Order that this section will appear.
 headless = true
 
 title = "карьера"
-subtitle = "учимся и развиваемся"
+subtitle = "развиваемся"
 
 [image]
   caption = ""

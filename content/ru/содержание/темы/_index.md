@@ -1,5 +1,5 @@
 +++
-kind = "taxonomy"
+# kind = "taxonomy"
 title = "Темы"
 toc = true
 +++

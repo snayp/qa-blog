@@ -16,7 +16,7 @@ height = "calc(100vh - 70px)"
 # Slides.
 # Duplicate an `[[item]]` block to add more slides.
 [[item]]
-  title = "QA & SDET :v:"
+  title = "QA | SDET | CI:v:"
   content = '''  
   задачи и обязанности инженера качества ПО
   \
@@ -24,7 +24,7 @@ height = "calc(100vh - 70px)"
   \
   ручные и автоматические проверки
   \
-  способы гарантировать надлежащее качество
+  способы обеспечить надлежащее качество
   '''
   align = "center"  
 

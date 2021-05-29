@@ -5,7 +5,7 @@ active = true  # Activate this widget? true/false
 weight = 80  # Order that this section will appear.
 headless = true
 
-title = "досуг"
+title = "undefined"
 subtitle = "легкий контент"
 
 [image]
