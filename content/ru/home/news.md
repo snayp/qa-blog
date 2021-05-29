@@ -2,11 +2,11 @@
 
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = true  # Activate this widget? true/false
-weight = 60  # Order that this section will appear.
+weight = 59  # Order that this section will appear.
 headless = true
 
 title = "новячок :new:"
-subtitle = "самое свежее"
+subtitle = "новости"
 
 [image]
   caption = ""
@@ -28,10 +28,13 @@ subtitle = "самое свежее"
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = ""
-    category = ""
-    author = ""
-    user_groups = ""
+    tag = []
+    category = []
+    author = []
+    publication_type = []
+    exclude_featured = true
+    exclude_past = false
+    exclude_future = true
   
 [design]
   # Toggle between the various page layout types.

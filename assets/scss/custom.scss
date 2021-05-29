@@ -318,3 +318,37 @@ transform: scale(1.1);
 section#featured.home-section {
   padding: 50px 0px 50px 0px;
 }
+
+
+// [role^="doc-"] {
+//   text-decoration: none; /* 2 */
+//   color: inherit; /* 2 */
+//   cursor: default; /* 2 */
+//   outline: none; /* 2 */
+// }
+
+// [role="doc-noteref"]::after {
+//   content: '[' counter(footnotes) ']'; /* 1 */
+//   vertical-align: super; /* 2 */
+//   font-size: 0.5em; /* 3 */
+//   margin-left: 2px; /* 4 */
+//   color: blue; /* 5 */
+//   text-decoration: underline; /* 5 */
+//   cursor: pointer; /* 5 */
+// }
+
+// [role="doc-noteref"]:focus::after {
+//   outline: thin dotted;
+//   outline-offset: 2px;
+// }
+
+//footnote link
+a[href^="#fn:"],
+// Back to footnote link
+a[href^="#fnref:"] {
+  text-decoration: none;
+  color: $orange;
+  font-family: monospace;
+}
+a[href^="#fn:"]:before{ content: '[' }
+a[href^="#fn:"]:after{ content: ']' }

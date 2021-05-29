@@ -28,10 +28,13 @@ subtitle = "опыт разных сторон"
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = ""
-    category = ""
-    author = ""
-    user_groups = ""
+    tag = []
+    category = []
+    author = []
+    publication_type = []
+    exclude_featured = true
+    exclude_past = false
+    exclude_future = true
   
 [design]
   # Toggle between the various page layout types.

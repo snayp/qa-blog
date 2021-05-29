@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 120  # Order that this section will appear.
 
 title = "популярно"
-subtitle = "10 главных тем"
+subtitle = "топовые 10 тем"
 
 [content]
   # Choose the taxonomy from `config.toml` to display (e.g. tags, categories)

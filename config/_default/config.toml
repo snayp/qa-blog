@@ -11,7 +11,7 @@ canonifyURLs = true
 relativeURLs = true
 enableEmoji = true
 prettyURLs = true
-footnotereturnlinkcontents = "<sup>^</sup>"
+footnoteReturnLinkContents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 disableKinds = [""]
 refLinksErrorLevel = "ERROR"
@@ -34,18 +34,43 @@ refLinksNotFoundURL = "/"
   mediaType = "application/manifest+json"
   rel = "manifest"
 
-  
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = false
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
     [markup.goldmark.renderer]
-      unsafe = true  # Enable user to embed HTML snippets in Markdown content.
-      
+      hardWraps = false
+      unsafe = true
+      xhtml = false
   [markup.highlight]
-    codeFences = false  # Disable Hugo's code highlighter as it conflicts with Academic's highligher.
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
   [markup.tableOfContents]
-    startLevel = 2
     endLevel = 3
+    ordered = false
+    startLevel = 2
 
 [imaging]
   resampleFilter = "lanczos"
