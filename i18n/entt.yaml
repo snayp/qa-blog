@@ -191,7 +191,10 @@
 # Default titles for archive pages
 
 - id: posts
-  translation: Posts
+  translation: posts
+
+- id: post
+  translation: blog
 
 - id: publications
   translation: Publications

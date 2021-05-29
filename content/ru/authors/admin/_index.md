@@ -1,7 +1,7 @@
 +++
 name = "admin"
 superuser = false
-user_groups = ["tech"]
+user_group = "tech"
 # slug = "/автор"
 profile = false
 +++

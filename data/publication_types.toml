@@ -2,11 +2,12 @@
 # Each item in the list corresponds to an item in the language packs.
 types = [ "pub_uncat",
           "pub_event",
-          "pub_release",
+          "pub_automation",
           "pub_qa",
+          "pub_manag",
           "pub_translate",
           "pub_manual",
           "pub_opinion",
-          "pub_tech",
+          "pub_technews",
           "pub_personal"
         ]

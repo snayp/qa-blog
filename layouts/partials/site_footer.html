@@ -3,11 +3,11 @@
   {{ if or (site.GetPage "terms") (site.GetPage "privacy") }}
   <p class="powered-by">
     {{ with site.GetPage "privacy" }}
-      {{ printf "<a href=\"%s\">%s</a>" (.URL | relLangURL) .Title | safeHTML }}
+      {{ printf "<a href=\"%s\">%s</a>" ( .RelPermalink | relLangURL ) .Title | safeHTML }}
     {{ end }}
     {{ with site.GetPage "terms" }}
       {{ if site.GetPage "privacy" }} &middot; {{ end }}
-      {{ printf "<a href=\"%s\">%s</a>" (.URL | relLangURL)  .Title | safeHTML }}
+      {{ printf "<a href=\"%s\">%s</a>" (.RelPermalink | relLangURL)  .Title | safeHTML }}
     {{ end }}
   </p>
   {{ end }}
@@ -16,7 +16,7 @@
     {{ with i18n "powered_by" }}
     {{ replace . "{year}" now.Year | markdownify}}
     {{ end }}
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
 
     {{ if not (in (slice "docs" "updates") .Type) }}
     <span class="float-right" aria-hidden="true">

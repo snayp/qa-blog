@@ -164,7 +164,7 @@ plugins_css  = [ "custom" ]
 
 #   # Choose a shape for avatar images. Options: circle, square.
 #   shape = "square"
-
+# mainSections = ["блог", "лучшее"]
 # Available address formats.
 [address_formats]
   # en-us = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ' ', '']}

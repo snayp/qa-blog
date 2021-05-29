@@ -18,7 +18,7 @@ subtitle = "самое свежее"
   page_type = "блог"
   
   # Choose how much pages you would like to display (0 = all pages)
-  count = 5
+  count = 3
   
   # Choose how many pages you would like to offset by
   offset = 0
@@ -31,7 +31,8 @@ subtitle = "самое свежее"
     tag = ""
     category = ""
     author = ""
-    user_groups = ""
+    # user_group = ""
+    publication_type = ""
   
 [design]
   # Toggle between the various page layout types.

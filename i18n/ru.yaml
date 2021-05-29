@@ -105,7 +105,9 @@
 - id: open_project_site
   translation: Перейти на сайт проекта
 - id: posts
-  translation: Посты
+  translation: посты
+- id: post
+  translation: блог
 - id: publications
   translation: Публикации
 - id: talks

@@ -18,7 +18,7 @@ subtitle = "легкий контент"
   page_type = "блог"
   
   # Choose how much pages you would like to display (0 = all pages)
-  count = 5
+  count = 3
   
   # Choose how many pages you would like to offset by
   offset = 0
@@ -28,10 +28,13 @@ subtitle = "легкий контент"
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = ""
-    category = ""
-    author = ""
-    user_groups = ""
+    tag = []
+    category = []
+    author = []
+    publication_type = []
+    exclude_featured = true
+    exclude_past = false
+    exclude_future = true
   
 [design]
   # Toggle between the various page layout types.

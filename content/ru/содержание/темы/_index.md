@@ -1,7 +1,7 @@
 +++
 
 title = "Темы"
-# section = "содержание"
+toc = true
 
 +++
 

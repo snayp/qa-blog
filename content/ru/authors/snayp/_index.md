@@ -1,12 +1,17 @@
 +++
-bio = "тестирую ПО, практикую Web и уважаю качественную музыку"
+bio = '''
+работаю инженером качества ПО \
+увлекаюсь web технологиями и качественной музыкой'''
 name = "snayp"
-role = "инженер качества"
-superuser = false
+role = "тестировщик софта"
+superuser = true
 # profile = false
 slug = "автор"
-user_groups = ["man"]
+
+user_group = "man"
+
 author = "admin"
+
 [[social]]
   icon = "telegram"
   icon_pack = "fab"

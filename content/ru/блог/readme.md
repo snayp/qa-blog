@@ -3,7 +3,7 @@ description = "A copy of the README.md file."
 tags = ["extra", "markdown"]
 title = "Read Me"
 toc = true
-
+author = "snayp"
 +++
 
 [Live demo (on Netlify)](https://color-your-world-demo.netlify.app/) | [Demo (on Hugo Themes)](https://themes.gohugo.io/theme/hugo-theme-color-your-world/)

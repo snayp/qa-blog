@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main>
+  <div>
+   <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
+    {{ range $index, $term := .Pages  }}
+        <h2><a href='{{ .Permalink }}'> {{ $term.Title }}</a> </h2>
+    {{ end }}
+  </div>
+</main>
+{{ end }}

@@ -13,20 +13,19 @@ interval = "3500"
 # E.g. `500px` for 500 pixels or `calc(100vh - 70px)` for full screen.
 height = "calc(100vh - 70px)"
 
-
- 
 # Slides.
 # Duplicate an `[[item]]` block to add more slides.
 [[item]]
-  title = "Приветствую! :v:"
-  content = '''
-  это блог QA инженера о web технологиях
+  title = "QA & SDET :v:"
+  content = '''  
+  задачи и обязанности инженера качества ПО
   \
-  создании качественного софта
+  основные процессы тестирования
   \
-  буднях тестировщика 
+  ручные и автоматические проверки
   \
-  модных трендах - SDET и Continuous Testing'''
+  способы гарантировать надлежащее качество
+  '''
   align = "center"  
 
   # Overlay a color or image (optional).
@@ -38,53 +37,52 @@ height = "calc(100vh - 70px)"
   # Call to action button (optional).
   #   Activate the button by specifying a URL and button label below.
   #   Deactivate by commenting out parameters, prefixing lines with `#`.
-  cta_label = "Вступление"
+  cta_label = "Знакомство"
   cta_url = "#about"
   cta_icon_pack = "fa"
   cta_icon = "handshake"
 
-[[item]]
-  title = "Актуально ☑️"
-  content = '''
-  новости индустрии ИТ
-  \
-  популярные сервисы и тренды в сети
-  \
-  последние тренды и фейки'''
-  align = "left"
-
-  overlay_color = "#000"  # An HTML color value.
-  overlay_img = "event.jpg"  # Image path relative to your `static/img/` folder.
-  overlay_filter = 0.7  # Darken the image. Value in range 0-1.
-  cta_label = "Подходы и инструменты"
-  cta_url = "#tech_tools"
-  cta_icon_pack = "fa"
-  cta_icon = "#news"
-
 # [[item]]
-#   title = "Знания и опыт ☑️"
-#   content = '''
-#   революционные технологии и продукты
-#   \
-#   опыт российских и зарубежных ИТ экспертов
-#   \
-#   новаторские товары и услуги online'''
-#   align = "left"
+#  title = "Карьера в ИТ ☑️"
+#  content = '''
+#  собираю советы экспертов 
+#  \
+#  сервисы и  в сети
+#  \
+#  последние тренды и фейки'''
+#  align = "left"
 
-#   overlay_color = "#000"  # An HTML color value.
-#   overlay_img = "development.jpg"  # Image path relative to your `static/img/` folder.
-#   overlay_filter = 0.7  # Darken the image. Value in range 0-1.
-#   cta_label = "Знания и опыт"
-#   cta_url = "#info"
-#   cta_icon_pack = "fa"
-#   cta_icon = "info-circle"
+#  overlay_color = "#000"  # An HTML color value.
+#  overlay_img = "event.jpg"  # Image path relative to your `static/img/` folder.
+#  overlay_filter = 0.7  # Darken the image. Value in range 0-1.
+#  cta_label = "Подходы и инструменты"
+#  cta_url = "#tech_tools"
+#  cta_icon_pack = "fa"
+#  cta_icon = "#news"
 
 [[item]]
-  title = "Примеры 🔥"
+  title = "Теория ИТ ☑️"
   content = '''
-  фрагменты кода из реальных проектов
+  варианты организации процессов
   \
-  автоматизация на Java и JS
+  подходы и методологии и их плюсы и минусы
+  \
+  аргументы за и против в спорных вопросах'''
+  align = "left"
+  overlay_color = "#000"  # An HTML color value.
+  overlay_img = "development.jpg"  # Image path relative to your `static/img/` folder.
+  overlay_filter = 0.7  # Darken the image. Value in range 0-1.
+  cta_label = "Истина где то рядом"
+  cta_url = "#opinion"
+  cta_icon_pack = "fa"
+  cta_icon = "info-circle"
+
+[[item]]
+  title = "Практика🔥"
+  content = ''' 
+  рабочие тесты API & GUI на Java и JavaScript
+  \
+  обзоры инструментов и сервисов
   \
   секреты и хитрости интернета'''
   align = "right"
@@ -92,7 +90,7 @@ height = "calc(100vh - 70px)"
   overlay_color = "#000"  # An HTML color value.
   overlay_img = "qa_blog.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.6  # Darken the image. Value in range 0-1.
-  cta_label = "Примеры кода"
+  cta_label = "Примеры"
   cta_url = "#snippets"
   cta_icon_pack = "fa"
   cta_icon = "code"
@@ -100,17 +98,18 @@ height = "calc(100vh - 70px)"
 [[item]]
   title = "Развитие 👍"
   content = '''
-  доступные образовательные курсы
+  доступные образовательные материалы
   \
-  советы по развитию карьеры
+  советы по развитию карьеры и личности
   \
-  обучающие события'''
+  ресурсы и события для профессионального роста'''
+
   align = "left"
 
   overlay_color = "#000"  # An HTML color value.
   overlay_img = "career.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.6  # Darken the image. Value in range 0-1.
-  cta_label = "Обучение и развитие"
+  cta_label = "Обучение и карьера"
   cta_url = "#career"
   cta_icon_pack = "fa"
   cta_icon = "user-graduate"
@@ -119,19 +118,17 @@ height = "calc(100vh - 70px)"
 [[item]]
   title = "Досуг :smile:"
   content = '''
-  мнения на спорные темы
+  забавные истории и случаи
   \
-  забавные истории и 
+  развлекательный контент
   \
-  занимательные случаи из жизни
-  \
-  размышления о вечном'''
+  не только в онлайн, но и в офлайн жизни'''
   align = "right"
 
   overlay_color = "#000"  # An HTML color value.
   overlay_img = "joks.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.6  # Darken the image. Value in range 0-1.
-  cta_label = "Досуг"
+  cta_label = "Отдых"
   cta_url = "#relax"
   cta_icon_pack = "fa"
   cta_icon = "couch"

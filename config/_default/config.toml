@@ -3,7 +3,8 @@ title = "сельский тестер"
 ignoreErrors = ["error-remote-getjson", "error-disable-taxonomy"]
 languageCode = ["ru", "en"]
 defaultContentLanguage = "ru"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
+disableLanguages = ["en"]
 # paginatepath = "страница"
 enableInlineShortcodes = true
 canonifyURLs = true
@@ -20,6 +21,7 @@ refLinksNotFoundURL = "/"
   tag = "tags"
   category = "categories"
   author = "authors"
+  publication_type = "publication_types"
 
 [outputs]
   home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]

@@ -1,5 +1,5 @@
 +++
 
-type = ""
+kind = "taxonomy"
 
 +++

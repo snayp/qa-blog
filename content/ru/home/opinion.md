@@ -6,7 +6,7 @@ weight = 63  # Order that this section will appear.
 headless = true
 
 title = "мнение"
-subtitle = "изучаем опыт гуру"
+subtitle = "опыт разных сторон"
 
 [image]
   caption = ""
@@ -18,7 +18,7 @@ subtitle = "изучаем опыт гуру"
   page_type = "блог"
   
   # Choose how much pages you would like to display (0 = all pages)
-  count = 5
+  count = 3
   
   # Choose how many pages you would like to offset by
   offset = 0
