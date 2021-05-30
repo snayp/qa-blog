@@ -1,7 +1,7 @@
 +++
 authors = [ "snayp" ]
-categories = [ "онлайн", "досуг" ]
-date = "2020-11-29T05:10:51+03:00"
+categories = [ "досуг", "музыка", "творчество" ]
+date = 2021-05-30T11:08:40.966Z
 draft = false
 tags = [ "dj oom", "techno", "Саратов" ]
 title = "Techno set Dj Omm"

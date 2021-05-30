@@ -16,10 +16,10 @@ height = "calc(100vh - 70px)"
 # Slides.
 # Duplicate an `[[item]]` block to add more slides.
 [[item]]
-  title = "природа"
+  title = "красота"
   content = '''
-  красота вокруг нас \
-  архивные и свежие фото
+  совершенства вокруг нас \
+  архивные и свежие моменты 
   '''
   align = "center"  # Choose `center`, `left`, or `right`.
 
@@ -38,7 +38,7 @@ height = "calc(100vh - 70px)"
   # cta_icon = "graduation-cap"
 
 [[item]]
-  title = "былое"
+  title = "было время"
   content = "события и люди"
   align = "left"
 
@@ -47,11 +47,11 @@ height = "calc(100vh - 70px)"
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
 
 [[item]]
-  title = "Right"
-  content = "I am right aligned :smile:"
+  title = "мысли в слух"
+  content = "думы суетные"
   align = "right"
 
-  overlay_color = "#333"  # An HTML color value.
+  overlay_color = "#133"  # An HTML color value.
   overlay_img = ""  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
 +++
