@@ -1,6 +1,6 @@
 +++
 description = "A copy of the README.md file."
-tags = ["extra", "markdown"]
+tags = ["markdown"]
 title = "Read Me"
 toc = true
 author = "snayp"

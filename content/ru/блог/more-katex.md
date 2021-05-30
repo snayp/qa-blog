@@ -2,7 +2,7 @@
 description = "Brief explanation of mhchem, copy-tex, etc."
 katex = true
 katexExtensions = ["mhchem", "copy-tex"]
-tags = ["markdown", "shortcodes", "extra"]
+tags = ["markdown", "shortcodes"]
 title = "More KaTeX"
 
 +++

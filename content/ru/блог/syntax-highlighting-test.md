@@ -1,7 +1,7 @@
 +++
 authors = ["snayp"]
 description = "A page full of code samples."
-tags = ["extra", "syntax highlighting"]
+tags = ["syntax highlighting"]
 title = "Syntax Highlighting Test"
 toc = true
 

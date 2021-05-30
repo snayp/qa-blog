@@ -1,12 +1,11 @@
 +++
 widget = "pages"
 title = "Переводы"
-active = true
-date = "2021-01-22T18:23:23+03:00"
+date = 2021-05-30T03:48:38.686Z
 view = 2
-# kind = "term"
+kind = "terms"
+lastmod = 2021-05-30T03:48:42.392Z
+categories = [ "перевод", "english" ]
 +++
-
-## dthbb
 
 {{% list_translations %}}

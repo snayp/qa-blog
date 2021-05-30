@@ -3,7 +3,7 @@
 
   {{ index $pub_types (int $index) }}
 
-    {{ if eq 3 }}
+    {{ range . }}
       <div>{{ .Title }}</div>
     {{ end }}
 
