@@ -13,7 +13,7 @@
   {{ end }}
   {{ end }}
 
-  {{ if not (in (slice "talk" "page") $page.Type) }}
+  {{ if not (in (slice "talk" ) $page.Type) }}
   <span class="article-date">
     {{ $date := printf "%d %s %d" $page.Lastmod.Day (index site.Data.months.months_rod $page.Lastmod.Month) $page.Lastmod.Year }}
     {{ if eq $page.Type "publication" }}

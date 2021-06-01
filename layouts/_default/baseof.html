@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.LanguageCode | default "ru-ru" }}">
+<html lang="{{ .Site.LanguageCode | default "ru" }}">
 
 {{ partial "site_head" . }}
 <body id="top" data-spy="scroll" data-offset="70" data-target="{{ if or .IsHome (eq .Type "widget_page") }}#navbar-main{{else}}#TableOfContents{{end}}" {{ if not (.Params.light) }}class="dark"{{end}}>
@@ -11,17 +11,9 @@
 
   {{ block "main" . }}{{ end }}
 
+  {{ partial "site_footer" . }}
+  
   {{ partial "site_js" . }}
-
-
-  {{/* Docs and Updates layouts include the site footer in a different location. */}}
-  {{ if not (in (slice "docs" "updates") .Type) }}
-  <div class="container">
-    {{ partial "site_footer" . }}
-  </div>
-  {{ end }}
-
-  {{ partial "citation" . }}
 
 </body>
 </html>
