@@ -2,7 +2,7 @@
 authors = [ "snayp", "admin" ]
 "категории" = [ "онлайн" ]
 date = 2021-05-29T23:29:31.339Z
-draft = false
+draft = true
 keywords = [ ]
 lastmod = 2021-05-29T23:29:32.070Z
 summary = "блог о тестировании и качестве"

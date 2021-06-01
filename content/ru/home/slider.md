@@ -70,10 +70,10 @@ height = "calc(100vh - 70px)"
   overlay_color = "#000"  # An HTML color value.
   overlay_img = "development.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
-  cta_label = "Истина где то рядом"
-  cta_url = "#opinion"
-  cta_icon_pack = "fa"
-  cta_icon = "info-circle"
+#  cta_label = "Истина где то рядом"
+#  cta_url = "#opinion"
+#  cta_icon_pack = "fa"
+#  cta_icon = "info-circle"
 
 [[item]]
   title = "Практика🔥"
@@ -88,10 +88,9 @@ height = "calc(100vh - 70px)"
   overlay_color = "#000"  # An HTML color value.
   overlay_img = "qa_blog.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.4  # Darken the image. Value in range 0-1.
-  cta_label = "Архив кода"
-  cta_url = "#snippets"
-  cta_icon_pack = "fa"
-  cta_icon = "code"
+#  cta_label = "Архив кода"
+#  cta_url = "#snippets"
+#  cta_icon = "code"
 
 [[item]]
   title = "Развитие 👍"
@@ -107,10 +106,10 @@ height = "calc(100vh - 70px)"
   overlay_color = "#000"  # An HTML color value.
   overlay_img = "career.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.7  # Darken the image. Value in range 0-1.
-  cta_label = "Обучение и карьера"
-  cta_url = "#career"
-  cta_icon_pack = "fa"
-  cta_icon = "user-graduate"
+#  cta_label = "Обучение и карьера"
+#  cta_url = "#career"
+#  cta_icon_pack = "fa"
+#  cta_icon = "user-graduate"
   
 
 [[item]]
@@ -126,8 +125,8 @@ height = "calc(100vh - 70px)"
   overlay_color = "#000"  # An HTML color value.
   overlay_img = "joks.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.6  # Darken the image. Value in range 0-1.
-  cta_label = "Отдых"
-  cta_url = "#relax"
-  cta_icon_pack = "fa"
-  cta_icon = "couch"
+#  cta_label = "Отдых"
+#  cta_url = "#relax"
+#  cta_icon_pack = "fa"
+#  cta_icon = "couch"
 +++

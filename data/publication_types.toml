@@ -11,5 +11,6 @@ types = [ "pub_uncat", # 0
           "pub_news", # 8
           "pub_personal", # 9
           "pub_career", # 10
-          "pub_relax" # 11
+          "pub_relax", # 11
+          "pub_audio" # 12
         ]

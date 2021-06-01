@@ -3,9 +3,12 @@
 title = "{{ replace .Name "-" " " | title }}"
 subtitle = ""
 summary = ""
+description = ""
+abstract = ""
 authors = ["snayp"]
 tags = []
 categories = []
+publication_type = []
 keywords = []
 date = {{ .Date }}
 lastmod = {{ .Date }}

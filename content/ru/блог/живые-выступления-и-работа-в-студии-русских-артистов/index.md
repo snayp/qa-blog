@@ -8,7 +8,7 @@ categories = [ "муыка", "технологии" ]
 date = 2021-01-30T22:47:19.000Z
 lastmod = 2021-01-30T22:47:19.000Z
 featured = false
-draft = false
+draft = true
 
 projects = [ ]
 [image]

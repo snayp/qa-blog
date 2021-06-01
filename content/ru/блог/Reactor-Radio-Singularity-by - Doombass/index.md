@@ -1,32 +1,31 @@
 +++
 title = "Reactor Radio - Singularity by : Doombass"
 subtitle = ""
-summary = ""
+summary = "запись live выступления Doombass на Reactor Radio"
 authors = [ "snayp" ]
 tags = [ "live", "Питер", "Doombass" ]
 categories = [ "музыка", "творчество" ]
 keywords = [ ]
+publication_types = ["12"]
 date = 2021-05-30T00:16:19.000Z
 lastmod = 2021-05-30T00:16:19.000Z
-featured = false
+featured = true
 draft = false
 projects = [ ]
 
 [image]
-caption = ""
-focal_point = ""
-preview_only = false
+caption = "Doombass диджеит винил"
+focal_point = "center"
+preview_only = true
 
 [design]
-background = { }
+
 +++
 
-## Очень круто
+Очень оцень круто! Местами 10 из 10 👍
 
-Местами 10 из 10
+Неожидал от Дена... Уважение артисту!!!
 
-Так долго мочить такой музон, заслуженно вызывает уважение к артисту
+Doombass замочил вещь. Давно не было так восхительно бомбезно!
 
-Дэн Doombass замочил вещь. Давно не было ничего настолько 
-
-<iframe src="https://vk.com/video_ext.php?oid=-147215218&id=456241533&hash=19f8039a00dd872a&hd=1&autoplay=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://vk.com/video_ext.php?oid=-147215218&id=456241533&hash=19f8039a00dd872a&hd=2" width="720" height="420" frameborder="0" allowfullscreen></iframe>

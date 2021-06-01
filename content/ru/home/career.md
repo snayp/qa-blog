@@ -1,7 +1,7 @@
 +++
 
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 69  # Order that this section will appear.
 headless = true
 
@@ -11,7 +11,7 @@ subtitle = "развиваемся"
 [image]
   caption = ""
   focal_point = ""
-  preview_only = false
+  preview_only = true
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
