@@ -6,7 +6,7 @@ types = [ "pub_uncat", # 0
           "pub_qa", # 3
           "pub_management", # 4
           "pub_translation", # 5
-          "pub_manual", # 6
+          "pub_doc", # 6
           "pub_opinion", # 7
           "pub_news", # 8
           "pub_personal", # 9

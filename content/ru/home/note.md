@@ -1,7 +1,7 @@
 +++
 widget = "blank"
 active = true
-headless = true
+headless = false
 weight = 22
 title = ""
 [design]

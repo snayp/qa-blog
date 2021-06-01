@@ -6,7 +6,7 @@ weight = 59  # Order that this section will appear.
 headless = true
 
 title = "новячок :new:"
-subtitle = "новости"
+subtitle = "в сети"
 
 [image]
   caption = ""
@@ -32,7 +32,7 @@ subtitle = "новости"
     category = []
     author = []
     publication_type = "8"
-    exclude_featured = true
+    exclude_featured = false
     exclude_past = false
     exclude_future = true
   

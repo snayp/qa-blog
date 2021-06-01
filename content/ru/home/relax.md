@@ -6,7 +6,7 @@ weight = 80  # Order that this section will appear.
 headless = true
 
 title = "undefined"
-subtitle = "легкий контент"
+subtitle = "прочий контент"
 
 [image]
   caption = ""
