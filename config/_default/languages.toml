@@ -25,7 +25,7 @@
 [ru.permalinks]
   categories = "/категория/:slug/"      # required
   tags = "/тема/:slug/"  
-  publication_types = "/тип/:slug/"
+  publications = "/тип/:slug/"
   # posts =  "/блог/"               # required
   # pages = "/:slug/"
   # authors = "/:slug/"

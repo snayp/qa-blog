@@ -3,4 +3,8 @@
 title = "Содержание"
 +++
 
-{{< list_children >}}
+{{< list_tags >}}
+
+{{< list_categories >}}
+
+{{< list_pub_types >}}

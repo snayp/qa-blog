@@ -85,23 +85,31 @@
 - id: location
   translation: Где?
 - id: pub_uncat
-  translation: Без категории
-- id: pub_conf
-  translation: Статья для конференции
-- id: pub_journal
-  translation: Статья для журнала
-- id: pub_preprint
-  translation: Предварительная печать
-- id: pub_report
-  translation: Выступление
-- id: pub_book
-  translation: Книга
-- id: pub_book_section
-  translation: Глава книги
-- id: pub_thesis
-  translation: Тезис
-- id: pub_patent
-  translation: Патент
+  translation: без категории
+- id: pub_event
+  translation: событие
+- id: pub_snippet
+  translation: пример кода
+- id: pub_qa
+  translation: тестирование
+- id: pub_management
+  translation: управление
+- id: pub_translation
+  translation: перевод
+- id: pub_doc
+  translation: документация
+- id: pub_opinion
+  translation: мнение
+- id: pub_news
+  translation: новость
+- id: pub_personal
+  translation: личное
+- id: pub_career
+  translation: карьера
+- id: pub_relax
+  translation: досуг
+- id: pub_audio
+  translation: музыка
 - id: open_project_site
   translation: Перейти на сайт проекта
 - id: posts
