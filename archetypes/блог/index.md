@@ -8,10 +8,11 @@ abstract = ""
 authors = ["snayp"]
 tags = []
 categories = []
-publication_type = []
+publication_types = []
 keywords = []
 date = {{ .Date }}
 lastmod = {{ .Date }}
+publishDate = {{ .Date }}
 featured = false
 draft = true
 

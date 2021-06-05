@@ -15,3 +15,5 @@ draft = true
 @ Baltic (31.10.2020)
 
 {{< mixcloud src="https://soundcloud.com/widget/live-set-somatik-fest-baltic-61220" >}}
+
+{{< music urls="http://ice.somafm.com/groovesalad" >}}

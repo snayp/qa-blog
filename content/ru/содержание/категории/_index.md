@@ -1,8 +1,8 @@
 +++
 title = "Категории"
 # section = "содержание"
-# kind = "taxonomy"
-toc = true
+kind = "taxonomy"
+
 +++
 
 {{< list_categories >}}

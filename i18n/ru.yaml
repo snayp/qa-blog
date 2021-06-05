@@ -84,31 +84,31 @@
   translation: Что?
 - id: location
   translation: Где?
-- id: pub_uncat
+- id: uncat
   translation: без категории
-- id: pub_event
+- id: event
   translation: событие
-- id: pub_snippet
+- id: snippet
   translation: пример кода
-- id: pub_qa
+- id: qa
   translation: тестирование
-- id: pub_management
+- id: management
   translation: управление
-- id: pub_translation
+- id: translation
   translation: перевод
-- id: pub_doc
+- id: doc
   translation: документация
-- id: pub_opinion
+- id: opinion
   translation: мнение
-- id: pub_news
+- id: news
   translation: новость
-- id: pub_personal
+- id: personal
   translation: личное
-- id: pub_career
+- id: career
   translation: карьера
-- id: pub_relax
+- id: relax
   translation: досуг
-- id: pub_audio
+- id: audio
   translation: музыка
 - id: open_project_site
   translation: Перейти на сайт проекта

@@ -1,0 +1,55 @@
+{
+  "_from": "artplayer-plugin-playlist",
+  "_id": "artplayer-plugin-playlist@3.2.4",
+  "_inBundle": false,
+  "_integrity": "sha512-i4KElC1BUMs07O8/dEnY95BV9znH5j7IQSdwJgCJA2Gfu/+EkX6ghhrkfriLMgdwBTNVhDSYwFKxLYMhMU4Z+g==",
+  "_location": "/artplayer-plugin-playlist",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "artplayer-plugin-playlist",
+    "name": "artplayer-plugin-playlist",
+    "escapedName": "artplayer-plugin-playlist",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/artplayer-plugin-playlist/-/artplayer-plugin-playlist-3.2.4.tgz",
+  "_shasum": "cd82b1387f2dff9c1d75e70bbcf187d1f59ee31d",
+  "_spec": "artplayer-plugin-playlist",
+  "_where": "/home/snayp/Documents/wwww",
+  "author": {
+    "name": "Harvey Zack",
+    "email": "laozhaochaguan@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/zhw2590582/ArtPlayer/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Playlist plugin for ArtPlayer",
+  "expose": "artplayerPluginPlaylist",
+  "gitHead": "0a3a20568e37f99972eefb01d4b1dcf4036a46db",
+  "homepage": "https://github.com/zhw2590582/ArtPlayer#readme",
+  "keywords": [
+    "video",
+    "player"
+  ],
+  "license": "MIT",
+  "main": "dist/artplayer-plugin-playlist.js",
+  "name": "artplayer-plugin-playlist",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhw2590582/ArtPlayer.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "style": "dist/artplayer-plugin-playlist.css",
+  "version": "3.2.4"
+}

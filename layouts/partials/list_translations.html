@@ -1,10 +1,10 @@
 {{ $pub_types := partial "functions/get_pub_types" $ }}
 {{ range $index, $taxonomy := site.Taxonomies.publication_types }}
 
-  {{ index $pub_types (int $index) }}
+  {{/*  {{ index $pub_types (string $taxonomy) }}  */}}
 
     {{ range . }}
-      <div>{{ .Title }}</div>
+      <div>{{ $taxonomy }}</div>
     {{ end }}
 
 

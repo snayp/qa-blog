@@ -1,6 +1,11 @@
+{{ $pub_types := partial "functions/get_pub_types" $ }}
 <ul class="list-unstyled">
-    {{ range site.Data.publication_types.types }}
-    <li><a href="{{ T (.) }}">{{ T (.) }}</a></li>
+    {{ range $pub_types }}
+    {{/*  <li><a href="/тип/{{ T (.) }}/">{{ T (.) }}</a></li>  */}}
+    {{/*  <li><a href="/тип/{{ . }}/">{{ . }}</a></li>  */}}
+                   <li> <a href="{{ (site.GetPage " section" "тип" ).RelPermalink }}{{ . | urlize }}">
+                        {{ . }}
+                    </a></li>
     {{ end }}
 </ul>
 {{/*  

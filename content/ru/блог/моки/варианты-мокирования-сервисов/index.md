@@ -10,7 +10,7 @@ subtitle = ""
 summary = ""
 tags = [ "привет", "работа", "транслитерация" ]
 title = "Разработка моков"
-view = 2
+view = 1
 
 [image]
   caption = ""
@@ -18,3 +18,5 @@ view = 2
   preview_only = false
 
 +++
+
+{{< music urls="http://somafm.com/m3u/groovesalad256.m3u" >}}
