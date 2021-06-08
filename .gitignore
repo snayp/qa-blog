@@ -1,6 +1,6 @@
-.idea/
-resources/
-.vscode/
+.idea
+resources
+.vscode
 .env
 themes/
 public/
