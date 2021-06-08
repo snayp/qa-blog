@@ -1,8 +1,8 @@
-.idea/
+.idea/*
 resources/*
-.vscode
+.vscode/*
 .env
-public
+public/*
 themes/
-node_modules/
+node_modules/*
 looog.txt
