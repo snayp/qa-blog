@@ -2,7 +2,7 @@
 resources
 .vscode
 .env
-public
+public/
 themes
 node_modules
 looog.txt
