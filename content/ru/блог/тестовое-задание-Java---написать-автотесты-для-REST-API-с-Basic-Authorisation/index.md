@@ -10,7 +10,7 @@ date = 2021-05-29T21:15:32.000Z
 lastmod = 2021-05-29T21:15:32.000Z
 featured = true
 draft = false
-publication_types = [ "9","11" ]
+publication_types = [ ]
 
 [image]
 caption = ""

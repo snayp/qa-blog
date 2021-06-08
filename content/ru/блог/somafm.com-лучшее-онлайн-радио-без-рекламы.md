@@ -9,7 +9,7 @@ draft = true
 lastmod = 2021-06-05T19:33:30.579Z
 tags = [ "API", "REST", "shortcodes", "блог", "онлайн", "somafm" ]
 categories = [ "досуг", "музыка", "творчество" ]
-publications = [ "музыка" ]
+publication_types = [ "музыка" ]
 keywords = [ ]
 authors = [ "snayp" ]
 

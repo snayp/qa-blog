@@ -1,12 +1,10 @@
 +++
 authors = [ "snayp", "admin" ]
-"категории" = [ "онлайн" ]
 date = 2021-05-29T23:29:31.339Z
 draft = true
 keywords = [ ]
 lastmod = 2021-05-29T23:29:32.070Z
 summary = "блог о тестировании и качестве"
-"темы" = [ "bdd" ]
 title = "Осознание BDD и первый опыт промышленной эксплуатации"
 categories = [ "Java код", "тестирование" ]
 tags = [ "BDD", "cucumber" ]
