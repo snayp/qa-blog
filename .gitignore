@@ -1,10 +1,10 @@
-.idea/
-resources/
-.vscode/
+.idea
+resources
+.vscode
 .env
-public/
-themes/
-node_modules/
+public
+themes
+node_modules
 looog.txt
 content/_index_tttt.md
 layouts/_default/index.reveal.html
