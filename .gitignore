@@ -6,7 +6,6 @@ themes/
 node_modules/
 looog.txt
 content/_index_tttt.md
-public/
 somafm/lib64
 somafm/pyvenv.cfg
 somafm/bin/activate
