@@ -55,7 +55,7 @@
   {{ end }}
 
   {{/* Fix Hugo's ContentBaseName returning wrong file base name when page section is within a bundle. */}}
-  {{ $hash_id := $st.Params.url }}
+  {{ $hash_id := replace $st.File.ContentBaseName "index" (path.Base (path.Split .Path).Dir) }}
 
   {{ $widget := or $st.Params.widget "blank" }}
   {{ if eq $widget "custom" }}{{ $widget = "blank" }}{{ end }}{{/* Support legacy Custom widget */}}
@@ -70,7 +70,7 @@
   {{/* Special case: Slider widget. */}}
   {{ if in (slice "slider") $widget }}
     {{ $css_classes = print $css_classes " carousel slide" }}
-    {{ $extra_attributes = printf "data-ride=\"carousel\" data-interval=\"%s\"" (string $st.Params.interval | default "5000") }}
+    {{ $extra_attributes = printf "data-ride=\"carousel\" data-interval=\"%s\"" (string $st.Params.interval | default "4000") }}
     {{ $use_container = false }}
   {{ end }}
 

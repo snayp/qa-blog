@@ -1,12 +1,16 @@
 # Publication types.
 # Each item in the list corresponds to an item in the language packs.
-types = [ "pub_uncat",
-          "pub_event",
-          "pub_release",
-          "pub_qa",
-          "pub_translate",
-          "pub_manual",
-          "pub_opinion",
-          "pub_tech",
-          "pub_personal"
+types = [ "uncat", # 0
+          "event", # 1
+          "snippet", # 2
+          "qa", # 3
+          "management", # 4
+          "translation", # 5
+          "doc", # 6
+          "opinion", # 7
+          "news", # 8
+          "personal", # 9
+          "career", # 10
+          "relax", # 11
+          "audio" # 12
         ]

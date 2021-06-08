@@ -1,0 +1,13 @@
+{{ $pub_types := partial "functions/get_pub_types" $ }}
+{{ range $index, $taxonomy := site.Taxonomies.publication_types }}
+
+  {{/*  {{ index $pub_types (string $taxonomy) }}  */}}
+
+    {{ range . }}
+      <div>{{ $taxonomy }}</div>
+    {{ end }}
+
+
+{{ end }}
+  
+

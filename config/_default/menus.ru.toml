@@ -1,0 +1,40 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+# [[main]]
+#   name = "muz"
+#   url = "/музыка/"
+#   weight = 32
+
+# [[main]]
+#   name = "анонс"
+#   url = "/анонс/"
+#   weight = 30
+
+[[main]]
+  name = "блог"
+  url = "блог/"
+  weight = 20
+
+[[main]]
+  name = "автор"
+  url = "автор/"
+  weight = 45
+
+# [[main]]
+#   name = "лучшее"
+#   url = "лучшее/"
+#   weight = 40
+
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+# [[main]]
+#    name = "CV"
+#    url = "files/cv.pdf"
+#    weight = 70
+
+# [["анонс"]]
+#   name = "год"
+#   weight = 10

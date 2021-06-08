@@ -23,7 +23,7 @@ font = "minimal"
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
 font_size = "L"
-aplayer = true
+
 ############################
 ## Basic Info
 ############################
@@ -130,13 +130,13 @@ address_format = "ru"
 ############################
 
 # Main menu alignment (l = left, c = center, r = right) and logo options.
-main_menu = {align = "c", show_logo = true,  highlight_active_link = false, show_language = false}
+main_menu = {align = "c", show_logo = true,  highlight_active_link = true, show_language = true}
 
 # Show estimated reading time for posts? (true/false)
 reading_time = true
 
 # Display next/previous section pager? (true/false)
-section_pager = false
+section_pager = true
 docs_section_pager = false  # Display pager in Docs layout (e.g. tutorials)?
 
 # Enable in-built social sharing buttons? (true/false)
@@ -145,7 +145,7 @@ sharing = true
 # link_authors = false
 
 # Link authors to their profile page? (true/false)
-show_related = {"блог" = true, "анонс" = true, page = false}
+show_related = {"блог" = true, page = false}
 
 # Abstract length (characters) in the Compact and Portfolio Card list views. Also, see `summaryLength` in `config.toml`.
 abstract_length = 135
@@ -164,7 +164,7 @@ plugins_css  = [ "custom" ]
 
 #   # Choose a shape for avatar images. Options: circle, square.
 #   shape = "square"
-
+# mainSections = ["блог", "лучшее"]
 # Available address formats.
 [address_formats]
   # en-us = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ' ', '']}
