@@ -1,10 +1,9 @@
 {{ $taxonomy := "tags" }}
-{{ with .Param $taxonomy }}
+{{ range .Param $taxonomy }}
 <div class="article-tags">
-  {{ range $index, $value := . }}
-  {{ with site.GetPage (printf "/%s/%s" $taxonomy . ) -}}
-  <a  class="badge badge-light" href="{{ .Permalink }}">{{ .Title }}</a>
-  {{ end }}
+  {{ with . }}
+  {{ $translitTerm := partial "functions/translit" . }}
+  <a id="translitTerm" class="badge badge-light" href="{{ absLangURL $translitTerm }}">{{ .Title }}</a>
   {{ end }}
 </div>
 {{ end }}

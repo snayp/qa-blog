@@ -16,6 +16,7 @@ height = "calc(100vh - 70px)"
 # Slides.
 # Duplicate an `[[item]]` block to add more slides.
 [[item]]
+<<<<<<< HEAD:content/ru/home/slider.md
   title = "QA | SDET | CI:v:"
   content = '''  
   задачи и обязанности инженера качества ПО
@@ -24,6 +25,17 @@ height = "calc(100vh - 70px)"
   \
   способы обеспечить надлежащее качество
   '''
+=======
+  title = "Приветствую! :v:"
+  content = '''
+  это блог QA инженера о web технологиях
+  \
+  создании качественного софта
+  \
+  буднях тестировщика 
+  \
+  модных трендах - SDET и Continuous Testing'''
+>>>>>>> feature/final-home-and-static-edition:content/home/slider.md
   align = "center"  
 
   # Overlay a color or image (optional).
@@ -40,6 +52,7 @@ height = "calc(100vh - 70px)"
   cta_icon_pack = "fa"
   cta_icon = "handshake"
 
+<<<<<<< HEAD:content/ru/home/slider.md
 # [[item]]
 #  title = "Карьера в ИТ ☑️"
 #  content = '''
@@ -74,6 +87,43 @@ height = "calc(100vh - 70px)"
   cta_url = "#opinion"
   cta_icon_pack = "fa"
   cta_icon = "info-circle"
+=======
+[[item]]
+  title = "Актуально ☑️"
+  content = '''
+  новости индустрии ИТ
+  \
+  популярные сервисы и тренды в сети
+  \
+  последние тренды и фейки'''
+  align = "left"
+
+  overlay_color = "#000"  # An HTML color value.
+  overlay_img = "event.jpg"  # Image path relative to your `static/img/` folder.
+  overlay_filter = 0.7  # Darken the image. Value in range 0-1.
+  cta_label = "Подходы и инструменты"
+  cta_url = "#tech_tools"
+  cta_icon_pack = "fa"
+  cta_icon = "#news"
+
+# [[item]]
+#   title = "Знания и опыт ☑️"
+#   content = '''
+#   революционные технологии и продукты
+#   \
+#   опыт российских и зарубежных ИТ экспертов
+#   \
+#   новаторские товары и услуги online'''
+#   align = "left"
+
+#   overlay_color = "#000"  # An HTML color value.
+#   overlay_img = "development.jpg"  # Image path relative to your `static/img/` folder.
+#   overlay_filter = 0.7  # Darken the image. Value in range 0-1.
+#   cta_label = "Знания и опыт"
+#   cta_url = "#info"
+#   cta_icon_pack = "fa"
+#   cta_icon = "info-circle"
+>>>>>>> feature/final-home-and-static-edition:content/home/slider.md
 
 [[item]]
   title = "Практика🔥"
@@ -96,12 +146,20 @@ height = "calc(100vh - 70px)"
 [[item]]
   title = "Развитие 👍"
   content = '''
+<<<<<<< HEAD:content/ru/home/slider.md
   доступные образовательные материалы
+=======
+  доступные образовательные курсы
+>>>>>>> feature/final-home-and-static-edition:content/home/slider.md
   \
   советы по развитию карьеры и личности
   \
+<<<<<<< HEAD:content/ru/home/slider.md
   ресурсы и события для профессионального роста'''
 
+=======
+  обучающие события'''
+>>>>>>> feature/final-home-and-static-edition:content/home/slider.md
   align = "left"
 
   overlay_color = "#000"  # An HTML color value.
@@ -116,11 +174,21 @@ height = "calc(100vh - 70px)"
 [[item]]
   title = "Досуг :smile:"
   content = '''
+<<<<<<< HEAD:content/ru/home/slider.md
   забавные истории и случаи
+=======
+  мнения на спорные темы
+  \
+  забавные истории и 
+>>>>>>> feature/final-home-and-static-edition:content/home/slider.md
   \
   развлекательный контент
   \
+<<<<<<< HEAD:content/ru/home/slider.md
   не только в онлайн, но и в офлайн жизни'''
+=======
+  размышления о вечном'''
+>>>>>>> feature/final-home-and-static-edition:content/home/slider.md
   align = "right"
 
   overlay_color = "#000"  # An HTML color value.

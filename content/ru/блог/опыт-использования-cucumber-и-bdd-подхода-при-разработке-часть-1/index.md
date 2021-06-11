@@ -4,7 +4,7 @@ categories = ["тестирование", "онлайн"]
 date = "2020-11-30T05:10:51+03:00"
 draft = false
 tags = ["автоматизация", "cucumber", "selenium", "java", "BDD"]
-title = "Знакомство Cucumber и BDD и TDD подхода. Начало."
+title = "Опыт использования Cucumber и BDD подхода. Часть 1"
 
 +++
 
@@ -12,9 +12,9 @@ title = "Знакомство Cucumber и BDD и TDD подхода. Начал�
 
 {{< figure src="header.png" link="https://cucumber.io/" title="BDD - мнения за и против, best practicies и anti patterns." caption="*Особенности процесса и полезные инструменты позволяющие команде сосредоточиться на реальных примерах использования системы с точки зрения конечного пользователя.*" alt="Behaviour Driven Development (BDD) - командное обсуждение существенных детелей проекта, позволяющее добиться однозначного понимания будущих изменений у всех членов команды." class="small" >}}
 
-О фреймворке [Cucumber](https://cucumber.io/), я узнал, примерно 7 лет назад. Увлечение фреймворком Ruby on Rails первое упоминание гибких методов разработки, сформулированные группой и сразу оценил возможность в 10 строчек написать e2e тест, основанного спеке. Написанной разговорным зяком, до написания и описывающее реальное использование возможностей системы, по всем канонам BDD/TDD подходов. Тест сразу мог запускался в headless версии браузера и только для отладки переключаться на полноценную версию. RoR подразумевает написание большого количества тестов из всех ступеней пирамиды тестирования и развила очень мощный инструментарий для тестов и проверок, которые могут понадобиться 90% создаваемых приложений. Сами принципы, которым рекомендуют следовать абрревиатуры BDD & TDD при организации процесса разработки и которым нужно придерживаются всем членам команды, смогли выразить весь накопленный опыт в программировании полученный при создании сложнейшего ПО, решающего задачи не доступные раньше для человека, изменили отношение к классическим источника дохода и перераспредение ресурсов в пользу цифровых я узнал благодаря передовому взгляду и инновацционному отношениею к процессам в командах, заинтересованных получить инструмент для оптимизации и упрощения издержен бизнеса и увеличить прибыль компании. Затраты на внедрение этих правил и рекомендаций, в несколько раз окупятся в долгосрочном проекте, в первый год развития. Неизменно следовать основым идеям, позволит получить максимальную уверенность в качестве и правильной работоспосоюности всего реализованного функционала, который описан и задокументирован разговорным языком в объеме достаточном для понимая всей доступной логики.
+О фреймворке [Cucumber](https://cucumber.io/), я узнал достаточно давно, примерно 7 лет назад, когда пытался овладеть технологией Ruby on Rails. RoR подразумевает написание большого количества тестов и имеет очень развитой инструментарий для различных видов тестирования. Собственно, абрревиатуры BDD & TDD и какие процессы за ними кроются, я тоже узнал изучая RoR.
 
-При первом знакомстве с гибкими подходами в разработке, приносящими множество улучшений в команде, которые позволят иметь единое представление у всех участников, о функциях и параметрах которые появятся, в будующем, через значительный промежок времени. Но и без этого же мы создавали надежное ПО для гигантских вычислений? Перспективы техник не были , в 2016 года в отечественной разработке массого использования не оценить по достуинству возможности предлагаемыми BDD & TDD методологиями и начать их применять на практике. Сразу стоит оговориться, что до сих пор споры на тему применимости данных подходов и реального профита для команды, не утихли и продожаются среди сторонников и противников в среде тестировщиков-автоматизаторов.
+При первом знакомстве, я не смог оценить по достуинству возможности предлагаемыми BDD & TDD методологиями и начать их применять на практике. Сразу стоит оговориться, что до сих пор споры на тему применимости данных подходов и реального профита для команды, не утихли и продожаются среди сторонников и противников в среде тестировщиков-автоматизаторов.
 
 В следующий раз я столкнулся с синтаксисом Given, When, Then уже при написании тестов на REST API используя Java и библиотеку [Rest-Assured](http://rest-assured.io/). Тесты выглядели примерно так и кроме  синтаксиса от BDD не заимствовали ничего лишнего.
 
@@ -65,12 +65,128 @@ it("dry cleaning", function(done) {
                 }
             ]
         };
- {
+        var paginationQuery = function(searchQuery) {
+            var context = {};
+            wsApi.sendMessage2("service", "dayuse", searchQuery).then(function(data) {
+                expect(data.search).not.toBeUndefined();
+                expect(data.done).not.toBeNull();
+                if (!data.done) {
+                    setTimeout(function() {
+                        paginationQuery(searchQuery);
+                    }, 1000);
+                } else {
+                    expect(data.search).toBeDefined();
+                    expect(data.search.length).toBeGreaterThan(0, "Нет результатов поиска");
+                    expect(data.search[0].items).toBeDefined("Нет результатов поиска");
+                    expect(data.search[0].items.length).toBeGreaterThan(0);
+                    var room = data.search[0].items[0][0];
+                    expect(room.meal).toBeDefined();
+                    expect(room.type).toBeDefined();
+                    expect(room.outtime).toBe(searchQuery.date.outtime, "Не сходится время выезда");
+                    expect(room.commerce.currency).toBe(978);
+                    expect(room.commerce.offer).not.toBeNull();
+                    context.offer = room.commerce.offer;
+                    return wsApi.sendMessage2("person", "create", context.createPersonQuery);
+                }
+            }).then(function(data) {
+                expect(data).not.toBeNull();
+                expect(data.id).not.toBeNull();
+                context.personId = data.id;
+                return wsApi.sendMessage2("order", "create");
+            }).then(function(data) {
+                context.orderId = data.id;
+                var createServiceQuery = {
+                    type: "dayuse",
+                    orderid: context.orderId,
+                    items: [{
+                        offer: context.offer
+                    }]
+                };
+                return wsApi.sendMessage2("service", "create", createServiceQuery);
+            }).then(function(data) {
+                expect(data).not.toBeNull();
+                expect(data.id).not.toBeNull();
+                context.serviceId = data.id;
+                context.linkQuery = {
+                    "service": context.serviceId,
+                    "tourist": context.personId,
+                    "item" : 0
+                };
+                return wsApi.sendMessage2("service", "linktourist", context.linkQuery);
+            }).then(function() {
+                return wsApi.sendMessage2("autocomplete", "clothes", { search:"", hotel:searchQuery.place.in });
+            }).then(function(data) {
+                expect(data).not.toBeNull();
+                expect(data.length).toBeGreaterThan(0);
+                var cloth = data[0];
+                expect(cloth.id).not.toBeNull();
+                expect(cloth.name).not.toBeNull();
+                context.clothId = cloth.id;
+                return wsApi.sendMessage2("extras", "dry", { cloth:context.clothId });
+            }).then(function(data) {
+                expect(data).not.toBeNull();
+                expect(data.actions).not.toBeNull();
+                expect(data.actions.length).toBeGreaterThan(0);
+                var action = data.actions[0];
+                expect(action.id).not.toBeNull();
+                context.actionId = action.id;
+                expect(action.name).not.toBeNull();
+                expect(action.commerce).not.toBeNull();
+                expect(action.commerce.original).not.toBeNull();
+                expect(action.commerce.offer).not.toBeNull();
+                context.extraOffer = action.commerce.offer;
+                var updateExtras = {
+                    service: context.serviceId,
+                    extras: [
+                        {
+                            index: 0,
+                            person: context.personId,
+                            amount: 1,
+                            offer: context.extraOffer,
+                            type: "DRY",
+                            item: {
+                                id: context.clothId
+                            },
+                            action: {
+                                id: context.actionId
+                            }
+                        }
+                    ]
+                }
+                return wsApi.sendMessage2("extras", "update", updateExtras);
+            }).then(function() {
+                return wsApi.sendMessage2("order", "retrieve", { id:context.orderId });
+            }).then(function(data) {
+                expect(data).not.toBeNull();
+                expect(data.date).not.toBeNull();
+                expect(data.commerce.payment).not.toBeNull();
+                expect(data.commerce.currency).not.toBeNull();
+                expect(data.services).not.toBeNull();
+                expect(data.services.length).toBeGreaterThan(0);
+                expect(data.services.length).toBe(1);
+                var service = data.services[0];
+                expect(service.type).not.toBeNull();
+                expect(service.type).toBe("dayuse");
+                expect(service.persons.length).toBe(1);
+                var person = service.persons[0];
+                expect(person).not.toBeNull();
+                expect(person.id).not.toBeNull();
+                expect(person.name.last).not.toBeNull();
+                expect(person.name.last).toBe(context.createPersonQuery.name.last);
+                expect(service.commerce.currency).toBe(978);
+                expect(service.commerce.tl).not.toBeNull();
+                expect(service.extraCommerce.payment).not.toBeNull();
+                expect(service.extraCommerce.original).not.toBeNull();
+                expect(service.extraCommerce.currency).not.toBeNull();
+                expect(service.extraCommerce.currency).toBe(978);
+
+                return wsApi.sendMessage2("extras", "retrieve", { service:context.serviceId, type:"DRY" });
+            }).then(function(data) {
                 expect(data).not.toBeNull();
                 expect(data.extras).not.toBeNull();
                 expect(data.extras.length).toBeGreaterThan(0);
                 expect(data.extras.length).toBe(1);
-
+                
                 var extra = data.extras[0];
                 expect(extra.type).not.toBeNull();
                 expect(extra.type).toBe("DRY");

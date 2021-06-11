@@ -142,5 +142,10 @@
   translation: "категории"   
 - id: tag
   translation: "тема" 
+<<<<<<< HEAD
 - id: category
   translation: "категория" 
+=======
+- id: author
+  translation: "автор" 
+>>>>>>> feature/final-home-and-static-edition
