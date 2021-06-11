@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcodes | Блог Снайпера</title>
+    <link>https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/shortcodes/</link>
+      <atom:link href="https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <description>shortcodes</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <image>
+      <url>https://snayp.github.io/img/qa-blog-512x512.png</url>
+      <title>shortcodes</title>
+      <link>https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/shortcodes/</link>
+    </image>
+    
+    <item>
+      <title>More KaTeX</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/more-katex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/more-katex/</guid>
+      <description>&lt;p&gt;The extensions &lt;code&gt;mhchem&lt;/code&gt; and &lt;code&gt;copy-tex&lt;/code&gt; are also included (along the necessary &lt;code&gt;auto-render&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;mhchem&lt;/code&gt; extension allows chemistry notation, like  \(\ce{H2O}\)  or:&lt;/p&gt;
+&lt;p&gt;$$
+\ce{x Na(NH4)HPO4 -&amp;gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}
+$$&lt;/p&gt;
+&lt;p&gt;While &lt;code&gt;copy-tex&lt;/code&gt; allows users to copy the rendered KaTeX and paste it in its native format.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s worth noting, though, that &lt;code&gt;copy-tex&lt;/code&gt; has some 
+&lt;a href=&#34;https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex#known-issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;known issues&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;About how to load the extensions, here&amp;rsquo;s a quick example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---
+&lt;span style=&#34;color:#f92672&#34;&gt;title           &lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;More KaTeX&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;katex           &lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;katexExtensions &lt;/span&gt;: [ &lt;span style=&#34;color:#ae81ff&#34;&gt;mhchem, copy-tex ]&lt;/span&gt;
+---
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+  &lt;h2 id=&#34;fences&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#fences&#34; title=&#39; &#34;Fences&#34;.&#39;&gt;&lt;svg aria-hidden=&#34;true&#34;&gt;&lt;use xlink:href=&#34;#hashtag&#34;/&gt;&lt;/svg&gt;&lt;/a&gt; Fences&lt;/h2&gt; 
+
+&lt;p&gt;Another tweak here is that KaTeX blocks are accessible via keyboard and long expressions can be scrolled:&lt;/p&gt;
+&lt;p&gt;$$ \text{Damage} = \text{Skill Level} * \lfloor A * (1 - B) * (1 - C) * (1 - D) * (1 - E) * F * G \lfloor \frac{H * 0.7 * \text{INT} * \text{INT} * \text{VIT}}{(\text{INT} + \text{VIT})} \rfloor \rfloor $$&lt;/p&gt;
+&lt;p&gt;Pretty much like code blocks:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$$&lt;/span&gt;
+  \text{Damage} &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; \text{Skill Level} &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; \lfloor A &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; B&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; C&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; D&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; E&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; F &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; G \lfloor \frac{H &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; \text{INT} &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; \text{INT} &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; \text{VIT}}{&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;\text{INT} &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; \text{VIT}&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;} \rfloor \rfloor
+&lt;span style=&#34;color:#e6db74&#34;&gt;$$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
