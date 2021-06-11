@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Bash #!/bin/bash  cd $ROOT_DIR DOT_FILES=&#34;lastpass weechat ssh Xauthority&#34; for dotfile in $DOT_FILES; do conform_link &#34;$DATA_DIR/$dotfile&#34; &#34;.$dotfile&#34;; done # TODO: refactor with suffix variables (or common cron values) case &#34;$PLATFORM&#34; in linux) #conform_link &#34;$CONF_DIR/shell/zshenv&#34; &#34;.zshenv&#34; crontab -l &gt; $ROOT_DIR/tmp/crontab-conflict-arch cd $ROOT_DIR/$CONF_DIR/cron if [[ &#34;$(diff ~/tmp/crontab-conflict-arch crontab-current-arch)&#34; == &#34;&#34; ]]; then # no difference with current backup logger &#34;$LOG_PREFIX: crontab live settings match stored &#34;\  &#34;settings; no restore required&#34; rm ~/tmp/crontab-conflict-arch else # current crontab settings in file do not match live settings crontab $ROOT_DIR/$CONF_DIR/cron/crontab-current-arch logger &#34;$LOG_PREFIX: crontab stored settings conflict with &#34;\  &#34;live settings; stored settings restored.">
+
+  
+  <link rel="alternate" hreflang="" href="https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  <meta name="theme-color" content="#fe8481">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="../../css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="../../index.webmanifest">
+  <link rel="icon" type="image/png" href="../../img/mstile-150x150_hu925f1eb09004ef6fa1eb3a268807fdd0_7989_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="../../img/mstile-150x150_hu925f1eb09004ef6fa1eb3a268807fdd0_7989_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Блог Снайпера">
+  <meta property="og:url" content="https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/">
+  <meta property="og:title" content="Syntax Highlighting Test | Блог Снайпера">
+  <meta property="og:description" content="Bash #!/bin/bash  cd $ROOT_DIR DOT_FILES=&#34;lastpass weechat ssh Xauthority&#34; for dotfile in $DOT_FILES; do conform_link &#34;$DATA_DIR/$dotfile&#34; &#34;.$dotfile&#34;; done # TODO: refactor with suffix variables (or common cron values) case &#34;$PLATFORM&#34; in linux) #conform_link &#34;$CONF_DIR/shell/zshenv&#34; &#34;.zshenv&#34; crontab -l &gt; $ROOT_DIR/tmp/crontab-conflict-arch cd $ROOT_DIR/$CONF_DIR/cron if [[ &#34;$(diff ~/tmp/crontab-conflict-arch crontab-current-arch)&#34; == &#34;&#34; ]]; then # no difference with current backup logger &#34;$LOG_PREFIX: crontab live settings match stored &#34;\  &#34;settings; no restore required&#34; rm ~/tmp/crontab-conflict-arch else # current crontab settings in file do not match live settings crontab $ROOT_DIR/$CONF_DIR/cron/crontab-current-arch logger &#34;$LOG_PREFIX: crontab stored settings conflict with &#34;\  &#34;live settings; stored settings restored."><meta property="og:image" content="https://snayp.github.io/img/qa-blog-512x512.png">
+  <meta property="twitter:image" content="https://snayp.github.io/img/qa-blog-512x512.png"><meta property="og:locale" content="ru-ru">
+  
+    
+    
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/"
+  },
+  "headline": "Syntax Highlighting Test",
+  
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "snayp"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Блог Снайпера",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://snayp.github.io/img/logo.svg"
+    }
+  },
+  "description": "Bash #!/bin/bash  cd $ROOT_DIR DOT_FILES=\u0026#34;lastpass weechat ssh Xauthority\u0026#34; for dotfile in $DOT_FILES; do conform_link \u0026#34;$DATA_DIR/$dotfile\u0026#34; \u0026#34;.$dotfile\u0026#34;; done # TODO: refactor with suffix variables (or common cron values) case \u0026#34;$PLATFORM\u0026#34; in linux) #conform_link \u0026#34;$CONF_DIR/shell/zshenv\u0026#34; \u0026#34;.zshenv\u0026#34; crontab -l \u0026gt; $ROOT_DIR/tmp/crontab-conflict-arch cd $ROOT_DIR/$CONF_DIR/cron if [[ \u0026#34;$(diff ~/tmp/crontab-conflict-arch crontab-current-arch)\u0026#34; == \u0026#34;\u0026#34; ]]; then # no difference with current backup logger \u0026#34;$LOG_PREFIX: crontab live settings match stored \u0026#34;\\  \u0026#34;settings; no restore required\u0026#34; rm ~/tmp/crontab-conflict-arch else # current crontab settings in file do not match live settings crontab $ROOT_DIR/$CONF_DIR/cron/crontab-current-arch logger \u0026#34;$LOG_PREFIX: crontab stored settings conflict with \u0026#34;\\  \u0026#34;live settings; stored settings restored."
+}
+</script>
+
+  
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#fe8481",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#fe8481"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "Для комфорной навигации на этом сайте используются куки (cookies).",
+        "dismiss": "Понял!",
+        "link": "Узнать больше",
+        "href": "/cookies/"
+      }
+    })});
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+  <title>Syntax Highlighting Test | Блог Снайпера</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
+  <div id="fb-root" style="text-align: center;"></div>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+  <!-- Start Preloader -->
+<div id="preloader">
+    <div class="preloader">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+</div>
+<!-- End Preloader -->
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Поиск</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Поиск ..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="../../"><img src="../../img/logo.svg" alt="Блог Снайпера"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="../../"><img src="../../img/logo.svg" alt="Блог Снайпера"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="../../%d0%b1%d0%bb%d0%be%d0%b3/"><span>блог</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="../../%d0%bb%d1%83%d1%87%d1%88%d0%b5%d0%b5/"><span>лучшее</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="../../%d0%b0%d0%b2%d1%82%d0%be%d1%80/"><span>автор</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Syntax Highlighting Test</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+
+    1 января 1
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 мин. для прочтения
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+
+
+  <h2 id="bash"><a class="anchor" href="#bash" title=' "Bash".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Bash</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+cd $ROOT_DIR
+DOT_FILES<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lastpass weechat ssh Xauthority&#34;</span>
+
+<span style="color:#66d9ef">for</span> dotfile in $DOT_FILES; <span style="color:#66d9ef">do</span> conform_link <span style="color:#e6db74">&#34;</span>$DATA_DIR<span style="color:#e6db74">/</span>$dotfile<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;.</span>$dotfile<span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">done</span>
+
+<span style="color:#75715e"># TODO: refactor with suffix variables (or common cron values)</span>
+
+<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;</span>$PLATFORM<span style="color:#e6db74">&#34;</span> in
+    linux<span style="color:#f92672">)</span>
+        <span style="color:#75715e">#conform_link &#34;$CONF_DIR/shell/zshenv&#34; &#34;.zshenv&#34;</span>
+        crontab -l &gt; $ROOT_DIR/tmp/crontab-conflict-arch
+        cd $ROOT_DIR/$CONF_DIR/cron
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>diff ~/tmp/crontab-conflict-arch crontab-current-arch<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#34;</span>
+            <span style="color:#f92672">]]</span>;
+            <span style="color:#66d9ef">then</span> <span style="color:#75715e"># no difference with current backup</span>
+                logger <span style="color:#e6db74">&#34;</span>$LOG_PREFIX<span style="color:#e6db74">: crontab live settings match stored &#34;</span><span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>                    <span style="color:#e6db74">&#34;settings; no restore required&#34;</span>
+                rm ~/tmp/crontab-conflict-arch
+            <span style="color:#66d9ef">else</span> <span style="color:#75715e"># current crontab settings in file do not match live settings</span>
+                crontab $ROOT_DIR/$CONF_DIR/cron/crontab-current-arch
+                logger <span style="color:#e6db74">&#34;</span>$LOG_PREFIX<span style="color:#e6db74">: crontab stored settings conflict with &#34;</span><span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>                    <span style="color:#e6db74">&#34;live settings; stored settings restored. &#34;</span><span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>                    <span style="color:#e6db74">&#34;Previous settings recorded in ~/tmp/crontab-conflict-arch.&#34;</span>
+        <span style="color:#66d9ef">fi</span>
+    ;;
+</code></pre></div>
+
+
+
+
+  <h2 id="c"><a class="anchor" href="#c" title=' "C".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> C</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#define UNICODE
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;windows.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">int</span> argc, <span style="color:#66d9ef">char</span> <span style="color:#f92672">**</span>argv) {
+  <span style="color:#66d9ef">int</span> speed <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, speed1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, speed2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#75715e">// 1-20
+</span><span style="color:#75715e"></span>  printf(<span style="color:#e6db74">&#34;Set Mouse Speed by Maverick</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+
+  SystemParametersInfo(SPI_GETMOUSESPEED, <span style="color:#ae81ff">0</span>, <span style="color:#f92672">&amp;</span>speed, <span style="color:#ae81ff">0</span>);
+  printf(<span style="color:#e6db74">&#34;Current speed: %2d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, speed);
+
+  <span style="color:#66d9ef">if</span> (argc <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+  <span style="color:#66d9ef">if</span> (argc <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">2</span>) sscanf(argv[<span style="color:#ae81ff">1</span>], <span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">&amp;</span>speed1);
+  <span style="color:#66d9ef">if</span> (argc <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">3</span>) sscanf(argv[<span style="color:#ae81ff">2</span>], <span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">&amp;</span>speed2);
+
+  <span style="color:#66d9ef">if</span> (argc <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>) <span style="color:#75715e">// set speed to first value
+</span><span style="color:#75715e"></span>    speed <span style="color:#f92672">=</span> speed1;
+  <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (speed <span style="color:#f92672">==</span> speed1 <span style="color:#f92672">||</span> speed <span style="color:#f92672">==</span> speed2) <span style="color:#75715e">// alternate
+</span><span style="color:#75715e"></span>    speed <span style="color:#f92672">=</span> speed1 <span style="color:#f92672">+</span> speed2 <span style="color:#f92672">-</span> speed;
+  <span style="color:#66d9ef">else</span>
+    speed <span style="color:#f92672">=</span> speed1;  <span style="color:#75715e">// start with first value
+</span><span style="color:#75715e"></span>
+  SystemParametersInfo(SPI_SETMOUSESPEED, <span style="color:#ae81ff">0</span>,  speed, <span style="color:#ae81ff">0</span>);
+  SystemParametersInfo(SPI_GETMOUSESPEED, <span style="color:#ae81ff">0</span>, <span style="color:#f92672">&amp;</span>speed, <span style="color:#ae81ff">0</span>);
+  printf(<span style="color:#e6db74">&#34;New speed:     %2d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, speed);
+  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div>
+
+
+
+
+  <h2 id="css"><a class="anchor" href="#css" title=' "CSS".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> CSS</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* CSS Comment */</span>
+#some-id .<span style="color:#a6e22e">some-class</span> {
+  <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+}
+</code></pre></div>
+
+
+
+
+  <h2 id="go"><a class="anchor" href="#go" title=' "Go".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Go</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Hello, 世界&#34;</span>)
+}
+</code></pre></div>
+
+
+
+
+  <h2 id="haskell"><a class="anchor" href="#haskell" title=' "Haskell".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Haskell</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#75715e">{-# LANGUAGE OverloadedStrings #-}</span>
+<span style="color:#66d9ef">module</span> Main <span style="color:#66d9ef">where</span>
+
+<span style="color:#75715e">--import Prelude hiding (id)</span>
+<span style="color:#75715e">--import Control.Category (id)</span>
+<span style="color:#66d9ef">import</span> Control.Arrow ((<span style="color:#f92672">&gt;&gt;&gt;</span>), (<span style="color:#f92672">***</span>), <span style="color:#a6e22e">arr</span>)
+<span style="color:#66d9ef">import</span> Control.Monad (<span style="color:#a6e22e">forM_</span>)
+<span style="color:#75715e">-- import Data.Monoid (mempty, mconcat)</span>
+<span style="color:#75715e">-- import System.FilePath</span>
+
+<span style="color:#66d9ef">import</span> Hakyll
+
+<span style="color:#a6e22e">main</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">IO</span> ()
+<span style="color:#a6e22e">main</span> <span style="color:#f92672">=</span> hakyll <span style="color:#f92672">$</span> <span style="color:#66d9ef">do</span>
+
+    route   <span style="color:#e6db74">&#34;css/*&#34;</span> <span style="color:#f92672">$</span> setExtension <span style="color:#e6db74">&#34;css&#34;</span>
+    compile <span style="color:#e6db74">&#34;css/*&#34;</span> <span style="color:#f92672">$</span> byExtension (<span style="color:#a6e22e">error</span> <span style="color:#e6db74">&#34;Not a (S)CSS file&#34;</span>)
+        [ (<span style="color:#e6db74">&#34;.css&#34;</span>,  compressCssCompiler)
+        , (<span style="color:#e6db74">&#34;.scss&#34;</span>, sass)
+        ]
+
+    route   <span style="color:#e6db74">&#34;js/**&#34;</span> idRoute
+    compile <span style="color:#e6db74">&#34;js/**&#34;</span> copyFileCompiler
+
+    route   <span style="color:#e6db74">&#34;img/*&#34;</span> idRoute
+    compile <span style="color:#e6db74">&#34;img/*&#34;</span> copyFileCompiler
+
+    compile <span style="color:#e6db74">&#34;templates/*&#34;</span> templateCompiler
+
+    forM_ [<span style="color:#e6db74">&#34;test.md&#34;</span>, <span style="color:#e6db74">&#34;index.md&#34;</span>] <span style="color:#f92672">$</span> <span style="color:#a6e22e">\</span>page <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">do</span>
+        route   page <span style="color:#f92672">$</span> setExtension <span style="color:#e6db74">&#34;html&#34;</span>
+        compile page <span style="color:#f92672">$</span> pageCompiler
+            <span style="color:#f92672">&gt;&gt;&gt;</span> applyTemplateCompiler <span style="color:#e6db74">&#34;templates/default.html&#34;</span>
+            <span style="color:#f92672">&gt;&gt;&gt;</span> relativizeUrlsCompiler
+
+<span style="color:#a6e22e">sass</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Compiler</span> <span style="color:#66d9ef">Resource</span> <span style="color:#66d9ef">String</span>
+<span style="color:#a6e22e">sass</span> <span style="color:#f92672">=</span> getResourceString <span style="color:#f92672">&gt;&gt;&gt;</span> unixFilter <span style="color:#e6db74">&#34;sass&#34;</span> [<span style="color:#e6db74">&#34;-s&#34;</span>, <span style="color:#e6db74">&#34;--scss&#34;</span>]
+                         <span style="color:#f92672">&gt;&gt;&gt;</span> arr compressCss
+</code></pre></div>
+
+
+
+
+  <h2 id="html"><a class="anchor" href="#html" title=' "HTML".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> HTML</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD HTML 4.01 Transitional//EN&#34;&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+  &lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;A Tiny Page&lt;/<span style="color:#f92672">title</span>&gt;
+    <span style="color:#75715e">&lt;!-- Valid HTML Comment --&gt;</span>
+    &lt;<span style="color:#f92672">style</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span>&gt;
+    <span style="color:#f92672">&lt;!</span><span style="color:#f92672">--</span> <span style="color:#f92672">Invalid</span> <span style="color:#f92672">HTML</span> <span style="color:#f92672">Comment</span> <span style="color:#f92672">--</span><span style="color:#f92672">&gt;</span>
+      <span style="color:#75715e">/* Inline CSS Comment */</span>
+      <span style="color:#f92672">p</span> {
+        <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">pt</span>;
+        <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#000</span>;
+        <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">right</span>;
+      }
+    &lt;/<span style="color:#f92672">style</span>&gt;
+  &lt;/<span style="color:#f92672">head</span>&gt;
+  &lt;<span style="color:#f92672">body</span> <span style="color:#a6e22e">bgcolor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#FFFFFF&#34;</span> <span style="color:#a6e22e">text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#000000&#34;</span> <span style="color:#a6e22e">link</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#0000CC&#34;</span>&gt;
+    &lt;<span style="color:#f92672">h1</span>&gt;Heading 1&lt;/<span style="color:#f92672">h1</span>&gt;
+    &lt;<span style="color:#f92672">h2</span>&gt;Heading 2&lt;/<span style="color:#f92672">h2</span>&gt;
+    &lt;<span style="color:#f92672">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/<span style="color:#f92672">p</span>&gt;
+    <span style="color:#75715e">&lt;!--  Valid HTML Comment --&gt;</span>
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">language</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;javascript&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+      <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">changeHeight</span>(<span style="color:#a6e22e">h</span>) {
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">tds</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#34;td&#34;</span>);
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">tds</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+          <span style="color:#a6e22e">tds</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;height&#34;</span>, <span style="color:#a6e22e">h</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;px&#34;</span>);
+      }}
+    &lt;/<span style="color:#f92672">script</span>&gt;
+  &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div>
+
+
+
+
+  <h2 id="java"><a class="anchor" href="#java" title=' "Java".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Java</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.util.Map<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.TreeSet<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetEnv</span> <span style="color:#f92672">{</span>
+  <span style="color:#75715e">/**
+</span><span style="color:#75715e">   * let&#39;s test generics
+</span><span style="color:#75715e">   * @param args the command line arguments
+</span><span style="color:#75715e">   */</span>
+  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#75715e">// get a map of environment variables
+</span><span style="color:#75715e"></span>    Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> String<span style="color:#f92672">&gt;</span> env <span style="color:#f92672">=</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">getenv</span><span style="color:#f92672">();</span>
+    <span style="color:#75715e">// build a sorted set out of the keys and iterate
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>String k<span style="color:#f92672">:</span> <span style="color:#66d9ef">new</span> TreeSet<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;(</span>env<span style="color:#f92672">.</span><span style="color:#a6e22e">keySet</span><span style="color:#f92672">()))</span> <span style="color:#f92672">{</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">printf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%s = %s\n&#34;</span><span style="color:#f92672">,</span> k<span style="color:#f92672">,</span> env<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>k<span style="color:#f92672">));</span>
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>    
+<span style="color:#f92672">}</span>
+</code></pre></div>
+
+
+
+
+  <h2 id="javascript"><a class="anchor" href="#javascript" title=' "JavaScript".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> JavaScript</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Inline Comment
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#66d9ef">undefined</span>,
+    <span style="color:#a6e22e">xui</span>,
+    window     <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>,
+    <span style="color:#a6e22e">string</span>     <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> String(<span style="color:#e6db74">&#39;string&#39;</span>),
+    document   <span style="color:#f92672">=</span> window.document,
+    <span style="color:#a6e22e">simpleExpr</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^#?([\w-]+)$/</span>;
+
+<span style="color:#75715e">/** 
+</span><span style="color:#75715e"> * Block Comment
+</span><span style="color:#75715e"> */</span> 
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">changeHeight</span> (<span style="color:#a6e22e">h</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">tds</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#34;td&#34;</span>);
+
+  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">tds</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#a6e22e">tds</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;height&#34;</span>, <span style="color:#a6e22e">h</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;px&#34;</span>);
+  }
+}
+</code></pre></div>
+
+
+
+
+  <h2 id="json"><a class="anchor" href="#json" title=' "JSON".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> JSON</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;employees&#34;</span>: [{
+    <span style="color:#f92672">&#34;firstName&#34;</span>: <span style="color:#e6db74">&#34;John&#34;</span>, 
+    <span style="color:#f92672">&#34;lastName&#34;</span>: <span style="color:#e6db74">&#34;Doe&#34;</span>
+  }]
+}
+</code></pre></div>
+
+
+
+
+  <h2 id="objective-c"><a class="anchor" href="#objective-c" title=' "Objective-C".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Objective-C</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-objective-c" data-lang="objective-c"><span style="color:#75715e">#import &#34;Cocoa1AppDelegate.h&#34;
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">@implementation</span> <span style="color:#a6e22e">Cocoa1AppDelegate</span>
+
+<span style="color:#66d9ef">@synthesize</span> window,siteUrl,pageContents;
+
+- (<span style="color:#66d9ef">void</span>)<span style="color:#a6e22e">applicationDidFinishLaunching:</span>(NSNotification <span style="color:#f92672">*</span>)aNotification {
+    <span style="color:#75715e">// Insert code here to initialize your application
+</span><span style="color:#75715e"></span>    model <span style="color:#f92672">=</span> [[Cocoa1Model alloc] init];
+}
+
+- (<span style="color:#66d9ef">IBAction</span>)<span style="color:#a6e22e">getSiteContents:</span>(<span style="color:#66d9ef">id</span>)sender {
+    [model setPageUrl:[siteUrl stringValue]];
+    NSString<span style="color:#f92672">*</span> reply <span style="color:#f92672">=</span> [model getUrlAsString];
+    NSLog(<span style="color:#e6db74">@&#34;pageSrc: %@&#34;</span>, reply);
+    [pageContents setString:reply];
+    [[[pageContents textStorage] mutableString] appendString:reply];
+}
+
+<span style="color:#66d9ef">@end</span>
+</code></pre></div>
+
+
+
+
+  <h2 id="perl"><a class="anchor" href="#perl" title=' "Perl".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Perl</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!perl -w</span>
+
+<span style="color:#75715e"># Time-stamp: &lt;2002/04/06, 13:12:13 (EST), maverick, csvformat.pl&gt;</span>
+<span style="color:#75715e"># Two pass CSV file to table formatter</span>
+
+$delim <span style="color:#f92672">=</span> $#ARGV <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">1</span> ? $ARGV[<span style="color:#ae81ff">1</span>] : <span style="color:#e6db74">&#39;,&#39;</span>;
+<span style="color:#66d9ef">print</span> STDERR <span style="color:#e6db74">&#34;Split pattern: $delim\n&#34;</span>;
+
+<span style="color:#75715e"># first pass</span>
+open F, <span style="color:#e6db74">&#34;&lt;$ARGV[0]&#34;</span> <span style="color:#f92672">or</span> die;
+<span style="color:#66d9ef">while</span>(<span style="color:#e6db74">&lt;F&gt;</span>)
+{
+  chomp;
+  $i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+  map { $max[$_<span style="color:#f92672">-&gt;</span>[<span style="color:#ae81ff">1</span>]] <span style="color:#f92672">=</span> $_<span style="color:#f92672">-&gt;</span>[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">if</span> $_<span style="color:#f92672">-&gt;</span>[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&gt;</span> ($max[$_<span style="color:#f92672">-&gt;</span>[<span style="color:#ae81ff">1</span>]] <span style="color:#f92672">||</span> <span style="color:#ae81ff">0</span>) }
+    (map {[length $_, $i<span style="color:#f92672">++</span>]} split($delim));
+}
+close F;
+
+<span style="color:#66d9ef">print</span> STDERR <span style="color:#e6db74">&#39;Field width:   &#39;</span>, join(<span style="color:#e6db74">&#39;, &#39;</span>, @max), <span style="color:#e6db74">&#34;\n&#34;</span>;
+<span style="color:#66d9ef">print</span> STDERR join(<span style="color:#e6db74">&#39; &#39;</span>, map {<span style="color:#e6db74">&#39;-&#39;</span> x $_} @max);
+
+<span style="color:#75715e"># second pass</span>
+open F, <span style="color:#e6db74">&#34;&lt;$ARGV[0]&#34;</span> <span style="color:#f92672">or</span> die;
+<span style="color:#66d9ef">while</span>(<span style="color:#e6db74">&lt;F&gt;</span>)
+{
+  chomp;
+  $i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+  map { printf(<span style="color:#e6db74">&#34;%-$max[$_-&gt;[1]]s &#34;</span>, $_<span style="color:#f92672">-&gt;</span>[<span style="color:#ae81ff">0</span>]) }
+    (map {[$_, $i<span style="color:#f92672">++</span>]} split($delim));
+  <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+}
+close F;
+</code></pre></div>
+
+
+
+
+  <h2 id="php"><a class="anchor" href="#php" title=' "PHP".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> PHP</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+
+<span style="color:#66d9ef">require_once</span>($GLOBALS[<span style="color:#e6db74">&#39;g_campsiteDir&#39;</span>]<span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;/</span><span style="color:#e6db74">$ADMIN_DIR</span><span style="color:#e6db74">/country/common.php&#34;</span>);
+<span style="color:#66d9ef">require_once</span>($GLOBALS[<span style="color:#e6db74">&#39;g_campsiteDir&#39;</span>]<span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;/classes/SimplePager.php&#34;</span>);
+
+<span style="color:#a6e22e">camp_load_translation_strings</span>(<span style="color:#e6db74">&#34;api&#34;</span>);
+
+$f_country_language_selected <span style="color:#f92672">=</span> <span style="color:#a6e22e">camp_session_get</span>(<span style="color:#e6db74">&#39;f_language_selected&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>);
+$f_country_offset <span style="color:#f92672">=</span> <span style="color:#a6e22e">camp_session_get</span>(<span style="color:#e6db74">&#39;f_country_offset&#39;</span>, <span style="color:#ae81ff">0</span>);
+
+<span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">empty</span>($f_country_language_selected)) {
+    $f_country_language_selected <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+}
+
+$ItemsPerPage <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+$languages <span style="color:#f92672">=</span> <span style="color:#a6e22e">Language</span><span style="color:#f92672">::</span><span style="color:#a6e22e">GetLanguages</span>(<span style="color:#66d9ef">null</span>, <span style="color:#66d9ef">null</span>, <span style="color:#66d9ef">null</span>, <span style="color:#66d9ef">array</span>(), <span style="color:#66d9ef">array</span>(), <span style="color:#66d9ef">true</span>);
+$numCountries <span style="color:#f92672">=</span> <span style="color:#a6e22e">Country</span><span style="color:#f92672">::</span><span style="color:#a6e22e">GetNumCountries</span>($f_country_language_selected);
+
+$pager <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">SimplePager</span>($numCountries, $ItemsPerPage, <span style="color:#e6db74">&#34;index.php?&#34;</span>);
+
+$crumbs <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>();
+$crumbs[] <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>(<span style="color:#a6e22e">getGS</span>(<span style="color:#e6db74">&#34;Configure&#34;</span>), <span style="color:#e6db74">&#34;&#34;</span>);
+$crumbs[] <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>(<span style="color:#a6e22e">getGS</span>(<span style="color:#e6db74">&#34;Countries&#34;</span>), <span style="color:#e6db74">&#34;&#34;</span>);
+
+<span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">camp_html_breadcrumbs</span>($crumbs);
+
+<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">&lt;?php if ($g_user-&gt;hasPermission(&#34;ManageCountries&#34;)) { ?&gt;
+</span><span style="color:#960050;background-color:#1e0010">&lt;table BORDER=&#34;0&#34; CELLSPACING=&#34;0&#34; CELLPADDING=&#34;1&#34;&gt;
+</span><span style="color:#960050;background-color:#1e0010">    &lt;tr&gt;
+</span><span style="color:#960050;background-color:#1e0010">        &lt;td&gt;&lt;a href=&#34;add.php&#34;&gt;&lt;?php putGS(&#34;Add new&#34;); ?&gt;&lt;/a&gt;&lt;/td&gt;
+</span><span style="color:#960050;background-color:#1e0010">    &lt;/tr&gt;
+</span><span style="color:#960050;background-color:#1e0010">&lt;/table&gt;
+</span><span style="color:#960050;background-color:#1e0010">&lt;?php } ?&gt;
+</span></code></pre></div>
+
+
+
+
+  <h2 id="python"><a class="anchor" href="#python" title=' "Python".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Python</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Inline Python Comment</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExitNotifyThread</span>(Thread):
+    <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">    Block-Level Python Comment
+</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>(self):
+        <span style="color:#66d9ef">global</span> exitthreads, profiledir
+        self<span style="color:#f92672">.</span>threadid <span style="color:#f92672">=</span> thread<span style="color:#f92672">.</span>get_ident()
+        <span style="color:#66d9ef">try</span>:
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> profiledir: <span style="color:#75715e"># normal case</span>
+                Thread<span style="color:#f92672">.</span>run(self)
+            <span style="color:#66d9ef">else</span>:
+                <span style="color:#66d9ef">try</span>:
+                    <span style="color:#f92672">import</span> cProfile <span style="color:#f92672">as</span> profile
+                <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ImportError</span>:
+                    <span style="color:#f92672">import</span> profile
+                prof <span style="color:#f92672">=</span> profile<span style="color:#f92672">.</span>Profile()
+                <span style="color:#66d9ef">try</span>:
+                    prof <span style="color:#f92672">=</span> prof<span style="color:#f92672">.</span>runctx(<span style="color:#e6db74">&#34;Thread.run(self)&#34;</span>, globals(), locals())
+                <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">SystemExit</span>:
+                    <span style="color:#66d9ef">pass</span>
+                prof<span style="color:#f92672">.</span>dump_stats( \
+                            profiledir <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> str(self<span style="color:#f92672">.</span>threadid) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;_&#34;</span> <span style="color:#f92672">+</span> \
+                            self<span style="color:#f92672">.</span>getName() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;.prof&#34;</span>)
+        <span style="color:#66d9ef">except</span>:
+            self<span style="color:#f92672">.</span>setExitCause(<span style="color:#e6db74">&#39;EXCEPTION&#39;</span>)
+            <span style="color:#66d9ef">if</span> sys:
+                self<span style="color:#f92672">.</span>setExitException(sys<span style="color:#f92672">.</span>exc_info()[<span style="color:#ae81ff">1</span>])
+                tb <span style="color:#f92672">=</span> traceback<span style="color:#f92672">.</span>format_exc()
+                self<span style="color:#f92672">.</span>setExitStackTrace(tb)
+        <span style="color:#66d9ef">else</span>:
+            self<span style="color:#f92672">.</span>setExitCause(<span style="color:#e6db74">&#39;NORMAL&#39;</span>)
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> hasattr(self, <span style="color:#e6db74">&#39;exitmessage&#39;</span>):
+            self<span style="color:#f92672">.</span>setExitMessage(None)
+
+        <span style="color:#66d9ef">if</span> exitthreads:
+            exitthreads<span style="color:#f92672">.</span>put(self, True)
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setExitCause</span>(self, cause):
+        self<span style="color:#f92672">.</span>exitcause <span style="color:#f92672">=</span> cause
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getExitCause</span>(self):
+        <span style="color:#e6db74">&#34;&#34;&#34;Returns the cause of the exit, one of:
+</span><span style="color:#e6db74">        &#39;EXCEPTION&#39; -- the thread aborted because of an exception
+</span><span style="color:#e6db74">        &#39;NORMAL&#39; -- normal termination.&#34;&#34;&#34;</span>
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>exitcause
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setExitException</span>(self, exc):
+        self<span style="color:#f92672">.</span>exitexception <span style="color:#f92672">=</span> exc
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getExitException</span>(self):
+        <span style="color:#e6db74">&#34;&#34;&#34;If getExitCause() is &#39;EXCEPTION&#39;, holds the value from
+</span><span style="color:#e6db74">        sys.exc_info()[1] for this exception.&#34;&#34;&#34;</span>
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>exitexception
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setExitStackTrace</span>(self, st):
+        self<span style="color:#f92672">.</span>exitstacktrace <span style="color:#f92672">=</span> st
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getExitStackTrace</span>(self):
+        <span style="color:#e6db74">&#34;&#34;&#34;If getExitCause() is &#39;EXCEPTION&#39;, returns a string representing
+</span><span style="color:#e6db74">        the stack trace for this exception.&#34;&#34;&#34;</span>
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>exitstacktrace
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setExitMessage</span>(self, msg):
+        <span style="color:#e6db74">&#34;&#34;&#34;Sets the exit message to be fetched by a subsequent call to
+</span><span style="color:#e6db74">        getExitMessage.  This message may be any object or type except
+</span><span style="color:#e6db74">        None.&#34;&#34;&#34;</span>
+        self<span style="color:#f92672">.</span>exitmessage <span style="color:#f92672">=</span> msg
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getExitMessage</span>(self):
+        <span style="color:#e6db74">&#34;&#34;&#34;For any exit cause, returns the message previously set by
+</span><span style="color:#e6db74">        a call to setExitMessage(), or None if there was no such message
+</span><span style="color:#e6db74">        set.&#34;&#34;&#34;</span>
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>exitmessage
+</code></pre></div>
+
+
+
+
+  <h2 id="ruby"><a class="anchor" href="#ruby" title=' "Ruby".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Ruby</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">desc <span style="color:#e6db74">&#34;Edit a post (defaults to most recent)&#34;</span>
+task <span style="color:#e6db74">:edit_post</span>, <span style="color:#e6db74">:title</span> <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>t, args<span style="color:#f92672">|</span>
+  args<span style="color:#f92672">.</span>with_defaults(<span style="color:#e6db74">:title</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">false</span>)
+  posts <span style="color:#f92672">=</span> <span style="color:#66d9ef">Dir</span><span style="color:#f92672">.</span>glob(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#{</span>source_dir<span style="color:#e6db74">}</span><span style="color:#e6db74">/</span><span style="color:#e6db74">#{</span>posts_dir<span style="color:#e6db74">}</span><span style="color:#e6db74">/*.*&#34;</span>)
+  post <span style="color:#f92672">=</span> (args<span style="color:#f92672">.</span>title) ? post <span style="color:#f92672">=</span> posts<span style="color:#f92672">.</span>keep_if {<span style="color:#f92672">|</span>post<span style="color:#f92672">|</span> post <span style="color:#f92672">=~</span> <span style="color:#e6db74">/</span><span style="color:#e6db74">#{</span>args<span style="color:#f92672">.</span>title<span style="color:#e6db74">}</span><span style="color:#e6db74">/</span>}<span style="color:#f92672">.</span>last : posts<span style="color:#f92672">.</span>last
+  <span style="color:#66d9ef">if</span> post
+    puts <span style="color:#e6db74">&#34;Opening </span><span style="color:#e6db74">#{</span>post<span style="color:#e6db74">}</span><span style="color:#e6db74"> with </span><span style="color:#e6db74">#{</span>editor<span style="color:#e6db74">}</span><span style="color:#e6db74">...&#34;</span>
+    system <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#{</span><span style="color:#66d9ef">ENV</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;EDITOR&#39;</span><span style="color:#f92672">]</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">#{</span>post<span style="color:#e6db74">}</span><span style="color:#e6db74"> &amp;&#34;</span>
+  <span style="color:#66d9ef">else</span>
+    puts <span style="color:#e6db74">&#34;No posts were found with </span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">#{</span>args<span style="color:#f92672">.</span>title<span style="color:#e6db74">}</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74"> in the title.&#34;</span>
+  <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div>
+
+
+
+
+  <h2 id="scss"><a class="anchor" href="#scss" title=' "SCSS".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> SCSS</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#66d9ef">@import</span> <span style="color:#e6db74">&#34;grids&#34;</span>;
+
+$blue<span style="color:#f92672">:</span> blue;
+
+<span style="color:#f92672">a</span><span style="color:#a6e22e">.myAnchor</span> {
+    <span style="color:#f92672">color</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">blue</span>;
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:hover</span> {
+        <span style="color:#f92672">text-decoration</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">underline</span>;
+    }
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:visited</span> {
+        <span style="color:#f92672">color</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">purple</span>;
+    }
+}
+
+<span style="color:#a6e22e">.error-input</span> {
+  <span style="color:#66d9ef">@extend</span> <span style="color:#a6e22e">.input</span>;
+  <span style="color:#f92672">border</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">4px</span> <span style="color:#f92672">solid</span> #e74c3c;
+}
+
+<span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">input-style</span> {
+    <span style="color:#f92672">font-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">14px</span>;
+}
+
+<span style="color:#f92672">input</span> {
+    <span style="color:#66d9ef">@extend</span> <span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">input-style</span>;
+    <span style="color:#f92672">color</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">black</span>;
+}
+
+<span style="color:#66d9ef">@mixin</span><span style="color:#a6e22e"> media</span>($queryString){
+    <span style="color:#66d9ef">@media</span> <span style="color:#e6db74">#{</span>$queryString<span style="color:#e6db74">}</span> {
+      <span style="color:#66d9ef">@content</span>;
+    }
+}
+
+<span style="color:#66d9ef">@function</span> <span style="color:#f92672">getColumnWidth</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">width</span><span style="color:#f92672">,</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">columns</span><span style="color:#f92672">,</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">margin</span><span style="color:#f92672">)</span>{
+    <span style="color:#66d9ef">@return</span> <span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">width</span> <span style="color:#f92672">/</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">columns</span><span style="color:#f92672">)</span> <span style="color:#f92672">-</span> <span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">margin</span> <span style="color:#f92672">*</span> <span style="color:#f92672">2</span><span style="color:#f92672">)</span>;
+}
+
+$settings<span style="color:#f92672">:</span> (
+    maxWidth<span style="color:#f92672">:</span> <span style="color:#ae81ff">800</span><span style="color:#66d9ef">px</span><span style="color:#f92672">,</span>
+    <span style="color:#66d9ef">columns</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">12</span><span style="color:#f92672">,</span>
+    <span style="color:#66d9ef">margin</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span><span style="color:#f92672">,</span>
+    breakpoints<span style="color:#f92672">:</span> (
+        xs<span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;(max-width : 480px)&#34;</span><span style="color:#f92672">,</span>
+        sm<span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;(max-width : 768px) and (min-width: 481px)&#34;</span><span style="color:#f92672">,</span>
+        md<span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;(max-width : 1024px)  and (min-width: 769px)&#34;</span><span style="color:#f92672">,</span>
+        lg<span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;(min-width : 1025px)&#34;</span>
+    )
+);
+</code></pre></div>
+
+
+
+
+  <h2 id="sql"><a class="anchor" href="#sql" title=' "SQL".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> SQL</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">column_name</span>, <span style="color:#66d9ef">column_name</span> <span style="color:#66d9ef">FROM</span> <span style="color:#66d9ef">table_name</span>;
+</code></pre></div>
+
+
+
+
+  <h2 id="xml"><a class="anchor" href="#xml" title=' "XML".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> XML</h2> 
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;employees&gt;</span>
+    <span style="color:#f92672">&lt;employee&gt;</span>
+        <span style="color:#f92672">&lt;firstName&gt;</span>John<span style="color:#f92672">&lt;/firstName&gt;</span> <span style="color:#f92672">&lt;lastName&gt;</span>Doe<span style="color:#f92672">&lt;/lastName&gt;</span>
+    <span style="color:#f92672">&lt;/employee&gt;</span>
+<span style="color:#f92672">&lt;/employees&gt;</span>
+</code></pre></div><hr>
+<p>Source:
+
+<a href="https://gist.github.com/cbracco/32036db5425d23de70c3dd9a846517d0" target="_blank" rel="noopener">markdown-pygments-syntax-highlighting-test.md · GitHub</a></p>
+
+    </div>
+
+    
+
+
+
+<div class="article-tags">
+  
+  
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/&amp;text=Syntax%20Highlighting%20Test" target="_blank" rel="noopener" class="share-btn-telegram">
+          <i class="fab fa-telegram"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/&amp;text=Syntax%20Highlighting%20Test" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/&amp;t=Syntax%20Highlighting%20Test" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Syntax%20Highlighting%20Test&amp;body=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/&amp;title=Syntax%20Highlighting%20Test" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Syntax%20Highlighting%20Test%20https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://reddit.com/submit?url=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/&amp;title=Syntax%20Highlighting%20Test" target="_blank" rel="noopener" class="share-btn-reddit">
+          <i class="fab fa-reddit-alien"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://pinterest.com/pin/create/link/?url=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/&amp;description=Syntax%20Highlighting%20Test" target="_blank" rel="noopener" class="share-btn-pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="../../authors/snayp/avatar_hu0f0bb9948d420c8221623f68964e2e2f_274258_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="../../%d0%b0%d0%b2%d1%82%d0%be%d1%80">snayp</a></h5>
+      <h6 class="card-subtitle">тестировщик</h6>
+      <div class="card-text">работаю инженером качества ПО.<br>
+увлекаюсь web технологиями. слушаю музыку.</div>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://t.me/continuous.testing" target="_blank" rel="noopener">
+        <i class="fab fa-telegram"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/qa_sdet" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/continuous4testing" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+  
+
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-snayp-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Похожее</h3>
+    <ul>
+      
+      <li><a href="../../%D0%B1%D0%BB%D0%BE%D0%B3/techno-set-dj-omm/">Techno set Dj Omm</a></li>
+      
+      <li><a href="../../%D0%B1%D0%BB%D0%BE%D0%B3/emoji-support/">Emoji Support</a></li>
+      
+      <li><a href="../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%B6%D0%B8%D0%B2%D1%8B%D0%B5-%D0%B2%D1%8B%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B2-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D1%85-%D0%B0%D1%80%D1%82%D0%B8%D1%81%D1%82%D0%BE%D0%B2/">Аудиовизуальная техника и звукотехническое обеспечение шоу</a></li>
+      
+      <li><a href="../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BC%D0%BE%D0%BA%D0%B8/%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D1%8B-%D0%BC%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BE%D0%B2/">Разработка моков</a></li>
+      
+      <li><a href="../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/">Знакомство Cucumber и BDD и TDD подхода. Начало.</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+  
+<footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="../../%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8/">Политика конфиденциальности</a>
+    
+    
+       &middot; 
+      <a href="../../%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/">Условия использования</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+    2021 © Сделано с помощью
+    
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"результат не найден","placeholder":"Поиск ...","results":"результат найден"};
+      const content_type = {
+        'post': "посты",
+        'project': "Проекты",
+        'publication' : "Публикации",
+        'talk' : "События"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    <script src="../../js/academic.min.4b236a73379b64df3d58dedeac8d6266.js"></script>
+
+
+
+</body>
+</html>
