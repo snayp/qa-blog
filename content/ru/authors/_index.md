@@ -1,7 +1,7 @@
 +++
 [_build]
-    render = false
+    render = true
 [cascade._build]
     render = true
-    list =  false
+    list =  true
 +++
