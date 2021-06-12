@@ -4,7 +4,7 @@
             {{ $pub_types := partial "functions/get_pub_types" $ }}
             {{ range $index, $value := $pub_types }} 
             <option value=".pubtype-{{ (T $value) }}">
-              {{ index $pub_types $index }}
+              {{ index $pub_types  $index }}
             </option>
             {{ end }}
           </select>

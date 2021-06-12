@@ -1,6 +1,7 @@
-{{/* Get Publication Types */}}
 {{ $pub_types := slice }}
-{{ range .Site.Taxonomies.publication_types }}
-{{ $pub_types = $pub_types | append (i18n . | default "uncat") }}
-{{ end }}
+{{  with .Site.GetPage "section" "содержание" }}
+    
+        {{ $pub_types =  $pub_types | append ( . ) }}
+    
+{{ end }} 
 {{ return $pub_types }}
