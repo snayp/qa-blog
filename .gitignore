@@ -3,7 +3,6 @@ resources/
 .vscode/
 .env
 themes/
-public/
 node_modules/
 looog.txt
 content/_index_tttt.md

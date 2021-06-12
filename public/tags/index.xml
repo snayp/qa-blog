@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Блог Снайпера</title>
+    <link>https://snayp.github.io/tags/</link>
+      <atom:link href="https://snayp.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Блог Снайпера</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Sat, 05 Jun 2021 13:01:13 +0000</lastBuildDate>
+    <image>
+      <url>https://snayp.github.io/img/qa-blog-512x512.png</url>
+      <title>Блог Снайпера</title>
+      <link>https://snayp.github.io/tags/</link>
+    </image>
+    
+  </channel>
+</rss>
