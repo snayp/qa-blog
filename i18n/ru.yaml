@@ -152,3 +152,5 @@
   translation: "тема" 
 - id: category
   translation: "категория" 
+- id: author
+  translation: "автор" 
