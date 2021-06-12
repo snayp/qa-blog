@@ -1,23 +1,5 @@
 <ul class="list-unstyled">
-    {{ range site.Data.publication_types.types }}
-    <li><a href="{{ T (.) }}">{{ T (.) }}</a></li>
+    {{ range site.Taxonomies.publication_types }}
+    <li><a href="/тип/{{ T (.) }}">{{ T (.) }}</a></li>
     {{ end }}
 </ul>
-{{/*  
-<div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-10">
-        <div class="row">
-            <div class="col-12 col-md-3 pub-row-heading">{{ i18n "publication_type" }}</div>
-            <div class="col-12 col-md-9">
-                {{ $pub_types := partial "functions/get_pub_types" $ }}
-                {{ range $pub_types }}
-                <a href="{{ (site.GetPage " section" "publications" ).RelPermalink }}{{ . | urlize }}">
-                    {{ . }}
-                </a>
-                {{ end }}
-            </div>
-        </div>
-    </div>
-    <div class="col-md-1"></div>
-</div>  */}}
