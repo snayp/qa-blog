@@ -249,3 +249,6 @@
 
 - id: category
   translation: Category
+
+- id: author
+  translation: author 
