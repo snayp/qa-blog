@@ -1,7 +1,7 @@
 +++
 # kind = "taxonomy"
 title = " Вид контента"
-toc = true
+# toc = true
 +++
 
 {{< list_pub_types >}}

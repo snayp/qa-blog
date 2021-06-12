@@ -1,7 +1,7 @@
 +++
 title = "Категории"
 # section = "содержание"
-kind = "taxonomy"
+# kind = "taxonomy"
 
 +++
 

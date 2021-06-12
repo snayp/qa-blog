@@ -1,6 +1,6 @@
 <ul class="list-unstyled">
     {{ range site.Data.publication_types.types }}
-    <li><a href="{{ T (.) }}">{{ T (.) }}</a></li>
+    <li><a href="/тип/{{ T (.) }}">{{ T (.) }}</a></li>
     {{ end }}
 </ul>
 {{/*  
