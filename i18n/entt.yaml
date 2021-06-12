@@ -248,11 +248,7 @@
   translation: Tag
 
 - id: category
-<<<<<<< HEAD:i18n/entt.yaml
-  translation: Category
-=======
   translation: Category
 
 - id: author
   translation: author 
->>>>>>> feature/final-home-and-static-edition:i18n/en.yaml
