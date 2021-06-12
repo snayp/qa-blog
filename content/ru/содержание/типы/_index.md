@@ -1,5 +1,5 @@
 +++
-title = " Тип контента"
+title = " Тип"
 +++
 
 {{< list_pub_types >}}
