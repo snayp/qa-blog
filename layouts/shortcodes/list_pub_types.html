@@ -1,4 +1,4 @@
-        <div class="col-auto">
+        <!-- <div class="col-auto">
           <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
             <option value="*">{{ i18n "publication_type" }}</option>
             {{ $pub_types := partial "functions/get_pub_types" $ }}
@@ -8,4 +8,10 @@
             </option>
             {{ end }}
           </select>
-        </div>
+        </div> -->
+
+<ul class="list-unstyled">
+  {{ range site.Taxonomies.publication_types }}
+  <li><a href="{{.Page.RelPermalink}}">{{.Page.Title}}</a></li>
+  {{ end }}
+</ul>
