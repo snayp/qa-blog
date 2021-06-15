@@ -9,6 +9,7 @@ projects = []
 subtitle = ""
 summary = ""
 tags = [ "привет", "работа", "транслитерация" ]
+publication_types = ["qa"]
 title = "Разработка моков"
 view = 1
 
