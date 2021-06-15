@@ -23,17 +23,10 @@
   url = "автор/"
   weight = 45
 
-<<<<<<< HEAD
-[[main]]
-  name = "содержание"
-  url = "содержание/"
-  weight = 40
-=======
 # [[main]]
 #   name = "лучшее"
 #   url = "ru/содержание/"
 #   weight = 40
->>>>>>> feature/final-home-and-static-edition
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
