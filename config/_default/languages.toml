@@ -14,7 +14,6 @@
   # layoutsDir = "layouts/ru"
   # configDir = "config/ru"
   contentDir = "content/ru/"
-<<<<<<< HEAD
   paginatepath = "страница"
 # Taxonomies.
 # [ru.taxonomies]
@@ -26,6 +25,7 @@
 [ru.permalinks]
   categories = "/категория/:slug/"      # required
   tags = "/тема/:slug/"  
+  publication_types = "/тип/:slug/"
   # posts =  "/блог/"               # required
   # pages = "/:slug/"
   # authors = "/:slug/"
@@ -53,39 +53,3 @@
 #   # posts =  "/блог/"               # required
 #   # pages = "/:slug/"
 #   # authors = "/:slug/"
-=======
-
-# Taxonomies.
-# [ru.taxonomies]
-  # "тема" = "темы"
-  # "категория" = "категории"
-  # publication_type = "publication_types"
-  # social = "socials"
-  # "автор" = "авторы"
-# [ru.permalinks]
-  # categories = "категория/:slug/"      # required
-  # tags = "тема/:slug/"                 # required
-  # pages = "/:slug/"
-  # authors = "автор/:slug/"
-
-[en]
-  languageName = "english"
-  subtitle = "Private view of software testing process"
-  keywords = ""
-  weight = 2
-  # copyright = ""
-  contentDir = "content/en/"
-  # configDir = "config/en"
-
-# Taxonomies.
-# [en.taxonomies]
-  # tag = "tags"
-  # category = "categories"
-  # publication_type = "publication_types"
-  # social = "socials"
-  # author = "authors"
-# [en.permalinks]
-  # categories = "category/:slug/"      # required
-  # tags = "tag/:slug/"   
-  # authors = "author/:slug/"
->>>>>>> feature/final-home-and-static-edition

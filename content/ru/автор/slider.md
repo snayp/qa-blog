@@ -2,7 +2,7 @@
 # Slider widget.
 widget = "slider"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 8  # Order that this section will appear.
 
 # Slide interval.
@@ -18,8 +18,7 @@ height = "calc(100vh - 70px)"
 [[item]]
   title = "красота"
   content = '''
-  совершенства вокруг нас \
-  архивные и свежие моменты 
+  вокруг нас
   '''
   align = "center"  # Choose `center`, `left`, or `right`.
 

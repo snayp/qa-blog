@@ -10,10 +10,4 @@ subtitle = ""
 
 +++
 
-## Лето 2019
-
 {{< gallery album="gallery_2019" >}}
-
-## Панорама
-
-{{< gallery album="gallery_wide" >}}

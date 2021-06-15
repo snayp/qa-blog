@@ -1,21 +1,14 @@
 +++
 
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
-<<<<<<< HEAD
-active = true  # Activate this widget? true/false
-weight = 59  # Order that this section will appear.
+active = false  # Activate this widget? true/false
+weight = 40  # Order that this section will appear.
+
 headless = true
 
 title = "новячок :new:"
 subtitle = "в сети"
-=======
-active = false  # Activate this widget? true/false
-weight = 60  # Order that this section will appear.
-headless = true
 
-title = "новячок :new:"
-subtitle = "самое свежее"
->>>>>>> feature/final-home-and-static-edition
 
 [image]
   caption = ""
@@ -40,13 +33,8 @@ subtitle = "самое свежее"
     tag = []
     category = []
     author = []
-<<<<<<< HEAD
-    publication_type = "8"
-    exclude_featured = false
-=======
     publication_type = []
     exclude_featured = true
->>>>>>> feature/final-home-and-static-edition
     exclude_past = false
     exclude_future = true
   

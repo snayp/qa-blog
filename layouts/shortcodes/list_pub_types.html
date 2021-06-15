@@ -1,0 +1,17 @@
+        <!-- <div class="col-auto">
+          <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
+            <option value="*">{{ i18n "publication_type" }}</option>
+            {{ $pub_types := partial "functions/get_pub_types" $ }}
+            {{ range $index, $value := $pub_types }} 
+            <option value=".pubtype-{{ (T $value) }}">
+              {{ index $pub_types $index }}
+            </option>
+            {{ end }}
+          </select>
+        </div> -->
+
+<ul class="list-unstyled">
+  {{ range site.Taxonomies.publication_types }}
+  <li><a href="{{.Page.RelPermalink}}">{{.Page.Title}}</a></li>
+  {{ end }}
+</ul>

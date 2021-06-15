@@ -3,12 +3,8 @@ title = "сельский тестер"
 ignoreErrors = ["error-remote-getjson", "error-disable-taxonomy"]
 languageCode = ["ru", "en"]
 defaultContentLanguage = "ru"
-<<<<<<< HEAD
-defaultContentLanguageInSubdir = false
-disableLanguages = ["en"]
-=======
 defaultContentLanguageInSubdir = true
->>>>>>> feature/final-home-and-static-edition
+disableLanguages = ["en"]
 # paginatepath = "страница"
 enableInlineShortcodes = true
 canonifyURLs = true

@@ -1,6 +1,4 @@
 +++
-# kind = "taxonomy"
-title = "Содержание"
+title = "Рубрикатор"
 +++
 
-{{< list_children >}}

@@ -2,11 +2,11 @@
 
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = false  # Activate this widget? true/false
-weight = 60  # Order that this section will appear.
+weight = 50  # Order that this section will appear.
 headless = true
 
-title = "новячок :new:"
-subtitle = "самое свежее"
+title = ""
+subtitle = ""
 
 [image]
   caption = ""
@@ -44,6 +44,7 @@ subtitle = "самое свежее"
   #   4 = Citation (publication only)
   view = 3
   
+
 [design.background]
   # Apply a background color, gradient, or image.
   #   Uncomment (by removing `#`) an option to apply it.

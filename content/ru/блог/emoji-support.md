@@ -5,7 +5,7 @@ description = "Guide to emoji usage in Hugo"
 tags = [ "emoji" ]
 categories = [ ]
 title = "Emoji Support"
-draft = false
+draft = true
 lastmod = 2021-05-24T10:41:44.969Z
 +++
 

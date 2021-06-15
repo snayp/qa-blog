@@ -4,6 +4,7 @@ tags = ["markdown"]
 title = "Read Me"
 toc = true
 author = "snayp"
+draft = true
 +++
 
 [Live demo (on Netlify)](https://color-your-world-demo.netlify.app/) | [Demo (on Hugo Themes)](https://themes.gohugo.io/theme/hugo-theme-color-your-world/)

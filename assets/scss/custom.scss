@@ -355,3 +355,61 @@ section#fn {
 }
 a[href="#fn"]:before{ content: '[' }
 a[href="#fn"]:after{ content: ']' }
+
+
+.playlist--list {
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  border-left: none;
+  height: 340px;
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  line-height: .95;
+  color: #565D64;
+  display: inline-block;
+  float: none;
+  margin: 0;
+  width: calc(100% - 343px);
+}
+@media (max-width: 600px) {
+  .playlist--list {
+    display: block;
+    width: 340px;
+    float: none;
+    border: 1px solid #ccc;
+    border-top: 0;
+  }
+}
+.playlist--list li {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  padding: 0;
+  cursor: pointer;
+  padding: 20px 10px;
+  background: #ffffff;
+  border-bottom: 1px solid #ccc;
+}
+.playlist--list li:last-child {
+  border-bottom: 0;
+}
+.playlist--list li:hover {
+  background-color: #3498db;
+  color: #ffffff;
+}
+.playlist--list li.active {
+  background-color: #CCDADE;
+  color: #565D64;
+}
+.playlist--list li span {
+  pointer-events: none;
+}
+.playlist--list li .artist {
+  display: block;
+  font-weight: normal;
+  margin-top: 5px;
+  color: #666;
+  font-size: 18px;
+}

@@ -3,12 +3,16 @@
 title = "{{ replace .Name "-" " " | title }}"
 subtitle = ""
 summary = ""
+description = ""
+abstract = ""
 authors = ["snayp"]
 tags = []
 categories = []
+publication_types = []
 keywords = []
 date = {{ .Date }}
 lastmod = {{ .Date }}
+publishDate = {{ .Date }}
 featured = false
 draft = true
 
