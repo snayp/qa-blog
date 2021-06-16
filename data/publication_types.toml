@@ -6,6 +6,7 @@
             "opinion", # 7
             "news",
             "audio",
-            "gallery"
+            "gallery",
+            "private"
           ]
 
