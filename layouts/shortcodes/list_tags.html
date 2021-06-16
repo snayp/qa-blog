@@ -1,5 +1,5 @@
 <ul class="list-unstyled">
-  {{ range .Page.Params.tags }}
+  {{ range site.Taxonomies.tags }}
   <li><a href="{{.Page.RelPermalink}}">{{.Page.Title}}</a></li>
   {{ end }}
 </ul>

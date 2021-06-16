@@ -3,12 +3,10 @@
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = false  # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
-
 headless = true
 
 title = "новячок :new:"
 subtitle = "в сети"
-
 
 [image]
   caption = ""

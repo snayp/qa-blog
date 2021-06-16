@@ -13,7 +13,7 @@
   # copyright = "{year} ( i18n \"powered_by\")"
   # layoutsDir = "layouts/ru"
   # configDir = "config/ru"
-  contentDir = "content/ru/"
+  contentDir = "content/ru"
   paginatepath = "страница"
 # Taxonomies.
 # [ru.taxonomies]
