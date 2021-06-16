@@ -1,18 +1,26 @@
 +++
-title = "Somafm"
+title = "Somafm Лучшая ONLINE Радиостанция. Ambient & Chillout"
 subtitle = ""
 summary = ""
 description = ""
 abstract = ""
-date = 2021-06-05T19:31:24.000Z
-draft = true
-lastmod = 2021-06-05T19:33:30.579Z
-tags = [ "API", "REST", "shortcodes", "блог", "онлайн", "somafm" ]
-categories = [ "досуг", "музыка", "творчество" ]
+date = 2021-06-16T21:02:55.201Z
+draft = false
+lastmod = 2021-06-16T21:02:56.831Z
+tags = [
+  "ambient",
+  "API",
+  "live",
+  "REST",
+  "somafm",
+  "блог",
+  "радио",
+  "chillout"
+]
+categories = [ "досуг", "онлайн" ]
 publication_types = [ "музыка" ]
 keywords = [ ]
 authors = [ "snayp" ]
-
 +++
 
 
@@ -114,6 +122,10 @@ var art = new Artplayer({
             {
                 title: 'SomaFM - BeatBlender',
                 url: 'http://ice6.somafm.com/beatblender-128-mp3',
+            },
+            {
+                title: 'SomaFM - Heavyweight Reggae',
+                url: 'http://ice2.somafm.com/reggae-128-mp3',
             },
         ]),
     ],

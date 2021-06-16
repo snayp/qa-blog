@@ -6,16 +6,13 @@ title = "Привет, уважаемый читатель!"
 headless = true
 author  = "snayp"
 [advanced]
- # 1. Custom CSS. 
  css_style = "color: #495057"
  
- # 2. CSS class.
  css_class = ""
 [design]
 
 
 [design.background]
- # 3. text_color_light = false
 [design.spacing]
   padding = ["60px", "0", "60px", "0"]
 +++

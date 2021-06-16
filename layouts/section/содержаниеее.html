@@ -10,7 +10,7 @@
       <div class="article-style">{{ . }}</div>
       {{ end }}
 
-      {{ range (.Paginate (.Data.Pages.GroupByDate "2006" "desc")).PageGroups }}
+      {{ range (.Paginate (.Pages.GroupByDate "2006" "desc")).PageGroups }}
       <div class="row" id="talk_list">
         <div class="col-lg-2">
           <h3>{{ .Key }}</h3>

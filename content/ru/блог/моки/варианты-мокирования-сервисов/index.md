@@ -1,5 +1,5 @@
 +++
-authors = ["snayp"]
+authors = ["admin"]
 categories = []
 date = "2021-01-22T18:23:23+03:00"
 draft = true

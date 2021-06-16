@@ -1,10 +1,10 @@
 +++
-authors = ["snayp"]
-categories = ["тестирование", "онлайн"]
+authors = ["admin"]
+categories = ["тестирование","онлайн"]
 date = "2020-11-30T05:10:51+03:00"
 draft = false
 tags = ["автоматизация", "cucumber", "selenium", "java", "BDD"]
-title = "Опыт использования Cucumber и BDD подхода. Часть 1"
+title = "Разбираемся в Запоздалой Популярности Cucumber и BDD подхода"
 
 +++
 
