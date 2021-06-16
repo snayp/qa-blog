@@ -4,9 +4,8 @@
             "translation", # 5
             "doc", # 6
             "opinion", # 7
-            "news", # 8
-            "personal", # 9
-            "career", # 10
-            "relax"
+            "news",
+            "audio",
+            "gallery"
           ]
 
