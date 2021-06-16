@@ -2,9 +2,9 @@
 resources
 .vscode
 .env
-themes/
-node_modules/
-public/
+themes
+node_modules
+public
 looog.txt
 content/_index_tttt.md
 somafm/lib64
