@@ -4,7 +4,7 @@ resources
 .env
 themes/
 node_modules/
-public/
+public/*
 looog.txt
 content/_index_tttt.md
 somafm/lib64
