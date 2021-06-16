@@ -7,6 +7,8 @@ headless = true
 
 title = "новячок :new:"
 subtitle = "в сети"
+
+[image]
   caption = ""
   preview_only = false
 
@@ -29,7 +31,8 @@ subtitle = "в сети"
     category = []
     author = []
     publication_type = []
-    exclude_featured = false
+    exclude_featured = true
+    exclude_past = false
     exclude_future = true
   
   # Toggle between the various page layout types.
