@@ -1,0 +1,7 @@
+{{ with $.Param "tags" }}
+
+    {{ $js :=  partial "functions/translit" . }}
+
+    <script src="{{ $js.Permalink }}"></script>
+{{ end }}
+

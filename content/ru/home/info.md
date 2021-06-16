@@ -1,15 +1,16 @@
 +++
 
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
-active = false  # Activate this widget? true/false
-weight = 40  # Order that this section will appear.
+active = true  # Activate this widget? true/false
+weight = 63  # Order that this section will appear.
 headless = true
 
-title = "новячок :new:"
-subtitle = "в сети"
+title = "мнение"
+subtitle = "взгляд с разных сторон"
 
 [image]
   caption = ""
+  focal_point = ""
   preview_only = false
 
 [content]
@@ -30,11 +31,12 @@ subtitle = "в сети"
     tag = []
     category = []
     author = []
-    publication_type = []
+    publication_type = "7"
     exclude_featured = true
     exclude_past = false
     exclude_future = true
   
+[design]
   # Toggle between the various page layout types.
   #   1 = List
   #   2 = Compact
