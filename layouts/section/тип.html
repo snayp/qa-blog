@@ -24,9 +24,9 @@
         <div class="col-auto">
           <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
             <option value="*">{{ i18n "publication_type" }}</option>
+            {{ range $index, $taxonomy := site.Data.publication_types.types }}
             {{ $pub_types := partial "functions/get_pub_types" $ }}
-            {{ range $index, $taxonomy := site.Taxonomies.publication_types }}
-            <option value=".pubtype-{{ (int $index) }}">
+            <option value=".pubtype-{{ T ($taxonomy) }}">
               {{ index $pub_types (int $index) }}
             </option>
             {{ end }}

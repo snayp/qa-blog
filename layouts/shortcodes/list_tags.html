@@ -1,5 +1,8 @@
+
 <ul class="list-unstyled">
   {{ range site.Taxonomies.tags }}
-  <li><a href="{{.Page.RelPermalink}}">{{.Page.Title}}</a></li>
+  {{/*< list_translations . >*/}}
+  <li><a id='translitTerm' href="{{.Page.RelPermalink}}">{{.Page.Title}}</a></li>
   {{ end }}
 </ul>
+

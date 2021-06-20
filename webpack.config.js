@@ -31,16 +31,13 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, 'assets')
+    path: path.resolve(__dirname, 'src')
   },
 
   plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin({
             template: 'index.html'
-          }), new WorkboxWebpackPlugin.GenerateSW({
-          swDest: 'sw.js',
-          clientsClaim: true,
-          skipWaiting: false,
-        })],
+          })
+          ],
 
   module: {
     rules: [{

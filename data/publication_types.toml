@@ -4,6 +4,7 @@
             "translation", # 5
             "doc", # 6
             "opinion", # 7
+            "experience",
             "news",
             "audio",
             "gallery",

@@ -18,8 +18,8 @@ tags = [ "офлайн" ]
 columns = "1"
 background = { }
 
-  [design.spacing]
-  padding = [ "60px", "0", "60px", "0" ]
+[design.spacing]
+padding = [ "60px", "0", "60px", "0" ]
 
 [advanced]
 css_class = "abbb"

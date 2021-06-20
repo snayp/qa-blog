@@ -4,26 +4,31 @@ subtitle = ""
 summary = ""
 description = ""
 abstract = ""
-authors = [ "admin" ]
+authors = ["snayp"]
 tags = [ "BDD", "Java", "автоматизация", "блог" ]
 categories = [ "english", "тестирование", "онлайн" ]
-publication_types = [ "перевод" ]
+publication_types = []
 keywords = [ ]
 date = 2021-06-16T19:07:40.764Z
 lastmod = 2021-06-16T19:07:42.739Z
 publishDate = 2021-06-16T19:01:01.000Z
-featured = true
+featured = false
 draft = false
 projects = [ ]
-external_link = "https://testguild.com/bdd-automation-testing/"
-view = 1
+
 [image]
-caption = ""
-focal_point = ""
-preview_only = false
+    caption = ""
+    focal_point = "smart"
+    placement = 2
+    preview_only = false
 
 [design]
-background = { }
+
+# [[links]]
+#    name = "оригинал"
+#    url = "https://testguild.com/bdd-automation-testing/"
+#    icon_pack = "fab"
+#    icon = "https://testguild.com/" 
 +++
 
 <!-- {{< gdocs src="https://drive.google.com/file/d/1ukyDnFQMsW6xrUtmvjPKqMYa5LnIohyp/preview" >}} -->

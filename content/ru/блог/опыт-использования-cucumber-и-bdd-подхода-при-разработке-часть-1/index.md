@@ -1,13 +1,12 @@
 +++
-authors = ["admin"]
+authors = ["snayp"]
 categories = ["тестирование","онлайн"]
 date = "2020-11-30T05:10:51+03:00"
 draft = false
-tags = ["автоматизация", "cucumber", "selenium", "java", "BDD"]
+tags = ["автоматизация","cucumber","selenium","java","BDD"]
 title = "Разбираемся в Запоздалой Популярности Cucumber и BDD подхода"
 
 +++
-
 ## Знакомство с BDD
 
 {{< figure src="header.png" link="https://cucumber.io/" title="BDD - мнения за и против, best practicies и anti patterns." caption="*Особенности процесса и полезные инструменты позволяющие команде сосредоточиться на реальных примерах использования системы с точки зрения конечного пользователя.*" alt="Behaviour Driven Development (BDD) - командное обсуждение существенных детелей проекта, позволяющее добиться однозначного понимания будущих изменений у всех членов команды." class="small" >}}
@@ -18,7 +17,7 @@ title = "Разбираемся в Запоздалой Популярности
 
 В следующий раз я столкнулся с синтаксисом Given, When, Then уже при написании тестов на REST API используя Java и библиотеку [Rest-Assured](http://rest-assured.io/). Тесты выглядели примерно так и кроме  синтаксиса от BDD не заимствовали ничего лишнего.
 
-{{< gist snayp c41875f9b2aa729ee29b32e13cc5205c >}}
+{{% gist snayp c41875f9b2aa729ee29b32e13cc5205c %}}
 
 [Выложил больше примеров с описанием, что делают тесты](https://automated-testing.info/t/code-recipe-primer-ispolzovaniya-rest-assured-dlya-avtomatizaczii-restfull-api/24599?u=snayp)
 

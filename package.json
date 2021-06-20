@@ -1,7 +1,6 @@
 {
  "comments": {
   "dependencies": {
-   "aplayer": "project",
    "bootstrap": "project",
    "hls.js": "project",
    "reveal.js": "project"
@@ -26,10 +25,11 @@
  },
  "dependencies": {
   "@popperjs/core": "^2.9.2",
-  "aplayer": "^1.10.1",
   "artplayer": "^3.5.30",
   "artplayer-plugin-playlist": "^3.2.4",
   "bootstrap": "^4.4.1",
+  "cyrillic-to-translit-js": "^3.1.0",
+  "esbuild": "^0.12.9",
   "hls.js": "^0.14.17",
   "jquery": "3.5",
   "reveal.js": "^4.1.0"

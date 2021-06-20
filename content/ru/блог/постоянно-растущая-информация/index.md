@@ -1,48 +1,23 @@
 +++
-
-title = "Постоянно Растущая Нформация"
+title = "Необходимость Анализировать И Обрабатывать Еще Больше Данных"
 subtitle = ""
 summary = ""
-authors = ["snayp"]
-tags = []
-categories = []
-keywords = []
-date = 2021-05-25T08:53:37+04:00
-lastmod = 2021-05-25T08:53:37+04:00
+authors = [ "admin" ]
+tags = [ "автоматизация" ]
+categories = [ "технологии" ]
+keywords = [ ]
+date = 2021-06-16T21:47:24.854Z
+lastmod = 2021-06-16T21:47:26.512Z
 featured = false
 draft = true
+projects = [ ]
 
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects = []
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 [image]
-  caption = ""
-  focal_point = ""
-  preview_only = false
+caption = ""
+focal_point = ""
+preview_only = false
 
-[design.background]
-  # Apply a background color, gradient, or image.
-  #   Uncomment (by removing `#`) an option to apply it.
-  #   Choose a light or dark text color by setting `text_color_light`.
-  #   Any HTML color name or Hex value is valid.
-  
-  # Background color.
-  # color = "navy"
-  
-  # Background gradient.
-  # gradient_start = "DeepSkyBlue"
-  # gradient_end = "SkyBlue"
-  
-  # Background image.
-  # image = "background.jpg"  # Name of image in `static/img/`.
-  # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
-
-  # Text color (true=light or false=dark).
-  # text_color_light = true  
+[design]
+background = { }
 +++
+

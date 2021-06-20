@@ -50,8 +50,8 @@ subtitle = ""
   # color = "navy"
   
   # Background gradient.
-  gradient_start = "#776660"
-  gradient_end = "#4a413f"
+  # gradient_start = "#776660"
+  # gradient_end = "#4a413f"
   
   # Background image.
   image = "background_talk.jpg"  # Name of image in `static/img/`.

@@ -4,8 +4,8 @@ bio = '''
 увлекаюсь web технологиями. слушаю музыку.'''
 name = "snayp"
 role = "тестировщик"
-superuser = false
-profile = false
+superuser = true 
+# profile = false
 slug = "автор"
 
 user_group = "man"

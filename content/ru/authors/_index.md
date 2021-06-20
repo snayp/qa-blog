@@ -1,7 +1,5 @@
-+++
 [_build]
-    render = false
+    render = "link"
 [cascade._build]
-    render = true
-    list =  false
-+++
+    list = false
+    publishResources = false

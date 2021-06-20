@@ -3,7 +3,7 @@ title = "сельский тестер"
 ignoreErrors = ["error-remote-getjson", "error-disable-taxonomy"]
 languageCode = ["ru", "en"]
 defaultContentLanguage = "ru"
-# defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 disableLanguages = ["en"]
 # paginatepath = "страница"
 enableInlineShortcodes = true
@@ -16,6 +16,9 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 disableKinds = ["taxonomy"]
 refLinksErrorLevel = "ERROR"
 refLinksNotFoundURL = "/"
+
+removePathAccents = true
+disableAliases = true
 # Taxonomies.
 [taxonomies]
   tag = "tags"
@@ -38,35 +41,21 @@ refLinksNotFoundURL = "/"
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
     [markup.goldmark.extensions]
-      definitionList = true
-      footnote = false
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
-    [markup.goldmark.parser]
-      autoHeadingID = true
-      autoHeadingIDType = "github"
-      [markup.goldmark.parser.attribute]
-        block = false
-        title = true
+      footnote = true
+
     [markup.goldmark.renderer]
-      hardWraps = false
-      unsafe = false  
+      hardWraps = true
+      unsafe = true  
       xhtml = false
   [markup.highlight]
     anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
+    codeFences = false
+    guessSyntax = true
     hl_Lines = ""
     lineAnchors = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "monokai"
-    tabWidth = 4
+    lineNumbersInTable = false
+    style = "dracula"
+    tabWidth = 2
   [markup.tableOfContents]
     endLevel = 3
     ordered = false
@@ -84,7 +73,7 @@ refLinksNotFoundURL = "/"
   # authors = "/:slug/"
 
 [related]
-  includeNewer = true
+  includeNewer = false
   threshold = 30
   toLower = true
 
@@ -97,16 +86,14 @@ refLinksNotFoundURL = "/"
     weight = 60
 
   [[related.indices]]
-    name = "publication_types"
-    weight = 80
-
-  [[related.indices]]
     name = "keywords"
     weight = 100
 
 [module]
 
   [[module.imports]]
+    disable = false
+    
     path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy"
   [[module.mounts]]
     source = "assets"

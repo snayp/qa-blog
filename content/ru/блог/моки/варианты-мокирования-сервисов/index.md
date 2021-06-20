@@ -1,23 +1,22 @@
 +++
-authors = ["admin"]
-categories = []
-date = "2021-01-22T18:23:23+03:00"
-draft = true
-featured = true
-lastmod = "2021-01-22T18:23:23+03:00"
-projects = []
+authors = ["snayp"]
+categories = ["инструмент"]
+date = 2021-06-20T00:16:54.583Z
+draft = false
+featured = false
+lastmod = 2021-06-20T00:16:56.390Z
+projects = [ ]
 subtitle = ""
 summary = ""
-tags = [ "привет", "работа", "транслитерация" ]
+tags = ["работа"]
 publication_types = ["qa"]
 title = "Разработка моков"
-view = 1
 
 [image]
-  caption = ""
-  focal_point = ""
-  preview_only = false
-
+caption = ""
+focal_point = ""
+preview_only = false
 +++
 
-{{< music urls="http://somafm.com/m3u/groovesalad256.m3u" >}}
+<!-- {{< music urls="http://somafm.com/m3u/groovesalad256.m3u" >}} -->
+
