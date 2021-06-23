@@ -8,17 +8,17 @@
 #   url = "/музыка/"
 #   weight = 32
 
-# [[social]]
-#   name = "GitHub"
-#   weight = 1
-#   identifier = "github"
-#   url = "/"
+[[social]]
+  name = "GitHub"
+  weight = 1
+  identifier = "github"
+  url = "/"
 
-# [[links]]
-#   name = "О блоге"
-#   weight = 13
-#   identifier = "about-me"
-#   url = "/about/"
+[[links]]
+  name = "О блоге"
+  weight = 13
+  identifier = "about-me"
+  url = "/about/"
 
 [[main]]
   name = "блог"

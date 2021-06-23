@@ -1,6 +1,6 @@
 {{- define "main" -}}
 {{ $pub_types := partial "functions/get_pub_types" $ }}
-{{ $pub_type_param := .Params.publication_types | default (slice 0) }}
+{{ $pub_type_param := .Params.publication_types | default ( T "uncat" ) }}
 
 {{/* Convert string in form `"0"` to int (`0`) */}}
 {{ $pub_type := (int (index $pub_type_param 0)) | default 0 }}

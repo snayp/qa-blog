@@ -1,7 +1,7 @@
 +++
 widget = "blank"
-active = false
-title = "Правовые политики"
+active = true
+title = "Политики"
 [menus.docs]
 name = "Документы"
 weight = 1

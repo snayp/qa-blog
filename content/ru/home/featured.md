@@ -10,7 +10,7 @@ active = true #  # Activate this widget? true/false
 weight = 85  # Order that this section will appear.
 
 title = "избранное"
-subtitle = "самое"
+subtitle = ""
 
 
 [content]
@@ -24,7 +24,7 @@ subtitle = "самое"
   order = "desc"
 
   # Show a "See all pages" link underneath the featured content?
-  link_to_archive = true
+  link_to_archive = false
 
   # Filter posts by a taxonomy term.
   [content.filters]

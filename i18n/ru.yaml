@@ -75,7 +75,7 @@
 - id: publication
   translation: Публикация
 - id: publication_type
-  translation: Тип публикации
+  translation: Тип
 - id: date
   translation: Когда?
 - id: last_updated
@@ -85,7 +85,7 @@
 - id: location
   translation: Где?
 - id: uncat
-  translation: без категории
+  translation: без-категории
 - id: photo
   translation: фото
 - id: event
@@ -111,7 +111,7 @@
 - id: audio
   translation: музыка
 - id: open_project_site
-  translation: Перейти на внешний сайт
+  translation: Внешний сайт
 - id: posts
   translation: посты
 - id: post

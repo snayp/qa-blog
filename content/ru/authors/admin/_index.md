@@ -6,8 +6,8 @@ title = "snayp"
 name = "admin"
 role = "тестировщик"
 # profile = false
-superuser = true
-# slug = "автор"
+superuser = false
+slug = "admin"
 user_group = "man"
 author = "admin"
 +++

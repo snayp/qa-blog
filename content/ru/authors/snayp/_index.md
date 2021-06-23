@@ -8,7 +8,7 @@ role = "тестировщик"
 superuser = false 
 # profile = false
 
-
+slug = "snayp"
 user_group = "man"
 author = "snayp"
 
