@@ -13,6 +13,7 @@
 {{ end }}
 {{ $items_sort := $st.Params.content.order | default "desc" }}
 
+
 {{/* Query */}}
 {{ $query := where site.RegularPages "Type" $items_type }}
 {{ $archive_page := site.GetPage "Section" $items_type }}
