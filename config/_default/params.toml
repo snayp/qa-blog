@@ -22,7 +22,7 @@ font = "minimal"
 
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size = "L"
+font_size = "M"
 
 ############################
 ## Basic Info
@@ -145,7 +145,7 @@ sharing = true
 # link_authors = false
 
 # Link authors to their profile page? (true/false)
-show_related = {"блог" = true, page = false}
+show_related = {"блог" = true, page = false, docs = false}
 
 # Abstract length (characters) in the Compact and Portfolio Card list views. Also, see `summaryLength` in `config.toml`.
 abstract_length = 135
@@ -226,8 +226,8 @@ plugins_js  = ["custom"]
   #   0: No search engine
   #   1: Academic (built-in)
   #   2: Algolia (https://www.algolia.com)
-  # engine = 1
-  provider = "wowchemy"
+  engine = 1
+  # provider = "wowchemy"
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.

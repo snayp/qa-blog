@@ -2,7 +2,6 @@
 widget = "blank"
 active = true
 weight = 20
-title = ""
 tags = [ ]
 description = ""
 [design]

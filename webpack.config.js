@@ -31,7 +31,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, 'src')
+    path: path.resolve(__dirname, 'src/dist')
   },
 
   plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin({

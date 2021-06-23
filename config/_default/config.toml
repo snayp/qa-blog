@@ -42,7 +42,6 @@ disableAliases = true
   [markup.goldmark]
     [markup.goldmark.extensions]
       footnote = true
-
     [markup.goldmark.renderer]
       hardWraps = true
       unsafe = true  
@@ -86,15 +85,13 @@ disableAliases = true
     weight = 60
 
   [[related.indices]]
-    name = "keywords"
-    weight = 100
+    name = "authors"
+    weight = 80
 
 [module]
-
   [[module.imports]]
     disable = false
-    
     path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy"
   [[module.mounts]]
-    source = "assets"
-    target = "assets"
+    source = "layouts"
+    target = "layouts"

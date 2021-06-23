@@ -9,8 +9,8 @@ headless = true  # This file represents a page section.
 active = true #  # Activate this widget? true/false
 weight = 85  # Order that this section will appear.
 
-title = "лучшее"
-subtitle = ""
+title = "избранное"
+subtitle = "самое"
 
 
 [content]
@@ -54,7 +54,7 @@ subtitle = ""
   # gradient_end = "#4a413f"
   
   # Background image.
-  image = "background_talk.jpg"  # Name of image in `static/img/`.
+  image = "background_talk.jpg" 
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
