@@ -6,7 +6,7 @@ name = "snayp"
 title = "snayp"
 role = "тестировщик"
 superuser = false 
-# profile = false
+profile = true
 
 slug = "snayp"
 user_group = "man"

@@ -24,7 +24,7 @@ active = true
   category = ""
   author = "admin"
 
-
-view = 2
+[design]
+  view = 3
 
 +++

@@ -2,7 +2,7 @@
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = true  # Activate this widget? true/false
 weight = 19
-headless = true
+# headless = true
 title = "личное"
 subtitle = ""
 
@@ -23,12 +23,12 @@ offset = 0
 
 # Page order. Descending (desc) or ascending (asc) date.
 order = "desc"
-
+link_to_archive = true
 # Filter posts by a taxonomy term.
   [content.filters]
     tag = []
     category = []
-    author = "snayp"
+    author = ["snayp"]
     publication_type = []
 
   

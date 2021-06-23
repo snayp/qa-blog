@@ -1,11 +1,9 @@
 +++
-bio = '''
-работаю инженером качества ПО. \
-увлекаюсь web технологиями. слушаю музыку.'''
-title = "snayp"
+bio = "web технологии и качевый биток"
+title = "admin"
 name = "admin"
 role = "тестировщик"
-# profile = false
+profile = true
 superuser = false
 slug = "admin"
 user_group = "man"
