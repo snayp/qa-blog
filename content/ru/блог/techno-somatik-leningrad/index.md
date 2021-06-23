@@ -1,5 +1,5 @@
 +++
-authors = ["snayp"]
+authors = ["admin"]
 categories = ["музыка"]
 date = "2020-12-26T13:43:10+03:00"
 description = ""

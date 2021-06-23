@@ -1,9 +1,15 @@
 +++
+bio = '''
+работаю инженером качества ПО. \
+увлекаюсь web технологиями. слушаю музыку.'''
+title = "snayp"
 name = "admin"
-superuser = false
-user_group = "tech"
-# slug = "/автор"
-profile = false
+role = "тестировщик"
+# profile = false
+superuser = true
+# slug = "автор"
+user_group = "man"
+author = "admin"
 +++
 
 

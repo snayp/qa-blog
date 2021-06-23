@@ -30,7 +30,7 @@ subtitle = "самое"
   [content.filters]
     tag = ""
     category = ""
-    author = ""
+    author = "admin"
   
 [design]
   # Toggle between the various page layout types.

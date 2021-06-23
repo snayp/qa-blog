@@ -28,7 +28,7 @@
   publication_types = "/тип/:slug/"
   # posts =  "/блог/"               # required
   # pages = "/:slug/"
-  # authors = "/:slug/"
+  authors = "/:slug/"
 
 # [en]
 #   languageName = "english"

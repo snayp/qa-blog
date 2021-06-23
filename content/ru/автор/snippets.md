@@ -2,8 +2,9 @@
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = true  # Activate this widget? true/false
 weight = 19
-title = "публикации"
-subtitle = "программные средства"
+headless = true
+title = "личное"
+subtitle = ""
 
 [image]
 caption = ""
@@ -24,11 +25,11 @@ offset = 0
 order = "desc"
 
 # Filter posts by a taxonomy term.
-[content.filters]
-tag = []
-category = []
-author = []
-publication_type = []
+  [content.filters]
+    tag = []
+    category = []
+    author = "snayp"
+    publication_type = []
 
   
 [design]
@@ -57,12 +58,10 @@ publication_type = []
   # image_darken = 0.4  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
-  text_color_light = false     
+  # text_color_light = false     
   
 [advanced]
  # Custom CSS. 
- css_style = "padding: 60px"
- 
- # CSS class.
- css_class = ""
+ css_style = "padding-bottom: 60px"
+
 +++

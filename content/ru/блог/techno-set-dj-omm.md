@@ -1,5 +1,5 @@
 +++
-authors = [ "snayp" ]
+authors = [ "admin" ]
 categories = [ "досуг", "музыка", "творчество" ]
 date = 2021-05-30T11:08:40.966Z
 draft = true

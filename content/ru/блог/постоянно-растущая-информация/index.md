@@ -2,7 +2,7 @@
 title = "Необходимость Анализировать И Обрабатывать Еще Больше Данных"
 subtitle = ""
 summary = ""
-authors = [ "admin" ]
+authors = ["admin"]
 tags = [ "автоматизация" ]
 categories = [ "технологии" ]
 keywords = [ ]

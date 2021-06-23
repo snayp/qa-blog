@@ -5,6 +5,7 @@ katexExtensions = ["mhchem", "copy-tex"]
 tags = ["markdown", "shortcodes"]
 title = "More KaTeX"
 draft = true
+author = "admin"
 +++
 
 The extensions `mhchem` and `copy-tex` are also included (along the necessary `auto-render`).

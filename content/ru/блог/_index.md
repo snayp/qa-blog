@@ -1,20 +1,13 @@
 +++
-
 commentable = true
 share = true
 summary = "Блог о разработке и тестировании коммерческих программ и о web технологиях"
 title = "Записки сельского тестировщика"
-subtitle = "Записки тестировщика"
-type = "post"
+subtitle = "блог тестировщика о качестве"
+widget = "pages"
+active = true
 [header]
-image = "фото.jpg"
+image = ""
 caption = ""
+
 +++
-
-```html
-<textarea>
-    <!-- {{/* printf "<" | safeHTML */}} -->
-</textarea>
-```
-
-{{< cta cta_url="#" cta_text="rrr" >}}

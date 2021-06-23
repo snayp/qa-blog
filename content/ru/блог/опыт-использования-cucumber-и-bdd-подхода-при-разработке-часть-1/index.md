@@ -1,5 +1,5 @@
 +++
-authors = ["snayp"]
+authors = ["admin"]
 categories = ["тестирование","онлайн"]
 date = "2020-11-30T05:10:51+03:00"
 draft = false

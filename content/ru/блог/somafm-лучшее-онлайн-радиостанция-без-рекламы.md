@@ -1,7 +1,7 @@
 +++
 title = "Somafm Лучшая ONLINE Радиостанция. Ambient & Chillout"
-subtitle = ""
-summary = ""
+subtitle = "Somafm"
+summary = "Somafm"
 description = ""
 abstract = ""
 date = 2021-06-16T21:02:55.201Z
@@ -20,7 +20,7 @@ tags = [
 categories = [ "досуг", "онлайн" ]
 publication_types = [ "музыка" ]
 keywords = [ ]
-authors = [ "snayp" ]
+authors = [ "admin" ]
 +++
 
 
