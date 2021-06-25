@@ -1,7 +1,7 @@
 baseURL = "https://snayp.github.io/"
 title = "сельский тестер"
 ignoreErrors = ["error-remote-getjson", "error-disable-taxonomy"]
-languageCode = ["ru", "en"]
+languageCode = ["ru"]
 defaultContentLanguage = "ru"
 defaultContentLanguageInSubdir = false
 disableLanguages = ["en"]
@@ -13,7 +13,7 @@ enableEmoji = true
 prettyURLs = true
 footnoteReturnLinkContents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-disableKinds = ["taxonomy"]
+disableKinds = ["taxonomies"]
 refLinksErrorLevel = "ERROR"
 refLinksNotFoundURL = "/"
 
@@ -45,7 +45,7 @@ disableAliases = true
     [markup.goldmark.renderer]
       hardWraps = true
       unsafe = true  
-      xhtml = false
+      xhtml = true
   [markup.highlight]
     anchorLineNos = false
     codeFences = false
@@ -90,7 +90,7 @@ disableAliases = true
 
 [module]
   [[module.imports]]
-    disable = false
+    disable = true
     path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy"
   [[module.mounts]]
     source = "layouts"

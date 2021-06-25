@@ -10,15 +10,34 @@
 
 [[social]]
   name = "GitHub"
-  weight = 1
+  weight = 14
   identifier = "github"
   url = "/"
 
 [[links]]
   name = "О блоге"
-  weight = 13
+  weight = 16
   identifier = "about-me"
   url = "/about/"
+
+
+# [["политика"]]
+#   name = "Печеньки"
+#   identifier = "политика"
+#   url = "/cookies/"
+#   weight = 3
+
+# [["политика"]]
+#   name = "Конфиденциальность"
+#   identifier = "политика"
+#   url = "/конфиденциальность/"
+#   weight = 1
+
+# [["политика"]]
+#   name = "Условия использования"
+#   identifier = "политика"
+#   url = "/использования/"
+#   weight = 2
 
 [[main]]
   name = "блог"

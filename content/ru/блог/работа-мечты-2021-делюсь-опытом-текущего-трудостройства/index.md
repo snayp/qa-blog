@@ -2,7 +2,7 @@
 title = "Работа Мечты 2021 Делюсь Опытом Текущего Трудоустройства"
 subtitle = ""
 summary = ""
-authors = ["admin"]
+authors = ["snayp"]
 tags = [
   "Java",
   "QA",

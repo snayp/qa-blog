@@ -1,5 +1,5 @@
 +++
-widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "ttt"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = true  # Activate this widget? true/false
 weight = 19
 # headless = true
@@ -23,14 +23,18 @@ offset = 0
 
 # Page order. Descending (desc) or ascending (asc) date.
 order = "desc"
-link_to_archive = true
-# Filter posts by a taxonomy term.
-  [content.filters]
-    tag = []
-    category = []
-    author = ["snayp"]
-    publication_type = []
 
+# Filter posts by a taxonomy term.
+[content.filters]
+  tag = ""
+  category = ""
+  author = "snayp"
+  publication_type = ""
+
+[content.archive]
+  enable = true
+  link = "личное/"
+  text = "больше записей"
   
 [design]
   # Toggle between the various page layout types.
@@ -39,7 +43,7 @@ link_to_archive = true
   #   3 = Card
   #   4 = Citation (publication only)
   view = 3
-
+  columns = "2"
 [design.background]
   # Apply a background color, gradient, or image.
   #   Uncomment (by removing `#`) an option to apply it.

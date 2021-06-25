@@ -12,8 +12,8 @@ draft = true
 projects = [ ]
 
 [image]
-caption = ""
-focal_point = ""
-preview_only = false
+    caption = ""
+    focal_point = ""
+    preview_only = false
 +++
 

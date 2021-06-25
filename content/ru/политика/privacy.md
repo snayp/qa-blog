@@ -3,14 +3,16 @@ date = 2021-06-20T18:20:11.221Z
 lastmod = 2021-05-07T07:43:32.759Z
 title = "Политика конфиденциальности"
 share = false
+toc = true
 type = "docs"
-toc = false
-slug = "политика-конфиденциальности"
+slug = "конфиденциальности"
 
 description = "политика конфиденциальности сайта"
-[menus.docs]
+
+[menus."политика"]
 name = "Конфиденциальность"
-weight = 4
+weight = 1
+url = "/политика/конфиденциальности/"
 [header]
 caption = ""
 image = ""

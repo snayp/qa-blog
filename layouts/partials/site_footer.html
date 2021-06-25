@@ -12,8 +12,6 @@
   </p>
   {{ end }}
 
-  {{ partial "footer-copy.html" . }}
-
   <p class="powered-by">
     {{ with i18n "powered_by" }}
     {{ replace . "{year}" now.Year | markdownify}}

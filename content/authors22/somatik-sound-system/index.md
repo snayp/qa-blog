@@ -8,8 +8,6 @@ user_groups = ["org"]
 
 [_build]
   render = "never"
-  publishResources = false
-  
 [avatar]
   shape = "square"
 

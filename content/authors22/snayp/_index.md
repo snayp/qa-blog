@@ -13,7 +13,6 @@ user_group = "man"
 author = "snayp"
 
 
-
 [[social]]
   icon = "telegram"
   icon_pack = "fab"

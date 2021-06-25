@@ -2,9 +2,9 @@
 commentable = true
 share = true
 summary = "Блог о разработке и тестировании коммерческих программ и о web технологиях"
-title = "Записки сельского тестировщика"
-subtitle = "блог тестировщика о качестве"
-
+title = "Записки сельского жителя"
+subtitle = "личные мысли"
+url = "личное/"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
@@ -22,9 +22,9 @@ subtitle = "блог тестировщика о качестве"
 [content.filters]
   tag = ""
   category = ""
-  author = "admin"
+  author = "snayp"
 
 [design]
-  view = 2
-  columns = 2
+  view = 1
+  columns = "2"
 +++

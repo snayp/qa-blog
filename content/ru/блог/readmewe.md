@@ -3,7 +3,7 @@ description = "A copy of the README.md file."
 tags = ["markdown"]
 title = "Read Me"
 toc = true
-authors = ["admin"]
+authors = ["snayp"]
 draft = true
 +++
 
