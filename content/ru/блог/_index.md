@@ -23,8 +23,8 @@ subtitle = "блог тестировщика о качестве"
   tag = ""
   category = ""
   author = "admin"
+  not_publication_type = "личное"
 
 [design]
   view = 2
-  columns = 2
 +++

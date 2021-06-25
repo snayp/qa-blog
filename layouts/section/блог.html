@@ -32,6 +32,9 @@
   {{ $archive_page = site.GetPage (printf "%s/%s" (T "publication_type") $st.Params.content.filters.publication_type) }}
   {{ $query = $query | intersect $archive_page.Pages }}
 {{ end }}
+{{ if $st.Params.content.filters.not_publication_type }}
+  {{ $query = where $query "section" "!=" $st.Params.content.filters.not_publication_type }}
+{{ end }}
 {{ if $st.Params.content.filters.author }}
   {{ $archive_page = site.GetPage (printf "authors/%s" (urlize $st.Params.content.filters.author)) }}
   {{ $query = $query | intersect $archive_page.Pages }}

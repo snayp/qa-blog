@@ -8,6 +8,11 @@ superuser = false
 slug = "admin"
 user_group = "man"
 author = "admin"
+
+
+[_build]
+  render = "never"
+  publishResources = false
 +++
 
 

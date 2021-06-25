@@ -2,12 +2,10 @@
             "event", # 1
             "snippet", # 2 4
             "translation", # 5
-            "doc", # 6
-            "opinion", # 7
-            "experience",
+            "doc",
             "news",
             "audio",
             "gallery",
-            "private"
+            "personal"
           ]
 

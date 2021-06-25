@@ -86,8 +86,8 @@
   translation: Где?
 - id: uncat
   translation: без-категории
-- id: photo
-  translation: фото
+- id: gallery
+  translation: фото альбом
 - id: event
   translation: событие
 - id: snippet
@@ -104,10 +104,7 @@
   translation: новость
 - id: personal
   translation: личное
-- id: career
-  translation: карьера
-- id: relax
-  translation: досуг
+
 - id: audio
   translation: музыка
 - id: open_project_site

@@ -23,8 +23,8 @@ url = "личное/"
   tag = ""
   category = ""
   author = "snayp"
+  publication_type = "личное"
 
 [design]
-  view = 1
-  columns = "2"
+  view = 2
 +++
