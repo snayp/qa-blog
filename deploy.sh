@@ -16,7 +16,7 @@ git push
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 # Build the project.
-hugo --clearDestinationDir --minify # if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo --cleanDestinationDir --minify # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 # Go To Public folder
 cd public
