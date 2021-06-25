@@ -16,7 +16,7 @@ git push
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 # Build the project.
-hugo --cleanDestinationDir --minify # if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo --cleanDestinationDir  # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 # Go To Public folder
 cd public
@@ -27,4 +27,4 @@ git add .
 git commit -m "$msg"
 
 # Push source and build repos.
-git push origin main
+git push -u origin main
