@@ -18,7 +18,7 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 # Build the project.
 hugo --cleanDestinationDir  # if using a theme, replace with `hugo -t <YOURTHEME>`
 
-git submodule init
+git submodule add -f -b main git@github.com:snayp/snayp.github.io.git public
 
 # Go To Public folder
 cd public
