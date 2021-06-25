@@ -20,6 +20,7 @@ hugo --cleanDestinationDir  # if using a theme, replace with `hugo -t <YOURTHEME
 
 git submodule add -f -b main git@github.com:snayp/snayp.github.io.git public
 
+
 # Go To Public folder
 cd public
 
