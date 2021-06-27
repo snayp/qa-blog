@@ -1,13 +1,21 @@
 +++
-title = "BDD Подход, Это Не Способ Писать Автотесты [Перевод]"
-subtitle = ""
+title = "BDD Подход К разработке Это Вовсе Не Способ Писать Автотесты"
+subtitle = "Очередная попытка пояснить суть BDD методологии"
 summary = ""
 description = ""
 abstract = ""
-authors = ["snayp"]
-tags = [ "BDD", "Java", "автоматизация", "блог" ]
-categories = [ "english", "тестирование", "онлайн" ]
-publication_types = []
+authors = [ "snayp" ]
+tags = [
+  "BDD",
+  "cucumber",
+  "QA",
+  "SDET",
+  "автоматизация",
+  "блог",
+  "selenium"
+]
+categories = [ "english", "онлайн", "процесс" ]
+publication_types = [ "перевод" ]
 keywords = [ ]
 date = 2021-06-16T19:07:40.764Z
 lastmod = 2021-06-16T19:07:42.739Z
@@ -15,20 +23,13 @@ publishDate = 2021-06-16T19:01:01.000Z
 featured = false
 draft = false
 projects = [ ]
+design = { }
 
 [image]
-    caption = ""
-    focal_point = "smart"
-    placement = 2
-    preview_only = false
-
-[design]
-
-# [[links]]
-#    name = "оригинал"
-#    url = "https://testguild.com/bdd-automation-testing/"
-#    icon_pack = "fab"
-#    icon = "https://testguild.com/" 
+caption = ""
+focal_point = "smart"
+placement = 2
+preview_only = false
 +++
 
 <!-- {{< gdocs src="https://drive.google.com/file/d/1ukyDnFQMsW6xrUtmvjPKqMYa5LnIohyp/preview" >}} -->
