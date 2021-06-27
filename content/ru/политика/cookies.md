@@ -11,7 +11,7 @@ slug = "cookies"
 
 
 [menus."политика"]
-name = "Печеньки"
+name = "Cookie файлы"
 weight = 3
 url = "/политика/cookies/"
 +++
