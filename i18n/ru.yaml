@@ -75,7 +75,7 @@
 - id: publication
   translation: Публикация
 - id: publication_type
-  translation: Тип публикации
+  translation: Тип
 - id: date
   translation: Когда?
 - id: last_updated
@@ -85,41 +85,40 @@
 - id: location
   translation: Где?
 - id: uncat
-  translation: без категории
+  translation: без-категории
+- id: gallery
+  translation: фото альбом
 - id: event
   translation: событие
 - id: snippet
   translation: пример кода
-- id: qa
-  translation: тестирование
-- id: management
-  translation: управление
 - id: translation
   translation: перевод
+- id: management
+  translation: управление
 - id: doc
-  translation: документация
+  translation: документ
 - id: opinion
   translation: мнение
 - id: news
   translation: новость
 - id: personal
   translation: личное
-- id: career
-  translation: карьера
-- id: relax
-  translation: досуг
+
 - id: audio
   translation: музыка
 - id: open_project_site
-  translation: Перейти на сайт проекта
+  translation: Внешний сайт
 - id: posts
   translation: посты
 - id: post
-  translation: блог
+  translation: пост
 - id: publications
-  translation: Публикации
+  translation: типы
+- id: publication
+  translation: тип
 - id: talks
-  translation: События
+  translation: встречи
 - id: projects
   translation: Проекты
 - id: search
@@ -139,7 +138,7 @@
 - id: cookie_dismiss
   translation: Понял!
 - id: cookie_learn
-  translation: Узнать больше
+  translation: Узнать о cookie политике
 
 - id: powered_by
   translation: "{year} &copy; Сделано с помощью " 

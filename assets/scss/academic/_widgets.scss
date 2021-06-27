@@ -455,7 +455,7 @@ ul.ul-edu li .description p.institution {
 
 .project-card {
   position: relative;
-  width: calc(33.3% - 2*20px); /* Fluid 3 columns (inc. 20px gutter) */
+  width: calc(33.3% - 2*10px); /* Fluid 3 columns (inc. 20px gutter) */
 }
 @media screen and (max-width: 1199px) {
   .project-card {
@@ -473,7 +473,7 @@ ul.ul-edu li .description p.institution {
 }
 
 .project-card.project-item {
-  margin: 0 0 20px 0; /* Set to Isotope's gutter size */
+  margin: 0; /* Set to Isotope's gutter size */
 }
 
 .project-card .card {
@@ -486,6 +486,7 @@ ul.ul-edu li .description p.institution {
 
 .project-item:last-of-type {
   margin-bottom: 0;
+  margin-right: 0;
 }
 
 .isotope-item {

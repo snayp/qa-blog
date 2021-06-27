@@ -20,7 +20,8 @@ publishDate = {{ .Date }}
 
 authors = []
 tags = []
-categories = ["анонс"]
+categories = []
+publication_types = ["событие"]
 # Is this a featured event? (true/false)
 featured = false
 
@@ -29,15 +30,16 @@ featured = false
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 [image]
   caption = ""
-  focal_point = ""
+  focal_point = "BottomRight"
   preview_only = false
+  placement = "2"
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
-[links]
+[[links]]
    name = ""
    url = ""
-   icon_pack = "fab"
+   icon_pack = ""
    icon = ""
 
 # Optional filename of your slides within your event's folder or a URL.

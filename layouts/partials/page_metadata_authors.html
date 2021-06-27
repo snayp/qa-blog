@@ -6,7 +6,6 @@
   {{ range $index, $value := . }}
     {{- $profile_page := site.GetPage (printf "/%s/%s" $taxonomy (. | urlize)) -}}
     {{- $name := $profile_page.Params.name | default ($value|markdownify) -}}
-    {{- if ne $name "admin" -}}
     {{- if gt $index 0 }}, {{ end -}}
     <span>
       {{- if and $profile_page $link_authors -}}
@@ -15,4 +14,3 @@
     </span>
     {{- end -}}
   {{- end -}}
-{{- end -}}

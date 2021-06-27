@@ -5,7 +5,7 @@ active = false  # Activate this widget? true/false
 weight = 78  # Order that this section will appear.
 headless = true
 
-title = "примеры"
+title = "публикации"
 subtitle = "программные средства"
 
 [image]
@@ -15,7 +15,7 @@ subtitle = "программные средства"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "блог"
+  page_type = "publication"
   
   # Choose how much pages you would like to display (0 = all pages)
   count = 3
@@ -31,7 +31,7 @@ subtitle = "программные средства"
     tag = []
     category = []
     author = []
-    publication_type = "2"
+    publication_type = []
     exclude_featured = true
     exclude_past = false
     exclude_future = true

@@ -11,3 +11,5 @@ title = "Techno set Dj Omm"
 Ваня экспериментирует с техно.
 
 {{< mixcloud src="https://www.mixcloud.com/widget/iframe/?feed=%2Fo936o%2Fjust-illusions%2F" >}}
+
+{{< list_translations  >}}

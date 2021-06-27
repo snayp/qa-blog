@@ -1,0 +1,46 @@
+<div class="footer gradient-2">
+  <div class="container footer-container ">
+    <div class="row">
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <div class="footer-title">{{ i18n "sitemap" }}</div>
+        <ul class="list-unstyled">
+            {{ if .Site.Menus.sitemap }}
+              {{ range .Site.Menus.sitemap }}
+                <li><a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a></li>
+              {{ end }}
+            {{ end }}
+            {{ with .Site.GetPage "home" }}
+            {{ with .OutputFormats.Get "RSS" }}
+            <li><a rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}"><i class="fas fa-rss-square"></i> {{ i18n "rss_feed" }}</a></li>
+            {{ end }}
+            {{ end }}
+            {{ if .Menus.ru.feed }}
+              {{ range .Menus.ru.feed }}
+                <li><a type="application/rss+xml" href="{{ .URL | absLangURL | safeURL }}"><i class="fas fa-rss-square"></i> {{ .Name }}</a></li>
+              {{ end }}
+            {{ end }}
+        </ul>
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        {{ if .Site.Menus.social }}
+        <div class="footer-title">{{ i18n "social" }}</div>
+        <ul class="list-unstyled">
+          {{ range .Site.Menus.social }}
+          <li><a href="{{ .URL | safeURL }}" rel="noopener" target="_blank">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        {{ if .Site.Menus.links }}
+        <div class="footer-title">{{ i18n "links" }}</div>
+        <ul class="list-unstyled">
+          {{ range .Site.Menus.links }}
+          <li><a href="{{ .URL | safeURL }}" rel="noopener" target="_blank">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div> 
+    </div>
+  </div>
+</div>

@@ -4,7 +4,7 @@ subtitle = ""
 summary = ""
 description = ""
 abstract = ""
-authors = ["snayp"]
+authors = []
 tags = []
 categories = []
 publication_types = []
@@ -15,6 +15,11 @@ publishDate = {{ .Date }}
 featured = false
 draft = true
 
+[[links]]
+   name = ""
+   url = ""
+#   icon_pack = "fab"
+#   icon = ""
 # Projects (optional).
 #   Associate this post with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
@@ -26,8 +31,9 @@ projects = []
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 [image]
   caption = ""
-  focal_point = ""
+  focal_point = "BottomRight"
   preview_only = false
+  placement = "2"
 
 [design.background]
   # Apply a background color, gradient, or image.

@@ -1,13 +1,9 @@
-{{ $pub_types := partial "functions/get_pub_types" $ }}
-{{ range $index, $taxonomy := site.Taxonomies.publication_types }}
 
-  {{/*  {{ index $pub_types (string $taxonomy) }}  */}}
-
-    {{ range . }}
-      <div>{{ $taxonomy }}</div>
-    {{ end }}
-
-
+<script>
+import { cyrillicToTranslit } from 'cyrillic-to-translit-js';
+</script>
+{{ $page := . }}
+{{ $taxonomy := "tags" }}
+{{ range $index, $value := where .Site.Pages "Params.tags" "!=" nil }}
+    {{ $value = printf "(cyrillicToTranslit().transform('{{$value}}', '-') | safeJS)" }}
 {{ end }}
-  
-

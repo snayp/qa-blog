@@ -1,9 +1,18 @@
 +++
+bio = "web технологии и качевый биток"
+title = "admin"
 name = "admin"
-superuser = false
-user_group = "tech"
-# slug = "/автор"
+role = "автор"
 profile = false
+superuser = false
+slug = "admin"
+user_group = "man"
+author = "admin"
+
+
+[_build]
+  render = "never"
+  publishResources = false
 +++
 
 

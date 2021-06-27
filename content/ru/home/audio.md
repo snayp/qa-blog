@@ -14,7 +14,7 @@ subtitle = "коллекция"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "блог"
+  page_type = "музыка"
   
   # Choose how much pages you would like to display (0 = all pages)
   count = 3
@@ -30,10 +30,7 @@ subtitle = "коллекция"
     tag = ""
     category = ""
     author = ""
-    publication_type = "12"
-    exclude_featured = true
-    exclude_past = false 
-    exclude_future = false
+    publication_type = ""
     
 [design]
   # Toggle between the various page layout types.
@@ -69,7 +66,6 @@ subtitle = "коллекция"
  css_class = ""
 +++
 
-<<<<<<< HEAD
 ---
 
 <!-- 
@@ -86,6 +82,3 @@ subtitle = "коллекция"
 P.S. Узнать подробнее об интересах и профессиональном опыте автора, можно по [ссылке](/автор/).
 
  -->
-=======
----
->>>>>>> feature/final-home-and-static-edition

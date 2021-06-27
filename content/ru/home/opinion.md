@@ -28,10 +28,10 @@ subtitle = "взгляд с разных сторон"
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = []
-    category = []
-    author = []
-    publication_type = "7"
+    tag = ""
+    category = ""
+    author = ""
+    publication_type = ""
     exclude_featured = true
     exclude_past = false
     exclude_future = true

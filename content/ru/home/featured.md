@@ -9,7 +9,7 @@ headless = true  # This file represents a page section.
 active = true #  # Activate this widget? true/false
 weight = 85  # Order that this section will appear.
 
-title = "лучшее"
+title = "избранное"
 subtitle = ""
 
 
@@ -24,7 +24,7 @@ subtitle = ""
   order = "desc"
 
   # Show a "See all pages" link underneath the featured content?
-  link_to_archive = true
+  link_to_archive = false
 
   # Filter posts by a taxonomy term.
   [content.filters]
@@ -50,11 +50,11 @@ subtitle = ""
   # color = "navy"
   
   # Background gradient.
-  gradient_start = "#776660"
-  gradient_end = "#4a413f"
+  # gradient_start = "#776660"
+  # gradient_end = "#4a413f"
   
   # Background image.
-  image = "background_talk.jpg"  # Name of image in `static/img/`.
+  image = "background_talk.jpg" 
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).

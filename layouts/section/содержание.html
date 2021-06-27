@@ -1,0 +1,13 @@
+{{- define "main" -}}
+
+{{ partial "page_header.html" . }}
+
+<div class="universal-wrapper">
+
+  <div class="row row-cols-3">
+    {{ range .Pages.ByLastmod }}  
+      {{ partial "portfolio_li_card" . }}
+    {{ end }}
+  </div>
+</div>
+{{- end -}}

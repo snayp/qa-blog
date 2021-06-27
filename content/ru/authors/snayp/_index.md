@@ -3,14 +3,16 @@ bio = '''
 работаю инженером качества ПО. \
 увлекаюсь web технологиями. слушаю музыку.'''
 name = "snayp"
+title = "snayp"
 role = "тестировщик"
 superuser = true
-# profile = false
-slug = "автор"
+profile = true
 
+slug = "snayp"
 user_group = "man"
+author = "snayp"
 
-author = "admin"
+
 
 [[social]]
   icon = "telegram"

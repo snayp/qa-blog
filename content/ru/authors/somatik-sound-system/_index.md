@@ -4,8 +4,13 @@ name = "Somatik Sound System"
 role = "Somatik techno"
 slug = "somatik-sound-system"
 superuser = false
+profile = false
 user_groups = ["org"]
 
+[_build]
+  render = "never"
+  publishResources = false
+  
 [avatar]
   shape = "square"
 
