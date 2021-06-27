@@ -88,10 +88,10 @@ disableAliases = true
     name = "authors"
     weight = 80
 
-[module]
-  [[module.imports]]
-    disable = true
-    path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy"
-  [[module.mounts]]
-    source = "layouts"
-    target = "layouts"
+# [module]
+#   [[module.imports]]
+#     disable = true
+#     path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy"
+#   [[module.mounts]]
+#     source = "layouts"
+#     target = "layouts"

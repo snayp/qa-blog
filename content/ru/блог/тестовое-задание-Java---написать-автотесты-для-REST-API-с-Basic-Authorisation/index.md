@@ -2,7 +2,7 @@
 subtitle = "задание собеседовани 24 мая 2021."
 title = "Задание Java. Тест для REST API с Basic Authorization"
 summary = "Тест  2021 года, определяющий уровень знаний и навыков Java языка и инструментов, необходимых для работы SDET специалиста на коммерческом проекте."
-authors = [ "admin" ]
+authors = [ "snayp" ]
 tags = [
   "API",
   "BDD",

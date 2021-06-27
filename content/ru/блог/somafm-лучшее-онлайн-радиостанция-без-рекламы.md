@@ -20,7 +20,7 @@ tags = [
 categories = [ "досуг", "онлайн" ]
 publication_types = [ "музыка" ]
 keywords = [ ]
-authors = [ "admin" ]
+authors = [ "snayp" ]
 +++
 
 

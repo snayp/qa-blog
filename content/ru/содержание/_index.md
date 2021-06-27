@@ -1,6 +1,5 @@
 +++
 title = "Католог"
-kind = "section"
 +++
 
 

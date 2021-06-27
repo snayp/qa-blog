@@ -1,5 +1,5 @@
 +++
-authors = ["admin"]
+authors = ["snayp"]
 date = 2021-05-24T10:49:57.451Z
 description = "Guide to emoji usage in Hugo"
 tags = [ "emoji" ]

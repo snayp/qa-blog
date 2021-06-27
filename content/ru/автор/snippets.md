@@ -1,8 +1,8 @@
 +++
 widget = "ttt"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = true  # Activate this widget? true/false
-weight = 19
-# headless = true
+weight = 1
+headless = true
 title = "личное"
 subtitle = ""
 
@@ -26,15 +26,12 @@ order = "desc"
 
 # Filter posts by a taxonomy term.
 [content.filters]
-  tag = ""
-  category = ""
-  author = "snayp"
-  publication_type = ""
+  exclude_personal = false
 
 [content.archive]
   enable = true
   link = "личное/"
-  text = "больше записей"
+  text = "больше "
   
 [design]
   # Toggle between the various page layout types.

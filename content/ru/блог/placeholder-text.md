@@ -1,5 +1,5 @@
 +++
-authors = [ "admin" ]
+authors = [ "snayp" ]
 date = 2021-06-16T19:23:54.678Z
 description = "Lorem Ipsum Dolor Si Amet"
 tags = [ ]

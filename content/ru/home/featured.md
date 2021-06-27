@@ -30,7 +30,7 @@ subtitle = ""
   [content.filters]
     tag = ""
     category = ""
-    author = "admin"
+    author = ""
   
 [design]
   # Toggle between the various page layout types.

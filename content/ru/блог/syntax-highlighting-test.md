@@ -1,5 +1,5 @@
 +++
-authors = ["admin"]
+authors = ["snayp"]
 description = "A page full of code samples."
 tags = ["syntax highlighting"]
 title = "Syntax Highlighting Test"

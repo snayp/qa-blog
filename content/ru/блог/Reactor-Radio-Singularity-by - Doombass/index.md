@@ -2,7 +2,7 @@
 title = "Reactor Radio - Singularity by : Doombass"
 subtitle = ""
 summary = "запись live выступления Doombass на Reactor Radio"
-authors = [ "admin" ]
+authors = [ "snayp" ]
 tags = [ "live", "Питер", "Doombass" ]
 categories = [ "музыка", "творчество" ]
 keywords = [ ]
