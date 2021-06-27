@@ -1,6 +1,6 @@
         <div class="col-auto">
           <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
-            <option value="*">{{ i18n "publication_type" }}</option>
+            <option value="*">{{ i18n "publication_types" }}</option>
             {{ $pub_types := partial "functions/get_pub_types" $ }}
             {{ range $index, $value := $pub_types }} 
             <option value=".pubtype-{{ (T $value) }}">

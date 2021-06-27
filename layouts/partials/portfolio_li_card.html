@@ -1,8 +1,8 @@
-{{ $item := .item }}
-{{ $widget := .widget }}
+{{ $item := . }}
+{{ $widget := "" }}
 
-{{ $link := .link }}
-{{ $target := .target }}
+{{ $link := $item.Title }}
+{{ $target := $item.Params.target }}
 
 {{/* Get summary. */}}
 {{ $summary := "" }}

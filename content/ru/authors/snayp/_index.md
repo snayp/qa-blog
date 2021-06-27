@@ -3,12 +3,12 @@ bio = '''
 работаю инженером качества ПО. \
 увлекаюсь web технологиями. слушаю музыку.'''
 name = "snayp"
-title = "snayp"
+# title = "snayp"
 role = "тестировщик"
 superuser = false 
 # profile = true
 
-slug = "snayp"
+# slug = "snayp"
 user_group = "man"
 author = "snayp"
 
