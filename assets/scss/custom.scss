@@ -341,20 +341,27 @@ section#featured.home-section {
 //   outline: thin dotted;
 //   outline-offset: 2px;
 // }
-section#fn {
+section#fn,
+section#fn2 {
   font-size: 0.8rem;
 }
 
 //footnote link
 [href="#fn"],
 // Back to footnote link
-[href="#fnref"] {
+[href="#fnref"],
+//footnote link
+[href="#fn2"],
+// Back to footnote link
+[href="#fnref2"] {
   text-decoration: none;
   color: $orange;
   font-family: monospace;
 }
 a[href="#fn"]:before{ content: '[' }
 a[href="#fn"]:after{ content: ']' }
+a[href="#fn2"]:before{ content: '[' }
+a[href="#fn2"]:after{ content: ']' }
 
 
 .playlist--list {

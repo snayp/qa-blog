@@ -1,10 +1,10 @@
 +++
 widget = "ttt"  # See https://sourcethemes.com/academic/docs/page-builder/
 active = true  # Activate this widget? true/false
-weight = 1
+weight = 21
 headless = true
 title = "личное"
-subtitle = ""
+subtitle = "в блоге"
 
 [image]
 caption = ""
@@ -31,7 +31,7 @@ order = "desc"
 [content.archive]
   enable = true
   link = "личное/"
-  text = "больше "
+  text = "читать"
   
 [design]
   # Toggle between the various page layout types.

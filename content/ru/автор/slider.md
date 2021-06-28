@@ -4,7 +4,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 8  # Order that this section will appear.
 
-interval = "3500"
+interval = "3800"
 lrc = true
 height = "calc(100vh - 70px)"
 

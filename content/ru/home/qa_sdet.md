@@ -17,20 +17,20 @@ author  = "snayp"
 [advanced]
   # css_style = "color: #f8f8f2"
 
-  css_class = "dark card-simple"
+  # css_class = "dark card-simple"
 
 [design]
 
 [design.background]
 
-  color = "#282a36"
+  # color = "#282a36"
   # Background image.#343a40, #1c2429
   image = "background_talk.jpg" 
   # image_darken = 0.4
 
   # Text color (true=light or false=dark).
-  text_color_light = false
-#qa_sdet > div > div > div.card-simple.col-12.col-lg-8
+  # text_color_light = false
+  # #qa_sdet > div > div > div.card-simple.col-12.col-lg-8
 [design.spacing]
   padding = ["60px", "0", "60px", "0"]
 +++
