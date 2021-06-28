@@ -1,32 +1,18 @@
 +++
-# A Featured Publications section created with the Featured Content widget.
-# This section displays publications from `content/publication/` which have
-# `featured = true` in their front matter.
 widget = "featured"
+headless = true
+active = true
+weight = 85
 
-# See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
-active = true #  # Activate this widget? true/false
-weight = 85  # Order that this section will appear.
-
-title = "избранное"
-subtitle = ""
+title = "Лучшее"
+subtitle = "в блоге"
 
 
 [content]
-  # Page type to display. E.g. post, talk, or publication.
   page_type = "блог"
-
-  # Choose how much pages you would like to display (0 = all pages)
   count = 5
-
-  # Page order. Descending (desc) or ascending (asc) date.
   order = "desc"
-
-  # Show a "See all pages" link underneath the featured content?
   link_to_archive = false
-
-  # Filter posts by a taxonomy term.
   [content.filters]
     tag = ""
     category = ""

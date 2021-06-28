@@ -17,7 +17,7 @@ disableKinds = ["taxonomy"]
 refLinksErrorLevel = "ERROR"
 refLinksNotFoundURL = "/"
 
-removePathAccents = true
+removePathAccents = false
 disableAliases = true
 # Taxonomies.
 [taxonomies]
