@@ -3,7 +3,7 @@ name: gh-pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - develop # Set a branch to deploy
 
 jobs:
   deploy:
@@ -13,5 +13,5 @@ jobs:
       uses: reuixiy/hugo-deploy@v1
       env:
         DEPLOY_REPO: snayp/snayp.github.io
-        DEPLOY_BRANCH: build
+        DEPLOY_BRANCH: develop
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
