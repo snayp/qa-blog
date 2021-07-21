@@ -4,7 +4,7 @@ description = "A page full of code samples."
 tags = ["syntax highlighting"]
 title = "Syntax Highlighting Test"
 toc = true
-draft = true
+draft = false
 +++
 
 ## Bash
