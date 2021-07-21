@@ -5,7 +5,7 @@ weight = 21
 headless = true
 title = "личное"
 subtitle = "в блоге"
-
+exclude_personal = false
 [image]
 caption = ""
 focal_point = ""
@@ -24,14 +24,10 @@ offset = 0
 # Page order. Descending (desc) or ascending (asc) date.
 order = "desc"
 
-# Filter posts by a taxonomy term.
-[content.filters]
-  exclude_personal = false
-
 [content.archive]
   enable = true
   link = "личное/"
-  text = "читать"
+  text = "больше "
   
 [design]
   # Toggle between the various page layout types.

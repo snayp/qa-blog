@@ -1,5 +1,12 @@
+{{ $exclude_personal := .Get "exclude_pers" }}
 <ul class="list-unstyled">
-  {{ range site.Taxonomies.publication_types }}
-  <li><a href="{{.Page.RelPermalink}}">{{ .Page.Title }}</a></li>
+
+  {{ range $key, $value := .Site.Taxonomies.publication_types }}
+  {{ if ne $key "личное" }} 
+
+  <li><a href="{{.Page.RelPermalink}}">{{.Page.Title }}</a></li>
+
+ {{ end }}
+
   {{ end }}
 </ul>

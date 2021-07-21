@@ -1,6 +1,7 @@
 +++
 title = "Типы контента"
-kind = "taxonomy"
+exclude_personal = true
+
 +++
 
 {{< list_pub_types >}}

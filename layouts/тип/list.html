@@ -1,15 +1,17 @@
 {{- define "main" -}}
 
 {{ partial "page_header.html" . }}
-{{ $st := . }}
-{{ $query := where .Site.Pages "Type" "блог" }}
-{{ $pers_pages := .Site.GetPage (printf "%s/" "типы") }}
+
+{{ $taxo := "тип" }}
+{{ $pages := where .Pages "Section" "типы" }}
+{{ $query := where site.RegularPages "Type" "блог" }}
+
 {{ if .Params.exclude_personal }}
-{{ $query = $query "Params.personal" "!=" true }}
-{{ $pers_pages = $pers_pages | intersect $query.Pages }}
+{{ $query = where $query "Params.personal" "!=" true }}
+{{ $pages = $pages | intersect $query }}
 {{ else }}
-{{ $query = $query "Params.personal" "=" true }}
-{{ $pers_pages = $pers_pages | intersect $query.Pages }}
+{{ $query = where $query "Params.personal" "=" true }}
+{{ $pages = $pages | intersect $query }}
 {{ end }}
 <div class="universal-wrapper">
 
@@ -21,7 +23,7 @@
 
 
 
-  {{ $paginator := .Paginate $pers_pages }}
+  {{ $paginator := .Paginate $pages }}
   {{ range $paginator.Pages }}
   {{ if eq .Params.view 1 }}
   {{ partial "li_list" . }}

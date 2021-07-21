@@ -5,24 +5,16 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
-# Slide interval.
-# Use `false` to disable animation or enter a time in ms, e.g. `5000` (5s).
-interval = "3500"
-
-# Slide height (optional).
-# E.g. `500px` for 500 pixels or `calc(100vh - 70px)` for full screen.
+interval = "3800"
 height = "calc(100vh - 70px)"
-
-# Slides.
-# Duplicate an `[[item]]` block to add more slides.
 [[item]]
-  title = "QA | SDET | CI :v:"
+  title = "QA | SDET | CT :v:"
   content = '''  
   задачи и обязанности инженера качества ПО\
   основные процессы тестирования\
   способы добиться лучшего качества'''
   
-  align = "center"  
+  align = "center"
 
   # Overlay a color or image (optional).
   #   Deactivate an option by commenting out the line, prefixing it with `#`.

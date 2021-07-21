@@ -1,7 +1,7 @@
 {{ $item := . }}
 {{ $widget := "" }}
 
-{{ $link := $item.Title }}
+{{ $link := $item.Params.slug }}
 {{ $target := $item.Params.target }}
 
 {{/* Get summary. */}}

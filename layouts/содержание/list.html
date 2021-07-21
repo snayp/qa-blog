@@ -5,8 +5,13 @@
 <div class="universal-wrapper">
 
   <div class="row row-cols-3">
-    {{ range .Pages.ByLastmod }}  
-      {{ partial "portfolio_li_card" . }}
+
+{{ range .Sections }}
+  
+      {{ partial "portfolio_li_card" . }} 
+
+      
+      
     {{ end }}
   </div>
 </div>
