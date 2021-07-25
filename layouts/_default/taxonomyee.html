@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{- $paginator := .Paginate (where (where .Pages "Type" "in" (slice "блог" "личное") ) "Params.personal" "!=" true) }}
+{{- $paginator := .Paginate (where (where .Data.Pages "Type" "блог") "Params.personal" "!=" true) }}
 <div class="archive-container">
     <div class="container content archive">
       <h2>{{ .Title }}{{ if $paginator.HasPrev }} <small>- {{ i18n "page" }} {{ $paginator.PageNumber }}</small>{{ end }}</h2>

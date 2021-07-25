@@ -8,17 +8,7 @@
   <div class="article-style">{{ . }}</div>
   {{ end }}
 
-  {{ $query := where .Site.RegularPages "Type" "блог" }}
-
-
-  {{ if .Params.exclude_personal }}
-  {{ $pers := where $query "Params.personal" "!=" true }}
-  {{ $query = $query | intersect $pers }}
-  {{ else }}
-  {{ $pers := where $query "Params.personal" "=" true }}
-  {{ $query = $query | intersect $pers }}
-  {{ end }}
-
+  {{ $query := (where (where site.RegularPages "Type" "блог") "Params.personal" "!=" true) }}
 
   {{ $paginator := .Paginate $query }}
   {{ range $paginator.Pages }}
