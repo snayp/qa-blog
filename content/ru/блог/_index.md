@@ -7,5 +7,5 @@ subtitle = "блог тестировщика о качестве"
 exclude_personal = true
 
 [design]
-  view = 3
+  view = 1
 +++
