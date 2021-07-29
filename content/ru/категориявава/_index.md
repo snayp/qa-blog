@@ -1,3 +1,0 @@
-+++
-exclude_personal = true
-+++
