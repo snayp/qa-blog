@@ -9,14 +9,14 @@
   {{ end }}
 
   {{ $query := where site.RegularPages "Type" "блог" }}
-  
-  
+
+
   {{ if .Params.exclude_personal }}
-    {{ $pers := where $query "Params.personal" "!=" true }}
-    {{ $query = $query | intersect $pers }}
+  {{ $pers := where $query "Params.personal" "!=" true }}
+  {{ $query = $query | intersect $pers }}
   {{ else }}
-    {{ $pers := where $query "Params.personal" "=" true }}
-    {{ $query = $query | intersect $pers }}
+  {{ $pers := where $query "Params.personal" "=" true }}
+  {{ $query = $query | intersect $pers }}
   {{ end }}
 
 
