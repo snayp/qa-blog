@@ -7,7 +7,7 @@
   {{ with .Content }}
   <div class="article-style">{{ . }}</div>
   {{ end }}
-  
+
   {{ $query := where site.RegularPages "Type" "блог" }}
   
   
@@ -18,7 +18,7 @@
     {{ $pers := where $query "Params.personal" "=" true }}
     {{ $query = $query | intersect $pers }}
   {{ end }}
-  
+
 
   {{ $paginator := .Paginate $query }}
   {{ range $paginator.Pages }}
