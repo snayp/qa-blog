@@ -4,7 +4,6 @@ resources/
 .env
 themes/
 node_modules/
-public/
 exampleSite/
 gen_demo_resources.sh
 
