@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cucumber | Блог Снайпера</title>
+    <link>https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/cucumber/</link>
+      <atom:link href="https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/cucumber/index.xml" rel="self" type="application/rss+xml" />
+    <description>cucumber</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Wed, 16 Jun 2021 19:07:40 +0000</lastBuildDate>
+    <image>
+      <url>https://snayp.github.io/img/qa-blog-512x512.png</url>
+      <title>cucumber</title>
+      <link>https://snayp.github.io/%D1%82%D0%B5%D0%BC%D0%B0/cucumber/</link>
+    </image>
+    
+    <item>
+      <title>BDD Подход К разработке Это Вовсе Не Способ Писать Автотесты</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4-%D0%BA-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%8D%D1%82%D0%BE-%D0%B2%D0%BE%D0%B2%D1%81%D0%B5-%D0%BD%D0%B5-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-%D0%B0%D0%B2%D1%82%D0%BE%D1%82%D0%B5%D1%81%D1%82%D1%8B/</link>
+      <pubDate>Wed, 16 Jun 2021 19:07:40 +0000</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4-%D0%BA-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%8D%D1%82%D0%BE-%D0%B2%D0%BE%D0%B2%D1%81%D0%B5-%D0%BD%D0%B5-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-%D0%B0%D0%B2%D1%82%D0%BE%D1%82%D0%B5%D1%81%D1%82%D1%8B/</guid>
+      <description>&lt;!-- &lt;div class=&#34;responsive-wrap&#34;&gt;
+  &lt;iframe src=&#34;https://drive.google.com/file/d/1ukyDnFQMsW6xrUtmvjPKqMYa5LnIohyp/preview&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt; --&gt;
+&lt;h2 id=&#34;тогда-какой-смысл-скрыт-в-аббревиатуре-bdd&#34;&gt;Тогда какой смысл, скрыт в аббревиатуре BDD?&lt;/h2&gt;
+&lt;p&gt;Методология разрабатывать ПО, основываясь на поведении пользователя, в первую очередь должна  сформировать одинаковое представление  о реализуемой логике у всех участников команды, в ходе совместного  обсуждения - как пользователь будет использовать данный функционал.&lt;/p&gt;
+&lt;p&gt;Затем надо описать конкретные действия пользователя в системе, обычно в виде feature файла.&lt;/p&gt;
+&lt;p&gt;Когда команда наберется опыта в написании таких файлов, вы сможете использовать специальные  инструменты для автоматизации записанных сценариев, помогая расширить набор приемочных тестов.&lt;/p&gt;
+&lt;h2 id=&#34;почему-же-bdd-это-не-тоже-самое-что-автотесты&#34;&gt;Почему же BDD это не тоже самое, что автотесты?&lt;/h2&gt;
+&lt;p&gt;Часто идея применить подход BDD исходит от разработчика или автотестера.&lt;/p&gt;
+&lt;p&gt;Разработчики оценивают сложность реализации логики исходя из сложности языка постановки  задачи.&lt;/p&gt;
+&lt;p&gt;А Gherkin невероятно простой натуральный язык, состоящий всего из десятка ключевых слов:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;rule&lt;/li&gt;
+&lt;li&gt;feature&lt;/li&gt;
+&lt;li&gt;example&lt;/li&gt;
+&lt;li&gt;given, when, then, and, but или *&lt;/li&gt;
+&lt;li&gt;scenario template&lt;/li&gt;
+&lt;li&gt;examples&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Не значительное количество языковых  конструкций, которые можно составить из такого набора слов, создает ощущение, что написать BDD сценарий довольно легко.&lt;/p&gt;
+&lt;p&gt;На самом деле, это совсем не так просто, как многие думают.&lt;/p&gt;
+&lt;p&gt;В действительности, этот процесс может тратить большие усилия команды.&lt;/p&gt;
+&lt;p&gt;Одной из проблем внедрения BDD подхода в организации, заключается в том, что многие слышали о BDD и думают, что это фреймворк автоматизации тестов с помощью given, then, when конструкций, такой же как Selenium.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Осознание BDD и Первый Опыт Промышленной Эксплуатации</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D1%81%D0%BE%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5-bdd-%D0%B8-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/</link>
+      <pubDate>Sat, 29 May 2021 23:29:31 +0000</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D1%81%D0%BE%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5-bdd-%D0%B8-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/</guid>
+      <description>&lt;h2 id=&#34;польза-bdd-методологии&#34;&gt;польза BDD методологии&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Разбираемся в Запоздалой Популярности Cucumber и BDD подхода</title>
+      <link>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/</link>
+      <pubDate>Mon, 30 Nov 2020 05:10:51 +0300</pubDate>
+      <guid>https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/</guid>
+      <description>&lt;h2 id=&#34;знакомство-с-bdd&#34;&gt;Знакомство с BDD&lt;/h2&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure class=&#34;small&#34; id=&#34;figure-bdd---мнения-за-и-против-best-practicies-и-anti-patterns&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/header_hu7907faaef7e9e2a11d2683d026425d0b_271474_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;BDD - мнения за и против, best practicies и anti patterns.&#34;&gt;
+
+
+  &lt;img data-src=&#34;../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/header_hu7907faaef7e9e2a11d2683d026425d0b_271474_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;Behaviour Driven Development (BDD) - командное обсуждение существенных детелей проекта, позволяющее добиться однозначного понимания будущих изменений у всех членов команды.&#34; width=&#34;2405&#34; height=&#34;1173&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    BDD - мнения за и против, best practicies и anti patterns.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;О фреймворке 
+&lt;a href=&#34;https://cucumber.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cucumber&lt;/a&gt;, я узнал достаточно давно, примерно 7 лет назад, когда пытался овладеть технологией Ruby on Rails. RoR подразумевает написание большого количества тестов и имеет очень развитой инструментарий для различных видов тестирования. Собственно, абрревиатуры BDD &amp;amp; TDD и какие процессы за ними кроются, я тоже узнал изучая RoR.&lt;/p&gt;
+&lt;p&gt;При первом знакомстве, я не смог оценить по достуинству возможности предлагаемыми BDD &amp;amp; TDD методологиями и начать их применять на практике. Сразу стоит оговориться, что до сих пор споры на тему применимости данных подходов и реального профита для команды, не утихли и продожаются среди сторонников и противников в среде тестировщиков-автоматизаторов.&lt;/p&gt;
+&lt;p&gt;В следующий раз я столкнулся с синтаксисом Given, When, Then уже при написании тестов на REST API используя Java и библиотеку 
+&lt;a href=&#34;http://rest-assured.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rest-Assured&lt;/a&gt;. Тесты выглядели примерно так и кроме  синтаксиса от BDD не заимствовали ничего лишнего.&lt;/p&gt;
+&lt;script type=&#34;application/javascript&#34; src=&#34;https://gist.github.com/snayp/c41875f9b2aa729ee29b32e13cc5205c.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://automated-testing.info/t/code-recipe-primer-ispolzovaniya-rest-assured-dlya-avtomatizaczii-restfull-api/24599?u=snayp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Выложил больше примеров с описанием, что делают тесты&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Затем, при автоматизации Websocket API пришлось использовать JavaScript инструменты - 
+&lt;a href=&#34;https://jasmine.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jasmine&lt;/a&gt; + 
+&lt;a href=&#34;https://karma-runner.github.io/latest/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Karma&lt;/a&gt;. Jasmine - BDD фреймворк, который &amp;ldquo;из коробки&amp;rdquo; имеет все необходимое для тестировани JavaScript кода. Не зависит ни каких сторонних npm модулей, потому очень шустрый. В моем случае, он был очень удобен по двум причинам:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;для тестирования ассинхронного WebSocket API JavaScript оказался гораздо приспособленней, чем Java;&lt;/li&gt;
+&lt;li&gt;парсить JSON объекты JavaScript&amp;rsquo;ом, намного легче, чем возиться с Java объектами;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Возможности BDD, снова никакой роли не играли. Тут хочу мельком сказать про свое первое знакомство с магией Promise, Поскольку тесты подразумевали несколько последовательных вызовов API, где каждый последующий вызов использовал результаты предыдущего, то очень быстро код стал абсолютно не читаемым из-за огромного числа вложенных callback&amp;rsquo;ов.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;wsApi.sendMessage(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;linktourist&amp;#34;&lt;/span&gt;, linkQuery, &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt; (data) {
+    wsApi.sendMessage(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;unlinktourist&amp;#34;&lt;/span&gt;, linkQuery, &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt; (data) {
+        wsApi.sendMessage(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;person&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;delete&amp;#34;&lt;/span&gt;, {id&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; personId}, &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt; (data) {
+            wsApi.sendMessage(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;delete&amp;#34;&lt;/span&gt;, {service&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; serviceId}, &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt; (data) {
+                wsApi.sendMessage(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;order&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;delete&amp;#34;&lt;/span&gt;, {id&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; orderId}, &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt; (data) {
+                    done();
+                });
+            });
+        });
+    });
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Хоть IntelliJIDEA и мощнейший редактор текста, но искать, где же пропущена одна скобка или точка с зяпятой, было просто не выносимо. Тогда я первый раз узнал про Linter&amp;rsquo;ы, это тоже отдельная тема, которой будет посвящен пост в будущем. Сокральный смысл Promise я тогда не понял, а вот возможность отрефакторить код, чтобы он был выровнен по левому краю, оценил сразу!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;it(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;dry cleaning&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;(done) {
+        &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; inDate &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;Date&lt;/span&gt;().getTime() &lt;span style=&#34;color:#ff79c6&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;60&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;60&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;24&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;40&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1000&lt;/span&gt;;
+        &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; outDate &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;Date&lt;/span&gt;().getTime() &lt;span style=&#34;color:#ff79c6&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;60&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;60&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;24&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;40&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1000&lt;/span&gt;;
+        &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; searchQuery &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; {
+            place&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; {
+                &lt;span style=&#34;color:#ff79c6&#34;&gt;in&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;HO000288TR&amp;#34;&lt;/span&gt;
+            },
+            date&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; {
+                &lt;span style=&#34;color:#ff79c6&#34;&gt;in&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; inDate,
+                out&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; outDate,
+                intime&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;43200000&lt;/span&gt;, &lt;span style=&#34;color:#6272a4&#34;&gt;// 12:00
+&lt;/span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;&lt;/span&gt;                outtime&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;50400000&lt;/span&gt; &lt;span style=&#34;color:#6272a4&#34;&gt;// 14:00
+&lt;/span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;&lt;/span&gt;            },
+            families&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; [
+                {
+                    adults&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;2&lt;/span&gt;
+                }
+            ]
+        };
+        &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; paginationQuery &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;(searchQuery) {
+            &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; context &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; {};
+            wsApi.sendMessage2(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;dayuse&amp;#34;&lt;/span&gt;, searchQuery).then(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;(data) {
+                expect(data.search).not.toBeUndefined();
+                expect(data.done).not.toBeNull();
+                &lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#ff79c6&#34;&gt;!&lt;/span&gt;data.done) {
+                    setTimeout(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;() {
+                        paginationQuery(searchQuery);
+                    }, &lt;span style=&#34;color:#bd93f9&#34;&gt;1000&lt;/span&gt;);
+                } &lt;span style=&#34;color:#ff79c6&#34;&gt;else&lt;/span&gt; {
+                    expect(data.search).toBeDefined();
+                    expect(data.search.length).toBeGreaterThan(&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Нет результатов поиска&amp;#34;&lt;/span&gt;);
+                    expect(data.search[&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;].items).toBeDefined(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Нет результатов поиска&amp;#34;&lt;/span&gt;);
+                    expect(data.search[&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;].items.length).toBeGreaterThan(&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;);
+                    &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; room &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; data.search[&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;].items[&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;][&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;];
+                    expect(room.meal).toBeDefined();
+                    expect(room.type).toBeDefined();
+                    expect(room.outtime).toBe(searchQuery.date.outtime, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Не сходится время выезда&amp;#34;&lt;/span&gt;);
+                    expect(room.commerce.currency).toBe(&lt;span style=&#34;color:#bd93f9&#34;&gt;978&lt;/span&gt;);
+                    expect(room.commerce.offer).not.toBeNull();
+                    context.offer &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; room.commerce.offer;
+                    &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; wsApi.sendMessage2(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;person&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;create&amp;#34;&lt;/span&gt;, context.createPersonQuery);
+                }
+            }).then(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;(data) {
+                expect(data).not.toBeNull();
+                expect(data.id).not.toBeNull();
+                context.personId &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; data.id;
+                &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; wsApi.sendMessage2(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;order&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;create&amp;#34;&lt;/span&gt;);
+            }).then(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;(data) {
+                context.orderId &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; data.id;
+                &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; createServiceQuery &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; {
+                    type&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;dayuse&amp;#34;&lt;/span&gt;,
+                    orderid&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; context.orderId,
+                    items&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; [{
+                        offer&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; context.offer
+                    }]
+                };
+                &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; wsApi.sendMessage2(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;create&amp;#34;&lt;/span&gt;, createServiceQuery);
+            }).then(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;(data) {
+                expect(data).not.toBeNull();
+                expect(data.id).not.toBeNull();
+                context.serviceId &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; data.id;
+                context.linkQuery &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; {
+                    &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; context.serviceId,
+                    &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;tourist&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; context.personId,
+                    &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;item&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;
+                };
+                &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; wsApi.sendMessage2(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;service&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;linktourist&amp;#34;&lt;/span&gt;, context.linkQuery);
+            }).then(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;() {
+                &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; wsApi.sendMessage2(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;autocomplete&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;clothes&amp;#34;&lt;/span&gt;, { search&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;, hotel&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt;searchQuery.place.&lt;span style=&#34;color:#ff79c6&#34;&gt;in&lt;/span&gt; });
+            }).then(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;(data) {
+                expect(data).not.toBeNull();
+                expect(data.length).toBeGreaterThan(&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;);
+                &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; cloth &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; data[&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;];
+                expect(cloth.id).not.toBeNull();
+                expect(cloth.name).not.toBeNull();
+                context.clothId &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; cloth.id;
+                &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; wsApi.sendMessage2(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;extras&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;dry&amp;#34;&lt;/span&gt;, { cloth&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt;context.clothId });
+            }).then(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;(data) {
+                expect(data).not.toBeNull();
+                expect(data.actions).not.toBeNull();
+                expect(data.actions.length).toBeGreaterThan(&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;);
+                &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; action &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; data.actions[&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;];
+                expect(action.id).not.toBeNull();
+                context.actionId &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; action.id;
+                expect(action.name).not.toBeNull();
+                expect(action.commerce).not.toBeNull();
+                expect(action.commerce.original).not.toBeNull();
+                expect(action.commerce.offer).not.toBeNull();
+                context.extraOffer &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; action.commerce.offer;
+                &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; updateExtras &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; {
+                    service&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; context.serviceId,
+                    extras&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; [
+                        {
+                            index&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;,
+                            person&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; context.personId,
+                            amount&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;,
+                            offer&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; context.extraOffer,
+                            type&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;DRY&amp;#34;&lt;/span&gt;,
+                            item&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; {
+                                id&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; context.clothId
+                            },
+                            action&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; {
+                                id&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt; context.actionId
+                            }
+                        }
+                    ]
+                }
+                &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; wsApi.sendMessage2(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;extras&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;update&amp;#34;&lt;/span&gt;, updateExtras);
+            }).then(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;() {
+                &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; wsApi.sendMessage2(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;order&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;retrieve&amp;#34;&lt;/span&gt;, { id&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt;context.orderId });
+            }).then(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;(data) {
+                expect(data).not.toBeNull();
+                expect(data.date).not.toBeNull();
+                expect(data.commerce.payment).not.toBeNull();
+                expect(data.commerce.currency).not.toBeNull();
+                expect(data.services).not.toBeNull();
+                expect(data.services.length).toBeGreaterThan(&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;);
+                expect(data.services.length).toBe(&lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;);
+                &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; service &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; data.services[&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;];
+                expect(service.type).not.toBeNull();
+                expect(service.type).toBe(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;dayuse&amp;#34;&lt;/span&gt;);
+                expect(service.persons.length).toBe(&lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;);
+                &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; person &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; service.persons[&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;];
+                expect(person).not.toBeNull();
+                expect(person.id).not.toBeNull();
+                expect(person.name.last).not.toBeNull();
+                expect(person.name.last).toBe(context.createPersonQuery.name.last);
+                expect(service.commerce.currency).toBe(&lt;span style=&#34;color:#bd93f9&#34;&gt;978&lt;/span&gt;);
+                expect(service.commerce.tl).not.toBeNull();
+                expect(service.extraCommerce.payment).not.toBeNull();
+                expect(service.extraCommerce.original).not.toBeNull();
+                expect(service.extraCommerce.currency).not.toBeNull();
+                expect(service.extraCommerce.currency).toBe(&lt;span style=&#34;color:#bd93f9&#34;&gt;978&lt;/span&gt;);
+
+                &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; wsApi.sendMessage2(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;extras&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;retrieve&amp;#34;&lt;/span&gt;, { service&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt;context.serviceId, type&lt;span style=&#34;color:#ff79c6&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;DRY&amp;#34;&lt;/span&gt; });
+            }).then(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;function&lt;/span&gt;(data) {
+                expect(data).not.toBeNull();
+                expect(data.extras).not.toBeNull();
+                expect(data.extras.length).toBeGreaterThan(&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;);
+                expect(data.extras.length).toBe(&lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;);
+                
+                &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;var&lt;/span&gt; extra &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; data.extras[&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;];
+                expect(extra.type).not.toBeNull();
+                expect(extra.type).toBe(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;DRY&amp;#34;&lt;/span&gt;);
+                expect(extra.index).not.toBeNull();
+                expect(extra.index).toBe(&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;);
+                expect(extra.commerce.offer).toBe(context.extraOffer);
+                expect(extra.commerce.original).not.toBeNull();
+                expect(extra.commerce.payment).not.toBeNull();
+                expect(extra.commerce.currency).not.toBeNull();
+                expect(extra.commerce.currency).toBe(&lt;span style=&#34;color:#bd93f9&#34;&gt;978&lt;/span&gt;);
+
+                done();
+            });
+        };
+        
+        paginationQuery(searchQuery);
+    }, &lt;span style=&#34;color:#bd93f9&#34;&gt;20000&lt;/span&gt;);
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Итого, за первые 5 лет моего знакомства с термином Behaviour Driven Development (BDD), так и не возникло насущной необходимости, благодаря который я бы смог подробнее разобраться, зачем же еще что то новое придумали и смог бы применить новый подход в своей работе.&lt;/p&gt;
+&lt;p&gt;В следующей части будет рассказ, о том, как же я все таки осознал, как и зачем можно использовать BDD и даже нашел задачу, где предложенные методы, могли реально упростить разработку, а точнее, что описание конкретного кейса на естественном языке, действительно помогает понять смысл разрабатываемого функционала всем членам команды и не тратить ресуры на реализацию сомнительнего функционала.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

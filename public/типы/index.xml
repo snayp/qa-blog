@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Типы контента | Блог Снайпера</title>
+    <link>https://snayp.github.io/%D1%82%D0%B8%D0%BF%D1%8B/</link>
+      <atom:link href="https://snayp.github.io/%D1%82%D0%B8%D0%BF%D1%8B/index.xml" rel="self" type="application/rss+xml" />
+    <description>Типы контента</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <image>
+      <url>https://snayp.github.io/img/qa-blog-512x512.png</url>
+      <title>Типы контента</title>
+      <link>https://snayp.github.io/%D1%82%D0%B8%D0%BF%D1%8B/</link>
+    </image>
+    
+  </channel>
+</rss>

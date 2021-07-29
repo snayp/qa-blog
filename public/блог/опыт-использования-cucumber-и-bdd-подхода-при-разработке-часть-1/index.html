@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="snayp">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Знакомство с BDD   BDD - мнения за и против, best practicies и anti patterns.   О фреймворке Cucumber, я узнал достаточно давно, примерно 7 лет назад, когда пытался овладеть технологией Ruby on Rails. RoR подразумевает написание большого количества тестов и имеет очень развитой инструментарий для различных видов тестирования. Собственно, абрревиатуры BDD &amp; TDD и какие процессы за ними кроются, я тоже узнал изучая RoR.
+При первом знакомстве, я не смог оценить по достуинству возможности предлагаемыми BDD &amp; TDD методологиями и начать их применять на практике.">
+
+  
+  <link rel="alternate" hreflang="" href="https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  <meta name="theme-color" content="#fe8481">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7CRoboto+Mono%7CRoboto:300,400,700&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="../../css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="../../index.webmanifest">
+  <link rel="icon" type="image/png" href="../../media/icon_hu925f1eb09004ef6fa1eb3a268807fdd0_7989_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="../../media/icon_hu925f1eb09004ef6fa1eb3a268807fdd0_7989_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@agileorange">
+  <meta property="twitter:creator" content="@agileorange">
+  
+  <meta property="og:site_name" content="Блог Снайпера">
+  <meta property="og:url" content="https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/">
+  <meta property="og:title" content="Разбираемся в Запоздалой Популярности Cucumber и BDD подхода | Блог Снайпера">
+  <meta property="og:description" content="Знакомство с BDD   BDD - мнения за и против, best practicies и anti patterns.   О фреймворке Cucumber, я узнал достаточно давно, примерно 7 лет назад, когда пытался овладеть технологией Ruby on Rails. RoR подразумевает написание большого количества тестов и имеет очень развитой инструментарий для различных видов тестирования. Собственно, абрревиатуры BDD &amp; TDD и какие процессы за ними кроются, я тоже узнал изучая RoR.
+При первом знакомстве, я не смог оценить по достуинству возможности предлагаемыми BDD &amp; TDD методологиями и начать их применять на практике."><meta property="og:image" content="https://snayp.github.io/img/qa-blog-512x512.png">
+  <meta property="twitter:image" content="https://snayp.github.io/img/qa-blog-512x512.png"><meta property="og:locale" content="ru-ru">
+  
+    
+      <meta property="article:published_time" content="2020-11-30T05:10:51&#43;03:00">
+    
+    <meta property="article:modified_time" content="2020-11-30T05:10:51&#43;03:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/"
+  },
+  "headline": "Разбираемся в Запоздалой Популярности Cucumber и BDD подхода",
+  
+  "datePublished": "2020-11-30T05:10:51+03:00",
+  "dateModified": "2020-11-30T05:10:51+03:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "snayp"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Блог Снайпера",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://snayp.github.io/img/logo.svg"
+    }
+  },
+  "description": "Знакомство с BDD   BDD - мнения за и против, best practicies и anti patterns.   О фреймворке Cucumber, я узнал достаточно давно, примерно 7 лет назад, когда пытался овладеть технологией Ruby on Rails. RoR подразумевает написание большого количества тестов и имеет очень развитой инструментарий для различных видов тестирования. Собственно, абрревиатуры BDD \u0026amp; TDD и какие процессы за ними кроются, я тоже узнал изучая RoR.\nПри первом знакомстве, я не смог оценить по достуинству возможности предлагаемыми BDD \u0026amp; TDD методологиями и начать их применять на практике."
+}
+</script>
+
+  
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#fe8481",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#fe8481"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "Для комфорной навигации на этом сайте используются куки (cookies).",
+        "dismiss": "Понял!",
+        "link": "Узнать о cookie политике",
+        "href": "/%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0/cookies/"
+      }
+    })});
+  </script>
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+  <title>Разбираемся в Запоздалой Популярности Cucumber и BDD подхода | Блог Снайпера</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
+  <div id="fb-root" style="text-align: center;"></div>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+  <!-- Start Preloader -->
+<div id="preloader">
+    <div class="preloader">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+</div>
+<!-- End Preloader -->
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Поиск</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Поиск ..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="../../"><img src="../../img/logo.svg" alt="Блог Снайпера"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="../../"><img src="../../img/logo.svg" alt="Блог Снайпера"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="../../%d0%b1%d0%bb%d0%be%d0%b3/"><span>блог</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="../../%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b0%d0%bd%d0%b8%d0%b5/"><span>содержание</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="../../%d0%b0%d0%b2%d1%82%d0%be%d1%80/"><span>автор</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Разбираемся в Запоздалой Популярности Cucumber и BDD подхода</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+
+    30 ноября 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 мин. для прочтения
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="../../%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F/%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/">тестирование</a>, <a href="../../%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F/%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD/">онлайн</a></span>
+  
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="знакомство-с-bdd">Знакомство с BDD</h2>
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure class="small" id="figure-bdd---мнения-за-и-против-best-practicies-и-anti-patterns">
+
+
+  <a data-fancybox="" href="../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/header_hu7907faaef7e9e2a11d2683d026425d0b_271474_2000x2000_fit_lanczos_2.png" data-caption="BDD - мнения за и против, best practicies и anti patterns.">
+
+
+  <img data-src="../../%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/header_hu7907faaef7e9e2a11d2683d026425d0b_271474_2000x2000_fit_lanczos_2.png" class="lazyload" alt="Behaviour Driven Development (BDD) - командное обсуждение существенных детелей проекта, позволяющее добиться однозначного понимания будущих изменений у всех членов команды." width="2405" height="1173">
+</a>
+
+
+  
+  
+  <figcaption>
+    BDD - мнения за и против, best practicies и anti patterns.
+  </figcaption>
+
+
+</figure>
+
+<p>О фреймворке 
+<a href="https://cucumber.io/" target="_blank" rel="noopener">Cucumber</a>, я узнал достаточно давно, примерно 7 лет назад, когда пытался овладеть технологией Ruby on Rails. RoR подразумевает написание большого количества тестов и имеет очень развитой инструментарий для различных видов тестирования. Собственно, абрревиатуры BDD &amp; TDD и какие процессы за ними кроются, я тоже узнал изучая RoR.</p>
+<p>При первом знакомстве, я не смог оценить по достуинству возможности предлагаемыми BDD &amp; TDD методологиями и начать их применять на практике. Сразу стоит оговориться, что до сих пор споры на тему применимости данных подходов и реального профита для команды, не утихли и продожаются среди сторонников и противников в среде тестировщиков-автоматизаторов.</p>
+<p>В следующий раз я столкнулся с синтаксисом Given, When, Then уже при написании тестов на REST API используя Java и библиотеку 
+<a href="http://rest-assured.io/" target="_blank" rel="noopener">Rest-Assured</a>. Тесты выглядели примерно так и кроме  синтаксиса от BDD не заимствовали ничего лишнего.</p>
+<script type="application/javascript" src="https://gist.github.com/snayp/c41875f9b2aa729ee29b32e13cc5205c.js"></script>
+<p>
+<a href="https://automated-testing.info/t/code-recipe-primer-ispolzovaniya-rest-assured-dlya-avtomatizaczii-restfull-api/24599?u=snayp" target="_blank" rel="noopener">Выложил больше примеров с описанием, что делают тесты</a></p>
+<p>Затем, при автоматизации Websocket API пришлось использовать JavaScript инструменты - 
+<a href="https://jasmine.github.io/" target="_blank" rel="noopener">Jasmine</a> + 
+<a href="https://karma-runner.github.io/latest/index.html" target="_blank" rel="noopener">Karma</a>. Jasmine - BDD фреймворк, который &ldquo;из коробки&rdquo; имеет все необходимое для тестировани JavaScript кода. Не зависит ни каких сторонних npm модулей, потому очень шустрый. В моем случае, он был очень удобен по двум причинам:</p>
+<ul>
+<li>для тестирования ассинхронного WebSocket API JavaScript оказался гораздо приспособленней, чем Java;</li>
+<li>парсить JSON объекты JavaScript&rsquo;ом, намного легче, чем возиться с Java объектами;</li>
+</ul>
+<p>Возможности BDD, снова никакой роли не играли. Тут хочу мельком сказать про свое первое знакомство с магией Promise, Поскольку тесты подразумевали несколько последовательных вызовов API, где каждый последующий вызов использовал результаты предыдущего, то очень быстро код стал абсолютно не читаемым из-за огромного числа вложенных callback&rsquo;ов.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript">wsApi.sendMessage(<span style="color:#f1fa8c">&#34;service&#34;</span>, <span style="color:#f1fa8c">&#34;linktourist&#34;</span>, linkQuery, <span style="color:#8be9fd;font-style:italic">function</span> (data) {
+    wsApi.sendMessage(<span style="color:#f1fa8c">&#34;service&#34;</span>, <span style="color:#f1fa8c">&#34;unlinktourist&#34;</span>, linkQuery, <span style="color:#8be9fd;font-style:italic">function</span> (data) {
+        wsApi.sendMessage(<span style="color:#f1fa8c">&#34;person&#34;</span>, <span style="color:#f1fa8c">&#34;delete&#34;</span>, {id<span style="color:#ff79c6">:</span> personId}, <span style="color:#8be9fd;font-style:italic">function</span> (data) {
+            wsApi.sendMessage(<span style="color:#f1fa8c">&#34;service&#34;</span>, <span style="color:#f1fa8c">&#34;delete&#34;</span>, {service<span style="color:#ff79c6">:</span> serviceId}, <span style="color:#8be9fd;font-style:italic">function</span> (data) {
+                wsApi.sendMessage(<span style="color:#f1fa8c">&#34;order&#34;</span>, <span style="color:#f1fa8c">&#34;delete&#34;</span>, {id<span style="color:#ff79c6">:</span> orderId}, <span style="color:#8be9fd;font-style:italic">function</span> (data) {
+                    done();
+                });
+            });
+        });
+    });
+});</code></pre></div>
+<p>Хоть IntelliJIDEA и мощнейший редактор текста, но искать, где же пропущена одна скобка или точка с зяпятой, было просто не выносимо. Тогда я первый раз узнал про Linter&rsquo;ы, это тоже отдельная тема, которой будет посвящен пост в будущем. Сокральный смысл Promise я тогда не понял, а вот возможность отрефакторить код, чтобы он был выровнен по левому краю, оценил сразу!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript">it(<span style="color:#f1fa8c">&#34;dry cleaning&#34;</span>, <span style="color:#8be9fd;font-style:italic">function</span>(done) {
+        <span style="color:#8be9fd;font-style:italic">var</span> inDate <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> <span style="color:#8be9fd;font-style:italic">Date</span>().getTime() <span style="color:#ff79c6">+</span> <span style="color:#bd93f9">60</span> <span style="color:#ff79c6">*</span> <span style="color:#bd93f9">60</span> <span style="color:#ff79c6">*</span> <span style="color:#bd93f9">24</span> <span style="color:#ff79c6">*</span> <span style="color:#bd93f9">40</span> <span style="color:#ff79c6">*</span> <span style="color:#bd93f9">1000</span>;
+        <span style="color:#8be9fd;font-style:italic">var</span> outDate <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> <span style="color:#8be9fd;font-style:italic">Date</span>().getTime() <span style="color:#ff79c6">+</span> <span style="color:#bd93f9">60</span> <span style="color:#ff79c6">*</span> <span style="color:#bd93f9">60</span> <span style="color:#ff79c6">*</span> <span style="color:#bd93f9">24</span> <span style="color:#ff79c6">*</span> <span style="color:#bd93f9">40</span> <span style="color:#ff79c6">*</span> <span style="color:#bd93f9">1000</span>;
+        <span style="color:#8be9fd;font-style:italic">var</span> searchQuery <span style="color:#ff79c6">=</span> {
+            place<span style="color:#ff79c6">:</span> {
+                <span style="color:#ff79c6">in</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;HO000288TR&#34;</span>
+            },
+            date<span style="color:#ff79c6">:</span> {
+                <span style="color:#ff79c6">in</span><span style="color:#ff79c6">:</span> inDate,
+                out<span style="color:#ff79c6">:</span> outDate,
+                intime<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">43200000</span>, <span style="color:#6272a4">// 12:00
+</span><span style="color:#6272a4"></span>                outtime<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">50400000</span> <span style="color:#6272a4">// 14:00
+</span><span style="color:#6272a4"></span>            },
+            families<span style="color:#ff79c6">:</span> [
+                {
+                    adults<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">2</span>
+                }
+            ]
+        };
+        <span style="color:#8be9fd;font-style:italic">var</span> paginationQuery <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">function</span>(searchQuery) {
+            <span style="color:#8be9fd;font-style:italic">var</span> context <span style="color:#ff79c6">=</span> {};
+            wsApi.sendMessage2(<span style="color:#f1fa8c">&#34;service&#34;</span>, <span style="color:#f1fa8c">&#34;dayuse&#34;</span>, searchQuery).then(<span style="color:#8be9fd;font-style:italic">function</span>(data) {
+                expect(data.search).not.toBeUndefined();
+                expect(data.done).not.toBeNull();
+                <span style="color:#ff79c6">if</span> (<span style="color:#ff79c6">!</span>data.done) {
+                    setTimeout(<span style="color:#8be9fd;font-style:italic">function</span>() {
+                        paginationQuery(searchQuery);
+                    }, <span style="color:#bd93f9">1000</span>);
+                } <span style="color:#ff79c6">else</span> {
+                    expect(data.search).toBeDefined();
+                    expect(data.search.length).toBeGreaterThan(<span style="color:#bd93f9">0</span>, <span style="color:#f1fa8c">&#34;Нет результатов поиска&#34;</span>);
+                    expect(data.search[<span style="color:#bd93f9">0</span>].items).toBeDefined(<span style="color:#f1fa8c">&#34;Нет результатов поиска&#34;</span>);
+                    expect(data.search[<span style="color:#bd93f9">0</span>].items.length).toBeGreaterThan(<span style="color:#bd93f9">0</span>);
+                    <span style="color:#8be9fd;font-style:italic">var</span> room <span style="color:#ff79c6">=</span> data.search[<span style="color:#bd93f9">0</span>].items[<span style="color:#bd93f9">0</span>][<span style="color:#bd93f9">0</span>];
+                    expect(room.meal).toBeDefined();
+                    expect(room.type).toBeDefined();
+                    expect(room.outtime).toBe(searchQuery.date.outtime, <span style="color:#f1fa8c">&#34;Не сходится время выезда&#34;</span>);
+                    expect(room.commerce.currency).toBe(<span style="color:#bd93f9">978</span>);
+                    expect(room.commerce.offer).not.toBeNull();
+                    context.offer <span style="color:#ff79c6">=</span> room.commerce.offer;
+                    <span style="color:#ff79c6">return</span> wsApi.sendMessage2(<span style="color:#f1fa8c">&#34;person&#34;</span>, <span style="color:#f1fa8c">&#34;create&#34;</span>, context.createPersonQuery);
+                }
+            }).then(<span style="color:#8be9fd;font-style:italic">function</span>(data) {
+                expect(data).not.toBeNull();
+                expect(data.id).not.toBeNull();
+                context.personId <span style="color:#ff79c6">=</span> data.id;
+                <span style="color:#ff79c6">return</span> wsApi.sendMessage2(<span style="color:#f1fa8c">&#34;order&#34;</span>, <span style="color:#f1fa8c">&#34;create&#34;</span>);
+            }).then(<span style="color:#8be9fd;font-style:italic">function</span>(data) {
+                context.orderId <span style="color:#ff79c6">=</span> data.id;
+                <span style="color:#8be9fd;font-style:italic">var</span> createServiceQuery <span style="color:#ff79c6">=</span> {
+                    type<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;dayuse&#34;</span>,
+                    orderid<span style="color:#ff79c6">:</span> context.orderId,
+                    items<span style="color:#ff79c6">:</span> [{
+                        offer<span style="color:#ff79c6">:</span> context.offer
+                    }]
+                };
+                <span style="color:#ff79c6">return</span> wsApi.sendMessage2(<span style="color:#f1fa8c">&#34;service&#34;</span>, <span style="color:#f1fa8c">&#34;create&#34;</span>, createServiceQuery);
+            }).then(<span style="color:#8be9fd;font-style:italic">function</span>(data) {
+                expect(data).not.toBeNull();
+                expect(data.id).not.toBeNull();
+                context.serviceId <span style="color:#ff79c6">=</span> data.id;
+                context.linkQuery <span style="color:#ff79c6">=</span> {
+                    <span style="color:#f1fa8c">&#34;service&#34;</span><span style="color:#ff79c6">:</span> context.serviceId,
+                    <span style="color:#f1fa8c">&#34;tourist&#34;</span><span style="color:#ff79c6">:</span> context.personId,
+                    <span style="color:#f1fa8c">&#34;item&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>
+                };
+                <span style="color:#ff79c6">return</span> wsApi.sendMessage2(<span style="color:#f1fa8c">&#34;service&#34;</span>, <span style="color:#f1fa8c">&#34;linktourist&#34;</span>, context.linkQuery);
+            }).then(<span style="color:#8be9fd;font-style:italic">function</span>() {
+                <span style="color:#ff79c6">return</span> wsApi.sendMessage2(<span style="color:#f1fa8c">&#34;autocomplete&#34;</span>, <span style="color:#f1fa8c">&#34;clothes&#34;</span>, { search<span style="color:#ff79c6">:</span><span style="color:#f1fa8c">&#34;&#34;</span>, hotel<span style="color:#ff79c6">:</span>searchQuery.place.<span style="color:#ff79c6">in</span> });
+            }).then(<span style="color:#8be9fd;font-style:italic">function</span>(data) {
+                expect(data).not.toBeNull();
+                expect(data.length).toBeGreaterThan(<span style="color:#bd93f9">0</span>);
+                <span style="color:#8be9fd;font-style:italic">var</span> cloth <span style="color:#ff79c6">=</span> data[<span style="color:#bd93f9">0</span>];
+                expect(cloth.id).not.toBeNull();
+                expect(cloth.name).not.toBeNull();
+                context.clothId <span style="color:#ff79c6">=</span> cloth.id;
+                <span style="color:#ff79c6">return</span> wsApi.sendMessage2(<span style="color:#f1fa8c">&#34;extras&#34;</span>, <span style="color:#f1fa8c">&#34;dry&#34;</span>, { cloth<span style="color:#ff79c6">:</span>context.clothId });
+            }).then(<span style="color:#8be9fd;font-style:italic">function</span>(data) {
+                expect(data).not.toBeNull();
+                expect(data.actions).not.toBeNull();
+                expect(data.actions.length).toBeGreaterThan(<span style="color:#bd93f9">0</span>);
+                <span style="color:#8be9fd;font-style:italic">var</span> action <span style="color:#ff79c6">=</span> data.actions[<span style="color:#bd93f9">0</span>];
+                expect(action.id).not.toBeNull();
+                context.actionId <span style="color:#ff79c6">=</span> action.id;
+                expect(action.name).not.toBeNull();
+                expect(action.commerce).not.toBeNull();
+                expect(action.commerce.original).not.toBeNull();
+                expect(action.commerce.offer).not.toBeNull();
+                context.extraOffer <span style="color:#ff79c6">=</span> action.commerce.offer;
+                <span style="color:#8be9fd;font-style:italic">var</span> updateExtras <span style="color:#ff79c6">=</span> {
+                    service<span style="color:#ff79c6">:</span> context.serviceId,
+                    extras<span style="color:#ff79c6">:</span> [
+                        {
+                            index<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>,
+                            person<span style="color:#ff79c6">:</span> context.personId,
+                            amount<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1</span>,
+                            offer<span style="color:#ff79c6">:</span> context.extraOffer,
+                            type<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;DRY&#34;</span>,
+                            item<span style="color:#ff79c6">:</span> {
+                                id<span style="color:#ff79c6">:</span> context.clothId
+                            },
+                            action<span style="color:#ff79c6">:</span> {
+                                id<span style="color:#ff79c6">:</span> context.actionId
+                            }
+                        }
+                    ]
+                }
+                <span style="color:#ff79c6">return</span> wsApi.sendMessage2(<span style="color:#f1fa8c">&#34;extras&#34;</span>, <span style="color:#f1fa8c">&#34;update&#34;</span>, updateExtras);
+            }).then(<span style="color:#8be9fd;font-style:italic">function</span>() {
+                <span style="color:#ff79c6">return</span> wsApi.sendMessage2(<span style="color:#f1fa8c">&#34;order&#34;</span>, <span style="color:#f1fa8c">&#34;retrieve&#34;</span>, { id<span style="color:#ff79c6">:</span>context.orderId });
+            }).then(<span style="color:#8be9fd;font-style:italic">function</span>(data) {
+                expect(data).not.toBeNull();
+                expect(data.date).not.toBeNull();
+                expect(data.commerce.payment).not.toBeNull();
+                expect(data.commerce.currency).not.toBeNull();
+                expect(data.services).not.toBeNull();
+                expect(data.services.length).toBeGreaterThan(<span style="color:#bd93f9">0</span>);
+                expect(data.services.length).toBe(<span style="color:#bd93f9">1</span>);
+                <span style="color:#8be9fd;font-style:italic">var</span> service <span style="color:#ff79c6">=</span> data.services[<span style="color:#bd93f9">0</span>];
+                expect(service.type).not.toBeNull();
+                expect(service.type).toBe(<span style="color:#f1fa8c">&#34;dayuse&#34;</span>);
+                expect(service.persons.length).toBe(<span style="color:#bd93f9">1</span>);
+                <span style="color:#8be9fd;font-style:italic">var</span> person <span style="color:#ff79c6">=</span> service.persons[<span style="color:#bd93f9">0</span>];
+                expect(person).not.toBeNull();
+                expect(person.id).not.toBeNull();
+                expect(person.name.last).not.toBeNull();
+                expect(person.name.last).toBe(context.createPersonQuery.name.last);
+                expect(service.commerce.currency).toBe(<span style="color:#bd93f9">978</span>);
+                expect(service.commerce.tl).not.toBeNull();
+                expect(service.extraCommerce.payment).not.toBeNull();
+                expect(service.extraCommerce.original).not.toBeNull();
+                expect(service.extraCommerce.currency).not.toBeNull();
+                expect(service.extraCommerce.currency).toBe(<span style="color:#bd93f9">978</span>);
+
+                <span style="color:#ff79c6">return</span> wsApi.sendMessage2(<span style="color:#f1fa8c">&#34;extras&#34;</span>, <span style="color:#f1fa8c">&#34;retrieve&#34;</span>, { service<span style="color:#ff79c6">:</span>context.serviceId, type<span style="color:#ff79c6">:</span><span style="color:#f1fa8c">&#34;DRY&#34;</span> });
+            }).then(<span style="color:#8be9fd;font-style:italic">function</span>(data) {
+                expect(data).not.toBeNull();
+                expect(data.extras).not.toBeNull();
+                expect(data.extras.length).toBeGreaterThan(<span style="color:#bd93f9">0</span>);
+                expect(data.extras.length).toBe(<span style="color:#bd93f9">1</span>);
+                
+                <span style="color:#8be9fd;font-style:italic">var</span> extra <span style="color:#ff79c6">=</span> data.extras[<span style="color:#bd93f9">0</span>];
+                expect(extra.type).not.toBeNull();
+                expect(extra.type).toBe(<span style="color:#f1fa8c">&#34;DRY&#34;</span>);
+                expect(extra.index).not.toBeNull();
+                expect(extra.index).toBe(<span style="color:#bd93f9">0</span>);
+                expect(extra.commerce.offer).toBe(context.extraOffer);
+                expect(extra.commerce.original).not.toBeNull();
+                expect(extra.commerce.payment).not.toBeNull();
+                expect(extra.commerce.currency).not.toBeNull();
+                expect(extra.commerce.currency).toBe(<span style="color:#bd93f9">978</span>);
+
+                done();
+            });
+        };
+        
+        paginationQuery(searchQuery);
+    }, <span style="color:#bd93f9">20000</span>);
+});</code></pre></div>
+<p>Итого, за первые 5 лет моего знакомства с термином Behaviour Driven Development (BDD), так и не возникло насущной необходимости, благодаря который я бы смог подробнее разобраться, зачем же еще что то новое придумали и смог бы применить новый подход в своей работе.</p>
+<p>В следующей части будет рассказ, о том, как же я все таки осознал, как и зачем можно использовать BDD и даже нашел задачу, где предложенные методы, могли реально упростить разработку, а точнее, что описание конкретного кейса на естественном языке, действительно помогает понять смысл разрабатываемого функционала всем членам команды и не тратить ресуры на реализацию сомнительнего функционала.</p>
+
+    </div>
+
+    
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="../../%D1%82%D0%B5%D0%BC%D0%B0/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/">автоматизация</a>
+  
+  <a class="badge badge-light" href="../../%D1%82%D0%B5%D0%BC%D0%B0/cucumber/">cucumber</a>
+  
+  <a class="badge badge-light" href="../../%D1%82%D0%B5%D0%BC%D0%B0/selenium/">selenium</a>
+  
+  <a class="badge badge-light" href="../../%D1%82%D0%B5%D0%BC%D0%B0/java/">java</a>
+  
+  <a class="badge badge-light" href="../../%D1%82%D0%B5%D0%BC%D0%B0/bdd/">BDD</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/&amp;text=%d0%a0%d0%b0%d0%b7%d0%b1%d0%b8%d1%80%d0%b0%d0%b5%d0%bc%d1%81%d1%8f%20%d0%b2%20%d0%97%d0%b0%d0%bf%d0%be%d0%b7%d0%b4%d0%b0%d0%bb%d0%be%d0%b9%20%d0%9f%d0%be%d0%bf%d1%83%d0%bb%d1%8f%d1%80%d0%bd%d0%be%d1%81%d1%82%d0%b8%20Cucumber%20%d0%b8%20BDD%20%d0%bf%d0%be%d0%b4%d1%85%d0%be%d0%b4%d0%b0" target="_blank" rel="noopener" class="share-btn-telegram">
+          <i class="fab fa-telegram"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/&amp;text=%d0%a0%d0%b0%d0%b7%d0%b1%d0%b8%d1%80%d0%b0%d0%b5%d0%bc%d1%81%d1%8f%20%d0%b2%20%d0%97%d0%b0%d0%bf%d0%be%d0%b7%d0%b4%d0%b0%d0%bb%d0%be%d0%b9%20%d0%9f%d0%be%d0%bf%d1%83%d0%bb%d1%8f%d1%80%d0%bd%d0%be%d1%81%d1%82%d0%b8%20Cucumber%20%d0%b8%20BDD%20%d0%bf%d0%be%d0%b4%d1%85%d0%be%d0%b4%d0%b0" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/&amp;t=%d0%a0%d0%b0%d0%b7%d0%b1%d0%b8%d1%80%d0%b0%d0%b5%d0%bc%d1%81%d1%8f%20%d0%b2%20%d0%97%d0%b0%d0%bf%d0%be%d0%b7%d0%b4%d0%b0%d0%bb%d0%be%d0%b9%20%d0%9f%d0%be%d0%bf%d1%83%d0%bb%d1%8f%d1%80%d0%bd%d0%be%d1%81%d1%82%d0%b8%20Cucumber%20%d0%b8%20BDD%20%d0%bf%d0%be%d0%b4%d1%85%d0%be%d0%b4%d0%b0" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%d0%a0%d0%b0%d0%b7%d0%b1%d0%b8%d1%80%d0%b0%d0%b5%d0%bc%d1%81%d1%8f%20%d0%b2%20%d0%97%d0%b0%d0%bf%d0%be%d0%b7%d0%b4%d0%b0%d0%bb%d0%be%d0%b9%20%d0%9f%d0%be%d0%bf%d1%83%d0%bb%d1%8f%d1%80%d0%bd%d0%be%d1%81%d1%82%d0%b8%20Cucumber%20%d0%b8%20BDD%20%d0%bf%d0%be%d0%b4%d1%85%d0%be%d0%b4%d0%b0&amp;body=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/&amp;title=%d0%a0%d0%b0%d0%b7%d0%b1%d0%b8%d1%80%d0%b0%d0%b5%d0%bc%d1%81%d1%8f%20%d0%b2%20%d0%97%d0%b0%d0%bf%d0%be%d0%b7%d0%b4%d0%b0%d0%bb%d0%be%d0%b9%20%d0%9f%d0%be%d0%bf%d1%83%d0%bb%d1%8f%d1%80%d0%bd%d0%be%d1%81%d1%82%d0%b8%20Cucumber%20%d0%b8%20BDD%20%d0%bf%d0%be%d0%b4%d1%85%d0%be%d0%b4%d0%b0" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=%d0%a0%d0%b0%d0%b7%d0%b1%d0%b8%d1%80%d0%b0%d0%b5%d0%bc%d1%81%d1%8f%20%d0%b2%20%d0%97%d0%b0%d0%bf%d0%be%d0%b7%d0%b4%d0%b0%d0%bb%d0%be%d0%b9%20%d0%9f%d0%be%d0%bf%d1%83%d0%bb%d1%8f%d1%80%d0%bd%d0%be%d1%81%d1%82%d0%b8%20Cucumber%20%d0%b8%20BDD%20%d0%bf%d0%be%d0%b4%d1%85%d0%be%d0%b4%d0%b0%20https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://reddit.com/submit?url=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/&amp;title=%d0%a0%d0%b0%d0%b7%d0%b1%d0%b8%d1%80%d0%b0%d0%b5%d0%bc%d1%81%d1%8f%20%d0%b2%20%d0%97%d0%b0%d0%bf%d0%be%d0%b7%d0%b4%d0%b0%d0%bb%d0%be%d0%b9%20%d0%9f%d0%be%d0%bf%d1%83%d0%bb%d1%8f%d1%80%d0%bd%d0%be%d1%81%d1%82%d0%b8%20Cucumber%20%d0%b8%20BDD%20%d0%bf%d0%be%d0%b4%d1%85%d0%be%d0%b4%d0%b0" target="_blank" rel="noopener" class="share-btn-reddit">
+          <i class="fab fa-reddit-alien"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://pinterest.com/pin/create/link/?url=https://snayp.github.io/%D0%B1%D0%BB%D0%BE%D0%B3/%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-cucumber-%D0%B8-bdd-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/&amp;description=%d0%a0%d0%b0%d0%b7%d0%b1%d0%b8%d1%80%d0%b0%d0%b5%d0%bc%d1%81%d1%8f%20%d0%b2%20%d0%97%d0%b0%d0%bf%d0%be%d0%b7%d0%b4%d0%b0%d0%bb%d0%be%d0%b9%20%d0%9f%d0%be%d0%bf%d1%83%d0%bb%d1%8f%d1%80%d0%bd%d0%be%d1%81%d1%82%d0%b8%20Cucumber%20%d0%b8%20BDD%20%d0%bf%d0%be%d0%b4%d1%85%d0%be%d0%b4%d0%b0" target="_blank" rel="noopener" class="share-btn-pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="../../snayp/avatar_hu0f0bb9948d420c8221623f68964e2e2f_274258_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="../../snayp">snayp</a></h5>
+      <h6 class="card-subtitle">тестировщик</h6>
+      <div class="card-text">работаю инженером качества ПО.<br />
+увлекаюсь web технологиями. слушаю музыку.</div>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://t.me/continuous.testing" target="_blank" rel="noopener">
+        <i class="fab fa-telegram"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/qa_sdet" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/continuous4testing" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-snayp-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Похожее</h3>
+    <ul>
+      
+      <li><a href="../../%D0%B1%D0%BB%D0%BE%D0%B3/syntax-highlighting-test/">Syntax Highlighting Test</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+  
+<footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href=../../%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0/%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8/>Политика конфиденциальности</a>
+    
+    
+       &middot; 
+      <a href=../../%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0/%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/>Условия использования</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+    2021 © Сделано с помощью
+    
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  
+  
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+  
+  
+  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+    
+  
+
+
+
+
+
+
+
+
+<script>const code_highlighting = true;</script>
+
+
+
+
+<script>const isSiteThemeDark = true;</script>
+
+
+
+
+
+
+
+
+<script>
+  const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+  const i18n = {"no_results":"результат не найден","placeholder":"Поиск ...","results":"результат найден"};
+  const content_type = {
+    'post': "посты",
+    'project': "Проекты",
+    'publication' : "типы",
+    'talk' : "встречи"
+    };
+</script>
+
+
+
+
+
+
+
+<script id="search-hit-fuse-template" type="text/x-template">
+  <div class="search-hit" id="summary-{{key}}">
+  <div class="search-hit-content">
+    <div class="search-hit-name">
+      <a href="{{relpermalink}}">{{title}}</a>
+      <div class="article-metadata search-hit-type">{{type}}</div>
+      <p class="search-hit-description">{{snippet}}</p>
+    </div>
+  </div>
+  </div>
+</script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+<script src="../../js/academic.min.4780291a895dba97597765a159d731dc.js"></script>
+
+
+</body>
+</html>
