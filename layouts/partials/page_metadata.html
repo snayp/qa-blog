@@ -13,7 +13,7 @@
   {{ end }}
   {{ end }}
 
-  {{ if not (in (slice "talk" "page") $page.Type) }}
+  {{ if not (in (slice "talk" ) $page.Type) }}
   <span class="article-date">
     {{ $date := printf "%d %s %d" $page.Lastmod.Day (index site.Data.months.months_rod $page.Lastmod.Month) $page.Lastmod.Year }}
     {{ if eq $page.Type "publication" }}
@@ -54,15 +54,13 @@
   {{ end}}
 
   {{ $taxonomy := "categories" }}
-  {{ with $page.Param $taxonomy }}
+  {{ if $page.Param $taxonomy }}
   <span class="middot-divider"></span>
   <span class="article-categories">
     <i class="fas fa-folder mr-1"></i>
-    {{- range $index, $value := . -}}
-      {{- if gt $index 0 }}, {{ end -}}
-        {{ with $page.GetPage (printf "/%s/%s" $taxonomy . ) -}}
-          <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-      {{- end -}}
+    {{- range $index, $value := ($page.GetTerms $taxonomy) -}}
+    {{- if gt $index 0 }}, {{ end -}}
+    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
     {{- end -}}
   </span>
   {{ end }}

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # If a command fails then the deploy stops
 set -e
@@ -27,4 +27,4 @@ git add .
 git commit -m "$msg"
 
 # Push source and build repos.
-git push
+git push -u origin main 

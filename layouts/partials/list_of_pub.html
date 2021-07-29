@@ -1,0 +1,39 @@
+{{- define "main" -}}
+
+{{ partial "page_header.html" . }}
+{{ $st := . }}
+{{ $query := where .Site.Pages "Type" "блог" }}
+{{ $pers_pages := .Site.GetPage (printf "%s/" "типы") }}
+{{ if .Params.exclude_personal }}
+{{ $query = $query "Params.personal" "!=" true }}
+{{ $pers_pages = $pers_pages | intersect $query.Pages }}
+{{ else }}
+{{ $query = $query "Params.personal" "=" true }}
+{{ $pers_pages = $pers_pages | intersect $query.Pages }}
+{{ end }}
+<div class="universal-wrapper">
+
+  {{ with .Content }}
+  <div class="article-style">{{ . }}</div>
+  {{ end }}
+
+
+
+
+
+  {{ $paginator := .Paginate $pers_pages }}
+  {{ range $paginator.Pages }}
+  {{ if eq .Params.view 1 }}
+  {{ partial "li_list" . }}
+  {{ else if eq .Params.view 3 }}
+  {{ partial "li_card" . }}
+  {{ else }}
+  {{ partial "li_compact" . }}
+  {{ end }}
+  {{ end }}
+
+  {{ partial "pagination" . }}
+
+</div>
+
+{{- end -}}

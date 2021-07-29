@@ -75,7 +75,7 @@
 - id: publication
   translation: Публикация
 - id: publication_type
-  translation: Тип публикации
+  translation: Тип
 - id: date
   translation: Когда?
 - id: last_updated
@@ -84,32 +84,41 @@
   translation: Что?
 - id: location
   translation: Где?
-- id: pub_uncat
-  translation: Без категории
-- id: pub_conf
-  translation: Статья для конференции
-- id: pub_journal
-  translation: Статья для журнала
-- id: pub_preprint
-  translation: Предварительная печать
-- id: pub_report
-  translation: Выступление
-- id: pub_book
-  translation: Книга
-- id: pub_book_section
-  translation: Глава книги
-- id: pub_thesis
-  translation: Тезис
-- id: pub_patent
-  translation: Патент
+- id: uncat
+  translation: без-категории
+- id: gallery
+  translation: фото альбом
+- id: event
+  translation: событие
+- id: snippet
+  translation: пример кода
+- id: translation
+  translation: перевод
+- id: management
+  translation: управление
+- id: doc
+  translation: документ
+- id: opinion
+  translation: мнение
+- id: news
+  translation: новость
+- id: personal
+  translation: личное
+
+- id: audio
+  translation: музыка
 - id: open_project_site
-  translation: Перейти на сайт проекта
+  translation: Внешний сайт
 - id: posts
-  translation: Посты
+  translation: посты
+- id: post
+  translation: пост
 - id: publications
-  translation: Публикации
+  translation: типы
+- id: publication
+  translation: тип
 - id: talks
-  translation: События
+  translation: встречи
 - id: projects
   translation: Проекты
 - id: search
@@ -129,7 +138,18 @@
 - id: cookie_dismiss
   translation: Понял!
 - id: cookie_learn
-  translation: Узнать больше
+  translation: Узнать о cookie политике
 
 - id: powered_by
   translation: "{year} &copy; Сделано с помощью " 
+
+- id: tags
+  translation: "темы" 
+- id: categories
+  translation: "категории"   
+- id: tag
+  translation: "тема" 
+- id: category
+  translation: "категория" 
+- id: author
+  translation: "автор" 

@@ -1,6 +1,4 @@
 +++
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
 title = "{{ replace .Name "-" " " | title }}"
 subtitle = ""
 
@@ -9,10 +7,11 @@ event_url = ""
 location = ""
 
 summary = ""
+description = ""
 abstract = ""
 
-# Talk start and end times.
-#   End time can optionally be hidden by prefixing the line with `#`.
+# event start and end times.
+# end time can optionally be hidden by prefixing the line with `#`.
 date = {{ .Date }}
 date_end = {{ .Date }}
 all_day = false
@@ -22,8 +21,9 @@ publishDate = {{ .Date }}
 
 authors = []
 tags = []
-categories = ["анонс"]
-# Is this a featured talk? (true/false)
+categories = []
+publication_types = ["событие"]
+# Is this a featured event? (true/false)
 featured = false
 
 # Featured image
@@ -31,18 +31,19 @@ featured = false
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 [image]
   caption = ""
-  focal_point = ""
+  focal_point = "BottomRight"
   preview_only = false
+  placement = "2"
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
-[links]
+[[links]]
    name = ""
    url = ""
    icon_pack = "fab"
    icon = ""
 
-# Optional filename of your slides within your talk's folder or a URL.
+# Optional filename of your slides within your event's folder or a URL.
 # url_slides:
 
 # url_code:

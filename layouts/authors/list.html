@@ -19,11 +19,12 @@
       {{ partial $widget $params }}
 
 
-      {{ $query := where .Pages ".IsNode" false }}
+      {{ $query := where .Pages "Type" "taxonomy" }}
       {{ $count := len $query }}
+      {{ $user_group := .Params.user_group }}
       {{ if $count }}
       <div class="article-widget content-widget-hr">
-        {{ if eq $username "snayp" }}
+        {{ if eq $user_group "man" }}
           <h3>{{ i18n "user_profile_latest" }}</h3>
         {{ else }}
           <h3>{{ i18n "org_latest" }}</h3>

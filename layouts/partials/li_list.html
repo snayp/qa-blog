@@ -11,7 +11,7 @@
   {{ $link = $item.Params.external_link }}
   {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
 {{ end }}
-{{ if eq $item.Type "post" }}
+{{ if eq $item.Type "блог" }}
   {{ $icon = "fa-newspaper" }}
 {{ else if eq $item.Type "talk" }}
   {{ $icon = "fa-calendar-alt" }}

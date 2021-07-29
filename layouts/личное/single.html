@@ -1,0 +1,18 @@
+{{- define "main" -}}
+
+{{ partial "page_header.html" . }}
+
+<div class="universal-wrapper">
+
+  <div class="row row-cols-3">
+
+{{ range .Pages.GroupByParam "personal" }}
+  
+      {{ partial "li_list" . }} 
+
+      
+      
+    {{ end }}
+  </div>
+</div>
+{{- end -}}

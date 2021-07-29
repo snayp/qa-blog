@@ -1,23 +1,30 @@
 baseURL = "https://snayp.github.io/"
 title = "сельский тестер"
 ignoreErrors = ["error-remote-getjson", "error-disable-taxonomy"]
-languageCode = "ru"
+languageCode = ["ru"]
 defaultContentLanguage = "ru"
-paginatepath = "страница"
+defaultContentLanguageInSubdir = false
+disableLanguages = ["en"]
+# paginatepath = "страница"
 enableInlineShortcodes = true
 canonifyURLs = true
 relativeURLs = true
 enableEmoji = true
-footnotereturnlinkcontents = "<sup>^</sup>"
+prettyURLs = true
+footnoteReturnLinkContents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-disableKinds = [""]
+disableKinds = ["taxonomy"]
 refLinksErrorLevel = "ERROR"
 refLinksNotFoundURL = "/"
+
+removePathAccents = false
+disableAliases = true
 # Taxonomies.
 [taxonomies]
   tag = "tags"
   category = "categories"
   author = "authors"
+  publication_type = "publication_types"
 
 [outputs]
   home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]
@@ -33,14 +40,25 @@ refLinksNotFoundURL = "/"
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
+    [markup.goldmark.extensions]
+      footnote = true
     [markup.goldmark.renderer]
-      unsafe = true  # Enable user to embed HTML snippets in Markdown content.
-      
+      hardWraps = true
+      unsafe = true  
+      xhtml = true
   [markup.highlight]
-    codeFences = false  # Disable Hugo's code highlighter as it conflicts with Academic's highligher.
+    anchorLineNos = false
+    codeFences = false
+    guessSyntax = true
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNumbersInTable = false
+    style = "dracula"
+    tabWidth = 2
   [markup.tableOfContents]
-    startLevel = 2
     endLevel = 3
+    ordered = false
+    startLevel = 2
 
 [imaging]
   resampleFilter = "lanczos"
@@ -48,13 +66,13 @@ refLinksNotFoundURL = "/"
   anchor = "smart" 
 
 [permalinks]
-  categories = "/категория/:slug/"      # required
-  tags = "/тема/:slug/"                 # required
+  # categories = "/категория/:slug/"      # required
+  # tags = "/тема/:slug/"                 # required
   pages = "/:slug/"
-  authors = "/:slug/"
+  # authors = "/:slug/"
 
 [related]
-  includeNewer = true
+  includeNewer = false
   threshold = 30
   toLower = true
 
@@ -67,9 +85,13 @@ refLinksNotFoundURL = "/"
     weight = 60
 
   [[related.indices]]
-    name = "keywords"
+    name = "authors"
     weight = 80
 
-  [[related.indices]]
-    name = "authors"
-    weight = 100
+# [module]
+#   [[module.imports]]
+#     disable = true
+#     path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy"
+#   [[module.mounts]]
+#     source = "layouts"
+#     target = "layouts"

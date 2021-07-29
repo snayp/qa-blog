@@ -1,5 +1,12 @@
+{{ $exclude_pers := .Get "exclude_pers" }}
 <ul class="list-unstyled">
-  {{ range site.Taxonomies.categories }}
+  
+  {{ range $key, $value := .Site.Taxonomies.categories }}
+{{ if ne ".Params.personal" true }}
+ 
   <li><a href="{{.Page.RelPermalink}}">{{.Page.Title}}</a></li>
+    
+
+{{ end }}
   {{ end }}
 </ul>

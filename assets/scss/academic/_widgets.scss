@@ -13,9 +13,17 @@
 
 .home-section {
   background-color: $sta-home-section-odd;
-  padding: 110px 0 110px 0;
+  padding: 70px 0 0 0;
   animation: intro 0.3s both;
   animation-delay: 0.15s;
+}
+
+#tags.home-section {
+  padding-bottom: 70px;
+}
+
+#contact.home-section {
+  padding: 60px 0 50px 0;
 }
 
 /* Override dark colors that may be inherited from body.dark */
@@ -447,7 +455,7 @@ ul.ul-edu li .description p.institution {
 
 .project-card {
   position: relative;
-  width: calc(33.3% - 2*20px); /* Fluid 3 columns (inc. 20px gutter) */
+  width: calc(33.3% - 2*10px); /* Fluid 3 columns (inc. 20px gutter) */
 }
 @media screen and (max-width: 1199px) {
   .project-card {
@@ -465,7 +473,7 @@ ul.ul-edu li .description p.institution {
 }
 
 .project-card.project-item {
-  margin: 0 0 20px 0; /* Set to Isotope's gutter size */
+  margin: 0; /* Set to Isotope's gutter size */
 }
 
 .project-card .card {
@@ -478,6 +486,7 @@ ul.ul-edu li .description p.institution {
 
 .project-item:last-of-type {
   margin-bottom: 0;
+  margin-right: 0;
 }
 
 .isotope-item {

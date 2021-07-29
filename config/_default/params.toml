@@ -22,8 +22,8 @@ font = "minimal"
 
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size = "L"
-aplayer = true
+font_size = "M"
+
 ############################
 ## Basic Info
 ############################
@@ -44,7 +44,7 @@ local_business_type = ""
 org_name = ""
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = ""
+# description = ""
 
 ############################
 ## Site Features
@@ -53,8 +53,8 @@ description = ""
 # Enable source code highlighting? true/false
 # Documentation: https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
 highlight = true
-# highlight_languages = [""]  # Add support for highlighting additional languages
-# highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
+# highlight_languages = ["java","javascript","json","python","go"]  # Add support for highlighting additional languages
+highlight_style = "dracula"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
 
 # Enable LaTeX math rendering? true/false
 #   If false, you can enable math on a per page basis as needed.
@@ -70,7 +70,7 @@ diagram = false
 privacy_pack = true
 # Enable visitors to edit pages?
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
-# edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir = "", repo_branch = "master", editable = {docs = true, page = false, post = false}}
+# edit_page = {repo_url = "https://github.com/snayp/snayp", content_dir = "", repo_branch = "main", editable = {docs = true, page = false, post = false, "блог" = true}}
 
 ############################
 ## Contact details
@@ -110,7 +110,7 @@ privacy_pack = true
 sharing_image = "qa-blog-512x512.png"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
-twitter = ""
+twitter = "agileorange"
 
 ############################
 ## Regional Settings
@@ -130,13 +130,13 @@ address_format = "ru"
 ############################
 
 # Main menu alignment (l = left, c = center, r = right) and logo options.
-main_menu = {align = "c", show_logo = true,  highlight_active_link = false, show_language = false}
+main_menu = {align = "c", show_logo = true,  highlight_active_link = true}
 
 # Show estimated reading time for posts? (true/false)
 reading_time = true
 
 # Display next/previous section pager? (true/false)
-section_pager = false
+section_pager = true
 docs_section_pager = false  # Display pager in Docs layout (e.g. tutorials)?
 
 # Enable in-built social sharing buttons? (true/false)
@@ -145,16 +145,16 @@ sharing = true
 # link_authors = false
 
 # Link authors to their profile page? (true/false)
-show_related = {"блог" = true, "анонс" = true, page = false}
+show_related = {"блог" = true, page = false, docs = false}
 
 # Abstract length (characters) in the Compact and Portfolio Card list views. Also, see `summaryLength` in `config.toml`.
 abstract_length = 135
 
 # Load JS plugins
 #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
-plugins_js  = [ "custom" ]
-plugins_css  = [ "custom" ]
-
+plugins_js  = ["custom"]
+# plugins_css  = ["custom"]
+# js = "js/translit.js"
 # Avatars.
 # An avatar is an image that appears next to a user's name.
 # An avatar can be uploaded as an image named `avatar` to each user's profile or fetched from Gravatar.com.
@@ -164,7 +164,7 @@ plugins_css  = [ "custom" ]
 
 #   # Choose a shape for avatar images. Options: circle, square.
 #   shape = "square"
-
+# mainSections = ["блог", "лучшее"]
 # Available address formats.
 [address_formats]
   # en-us = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ' ', '']}
@@ -206,7 +206,7 @@ plugins_css  = [ "custom" ]
   engine = 1
 
   # Which page types are commentable?
-  commentable = {page = false, post = true, docs = false, project = true, publication = true, talk = true, "блог"=true, "анонс"=true }
+  commentable = {page = false, post = true, docs = false, project = true, publication = true, talk = true, "блог" = true, "анонс" = true}
 
   # Configuration of Disqus.
   [comments.disqus]
@@ -227,6 +227,7 @@ plugins_css  = [ "custom" ]
   #   1: Academic (built-in)
   #   2: Algolia (https://www.algolia.com)
   engine = 1
+  # provider = "wowchemy"
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.

@@ -42,7 +42,7 @@
   {{ $.Scratch.Set "src" .image }}
   {{ if gt (len .image) 4 }}
     {{ if ne "http" (slicestr .image 0 4) }}
-      {{ $.Scratch.Set "src" (printf "img/%s" .image | relURL) }}
+      {{ $.Scratch.Set "src" (printf "img/$album/" .image | relURL) }}
     {{ end }}
   {{ end }}
   {{/* Don't lazy load image as cannot init image size from non-Hugo asset, resulting in inaccurate anchor scrolling & active link highlighting. */}}

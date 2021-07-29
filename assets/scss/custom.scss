@@ -1,63 +1,3 @@
-// Override this file to add your own SCSS styling.
-#contact {
-
-  margin: 1.5rem 0;
-
-  label {
-    display: block;
-    line-height: 1.8rem;
-  }
-
-  input[name=name],
-  input[name=_replyto],
-  input[name=_subject],
-  select,
-  textarea {
-    display: block;
-    background-color: #7e7c7c;
-    color: darkslategray;
-    margin: 3px 0;
-    max-width: 100%;
-  }
-  
-  input[name=name],
-  input[name=_replyto],
-  input[name=_subject] {
-    min-width: 240px;
-    padding: 6px 12px;
-  }
-  
-  select {
-    min-width: 210px;
-    padding: 6px;
-  }
-  
-  textarea {
-    padding: 9px 15px;
-    
-    width: 90%;
-    height: auto;
-  }
-
-  input[type=submit] {
-    font-size: .75rem;
-    text-transform: uppercase;
-    letter-spacing: .05rem;
-    
-    margin-top: 1.2rem;
-    padding: 12px 42px 15px;
-    
-    outline-offset: 2px;
-
-    color: #dd5656;
-
-    // HACK
-    // Override Firefox unnecessary extra inner outline
-    &::-moz-focus-inner {
-      border: 0;
-    }
-  }
-}
 
 /* reset */
 form input,
@@ -128,6 +68,66 @@ form select {
 text-transform: none;
 }
 
+
+// Override this file to add your own SCSS styling.
+#contact {
+
+  // margin: 1.5rem 0;
+
+  label {
+    display: block;
+    line-height: 1.8rem;
+  }
+
+  input[name=name],
+  input[name=_replyto],
+  input[name=_subject],
+  select,
+  textarea {
+    display: block;
+    color: darkslategray;
+    margin: 3px 0;
+    max-width: 100%;
+  }
+  
+  input[name=name],
+  input[name=_replyto],
+  input[name=_subject] {
+    min-width: 240px;
+    padding: 6px 12px;
+  }
+  
+  select {
+    min-width: 210px;
+    padding: 6px;
+  }
+  
+  textarea {
+    padding: 9px 15px;
+
+    height: auto;
+  }
+
+  input[type=submit] {
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    
+    margin-top: 1.2rem;
+    padding: 12px 42px 15px;
+    
+    outline-offset: 2px;
+
+    color: #dd5656;
+
+    // HACK
+    // Override Firefox unnecessary extra inner outline
+    &::-moz-focus-inner {
+      border: 0;
+    }
+  }
+}
+
 #talk_list > div > h3 {
 margin-top: 0rem;
 }
@@ -138,8 +138,9 @@ text-decoration: none;
 
 
 
-.abbb {
+html.abbb {
 padding: 3em 0 3em 0;
+color: dimgray;
 }
 
 .abbb.wg-blank {
@@ -201,6 +202,10 @@ transition: transform 0.3s ease-in-out;
 /* Transform the image scale when container gets hovered */
 .img-hover-zoom:hover img {
 transform: scale(1.1);
+}
+
+#slider > div > div.wg-hero.dark.carousel-item > div {
+    margin: 8% auto 0 auto;
 }
 
 #preloader {
@@ -306,6 +311,112 @@ transform: scale(1.1);
     }
   }
 
-  .abbb {
-    min-height: 200px !important;
+.abbb {
+  min-height: 200px !important;
+}
+
+section#featured.home-section {
+  padding: 50px 0px 50px 0px;
+}
+
+
+// [role^="doc-"] {
+//   text-decoration: none; /* 2 */
+//   color: inherit; /* 2 */
+//   cursor: default; /* 2 */
+//   outline: none; /* 2 */
+// }
+
+// [role="doc-noteref"]::after {
+//   content: '[' counter(footnotes) ']'; /* 1 */
+//   vertical-align: super; /* 2 */
+//   font-size: 0.5em; /* 3 */
+//   margin-left: 2px; /* 4 */
+//   color: blue; /* 5 */
+//   text-decoration: underline; /* 5 */
+//   cursor: pointer; /* 5 */
+// }
+
+// [role="doc-noteref"]:focus::after {
+//   outline: thin dotted;
+//   outline-offset: 2px;
+// }
+section#fn,
+section#fn2 {
+  font-size: 0.8rem;
+}
+
+//footnote link
+[href="#fn"],
+// Back to footnote link
+[href="#fnref"],
+//footnote link
+[href="#fn2"],
+// Back to footnote link
+[href="#fnref2"] {
+  text-decoration: none;
+  color: $orange;
+  font-family: monospace;
+}
+a[href="#fn"]:before{ content: '[' }
+a[href="#fn"]:after{ content: ']' }
+a[href="#fn2"]:before{ content: '[' }
+a[href="#fn2"]:after{ content: ']' }
+
+
+.playlist--list {
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  border-left: none;
+  height: 340px;
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  line-height: .95;
+  color: #565D64;
+  display: inline-block;
+  float: none;
+  margin: 0;
+  width: calc(100% - 343px);
+}
+@media (max-width: 600px) {
+  .playlist--list {
+    display: block;
+    width: 340px;
+    float: none;
+    border: 1px solid #ccc;
+    border-top: 0;
   }
+}
+.playlist--list li {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  padding: 0;
+  cursor: pointer;
+  padding: 20px 10px;
+  background: #ffffff;
+  border-bottom: 1px solid #ccc;
+}
+.playlist--list li:last-child {
+  border-bottom: 0;
+}
+.playlist--list li:hover {
+  background-color: #3498db;
+  color: #ffffff;
+}
+.playlist--list li.active {
+  background-color: #CCDADE;
+  color: #565D64;
+}
+.playlist--list li span {
+  pointer-events: none;
+}
+.playlist--list li .artist {
+  display: block;
+  font-weight: normal;
+  margin-top: 5px;
+  color: #666;
+  font-size: 18px;
+}

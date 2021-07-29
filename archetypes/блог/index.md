@@ -1,17 +1,25 @@
 +++
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
 title = "{{ replace .Name "-" " " | title }}"
 subtitle = ""
 summary = ""
-authors = ["snayp"]
+description = ""
+abstract = ""
+authors = []
 tags = []
 categories = []
+publication_types = []
+keywords = []
 date = {{ .Date }}
 lastmod = {{ .Date }}
+publishDate = {{ .Date }}
 featured = false
 draft = true
 
+[[links]]
+   name = ""
+   url = ""
+#   icon_pack = "fab"
+#   icon = ""
 # Projects (optional).
 #   Associate this post with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
@@ -23,8 +31,9 @@ projects = []
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 [image]
   caption = ""
-  focal_point = ""
+  focal_point = "BottomRight"
   preview_only = false
+  placement = "2"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -36,8 +45,8 @@ projects = []
   # color = "navy"
   
   # Background gradient.
-  gradient_start = "DeepSkyBlue"
-  gradient_end = "SkyBlue"
+  # gradient_start = "DeepSkyBlue"
+  # gradient_end = "SkyBlue"
   
   # Background image.
   # image = "background.jpg"  # Name of image in `static/img/`.
